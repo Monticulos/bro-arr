@@ -1,7 +1,5 @@
 - Remove "Droppe til innhold" content from Brønnøy bibliotek
 - Add working links for each event
-- Add simple search
-- HTTPS
 - Make Kred appear in location
 - Add cinema events
 - Connect to meta events
@@ -10,3 +8,5 @@
 - Add a calendar function on a separate page
 - Push alert on new events
 - Evals for prompts/llm models
+- Better de-duplication system (llm-based)
+- Improve event extraction (reliably add location, events at Kred, prevent non-events from appearing)
