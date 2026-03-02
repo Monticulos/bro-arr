@@ -5,7 +5,7 @@ import puppeteer from "puppeteer";
 
 const JS_RENDER_THRESHOLD = 500;
 const MAX_CHARS = 8000;
-const TRUNCATION_MARKER = "[TEXT TRUNCATED AT 8000 CHARACTERS]";
+export const TRUNCATION_MARKER = "[TEXT TRUNCATED AT 8000 CHARACTERS]";
 
 export function extractText(html: string, selector?: string): string {
   const $ = cheerio.load(html);

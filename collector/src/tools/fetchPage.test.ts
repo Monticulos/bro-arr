@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { extractText, truncate } from "./fetchPage.js";
+import { extractText, truncate, TRUNCATION_MARKER } from "./fetchPage.js";
 
 vi.mock("puppeteer", () => {
   const mockPage = {
@@ -77,7 +77,7 @@ describe("truncate", () => {
   it("truncates at 8000 chars with marker when over limit", () => {
     const longText = "a".repeat(9000);
     const result = truncate(longText);
-    expect(result).toHaveLength(8000 + "\n\n[TEXT TRUNCATED AT 8000 CHARACTERS]".length);
+    expect(result).toHaveLength(8000 + TRUNCATION_MARKER.length);
     expect(result).toContain("[TEXT TRUNCATED AT 8000 CHARACTERS]");
     expect(result.slice(0, 8000)).toBe("a".repeat(8000));
   });
