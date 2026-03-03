@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import type { Event } from '../../../types/event';
+import type { Event } from '../../../types/Event';
 import { CATEGORY_LABELS } from '../constants/categories';
 
 const CATEGORY_ORDER = Object.keys(CATEGORY_LABELS) as Event['category'][];

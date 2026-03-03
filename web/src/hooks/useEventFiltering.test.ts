@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
-import type { Event } from '../../../types/event';
+import type { Event } from '../../../types/Event';
 import { useEventFiltering } from './useEventFiltering';
 
 function createEvent(overrides: Partial<Event> = {}): Event {
@@ -8,9 +8,8 @@ function createEvent(overrides: Partial<Event> = {}): Event {
     id: '1',
     title: 'Test Event',
     description: 'Description',
-    category: 'kultur',
-    startDate: '2025-06-15T18:00:00Z',
-    source: 'https://example.com',
+    category: 'musikk',
+    dateTime: '2025-06-15T18:00:00Z',
     collectedAt: '2025-06-01T00:00:00Z',
     ...overrides,
   };
@@ -30,14 +29,14 @@ describe('useEventFiltering', () => {
 
   it('filters by selected category', () => {
     const events = [
-      createEvent({ id: '1', title: 'Concert', category: 'kultur' }),
-      createEvent({ id: '2', title: 'Football', category: 'sport' }),
+      createEvent({ id: '1', title: 'Concert', category: 'musikk' }),
+      createEvent({ id: '2', title: 'Football', category: 'kino' }),
     ];
 
     const { result } = renderHook(() => useEventFiltering(events));
 
     act(() => {
-      result.current.handleToggleCategory('kultur');
+      result.current.handleToggleCategory('musikk');
     });
 
     expect(result.current.filteredEvents.map((e) => e.title)).toEqual(['Concert']);
@@ -64,13 +63,12 @@ describe('useEventFiltering', () => {
     ]);
   });
 
-  it('does not match against startDate or source', () => {
+  it('does not match against dateTime', () => {
     const events = [
       createEvent({
         id: '1',
         title: 'Concert',
-        startDate: '2025-06-20T10:00:00Z',
-        source: 'https://example.com',
+        dateTime: '2025-06-20T10:00:00Z',
       }),
     ];
 
@@ -80,24 +78,19 @@ describe('useEventFiltering', () => {
       result.current.setSearchQuery('2025-06-20');
     });
     expect(result.current.filteredEvents).toEqual([]);
-
-    act(() => {
-      result.current.setSearchQuery('example.com');
-    });
-    expect(result.current.filteredEvents).toEqual([]);
   });
 
   it('combines category and search filters', () => {
     const events = [
-      createEvent({ id: '1', title: 'Jazz concert', category: 'kultur' }),
-      createEvent({ id: '2', title: 'Jazz festival', category: 'kultur' }),
-      createEvent({ id: '3', title: 'Jazz match', category: 'sport' }),
+      createEvent({ id: '1', title: 'Jazz concert', category: 'musikk' }),
+      createEvent({ id: '2', title: 'Jazz festival', category: 'musikk' }),
+      createEvent({ id: '3', title: 'Jazz match', category: 'kino' }),
     ];
 
     const { result } = renderHook(() => useEventFiltering(events));
 
     act(() => {
-      result.current.handleToggleCategory('sport');
+      result.current.handleToggleCategory('kino');
       result.current.setSearchQuery('jazz');
     });
 
@@ -106,12 +99,12 @@ describe('useEventFiltering', () => {
 
   it('computes availableCategories from provided events', () => {
     const events = [
-      createEvent({ id: '1', category: 'kultur' }),
-      createEvent({ id: '2', category: 'sport' }),
+      createEvent({ id: '1', category: 'musikk' }),
+      createEvent({ id: '2', category: 'kino' }),
     ];
 
     const { result } = renderHook(() => useEventFiltering(events));
 
-    expect(result.current.availableCategories).toEqual(['kultur', 'sport']);
+    expect(result.current.availableCategories).toEqual(['musikk', 'kino']);
   });
 });

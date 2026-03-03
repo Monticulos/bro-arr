@@ -5,7 +5,7 @@ import CategoryFilter from './CategoryFilter';
 import type { Event } from '../../types/event';
 
 describe('CategoryFilter', () => {
-  const availableCategories: Event['category'][] = ['kultur', 'sport', 'annet'];
+  const availableCategories: Event['category'][] = ['musikk', 'kino', 'annet'];
 
   it('renders a chip for each available category', () => {
     render(
@@ -16,8 +16,8 @@ describe('CategoryFilter', () => {
       />
     );
 
-    expect(screen.getByText('Kultur')).toBeInTheDocument();
-    expect(screen.getByText('Sport')).toBeInTheDocument();
+    expect(screen.getByText('Musikk')).toBeInTheDocument();
+    expect(screen.getByText('Kino')).toBeInTheDocument();
     expect(screen.getByText('Annet')).toBeInTheDocument();
   });
 
@@ -25,13 +25,13 @@ describe('CategoryFilter', () => {
     render(
       <CategoryFilter
         availableCategories={availableCategories}
-        selectedCategories={new Set<Event['category']>(['sport'])}
+        selectedCategories={new Set<Event['category']>(['kino'])}
         onToggleCategory={() => {}}
       />
     );
 
-    expect(screen.getByRole('checkbox', { name: 'Sport' })).toBeChecked();
-    expect(screen.getByRole('checkbox', { name: 'Kultur' })).not.toBeChecked();
+    expect(screen.getByRole('checkbox', { name: 'Kino' })).toBeChecked();
+    expect(screen.getByRole('checkbox', { name: 'Musikk' })).not.toBeChecked();
     expect(screen.getByRole('checkbox', { name: 'Annet' })).not.toBeChecked();
   });
 
@@ -47,8 +47,8 @@ describe('CategoryFilter', () => {
       />
     );
 
-    await user.click(screen.getByRole('checkbox', { name: 'Kultur' }));
-    expect(handleToggle).toHaveBeenCalledWith('kultur');
+    await user.click(screen.getByRole('checkbox', { name: 'Musikk' }));
+    expect(handleToggle).toHaveBeenCalledWith('musikk');
   });
 
   it('has a visible Filter legend', () => {

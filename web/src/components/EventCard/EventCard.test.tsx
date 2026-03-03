@@ -9,9 +9,8 @@ function createEvent(overrides: Partial<Event> = {}): Event {
     id: "1",
     title: "Test Event",
     description: "A test event description",
-    category: "kultur",
-    startDate: "2025-06-15T18:00:00Z",
-    source: "TestSource",
+    category: "annet",
+    dateTime: "2025-06-15T18:00:00Z",
     collectedAt: "2025-06-01T00:00:00Z",
     ...overrides,
   };
@@ -30,12 +29,11 @@ function renderCard(overrides: Partial<Event> = {}, isFavorited = false) {
 }
 
 describe("EventCard", () => {
-  it("renders title, description and source", () => {
+  it("renders title and description", () => {
     renderCard();
 
     expect(screen.getByText("Test Event")).toBeInTheDocument();
     expect(screen.getByText("A test event description")).toBeInTheDocument();
-    expect(screen.getByText("TestSource")).toBeInTheDocument();
   });
 
   it("renders location when provided", () => {

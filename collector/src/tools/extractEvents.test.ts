@@ -1,83 +1,66 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
-import { createEvent } from "../test/createEvent.js";
+import { describe, it, expect } from "vitest";
+import { cleanHtml, truncateText } from "./extractEvents.js";
 
-vi.mock("../eventBuffer.js", () => ({
-  pushEvents: vi.fn(),
-}));
+describe("cleanHtml", () => {
+  it("removes script, style, and nav elements", () => {
+    const html = `
+      <div>
+        <script>alert('hi')</script>
+        <style>.foo { color: red }</style>
+        <nav>Navigation</nav>
+        <p>Content here</p>
+      </div>
+    `;
+    const result = cleanHtml(html);
+    expect(result).not.toContain("alert");
+    expect(result).not.toContain("color: red");
+    expect(result).not.toContain("Navigation");
+    expect(result).toContain("Content here");
+  });
 
-vi.mock("@langchain/mistralai", () => {
-  const mockStructuredLlm = {
-    invoke: vi.fn().mockResolvedValue({ events: [] }),
-  };
-  return {
-    ChatMistralAI: vi.fn().mockImplementation(() => ({
-      withStructuredOutput: vi.fn().mockReturnValue(mockStructuredLlm),
-    })),
-  };
+  it("removes footer, header, aside, and noscript elements", () => {
+    const html = `
+      <div>
+        <header>Header</header>
+        <footer>Footer</footer>
+        <aside>Sidebar</aside>
+        <noscript>Enable JS</noscript>
+        <main>Main content</main>
+      </div>
+    `;
+    const result = cleanHtml(html);
+    expect(result).not.toContain("Header");
+    expect(result).not.toContain("Footer");
+    expect(result).not.toContain("Sidebar");
+    expect(result).not.toContain("Enable JS");
+    expect(result).toContain("Main content");
+  });
+
+  it("collapses whitespace", () => {
+    const html = "<p>  Hello   \n\n  World  </p>";
+    expect(cleanHtml(html)).toBe("Hello World");
+  });
+
+  it("returns empty string for empty input", () => {
+    expect(cleanHtml("")).toBe("");
+  });
 });
 
-describe("extractEvents tool", () => {
-  beforeEach(() => {
-    vi.clearAllMocks();
+describe("truncateText", () => {
+  it("returns text unchanged when under limit", () => {
+    const shortText = "Hello world";
+    expect(truncateText(shortText)).toBe(shortText);
   });
 
-  async function invokeExtractEvents(args: { pageText: string; sourceUrl: string }): Promise<string> {
-    const { extractEvents } = await import("./extractEvents.js");
-    return extractEvents.invoke(args);
-  }
-
-  it("pushes extracted events to buffer", async () => {
-    const { ChatMistralAI } = await import("@langchain/mistralai");
-    const eventBuffer = await import("../eventBuffer.js");
-
-    const mockEvents = [createEvent({ title: "Festival" })];
-    vi.mocked(ChatMistralAI).mockImplementation(() => ({
-      withStructuredOutput: vi.fn().mockReturnValue({
-        invoke: vi.fn().mockResolvedValue({ events: mockEvents }),
-      }),
-    }) as any);
-
-    await invokeExtractEvents({
-      pageText: "Festival on March 15th",
-      sourceUrl: "https://example.com/events",
-    });
-
-    expect(eventBuffer.pushEvents).toHaveBeenCalledWith(mockEvents);
+  it("truncates text exceeding 8000 chars with marker", () => {
+    const longText = "a".repeat(9000);
+    const result = truncateText(longText);
+    expect(result.length).toBeLessThanOrEqual(8000);
+    expect(result).toContain("...[truncated]");
   });
 
-  it("returns summary with event count", async () => {
-    const { ChatMistralAI } = await import("@langchain/mistralai");
-
-    const mockEvents = [createEvent(), createEvent({ title: "Second" })];
-    vi.mocked(ChatMistralAI).mockImplementation(() => ({
-      withStructuredOutput: vi.fn().mockReturnValue({
-        invoke: vi.fn().mockResolvedValue({ events: mockEvents }),
-      }),
-    }) as any);
-
-    const result = await invokeExtractEvents({
-      pageText: "Some page text",
-      sourceUrl: "https://example.com",
-    });
-
-    expect(result).toContain("2 event(s)");
-    expect(result).toContain("example.com");
-  });
-
-  it("handles zero events", async () => {
-    const { ChatMistralAI } = await import("@langchain/mistralai");
-
-    vi.mocked(ChatMistralAI).mockImplementation(() => ({
-      withStructuredOutput: vi.fn().mockReturnValue({
-        invoke: vi.fn().mockResolvedValue({ events: [] }),
-      }),
-    }) as any);
-
-    const result = await invokeExtractEvents({
-      pageText: "No events here",
-      sourceUrl: "https://example.com",
-    });
-
-    expect(result).toContain("0 event(s)");
+  it("returns text unchanged when exactly at limit", () => {
+    const exactText = "a".repeat(8000);
+    expect(truncateText(exactText)).toBe(exactText);
   });
 });

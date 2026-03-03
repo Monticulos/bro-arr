@@ -4,10 +4,9 @@ import CategoryBadge from "./CategoryBadge";
 import type { Event } from "../../types/event";
 
 const CATEGORIES: { category: Event["category"]; label: string; color: string }[] = [
-  { category: "kultur", label: "Kultur", color: "accent" },
-  { category: "sport", label: "Sport", color: "brand1" },
-  { category: "næringsliv", label: "Næringsliv", color: "brand2" },
-  { category: "kommunalt", label: "Kommunalt", color: "brand2" },
+  { category: "musikk", label: "Musikk", color: "accent" },
+  { category: "stand-up", label: "Stand-up", color: "brand1" },
+  { category: "kino", label: "Kino", color: "brand2" },
   { category: "annet", label: "Annet", color: "neutral" },
 ];
 

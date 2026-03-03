@@ -1,7 +1,9 @@
+# High priority
 - Connect to meta events
+
+# Medium priority
 - Create workaround for type issues for DS only allowing 4 colors for badges/tags/categories
-- Add a calendar function on a separate page
-- Push alert on new events
 - Evals for prompts/llm models
-- Better de-duplication system (llm-based)
-- Improve event extraction (reliably add location, events at Kred, prevent non-events from appearing)
+
+# Low priority
+- Add a calendar function on a separate page

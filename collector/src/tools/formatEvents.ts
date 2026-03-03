@@ -1,0 +1,42 @@
+import { readFileSync } from "fs";
+import { dirname, resolve } from "path";
+import { fileURLToPath } from "url";
+import { ChatMistralAI } from "@langchain/mistralai";
+import { z } from "zod";
+import type { Event } from "../types.js";
+import type { Source } from "../sources.js";
+
+const EventSchema = z.object({
+  id: z.string().describe("Unique kebab-case slug: <source-domain>-<title-slug>-<YYYY-MM-DD>"),
+  title: z.string().describe("Title as given from source html, excluding date"),
+  description: z.string(),
+  category: z.enum(["musikk", "stand-up", "kino", "annet"]),
+  dateTime: z.string().describe("ISO 8601 datetime, e.g. 2026-03-07T19:00:00"),
+  location: z.string().optional().describe("The event location, usually the source name"),
+  url: z.string().optional().describe("The url from the given source"),
+  collectedAt: z.string().describe("Current ISO 8601 timestamp"),
+});
+
+const EventsResponseSchema = z.object({
+  events: z.array(EventSchema),
+});
+
+const PROMPTS_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..", "prompts");
+const SYSTEM_PROMPT = readFileSync(resolve(PROMPTS_DIR, "format-events.md"), "utf-8");
+
+export async function formatEvents(source: Source, rawText: string): Promise<Event[]> {
+  if (!rawText) return [];
+
+  const llm = new ChatMistralAI({ model: "mistral-small-latest", temperature: 0.1 });
+  const structuredLlm = llm.withStructuredOutput(EventsResponseSchema);
+
+  const result = await structuredLlm.invoke([
+    { role: "system", content: SYSTEM_PROMPT },
+    {
+      role: "user",
+      content: `Source: ${source.name}\nSource URL: ${source.url}\nCurrent time: ${new Date().toISOString()}\n\n${rawText}`,
+    },
+  ]);
+
+  return result.events as Event[];
+}

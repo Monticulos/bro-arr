@@ -1,45 +1,44 @@
-import { readFileSync } from "fs";
-import { dirname, resolve } from "path";
-import { fileURLToPath } from "url";
-import { tool } from "@langchain/core/tools";
-import { ChatMistralAI } from "@langchain/mistralai";
-import { z } from "zod";
-import { pushEvents } from "../eventBuffer.js";
+import puppeteer from "puppeteer";
+import * as cheerio from "cheerio";
+import type { Source } from "../sources.js";
 
-const EventSchema = z.object({
-  id: z.string().describe("Unique kebab-case slug: <source-domain>-<title-slug>-<YYYY-MM-DD>"),
-  title: z.string(),
-  description: z.string(),
-  category: z.enum(["kultur", "sport", "næringsliv", "kommunalt", "annet"]),
-  startDate: z.string().describe("ISO 8601 datetime, e.g. 2026-03-07T19:00:00"),
-  endDate: z.string().optional(),
-  location: z.string().optional(),
-  url: z.string().optional(),
-  source: z.string().describe("Domain name of the source, e.g. 'bronnoy.kommune.no'"),
-  collectedAt: z.string().describe("Current ISO 8601 timestamp"),
-});
+const MAX_TEXT_LENGTH = 8000;
+const TRUNCATION_MARKER = "\n...[truncated]";
+const RENDER_WAIT_MS = 2500;
+const ELEMENTS_TO_REMOVE = "script, style, noscript, nav, footer, header, aside";
 
-const PROMPTS_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..", "prompts");
-const SYSTEM_PROMPT = readFileSync(resolve(PROMPTS_DIR, "extract-events-system.md"), "utf-8");
+export function cleanHtml(html: string): string {
+  const $ = cheerio.load(html);
+  $(ELEMENTS_TO_REMOVE).remove();
+  return $.text().replace(/\s+/g, " ").trim();
+}
 
-export const extractEvents = tool(
-  async ({ pageText, sourceUrl }) => {
-    const llm = new ChatMistralAI({ model: "mistral-small-latest", temperature: 0.1 });
-    const structuredLlm = llm.withStructuredOutput(z.object({ events: z.array(EventSchema) }));
-    const result = await structuredLlm.invoke([
-      { role: "system", content: SYSTEM_PROMPT },
-      { role: "user", content: `Source URL: ${sourceUrl}\n\nCurrent time: ${new Date().toISOString()}\n\n${pageText}` },
-    ]);
-    pushEvents(result.events);
-    return `Extracted ${result.events.length} event(s) from ${sourceUrl}. Call writeEvents to save them.`;
-  },
-  {
-    name: "extractEvents",
-    description:
-      "Extract structured events from cleaned webpage text and stage them for saving. Call writeEvents afterwards.",
-    schema: z.object({
-      pageText: z.string().describe("Cleaned plain text from the webpage"),
-      sourceUrl: z.string().describe("The URL the page was fetched from"),
-    }),
+export function truncateText(text: string): string {
+  if (text.length <= MAX_TEXT_LENGTH) return text;
+  return text.slice(0, MAX_TEXT_LENGTH - TRUNCATION_MARKER.length) + TRUNCATION_MARKER;
+}
+
+export async function extractEvents(source: Source): Promise<string> {
+  try {
+    const browser = await puppeteer.launch({ headless: true });
+    const page = await browser.newPage();
+    await page.goto(source.url, { waitUntil: "networkidle2" });
+    await new Promise((resolve) => setTimeout(resolve, RENDER_WAIT_MS));
+
+    let html: string;
+    if (source.selector) {
+      const element = await page.$(source.selector);
+      html = element ? await page.evaluate((el) => el.innerHTML, element) : "";
+    } else {
+      html = await page.content();
+    }
+
+    await browser.close();
+
+    const cleanedText = cleanHtml(html);
+    return truncateText(cleanedText);
+  } catch (error) {
+    console.warn(`Failed to extract events from ${source.name}:`, error);
+    return "";
   }
-);
+}

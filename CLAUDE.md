@@ -16,4 +16,5 @@
 - Don't use magic numbers or strings. Assign them to a constant or variable instead.
 - Multi-line LLM prompts should be extracted into markdown files in the `collector/src/prompts` folder.
 - Test happy paths, error cases and important edge cases using Vitest.
+- When making plans, ask if anything is unclear.
 - After writing code, double check that it follows the requirements.

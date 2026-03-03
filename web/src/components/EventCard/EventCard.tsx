@@ -22,8 +22,8 @@ export default function EventCard({ event, isFavorited, onToggleFavorite }: Prop
         <div className={styles.meta}>
           <div className={styles.metaLeft}>
             <CategoryBadge category={event.category} />
-            <time className={styles.date} dateTime={event.startDate}>
-              {formatEventDate(event.startDate)}
+            <time className={styles.date} dateTime={event.dateTime}>
+              {formatEventDate(event.dateTime)}
             </time>
           </div>
           <Button
@@ -56,7 +56,6 @@ export default function EventCard({ event, isFavorited, onToggleFavorite }: Prop
       </Card.Block>
 
       <Card.Block className={styles.footer}>
-        <span className={styles.source}>{event.source}</span>
         {event.url && (
           <Link href={event.url} target="_blank" rel="noopener noreferrer">
             Les mer →

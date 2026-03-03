@@ -1,17 +1,15 @@
-import type { Event } from '../../../types/event';
+import type { Event } from '../../../types/Event';
 
 export const CATEGORY_LABELS: Record<Event['category'], string> = {
-  kultur: 'Kultur',
-  sport: 'Sport',
-  næringsliv: 'Næringsliv',
-  kommunalt: 'Kommunalt',
+  musikk: 'Musikk',
+  'stand-up': 'Stand-up',
+  kino: 'Kino',
   annet: 'Annet',
 };
 
 export const CATEGORY_COLOR_MAP = {
-  kultur: 'accent',
-  sport: 'brand1',
-  næringsliv: 'brand2',
-  kommunalt: 'brand2',
+  musikk: 'accent',
+  'stand-up': 'brand1',
+  kino: 'brand2',
   annet: 'neutral',
 } as const satisfies Record<Event['category'], string>;

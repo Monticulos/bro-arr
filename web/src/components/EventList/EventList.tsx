@@ -22,14 +22,14 @@ function getUpcomingEvents(events: Event[]): Event[] {
   now.setHours(0, 0, 0, 0);
 
   return events
-    .filter((event) => new Date(event.startDate) >= now)
-    .sort((a, b) => a.startDate.localeCompare(b.startDate));
+    .filter((event) => new Date(event.dateTime) >= now)
+    .sort((a, b) => a.dateTime.localeCompare(b.dateTime));
 }
 
 function groupByMonth(eventList: Event[]) {
   const groups: { monthKey: string; events: Event[] }[] = [];
   for (const event of eventList) {
-    const monthKey = event.startDate.slice(0, YEAR_MONTH_KEY_LENGTH);
+    const monthKey = event.dateTime.slice(0, YEAR_MONTH_KEY_LENGTH);
     const lastGroup = groups[groups.length - 1];
     if (lastGroup && lastGroup.monthKey === monthKey) {
       lastGroup.events.push(event);
@@ -100,7 +100,7 @@ export default function EventList({ events, loading, error }: Props) {
           {groupByMonth(filteredEvents).map(({ monthKey, events: groupEvents }) => (
             <li key={monthKey}>
               <Heading level={2} data-size="sm" className={styles.monthHeading}>
-                {formatMonthHeading(groupEvents[0].startDate)}
+                {formatMonthHeading(groupEvents[0].dateTime)}
               </Heading>
               <ul className={styles.list}>
                 {groupEvents.map((event) => (

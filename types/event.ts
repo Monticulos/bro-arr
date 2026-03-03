@@ -2,12 +2,10 @@ export interface Event {
   id: string;
   title: string;
   description: string;
-  category: "kultur" | "sport" | "næringsliv" | "kommunalt" | "annet";
-  startDate: string;   // ISO 8601
-  endDate?: string;
+  category: "musikk" | "stand-up" | "kino" | "annet";
+  dateTime: string;   // ISO 8601
   location?: string;
   url?: string;
-  source: string;
   collectedAt: string;   // ISO 8601
 }
 
