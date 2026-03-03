@@ -20,7 +20,7 @@ A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI co
 ```
 broarr/
 ├── types/
-│   └── event.ts              # Shared Event + EventsData TypeScript interfaces
+│   └── Event.ts              # Shared Event + EventsData TypeScript interfaces
 ├── web/                      # React + Vite frontend (deployed to GitHub Pages)
 │   ├── public/data/
 │   │   └── events.json       # Generated event data consumed by the frontend
@@ -47,7 +47,6 @@ broarr/
 │   │       ├── deleteExpiredEvents.ts
 │   │       ├── deleteSavedEvents.ts
 │   │       └── editorAgent.ts
-│   └── COLLECTING-GUIDE.md   # Full guide for running and extending the collector
 └── .github/workflows/
     └── deploy.yml            # GitHub Actions: build + deploy on push to main
 ```
@@ -67,8 +66,6 @@ The site is served at `http://localhost:5173`.
 ---
 
 ## Running the collector
-
-See [collector/COLLECTING-GUIDE.md](collector/COLLECTING-GUIDE.md) for full instructions.
 
 ```bash
 cd collector
