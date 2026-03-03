@@ -55,13 +55,18 @@ async function fetchWithRetry(url: string, selector?: string, retries = 3): Prom
   throw new Error("Unreachable");
 }
 
+const EMPTY_CONTENT_MESSAGE =
+  "EMPTY_CONTENT: The page returned no extractable text. Call writeEvents with no events, then move on to the next source.";
+
 export const fetchPage = tool(
   async ({ url, selector }) => {
     try {
-      return await fetchWithRetry(url, selector);
+      const text = await fetchWithRetry(url, selector);
+      return text || EMPTY_CONTENT_MESSAGE;
     } catch {
       try {
-        return await fetchWithPuppeteer(url, selector);
+        const text = await fetchWithPuppeteer(url, selector);
+        return text || EMPTY_CONTENT_MESSAGE;
       } catch (error) {
         return `FETCH_ERROR: ${error instanceof Error ? error.message : String(error)}. Skip this source and move on to the next one.`;
       }

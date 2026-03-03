@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-28T08:54:39.185Z",
+  "updatedAt": "2026-03-03T16:58:37.289Z",
   "events": [
     {
       "id": "havnesenteret-no-hjertedagan-2026-02-05",
@@ -54,6 +54,30 @@
       "collectedAt": "2026-02-25T17:59:17.941Z"
     },
     {
+      "id": "bronnoy-kommune-no-handbok-for-superhelter-2026-02-27",
+      "title": "Håndbok For Superhelter",
+      "description": "Visning av filmen Håndbok For Superhelter",
+      "category": "kultur",
+      "startDate": "2026-02-27T18:00:00",
+      "endDate": "2026-02-27T20:00:00",
+      "location": "Brønnøy Kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "source": "bronnoy.kommune.no",
+      "collectedAt": "2026-03-03T16:45:30.802Z"
+    },
+    {
+      "id": "bronnoy-kommune-no-scream-7-2026-02-27",
+      "title": "Scream 7",
+      "description": "Visning av filmen Scream 7",
+      "category": "kultur",
+      "startDate": "2026-02-27T20:00:00",
+      "endDate": "2026-02-27T22:00:00",
+      "location": "Brønnøy Kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "source": "bronnoy.kommune.no",
+      "collectedAt": "2026-03-03T16:45:30.802Z"
+    },
+    {
       "id": "bronnoybibliotek-barseltreff-pa-bibliotek-2026-03-03",
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
@@ -63,6 +87,30 @@
       "location": "Brønnøy bibliotek Brønnøysund",
       "source": "bronnoybibliotek.no",
       "collectedAt": "2026-02-25T18:12:57.319Z"
+    },
+    {
+      "id": "bronnoy-kommune-no-handbok-for-superhelter-2026-03-03",
+      "title": "Håndbok For Superhelter",
+      "description": "Visning av filmen Håndbok For Superhelter",
+      "category": "kultur",
+      "startDate": "2026-03-03T18:00:00",
+      "endDate": "2026-03-03T20:00:00",
+      "location": "Brønnøy Kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "source": "bronnoy.kommune.no",
+      "collectedAt": "2026-03-03T16:45:30.802Z"
+    },
+    {
+      "id": "bronnoy-kommune-no-scream-7-2026-03-03",
+      "title": "Scream 7",
+      "description": "Visning av filmen Scream 7",
+      "category": "kultur",
+      "startDate": "2026-03-03T20:00:00",
+      "endDate": "2026-03-03T22:00:00",
+      "location": "Brønnøy Kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "source": "bronnoy.kommune.no",
+      "collectedAt": "2026-03-03T16:45:30.802Z"
     },
     {
       "id": "bronnoy-kommune-no-innskrivingsbrev-for-1-klasse-2026-03-04",
@@ -103,6 +151,18 @@
       "location": "Brønnøy kirke",
       "source": "bronnoy.kirken.no",
       "collectedAt": "2026-02-25T18:14:39.340Z"
+    },
+    {
+      "id": "bronnoy-kommune-no-operasjon-bever-2026-03-06",
+      "title": "Operasjon Bever",
+      "description": "Visning av filmen Operasjon Bever",
+      "category": "kultur",
+      "startDate": "2026-03-06T18:00:00",
+      "endDate": "2026-03-06T20:00:00",
+      "location": "Brønnøy Kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "source": "bronnoy.kommune.no",
+      "collectedAt": "2026-03-03T16:45:30.802Z"
     },
     {
       "id": "bronnoy-kirken-lordagskafe-2026-03-07",
@@ -195,6 +255,18 @@
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
       "collectedAt": "2026-02-25T18:14:39.340Z"
+    },
+    {
+      "id": "bronnoy-kirken-gudstjeneste-2026-03-19",
+      "title": "Gudstjeneste",
+      "description": "Gudstjeneste",
+      "category": "kultur",
+      "startDate": "2026-03-19T11:30:00",
+      "endDate": "2026-03-19T12:30:00",
+      "location": "Sykehjemmets kapell",
+      "url": "https://www.bronnoy.kirken.no/Kalender",
+      "source": "bronnoy.kirken.no",
+      "collectedAt": "2026-03-03T16:58:30.584Z"
     },
     {
       "id": "cafekred-no-mat-og-vinkveld-med-erik-strugstad-20-mars-2026",

@@ -1,7 +1,4 @@
 - Remove "Droppe til innhold" content from Brønnøy bibliotek
-- Add working links for each event
-- Make Kred appear in location
-- Add cinema events
 - Connect to meta events
 - Create workaround for type issues for DS only allowing 4 colors for badges/tags/categories
 - Favorites (use StarIcon, StarFillIcon and local storage), with favorite heading over months
