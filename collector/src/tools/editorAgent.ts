@@ -12,6 +12,7 @@ const EditorResponseSchema = z.object({
 const PROMPTS_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..", "prompts");
 const SYSTEM_PROMPT = readFileSync(resolve(PROMPTS_DIR, "editor-agent.md"), "utf-8");
 
+// Can be changed to do a general quality check of the events file in the future.
 export async function runEditorAgent(): Promise<number> {
   const data = readEventsFile();
 
