@@ -1,12 +1,12 @@
 import "dotenv/config";
 import { TARGET_SOURCES } from "./sources.js";
-import { deleteSavedEvents } from "./tools-new/deleteSavedEvents.js";
-import { extractEvents } from "./tools-new/extractEvents.js";
-import { formatEvents } from "./tools-new/formatEvents.js";
-import { writeEvents } from "./tools-new/writeEvents.js";
-import { sortEvents } from "./tools-new/sortEvents.js";
-import { deleteExpiredEvents } from "./tools-new/deleteExpiredEvents.js";
-import { runEditorAgent } from "./tools-new/editorAgent.js";
+import { deleteSavedEvents } from "./tools/deleteSavedEvents.js";
+import { extractEvents } from "./tools/extractEvents.js";
+import { formatEvents } from "./tools/formatEvents.js";
+import { writeEvents } from "./tools/writeEvents.js";
+import { sortEvents } from "./tools/sortEvents.js";
+import { deleteExpiredEvents } from "./tools/deleteExpiredEvents.js";
+import { runEditorAgent } from "./tools/editorAgent.js";
 
 async function main() {
     

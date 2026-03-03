@@ -29,18 +29,24 @@ broarr/
 │       └── components/
 │           ├── EventList.tsx
 │           ├── EventCard.tsx
-│           ├── EventModal.tsx
 │           ├── Header.tsx
-│           └── CategoryBadge.tsx
-├── collector/                # Node.js LangChain agent
+│           ├── Footer.tsx
+│           ├── Search.tsx
+│           ├── CategoryBadge.tsx
+│           └── CategoryFilter.tsx
+├── collector/                # Node.js collection script
 │   ├── src/
-│   │   ├── index.ts          # Entry point + CLI arg handling
-│   │   ├── agent.ts          # LangChain ReAct agent setup
+│   │   ├── script.ts         # Entry point — orchestrates the collection pipeline
 │   │   ├── sources.ts        # Target URLs with optional CSS selectors
+│   │   ├── prompts/          # Markdown prompts for LLM calls
 │   │   └── tools/
-│   │       ├── fetchPage.ts
 │   │       ├── extractEvents.ts
-│   │       └── writeEvents.ts
+│   │       ├── formatEvents.ts
+│   │       ├── writeEvents.ts
+│   │       ├── sortEvents.ts
+│   │       ├── deleteExpiredEvents.ts
+│   │       ├── deleteSavedEvents.ts
+│   │       └── editorAgent.ts
 │   └── COLLECTING-GUIDE.md   # Full guide for running and extending the collector
 └── .github/workflows/
     └── deploy.yml            # GitHub Actions: build + deploy on push to main
@@ -67,7 +73,7 @@ See [collector/COLLECTING-GUIDE.md](collector/COLLECTING-GUIDE.md) for full inst
 ```bash
 cd collector
 cp .env.example .env   # add your MISTRAL_API_KEY
-npx tsx src/index.ts   # collect all sources and update events.json
+npx tsx src/script.ts  # collect all sources and update events.json
 ```
 
 ---
