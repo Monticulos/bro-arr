@@ -1,12 +1,13 @@
 import { useMemo } from 'react';
-import { Spinner, Alert, Heading, Paragraph } from '@digdir/designsystemet-react';
+import { Spinner, Alert, Paragraph } from '@digdir/designsystemet-react';
 import type { Event } from '../../types/event';
 import { useEventFiltering } from '../../hooks/useEventFiltering';
 import { useFavorites } from '../../hooks/useFavorites';
-import EventCard from '../EventCard/EventCard';
 import CategoryFilter from '../CategoryFilter/CategoryFilter';
 import Search from '../Search/Search';
+import EventSection from '../EventSection/EventSection';
 import { formatMonthHeading } from '../../utils/formatDate';
+import { getUpcomingEvents, groupByMonth } from '../../utils/eventGrouping';
 import styles from './EventList.module.css';
 
 interface Props {
@@ -15,30 +16,7 @@ interface Props {
   error: string | null;
 }
 
-const YEAR_MONTH_KEY_LENGTH = 7;
-
-function getUpcomingEvents(events: Event[]): Event[] {
-  const now = new Date();
-  now.setHours(0, 0, 0, 0);
-
-  return events
-    .filter((event) => new Date(event.dateTime) >= now)
-    .sort((a, b) => a.dateTime.localeCompare(b.dateTime));
-}
-
-function groupByMonth(eventList: Event[]) {
-  const groups: { monthKey: string; events: Event[] }[] = [];
-  for (const event of eventList) {
-    const monthKey = event.dateTime.slice(0, YEAR_MONTH_KEY_LENGTH);
-    const lastGroup = groups[groups.length - 1];
-    if (lastGroup && lastGroup.monthKey === monthKey) {
-      lastGroup.events.push(event);
-    } else {
-      groups.push({ monthKey, events: [event] });
-    }
-  }
-  return groups;
-}
+const alwaysFavorited = () => true;
 
 export default function EventList({ events, loading, error }: Props) {
   const upcomingEvents = useMemo(() => getUpcomingEvents(events), [events]);
@@ -57,6 +35,8 @@ export default function EventList({ events, loading, error }: Props) {
     () => filteredEvents.filter((e) => favoriteIds.has(e.id)),
     [filteredEvents, favoriteIds]
   );
+
+  const monthGroups = useMemo(() => groupByMonth(filteredEvents), [filteredEvents]);
 
   if (loading) return (
     <div className={styles.statusContainer}>
@@ -77,42 +57,30 @@ export default function EventList({ events, loading, error }: Props) {
         onToggleCategory={handleToggleCategory}
       />
       <Search value={searchQuery} onChange={setSearchQuery} />
-      {favoritedFilteredEvents.length > 0 && (
-        <>
-          <Heading level={2} data-size="sm" className={styles.monthHeading}>
-            Favoritter
-          </Heading>
-          <ul className={styles.list}>
-            {favoritedFilteredEvents.map((event) => (
-              <li key={event.id}>
-                <EventCard event={event} isFavorited={true} onToggleFavorite={toggleFavorite} />
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
       {filteredEvents.length === 0 ? (
         <Paragraph className={styles.statusContainer}>
           Ingen arrangementer funnet.
         </Paragraph>
       ) : (
         <ul className={styles.list}>
-          {groupByMonth(filteredEvents).map(({ monthKey, events: groupEvents }) => (
+          {favoritedFilteredEvents.length > 0 && (
+            <li>
+              <EventSection
+                heading="Favoritter"
+                events={favoritedFilteredEvents}
+                isFavorited={alwaysFavorited}
+                onToggleFavorite={toggleFavorite}
+              />
+            </li>
+          )}
+          {monthGroups.map(({ monthKey, events: groupEvents }) => (
             <li key={monthKey}>
-              <Heading level={2} data-size="sm" className={styles.monthHeading}>
-                {formatMonthHeading(groupEvents[0].dateTime)}
-              </Heading>
-              <ul className={styles.list}>
-                {groupEvents.map((event) => (
-                  <li key={event.id}>
-                    <EventCard
-                      event={event}
-                      isFavorited={isFavorite(event.id)}
-                      onToggleFavorite={toggleFavorite}
-                    />
-                  </li>
-                ))}
-              </ul>
+              <EventSection
+                heading={formatMonthHeading(groupEvents[0].dateTime)}
+                events={groupEvents}
+                isFavorited={isFavorite}
+                onToggleFavorite={toggleFavorite}
+              />
             </li>
           ))}
         </ul>

@@ -119,11 +119,11 @@ describe("EventList", () => {
   });
 });
 
-describe("EventList favorites", () => {
-  function createFutureEvent(overrides: Partial<Event> = {}): Event {
-    return createEvent({ dateTime: "2099-06-20T10:00:00Z", ...overrides });
-  }
+function createFutureEvent(overrides: Partial<Event> = {}): Event {
+  return createEvent({ dateTime: "2099-06-20T10:00:00Z", ...overrides });
+}
 
+describe("EventList favorites", () => {
   beforeEach(() => {
     localStorage.clear();
   });
@@ -199,10 +199,6 @@ describe("EventList favorites", () => {
 });
 
 describe("EventList category filtering", () => {
-  function createFutureEvent(overrides: Partial<Event> = {}): Event {
-    return createEvent({ dateTime: "2099-06-20T10:00:00Z", ...overrides });
-  }
-
   beforeEach(() => {
     localStorage.clear();
   });
@@ -256,10 +252,6 @@ describe("EventList category filtering", () => {
 });
 
 describe("EventList search filtering", () => {
-  function createFutureEvent(overrides: Partial<Event> = {}): Event {
-    return createEvent({ dateTime: "2099-06-20T10:00:00Z", ...overrides });
-  }
-
   beforeEach(() => {
     localStorage.clear();
   });

@@ -11,9 +11,3 @@
   text-align: center;
   padding: var(--ds-size-9) 0;
 }
-
-.monthHeading {
-  letter-spacing: 0.04em;
-  color: var(--ds-color-neutral-text-subtle);
-  margin: var(--ds-size-7) 0 var(--ds-size-3);
-}
