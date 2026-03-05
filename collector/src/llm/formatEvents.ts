@@ -5,7 +5,7 @@ import { ChatMistralAI } from "@langchain/mistralai";
 import { z } from "zod";
 import type { Event } from "../types.js";
 import type { Source } from "../sources.js";
-import { generateEventId } from "./generateEventId.js";
+import { generateEventId } from "../tools/generateEventId.js";
 
 const EventSchema = z.object({
   title: z.string().describe("Event title only. Must not contain dates, times, or weekday names"),

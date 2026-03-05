@@ -2,11 +2,13 @@ import "dotenv/config";
 import { TARGET_SOURCES } from "./sources.js";
 import { deleteSavedEvents } from "./tools/deleteSavedEvents.js";
 import { extractEvents } from "./tools/extractEvents.js";
-import { formatEvents } from "./tools/formatEvents.js";
+import { formatEvents } from "./llm/formatEvents.js";
 import { writeEvents } from "./tools/writeEvents.js";
 import { sortEvents } from "./tools/sortEvents.js";
 import { deleteExpiredEvents } from "./tools/deleteExpiredEvents.js";
 import { readEventsFile } from "./tools/eventsFile.js";
+import { fetchApifyEvents } from "./api/fetchApifyEvents.js";
+import { mapApifyEventToEvent } from "./api/mapApifyEventToEvent.js";
 
 async function main() {
   deleteSavedEvents();
@@ -28,6 +30,15 @@ async function main() {
     await writeEvents(events);
 
     console.log(`  Formatted and saved ${events.length} event(s).`);
+  }
+
+  console.log("Fetching Apify events...");
+
+  const apifyEvents = await fetchApifyEvents();
+  for (const apifyEvent of apifyEvents.filter((e) => !e.isPast)) {
+    const event = await mapApifyEventToEvent(apifyEvent);
+    await writeEvents([event]);
+    console.log(`  Saved Apify event: ${event.title}`);
   }
 
   sortEvents();
