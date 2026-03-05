@@ -49,8 +49,10 @@ export default function EventCard({ event, isFavorited, onToggleFavorite }: Prop
             {LOCATION_ICON} {event.location}
           </Paragraph>
         )}
+      </Card.Block>
 
-        <Paragraph data-size="sm">
+      <Card.Block>
+        <Paragraph data-size="sm" className={styles.description}>
           {event.description}
         </Paragraph>
       </Card.Block>

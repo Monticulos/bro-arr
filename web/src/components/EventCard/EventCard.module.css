@@ -20,6 +20,10 @@
   color: var(--ds-color-neutral-text-subtle);
 }
 
+.description {
+  white-space: pre-line;
+}
+
 .footer {
   display: flex;
   align-items: center;
