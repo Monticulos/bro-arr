@@ -1,5 +1,5 @@
-.mainBlock {
-  padding-block: var(--ds-size-5);
+.headingBlock {
+  padding-top: var(--ds-size-5); /* Compensates for the added padding from StarIcon */
 }
 
 .meta {
@@ -18,6 +18,10 @@
 .date {
   font-size: var(--ds-body-xs-font-size);
   color: var(--ds-color-neutral-text-subtle);
+}
+
+.heading {
+  margin-block: var(--ds-size-1);
 }
 
 .description {
