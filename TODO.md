@@ -7,6 +7,7 @@
 - Evals for prompts/llm models
 - Download calendar event
 - Make domain work on stricter work networks
+- Manual event links should lead directly to event
 
 # Low priority
 - Add a calendar function on a separate page
