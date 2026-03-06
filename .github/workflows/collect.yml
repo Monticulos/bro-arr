@@ -28,6 +28,7 @@ jobs:
         working-directory: collector
         env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          APIFY_API_KEY: ${{ secrets.APIFY_API_KEY }}
 
       - name: Commit and push updated events
         id: commit
