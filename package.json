@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "setup": "npm install --prefix web && npm install --prefix collector",
+    "web": "npm run dev --prefix web",
+    "collector": "npm start --prefix collector",
+    "test": "npm test --prefix web && npm test --prefix collector",
+    "typecheck": "npx --prefix web tsc -b --noEmit web/tsconfig.json && npx --prefix collector tsc --noEmit --project collector/tsconfig.json"
+  }
+}

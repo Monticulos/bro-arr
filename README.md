@@ -44,9 +44,8 @@ broarr/
 ## Running the frontend locally
 
 ```bash
-cd web
-npm install
-npm run dev
+npm run setup
+npm run web
 ```
 
 The site is served at `http://localhost:5173`.
@@ -56,9 +55,9 @@ The site is served at `http://localhost:5173`.
 ## Running the collector
 
 ```bash
-cd collector
-cp .env.example .env   # add your MISTRAL_API_KEY
-npx tsx src/script.ts  # collect all sources and update events.json
+cp collector/.env.example collector/.env   # add your api keys
+npm run setup
+npm run collector
 ```
 
 ---

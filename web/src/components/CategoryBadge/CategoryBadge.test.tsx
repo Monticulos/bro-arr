@@ -5,8 +5,14 @@ import type { Event } from "../../types/event";
 
 const CATEGORIES: { category: Event["category"]; label: string; color: string }[] = [
   { category: "musikk", label: "Musikk", color: "accent" },
-  { category: "stand-up", label: "Stand-up", color: "brand1" },
   { category: "kino", label: "Kino", color: "brand2" },
+  { category: "quiz", label: "Quiz", color: "brand1" },
+  { category: "mat-og-drikke", label: "Mat og drikke", color: "accent" },
+  { category: "barn-og-ungdom", label: "Barn og ungdom", color: "brand1" },
+  { category: "næringsliv", label: "Næringsliv", color: "neutral" },
+  { category: "kunst-og-kultur", label: "Kunst og kultur", color: "brand2" },
+  { category: "kommunalt", label: "Kommunalt", color: "neutral" },
+  { category: "tro-og-livssyn", label: "Tro og livssyn", color: "brand1" },
   { category: "annet", label: "Annet", color: "neutral" },
 ];
 

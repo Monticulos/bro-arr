@@ -1,8 +1,10 @@
+import { CATEGORY_SLUGS } from './categories';
+
 export interface Event {
   id: string;
   title: string;
   description: string;
-  category: "musikk" | "stand-up" | "kino" | "annet";
+  category: typeof CATEGORY_SLUGS[number];
   dateTime: string;   // ISO 8601
   location?: string;
   url?: string;

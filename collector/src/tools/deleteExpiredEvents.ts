@@ -1,4 +1,4 @@
-import type { Event } from "../types.js";
+import type { Event } from "../../../types/Event";
 import { readEventsFile, writeEventsFile } from "./eventsFile.js";
 
 const EXPIRY_HOURS = 12;

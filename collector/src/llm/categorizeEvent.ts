@@ -3,10 +3,11 @@ import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 import { ChatMistralAI } from "@langchain/mistralai";
 import { z } from "zod";
-import type { Event } from "../types.js";
+import type { Event } from "../../../types/Event";
+import { CATEGORY_SLUGS } from "../../../types/categories";
 
 const CategorySchema = z.object({
-  category: z.enum(["musikk", "stand-up", "kino", "annet"]),
+  category: z.enum(CATEGORY_SLUGS),
 });
 
 const PROMPTS_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..", "prompts");

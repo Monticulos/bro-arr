@@ -1,4 +1,4 @@
-import type { Event } from "../types.js";
+import type { Event } from "../../../types/Event";
 import { readEventsFile, writeEventsFile } from "./eventsFile.js";
 
 export function sortByDateTime(events: Event[]): Event[] {

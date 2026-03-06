@@ -3,14 +3,15 @@ import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 import { ChatMistralAI } from "@langchain/mistralai";
 import { z } from "zod";
-import type { Event } from "../types.js";
+import type { Event } from "../../../types/Event";
 import type { Source } from "../sources.js";
+import { CATEGORY_SLUGS } from "../../../types/categories";
 import { generateEventId } from "../tools/generateEventId.js";
 
 const EventSchema = z.object({
   title: z.string().describe("Event title only. Must not contain dates, times, or weekday names"),
   description: z.string().describe("Description as is from source. If missing, use the title"),
-  category: z.enum(["musikk", "stand-up", "kino", "annet"]),
+  category: z.enum(CATEGORY_SLUGS),
   dateTime: z.string().describe("ISO 8601 datetime, e.g. 2026-03-07T19:00:00"),
   location: z.string().optional().describe("The event location, usually the source name"),
   url: z.string().optional().describe("The url from the given source"),

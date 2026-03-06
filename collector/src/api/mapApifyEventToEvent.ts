@@ -1,4 +1,4 @@
-import type { Event } from "../types.js";
+import type { Event } from "../../../types/Event";
 import type { ApifyEvent } from "./fetchApifyEvents.js";
 import { categorizeEvent } from "../llm/categorizeEvent.js";
 
