@@ -10,7 +10,7 @@ export default function Search({ value, onChange }: Props) {
   return (
     <div className={styles.search}>
       <DsSearch>
-        <DsSearch.Input
+        <DsSearch.Input     
           aria-label="Søk etter arrangementer"
           placeholder="Søk etter arrangementer"
           value={value}
