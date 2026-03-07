@@ -3,9 +3,10 @@ import type { Event } from "../../types/Event.js";
 import { TARGET_SOURCES } from "./sources.js";
 import { extractEvents } from "./tools/extractEvents.js";
 import { formatEvents } from "./llm/formatEvents.js";
-import { upsertEvents } from "./tools/writeEvents.js";
+import { upsertEvents } from "./tools/upsertEvents.js";
 import { sortEvents } from "./tools/sortEvents.js";
 import { deleteExpiredEvents } from "./tools/deleteExpiredEvents.js";
+import { deleteDuplicateEvents } from "./tools/deleteDuplicateEvents.js";
 import { readEventsFile } from "./tools/eventsFile.js";
 import { getValidApifyEvents } from "./api/fetchApifyEvents.js";
 import { mapApifyEventToEvent } from "./api/mapApifyEventToEvent.js";
@@ -13,7 +14,7 @@ import { startApifyActorRun, waitForActorRun } from "./api/runApifyActor.js";
 import { shouldRunApify } from "./api/apifyConfig.js";
 
 async function collectPuppeteerEvents(): Promise<number> {
-  console.log("Starting puppeteer event collection...");
+  console.log("Starting puppeteer event collection");
   const collectedEvents: Event[] = [];
 
   for (const source of TARGET_SOURCES) {
@@ -21,7 +22,7 @@ async function collectPuppeteerEvents(): Promise<number> {
 
     const rawText = await extractEvents(source);
     if (!rawText) {
-      console.log(`  Skipping ${source.name} — no content extracted.`);
+      console.log(`  Skipping ${source.name} — no content extracted`);
       continue;
     }
 
@@ -30,7 +31,7 @@ async function collectPuppeteerEvents(): Promise<number> {
     try {
       const events = await formatEvents(source, rawText);
       collectedEvents.push(...events);
-      console.log(`  Formatted ${events.length} event(s).`);
+      console.log(`  Formatted ${events.length} event(s)`);
     } catch (error) {
       console.warn(`  Failed to format events from ${source.name}:`, error);
     }
@@ -69,7 +70,7 @@ async function main() {
     console.log("Starting Apify actor run...");
     runId = await startApifyActorRun();
   } else {
-    console.log("Skipping Apify today. Previous events preserved.");
+    console.log("Skipping Apify today - previous events preserved");
   }
 
   const puppeteerEventCount = await collectPuppeteerEvents();
@@ -80,6 +81,7 @@ async function main() {
   }
 
   deleteExpiredEvents();
+  deleteDuplicateEvents();
   sortEvents();
 
   const apifyFailed = runApify && apifyEventCount === 0;

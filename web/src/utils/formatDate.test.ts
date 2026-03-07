@@ -23,6 +23,16 @@ describe("formatEventDate", () => {
     expect(result).toContain("2025");
     expect(result).toMatch(/\d{2}:\d{2}/);
   });
+
+  it("displays Norwegian local time (CEST) regardless of user timezone", () => {
+    const result = formatEventDate("2025-06-15T18:30:00Z");
+    expect(result).toContain("20:30");
+  });
+
+  it("displays Norwegian local time (CET) regardless of user timezone", () => {
+    const result = formatEventDate("2025-01-15T18:30:00Z");
+    expect(result).toContain("19:30");
+  });
 });
 
 describe("formatUpdatedAtDate", () => {

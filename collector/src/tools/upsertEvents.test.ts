@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { upsertEvents } from "./writeEvents.js";
+import { upsertEvents } from "./upsertEvents.js";
 import { EVENTS_JSON_PATH } from "./eventsFile.js";
 import { createEvent } from "../test/createEvent.js";
 import { readFileSync, writeFileSync } from "fs";
@@ -20,7 +20,7 @@ function getWrittenEvents() {
   return JSON.parse(writeCall[1] as string);
 }
 
-describe("writeEvents", () => {
+describe("upsertEvents", () => {
   beforeEach(() => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-03-01T12:00:00Z"));

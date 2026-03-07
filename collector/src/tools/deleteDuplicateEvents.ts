@@ -1,0 +1,80 @@
+import type { Event } from "../../../types/Event";
+import { readEventsFile, writeEventsFile } from "./eventsFile.js";
+
+const MIN_WORD_LENGTH = 4;
+const SIMILARITY_THRESHOLD = 0.5;
+const DUPLICATE_BOUNDARY_MS = 60 * 60 * 1000;
+
+function isApifyEvent(event: Event): boolean {
+  // Apify IDs only contain digits
+  return /^\d+$/.test(event.id);
+}
+
+function extractSignificantWords(title: string): string[] {
+  return title
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s]/gu, " ") // Replace punctuation with space
+    .split(/\s+/) // Split on whitespace
+    .filter((word) => word.length >= MIN_WORD_LENGTH);
+}
+
+export function hasSimilarTitle(titleA: string, titleB: string): boolean {
+  const wordsA = extractSignificantWords(titleA);
+  const wordsB = extractSignificantWords(titleB);
+
+  if (wordsA.length === 0 || wordsB.length === 0) {
+    return false;
+  }
+
+  const shorterWords = wordsA.length <= wordsB.length ? wordsA : wordsB;
+  const longerWords = new Set(wordsA.length > wordsB.length ? wordsA : wordsB);
+
+  const matchCount = shorterWords.filter((word) => longerWords.has(word)).length;
+  return matchCount / shorterWords.length >= SIMILARITY_THRESHOLD;
+}
+
+function hasCloseTime(dateTimeA: string, dateTimeB: string): boolean {
+  const timeDifference = Math.abs(
+    new Date(dateTimeA).getTime() - new Date(dateTimeB).getTime()
+  );
+  return timeDifference < DUPLICATE_BOUNDARY_MS;
+}
+
+export function isDuplicate(apifyEvent: Event, puppeteerEvent: Event): boolean {
+  return (
+    hasCloseTime(apifyEvent.dateTime, puppeteerEvent.dateTime) &&
+    hasSimilarTitle(apifyEvent.title, puppeteerEvent.title)
+  );
+}
+
+export function findDuplicateIds(events: Event[]): Set<string> {
+  const apifyEvents = events.filter(isApifyEvent);
+  const puppeteerEvents = events.filter((e) => !isApifyEvent(e));
+  const duplicateIds = new Set<string>();
+
+  for (const puppeteerEvent of puppeteerEvents) {
+    const hasDuplicate = apifyEvents.some((apifyEvent) =>
+      isDuplicate(apifyEvent, puppeteerEvent)
+    );
+
+    if (hasDuplicate) {
+      duplicateIds.add(puppeteerEvent.id);
+    }
+  }
+
+  return duplicateIds;
+}
+
+export function deleteDuplicateEvents(): void {
+  const data = readEventsFile();
+  const duplicateIds = findDuplicateIds(data.events);
+
+  if (duplicateIds.size === 0) {
+    console.log("No duplicate events found.");
+    return;
+  }
+
+  data.events = data.events.filter((event) => !duplicateIds.has(event.id));
+  writeEventsFile(data);
+  console.log(`Removed ${duplicateIds.size} duplicate event(s).`);
+}

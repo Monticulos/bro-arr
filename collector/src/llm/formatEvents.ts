@@ -12,7 +12,7 @@ const EventSchema = z.object({
   title: z.string().describe("Event title only. Must not contain dates, times, or weekday names"),
   description: z.string().describe("Description as is from source. If missing, use the title"),
   category: z.enum(CATEGORY_SLUGS),
-  dateTime: z.string().describe("ISO 8601 datetime, e.g. 2026-03-07T19:00:00"),
+  dateTime: z.string().describe("ISO 8601 datetime in UTC with Z suffix, e.g. 2026-03-07T18:00:00Z"),
   location: z.string().optional().describe("The event location, usually the source name"),
   url: z.string().optional().describe("The url from the given source"),
   collectedAt: z.string().describe("Current ISO 8601 timestamp"),
