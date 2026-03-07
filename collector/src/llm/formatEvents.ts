@@ -10,7 +10,7 @@ import { generateEventId } from "../tools/generateEventId.js";
 
 const EventSchema = z.object({
   title: z.string().describe("Event title only. Must not contain dates, times, or weekday names"),
-  description: z.string().describe("Description as is from source. If missing, use the title"),
+  description: z.string().describe("Description as is from source. If missing, use event title without dates, times, or weekday names"),
   category: z.enum(CATEGORY_SLUGS),
   dateTime: z.string().describe("ISO 8601 datetime in UTC with Z suffix, e.g. 2026-03-07T18:00:00Z"),
   location: z.string().optional().describe("The event location, usually the source name"),

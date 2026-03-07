@@ -17,4 +17,4 @@
 - Categorize all events at the end, to reduce number of LLM calls
 - Test deleteExpiredEvents, deleteDuplicateEvents and upsertEvents
 - Favorite button tooltip and other a11y improvements
-- More information in header, including link to new GitHub issue
+- More information in footer, including link to new GitHub issue
