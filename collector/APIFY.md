@@ -5,7 +5,7 @@ The collector uses Apify to discover events from Facebook's location-based event
 ## How it works
 
 1. The collector builds a Facebook events search URL (`/events/search?q=Brønnøysund&filters=...`) with base64-encoded filters for location (ID `103758419663407`) and date range (today to 6 months ahead).
-2. It starts an Apify actor run via `POST /v2/acts/:actorId/runs` with a server-side timeout (currently 300 seconds) to cap costs.
+2. It starts an Apify actor run via `POST /v2/acts/:actorId/runs`.
 3. While the actor runs, manual event collection happens in parallel.
 4. After manual collection, the collector polls `GET /v2/actor-runs/:runId` until the actor finishes.
 5. Events are fetched from the actor's dataset and merged with manually collected events.

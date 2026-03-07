@@ -12,12 +12,12 @@ import { mapApifyEventToEvent } from "./api/mapApifyEventToEvent.js";
 import { startApifyActorRun, waitForActorRun } from "./api/runApifyActor.js";
 import { shouldRunApify } from "./api/apifyConfig.js";
 
-async function collectManualEvents(): Promise<number> {
-  console.log("Starting event collection...");
+async function collectPuppeteerEvents(): Promise<number> {
+  console.log("Starting puppeteer event collection...");
   const collectedEvents: Event[] = [];
 
   for (const source of TARGET_SOURCES) {
-    console.log(`Processing: ${source.name}...`);
+    console.log(`Processing ${source.name}...`);
 
     const rawText = await extractEvents(source);
     if (!rawText) {
@@ -46,10 +46,11 @@ async function collectApifyEvents(datasetId: string): Promise<number> {
 
   const apifyEvents = await getValidApifyEvents(datasetId);
   for (const apifyEvent of apifyEvents) {
+    console.log(`  Fetched Apify event ${apifyEvent.name}`)
     try {
       const event = await mapApifyEventToEvent(apifyEvent);
       collectedEvents.push(event);
-      console.log(`  Fetched Apify event: ${event.title}`);
+      console.log(`  Mapped event with category ${event.category}`);
     } catch (error) {
       console.warn(`  Failed to map Apify event "${apifyEvent.name}":`, error);
     }
@@ -66,18 +67,15 @@ async function main() {
 
   if (runApify) {
     console.log("Starting Apify actor run...");
-    runId = await startApifyActorRun();
-    console.log(`Apify actor run started (ID: ${runId}). Collecting manual events in parallel...`);
+    await startApifyActorRun();
   } else {
     console.log("Skipping Apify today. Previous events preserved.");
   }
 
-  const manualEventCount = await collectManualEvents();
+  const puppeteerEventCount = await collectPuppeteerEvents();
 
   if (runApify) {
-    console.log("Waiting for Apify actor run to complete...");
     const datasetId = await waitForActorRun(runId!);
-    console.log(`Apify actor run completed (dataset: ${datasetId}).`);
     apifyEventCount = await collectApifyEvents(datasetId);
   }
 
@@ -85,9 +83,9 @@ async function main() {
   sortEvents();
 
   const apifyFailed = runApify && apifyEventCount === 0;
-  if (manualEventCount === 0 || apifyFailed) {
+  if (puppeteerEventCount === 0 || apifyFailed) {
     throw new Error(
-      `Collection incomplete — manual: ${manualEventCount}, apify: ${apifyEventCount} (ran: ${runApify}). Events not updated.`
+      `Collection incomplete — puppeteer: ${puppeteerEventCount}, apify: ${apifyEventCount} (ran: ${runApify}). Events not updated.`
     );
   }
 

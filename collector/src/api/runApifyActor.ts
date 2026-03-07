@@ -53,7 +53,7 @@ export function buildFacebookSearchUrl(
   return `https://www.facebook.com/events/search?q=Brønnøysund&filters=${filters}`;
 }
 
-export async function startApifyActorRun(): Promise<string> {
+export async function startApifyActorRun(): Promise<void> {
   const apiKey = getApifyApiKey();
   const discoveryUrl = buildFacebookSearchUrl();
   const url = `${APIFY_BASE_URL}/acts/${FACEBOOK_EVENTS_ACTOR_ID}/runs?token=${apiKey}&timeout=${ACTOR_TIMEOUT_SECONDS}`;
@@ -74,7 +74,7 @@ export async function startApifyActorRun(): Promise<string> {
   }
 
   const result = (await response.json()) as ActorRunResponse;
-  return result.data.id;
+  console.log(`Apify actor run started (ID: ${result.data.id})`);
 }
 
 export async function waitForActorRun(runId: string): Promise<string> {
@@ -84,6 +84,7 @@ export async function waitForActorRun(runId: string): Promise<string> {
   let datasetId = "";
 
   while (Date.now() - startTime < MAX_WAIT_MS) {
+    console.log("Waiting for Apify actor run to complete...");
     const response = await fetch(url);
 
     if (!response.ok) {
@@ -97,6 +98,7 @@ export async function waitForActorRun(runId: string): Promise<string> {
     datasetId = defaultDatasetId;
 
     if (status === ActorRunStatus.SUCCEEDED || status === ActorRunStatus.TIMED_OUT) {
+      console.log(`Apify actor run completed (dataset: ${datasetId}).`);
       return datasetId;
     }
 
