@@ -1,21 +1,20 @@
 # High priority
-- Find a way to consolidate manual events and Apify events. Favorites should be preserved and duplicates deleted.
-
-# Medium priority
 - Download calendar event
 - Make domain work on stricter work networks
 - Manual event links should lead directly to event
+
+# Medium priority
+- Pagination per month
 - Analytics
 - SEO
+- Consider DDD. E.g extracting upsertEvents and deleteEvents logic to a repository
 
 # Low priority
 - Add a calendar function on a separate page
-- Pagination per month
 - Evals for prompts/llm models
 - Create workaround for type issues for DS only allowing 4 colors for badges/tags/categories
 - Three event types: manual, from puppeteer, and apify
 - Categorize all events at the end, to reduce number of LLM calls
 - Test deleteExpiredEvents, deleteDuplicateEvents and upsertEvents
-- Consider DDD. E.g extracting upsertEvents and deleteEvents logic to a repository
 - Favorite button tooltip and other a11y improvements
 - More information in header, including link to new GitHub issue
