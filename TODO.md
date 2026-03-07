@@ -5,7 +5,6 @@
 - Download calendar event
 - Make domain work on stricter work networks
 - Manual event links should lead directly to event
-- Quality check that dates are handled correctly with regards to timezones
 - Analytics
 - SEO
 
@@ -18,3 +17,5 @@
 - Categorize all events at the end, to reduce number of LLM calls
 - Test deleteExpiredEvents, deleteDuplicateEvents and upsertEvents
 - Consider DDD. E.g extracting upsertEvents and deleteEvents logic to a repository
+- Favorite button tooltip and other a11y improvements
+- More information in header, including link to new GitHub issue
