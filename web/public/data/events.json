@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-07T14:44:15.101Z",
+  "updatedAt": "2026-03-07T22:25:11.074Z",
   "events": [
     {
       "title": "Lørdagskafé",
-      "description": "Lørdag 07.03 kl.12.00 Lørdagskafé Kefas",
+      "description": "Lørdagskafé",
       "category": "mat-og-drikke",
       "dateTime": "2026-03-07T11:00:00Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-07T14:43:57.281Z",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=551ddd8c-a29b-470c-8419-98e0be935d27&OccurenceId=551ddd8c-a29b-470c-8419-98e0be935d27",
+      "collectedAt": "2026-03-07T22:25:02.889Z",
       "id": "Brønnøy-kirke-2026-03-07T11:00:00.000Z"
     },
     {
@@ -32,23 +32,13 @@
       "collectedAt": "2026-03-07T09:11:41.557Z"
     },
     {
-      "title": "MusikkBingo",
-      "description": "Vi er på senvinteren og venter fortsatt på våren. Hva passer bedre nå på kaldeste vinteren enn å ta turen innom og være med på Kred's Musikk-Bingo! Temaene er ikke bestemt enda, men det blir gøy uansett.",
-      "category": "musikk",
-      "dateTime": "2026-03-07T20:00:00Z",
-      "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer",
-      "collectedAt": "2026-03-07T14:42:51.080Z",
-      "id": "Kred-2026-03-07T20:00:00.000Z"
-    },
-    {
       "title": "Gudstjeneste",
-      "description": "Søndag 08.03 kl.18.00 Gudstjeneste Gudstjeneste - Brønnøy kirke",
+      "description": "Gudstjeneste - Brønnøy kirke",
       "category": "tro-og-livssyn",
       "dateTime": "2026-03-08T17:00:00Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-07T14:43:57.281Z",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=b3ae5714-debd-45cc-a208-2e5cf46400dd&OccurenceId=b3ae5714-debd-45cc-a208-2e5cf46400dd",
+      "collectedAt": "2026-03-07T22:25:02.889Z",
       "id": "Brønnøy-kirke-2026-03-08T17:00:00.000Z"
     },
     {
@@ -57,18 +47,28 @@
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-10T10:00:00Z",
       "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-07T14:43:19.822Z",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/0c7370ef-3e62-4e37-9bdb-895a5706b4f0",
+      "collectedAt": "2026-03-07T21:54:10.960Z",
       "id": "Brønnøy-bibliotek-2026-03-10T10:00:00.000Z"
     },
     {
-      "title": "INVITASJON TIL FOLKEMØTE Åpent folkemøte om områderegulering for Brønnøy Kalk",
-      "description": "Helgeland Museum i Velfjord 10. mars kl. 18.00–20.00",
+      "title": "Barseltreff på bibliotek",
+      "description": "Barseltreff på bibliotek",
+      "category": "barn-og-ungdom",
+      "dateTime": "2026-03-10T11:00:00Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/0c7370ef-3e62-4e37-9bdb-895a5706b4f0",
+      "collectedAt": "2026-03-07T22:24:31.191Z",
+      "id": "Brønnøy-bibliotek-2026-03-10T11:00:00.000Z"
+    },
+    {
+      "title": "INVITASJON TIL FOLKEMØTE",
+      "description": "Åpent folkemøte om områderegulering for Brønnøy Kalk Helgeland Museum i Velfjord",
       "category": "kommunalt",
       "dateTime": "2026-03-10T17:00:00Z",
-      "location": "Brønnøy kommune",
-      "url": "https://www.bronnoy.kommune.no/",
-      "collectedAt": "2026-03-07T14:42:33.896Z",
+      "location": "Helgeland Museum i Velfjord",
+      "url": "https://www.bronnoy.kommune.no/aktuelt/invitasjon-til-folkemote.17395.aspx",
+      "collectedAt": "2026-03-07T22:24:01.524Z",
       "id": "Brønnøy-kommune-2026-03-10T17:00:00.000Z"
     },
     {
@@ -78,7 +78,7 @@
       "dateTime": "2026-03-10T17:00:00Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
-      "collectedAt": "2026-03-07T14:42:42.540Z",
+      "collectedAt": "2026-03-07T22:24:06.861Z",
       "id": "Brønnøy-kino-2026-03-10T17:00:00.000Z"
     },
     {
@@ -88,17 +88,17 @@
       "dateTime": "2026-03-10T19:00:00Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
-      "collectedAt": "2026-03-07T14:42:42.540Z",
+      "collectedAt": "2026-03-07T22:24:06.861Z",
       "id": "Brønnøy-kino-2026-03-10T19:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Onsdag 11.03 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
+      "description": "Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-11T10:00:00Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-07T14:43:57.281Z",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=9b67cdaf-e874-440a-8ecd-b5e98b43692a",
+      "collectedAt": "2026-03-07T22:25:02.889Z",
       "id": "Brønnøy-kirke-2026-03-11T10:00:00.000Z"
     },
     {
@@ -107,9 +107,19 @@
       "category": "kunst-og-kultur",
       "dateTime": "2026-03-11T17:00:00Z",
       "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-07T14:43:19.822Z",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/1cf99238-9220-459f-9691-fc33e628872a",
+      "collectedAt": "2026-03-07T21:54:10.960Z",
       "id": "Brønnøy-bibliotek-2026-03-11T17:00:00.000Z"
+    },
+    {
+      "title": "Diktkveld med forfatter Ola-Jørn Tilrem",
+      "description": "Diktkveld med forfatter Ola-Jørn Tilrem",
+      "category": "kunst-og-kultur",
+      "dateTime": "2026-03-11T18:00:00Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/1cf99238-9220-459f-9691-fc33e628872a",
+      "collectedAt": "2026-03-07T22:24:31.191Z",
+      "id": "Brønnøy-bibliotek-2026-03-11T18:00:00.000Z"
     },
     {
       "id": "4463441877217520",
@@ -127,8 +137,8 @@
       "category": "kino",
       "dateTime": "2026-03-11T19:00:00Z",
       "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "collectedAt": "2026-03-07T14:42:42.540Z",
+      "url": "https://www.bronnø.kommune.no/kino/",
+      "collectedAt": "2026-03-07T22:24:06.861Z",
       "id": "Brønnøy-kino-2026-03-11T19:00:00.000Z"
     },
     {
@@ -167,18 +177,18 @@
       "category": "quiz",
       "dateTime": "2026-03-12T19:00:00Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer",
-      "collectedAt": "2026-03-07T14:42:51.080Z",
+      "url": "https://www.cafekred.no/b/allmenquiz---19-februar-kl-2000",
+      "collectedAt": "2026-03-07T22:24:15.079Z",
       "id": "Kred-2026-03-12T19:00:00.000Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Søndag 15.03 kl.11.00 Gudstjeneste Gudstjeneste - Brønnøy kirke",
+      "description": "Gudstjeneste - Brønnøy kirke",
       "category": "tro-og-livssyn",
       "dateTime": "2026-03-15T10:00:00Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-07T14:43:57.281Z",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18&OccurenceId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18",
+      "collectedAt": "2026-03-07T22:25:02.889Z",
       "id": "Brønnøy-kirke-2026-03-15T10:00:00.000Z"
     },
     {
@@ -197,9 +207,19 @@
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-17T10:00:00Z",
       "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-07T14:43:19.822Z",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/eea43543-c595-4083-9ee0-1873e5da0b1f",
+      "collectedAt": "2026-03-07T21:54:10.960Z",
       "id": "Brønnøy-bibliotek-2026-03-17T10:00:00.000Z"
+    },
+    {
+      "title": "Barseltreff på bibliotek",
+      "description": "Barseltreff på bibliotek",
+      "category": "barn-og-ungdom",
+      "dateTime": "2026-03-17T11:00:00Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/eea43543-c595-4083-9ee0-1873e5da0b1f",
+      "collectedAt": "2026-03-07T22:24:31.191Z",
+      "id": "Brønnøy-bibliotek-2026-03-17T11:00:00.000Z"
     },
     {
       "id": "1474715997583350",
@@ -223,12 +243,12 @@
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Onsdag 18.03 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
+      "description": "Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-18T10:00:00Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-07T14:43:57.281Z",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=dee8135a-44ee-4bf7-99bf-6cd2c45b17e8",
+      "collectedAt": "2026-03-07T22:25:02.889Z",
       "id": "Brønnøy-kirke-2026-03-18T10:00:00.000Z"
     },
     {
@@ -243,12 +263,12 @@
     },
     {
       "title": "Gudstjeneste",
-      "description": "Torsdag 19.03 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
+      "description": "Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-03-19T10:30:00Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-07T14:43:57.281Z",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=53891794-5db0-4f2b-9f44-01aa734b1b00&OccurenceId=53891794-5db0-4f2b-9f44-01aa734b1b00",
+      "collectedAt": "2026-03-07T22:25:02.889Z",
       "id": "Brønnøy-kirke-2026-03-19T10:30:00.000Z"
     },
     {
@@ -257,9 +277,19 @@
       "category": "kino",
       "dateTime": "2026-03-19T12:00:00Z",
       "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-07T14:43:19.822Z",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/1e111f86-61e6-400b-a70b-04e652019cc8",
+      "collectedAt": "2026-03-07T21:54:10.960Z",
       "id": "Brønnøy-bibliotek-2026-03-19T12:00:00.000Z"
+    },
+    {
+      "title": "Formiddagsfilmen: LOOP (2005)",
+      "description": "Formiddagsfilmen: LOOP (2005)",
+      "category": "kino",
+      "dateTime": "2026-03-19T13:00:00Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/1e111f86-61e6-400b-a70b-04e652019cc8",
+      "collectedAt": "2026-03-07T22:24:31.191Z",
+      "id": "Brønnøy-bibliotek-2026-03-19T13:00:00.000Z"
     },
     {
       "id": "1592827455088754",
@@ -270,16 +300,6 @@
       "location": "Kred",
       "url": "https://www.facebook.com/events/1592827455088754/",
       "collectedAt": "2026-03-07T09:11:40.671Z"
-    },
-    {
-      "title": "Mat og Vinkveld med Erik Strugstad",
-      "description": "Kred arrangerer en spennende mat og vinkveld med sommelier Erik Strugstad. Kom og lær litt om vin, samtidig som du får deg et godt maltid. Ingen forkunnskaper om vin er nødvendig, her skal vi bare nyte og kose oss.",
-      "category": "mat-og-drikke",
-      "dateTime": "2026-03-20T18:00:00Z",
-      "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer",
-      "collectedAt": "2026-03-07T14:42:51.080Z",
-      "id": "Kred-2026-03-20T18:00:00.000Z"
     },
     {
       "id": "803770719136708",
@@ -293,12 +313,12 @@
     },
     {
       "title": "Gudstjeneste",
-      "description": "Søndag 22.03 kl.11.00 Gudstjeneste Gudstjeneste - Brønnøy kirke",
+      "description": "Gudstjeneste - Brønnøy kirke",
       "category": "tro-og-livssyn",
       "dateTime": "2026-03-22T10:00:00Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-07T14:43:57.281Z",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=629b5fec-acb3-43e9-b6be-e7771a0841ca&OccurenceId=629b5fec-acb3-43e9-b6be-e7771a0841ca",
+      "collectedAt": "2026-03-07T22:25:02.889Z",
       "id": "Brønnøy-kirke-2026-03-22T10:00:00.000Z"
     },
     {
@@ -307,18 +327,28 @@
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-24T10:00:00Z",
       "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-07T14:43:19.822Z",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/cdbf19a0-36ae-4621-b229-1927c4c002a1",
+      "collectedAt": "2026-03-07T21:54:10.960Z",
       "id": "Brønnøy-bibliotek-2026-03-24T10:00:00.000Z"
     },
     {
+      "title": "Barseltreff på bibliotek",
+      "description": "Barseltreff på bibliotek",
+      "category": "barn-og-ungdom",
+      "dateTime": "2026-03-24T11:00:00Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/cdbf19a0-36ae-4621-b229-1927c4c002a1",
+      "collectedAt": "2026-03-07T22:24:31.191Z",
+      "id": "Brønnøy-bibliotek-2026-03-24T11:00:00.000Z"
+    },
+    {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Onsdag 25.03 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
+      "description": "Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-25T10:00:00Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-07T14:43:57.281Z",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=22c53a4a-b808-4114-98d3-5f805277927b",
+      "collectedAt": "2026-03-07T22:25:02.889Z",
       "id": "Brønnøy-kirke-2026-03-25T10:00:00.000Z"
     },
     {
@@ -342,24 +372,24 @@
       "collectedAt": "2026-03-07T09:11:40.401Z"
     },
     {
-      "title": "Christer Torjussen: Stand Up Spesial",
-      "description": "Velkommen til en kveld med en av landets mest rutinerte komikere! Christer er en veteran i humorfaget med over 25 års fartstid på standupscenen og har treffsikker humor, høy gjenkjennelsesfaktor og en god porsjon selvironi som varemerke. Som en anmelder skriver: Torjussen er den rene mitraljøsen, og poengene renner ut i raskt tempo!",
-      "category": "kunst-og-kultur",
-      "dateTime": "2026-03-27T20:00:00Z",
-      "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer",
-      "collectedAt": "2026-03-07T14:42:51.080Z",
-      "id": "Kred-2026-03-27T20:00:00.000Z"
-    },
-    {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-31T10:00:00Z",
       "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-07T14:43:19.822Z",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/7220a075-7e96-4e78-8cc9-5e680a7fdd01",
+      "collectedAt": "2026-03-07T21:54:10.960Z",
       "id": "Brønnøy-bibliotek-2026-03-31T10:00:00.000Z"
+    },
+    {
+      "title": "Barseltreff på bibliotek",
+      "description": "Barseltreff på bibliotek",
+      "category": "barn-og-ungdom",
+      "dateTime": "2026-03-31T11:00:00Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/7220a075-7e96-4e78-8cc9-5e680a7fdd01",
+      "collectedAt": "2026-03-07T22:24:31.191Z",
+      "id": "Brønnøy-bibliotek-2026-03-31T11:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -377,9 +407,19 @@
       "category": "barn-og-ungdom",
       "dateTime": "2026-04-07T10:00:00Z",
       "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-07T14:43:19.822Z",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/a727dc35-bf3b-4cc7-9e0e-9779c49ecc16",
+      "collectedAt": "2026-03-07T21:54:10.960Z",
       "id": "Brønnøy-bibliotek-2026-04-07T10:00:00.000Z"
+    },
+    {
+      "title": "Barseltreff på bibliotek",
+      "description": "Barseltreff på bibliotek",
+      "category": "barn-og-ungdom",
+      "dateTime": "2026-04-07T11:00:00Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/a727dc35-bf3b-4cc7-9e0e-9779c49ecc16",
+      "collectedAt": "2026-03-07T22:24:31.191Z",
+      "id": "Brønnøy-bibliotek-2026-04-07T11:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -417,9 +457,19 @@
       "category": "barn-og-ungdom",
       "dateTime": "2026-04-14T10:00:00Z",
       "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-07T14:43:19.822Z",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/e08bf792-51f2-401b-b98a-96c5ba64c428",
+      "collectedAt": "2026-03-07T21:54:10.960Z",
       "id": "Brønnøy-bibliotek-2026-04-14T10:00:00.000Z"
+    },
+    {
+      "title": "Barseltreff på bibliotek",
+      "description": "Barseltreff på bibliotek",
+      "category": "barn-og-ungdom",
+      "dateTime": "2026-04-14T11:00:00Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/e08bf792-51f2-401b-b98a-96c5ba64c428",
+      "collectedAt": "2026-03-07T22:24:31.191Z",
+      "id": "Brønnøy-bibliotek-2026-04-14T11:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -460,16 +510,6 @@
       "location": "Kred",
       "url": "https://www.facebook.com/events/1442826520606132/",
       "collectedAt": "2026-03-07T09:11:40.107Z"
-    },
-    {
-      "title": "Dr. Bergland - på liv og død",
-      "description": "Ventetiden er over, Dr. Bergland er endelig klar med ny forestilling! I løpet av de siste årene har Jonas Kinge Bergland etablert seg som en av landets største og mest populære komikere. Siden brakdebuten \"Dr. Bergland og den alternative medisin\" i 2016 har han levert intelligent, kompromissløs og etter eget utsagn \"helt brukbar\" standup, for et stadig større publikum og begeistrede anmeldere.",
-      "category": "kunst-og-kultur",
-      "dateTime": "2026-04-24T17:00:00Z",
-      "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer",
-      "collectedAt": "2026-03-07T14:42:51.080Z",
-      "id": "Kred-2026-04-24T17:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -520,16 +560,6 @@
       "location": "Kred",
       "url": "https://www.facebook.com/events/1584031199293294/",
       "collectedAt": "2026-03-07T09:11:45.025Z"
-    },
-    {
-      "title": "Ole Soo & Nils-Ingar Aadne",
-      "description": "To av Norges mest populære og morsomste komikere skal ut på veien for å teste nytt materiale. Når nye vitser skal prøves, kan alt skje – og det eneste som er sikkert, er at det blir morsomt! Enten så ler du med dem eller av dem!",
-      "category": "kunst-og-kultur",
-      "dateTime": "2026-05-15T17:00:00Z",
-      "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer",
-      "collectedAt": "2026-03-07T14:42:51.080Z",
-      "id": "Kred-2026-05-15T17:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -667,8 +697,8 @@
       "category": "kunst-og-kultur",
       "dateTime": "2026-10-10T17:00:00Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer",
-      "collectedAt": "2026-03-07T14:42:51.080Z",
+      "url": "https://www.cafekred.no/b/espen-abrahamsen---avantgarde---10-oktober-kl-1900",
+      "collectedAt": "2026-03-07T22:24:15.079Z",
       "id": "Kred-2026-10-10T17:00:00.000Z"
     },
     {

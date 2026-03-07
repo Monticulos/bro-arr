@@ -1,6 +1,6 @@
 import type { Event } from "../../../types/Event";
 
 export function sortEvents(events: Event[]): Event[] {
-  console.log("Sorting events by date");
+  console.log("Sorting events by date.");
   return [...events].sort((a, b) => a.dateTime.localeCompare(b.dateTime));
 }

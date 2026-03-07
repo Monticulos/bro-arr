@@ -14,7 +14,7 @@ import { startApifyActorRun, waitForActorRun } from "./api/runApifyActor.js";
 import { shouldRunApify } from "./api/apifyConfig.js";
 
 async function collectPuppeteerEvents(): Promise<number> {
-  console.log("Starting puppeteer event collection");
+  console.log("Starting Puppeteer event collection.");
   const collectedEvents: Event[] = [];
 
   for (const source of TARGET_SOURCES) {
@@ -22,7 +22,7 @@ async function collectPuppeteerEvents(): Promise<number> {
 
     const rawText = await extractEvents(source);
     if (!rawText) {
-      console.log(`  Skipping ${source.name} — no content extracted`);
+      console.log(`  Skipping ${source.name} - no content extracted.`);
       continue;
     }
 
@@ -31,7 +31,7 @@ async function collectPuppeteerEvents(): Promise<number> {
     try {
       const events = await formatEvents(source, rawText);
       collectedEvents.push(...events);
-      console.log(`  Formatted ${events.length} event(s)`);
+      console.log(`  Formatted ${events.length} events.`);
     } catch (error) {
       console.warn(`  Failed to format events from ${source.name}:`, error);
     }
@@ -47,11 +47,11 @@ async function collectApifyEvents(datasetId: string): Promise<number> {
 
   const apifyEvents = await getValidApifyEvents(datasetId);
   for (const apifyEvent of apifyEvents) {
-    console.log(`  Fetched Apify event ${apifyEvent.name}`);
+    console.log(`  Fetched Apify event ${apifyEvent.name}.`);
     try {
       const event = await mapApifyEventToEvent(apifyEvent);
       collectedEvents.push(event);
-      console.log(`  Mapped event with category ${event.category}`);
+      console.log(`  Mapped event with category ${event.category}.`);
     } catch (error) {
       console.warn(`  Failed to map Apify event "${apifyEvent.name}":`, error);
     }
@@ -78,14 +78,16 @@ async function main() {
     console.log("Starting Apify actor run...");
     runId = await startApifyActorRun();
   } else {
-    console.log("Skipping Apify today - previous events preserved");
+    console.log("Skipping Apify today - rest day.");
   }
 
   const puppeteerEventCount = await collectPuppeteerEvents();
+  console.log(`Added ${puppeteerEventCount} Puppeteer event.`);
 
   if (runApify && runId) {
     const datasetId = await waitForActorRun(runId);
     apifyEventCount = await collectApifyEvents(datasetId);
+    console.log(`Added ${apifyEventCount} Apify event.`);
   }
 
   cleanEventsFile();
@@ -97,7 +99,7 @@ async function main() {
     );
   }
 
-  console.log(`Done! ${eventCount()} events saved to file.`);
+  console.log(`Done! ${eventCount()} events in file.`);
 }
 
 main();

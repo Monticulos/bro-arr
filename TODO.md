@@ -1,7 +1,6 @@
 # High priority
-- Download calendar event
+- Download calendar event (ICS or similar)
 - Make domain work on stricter work networks
-- Manual event links should lead directly to event
 
 # Medium priority
 - Pagination per month

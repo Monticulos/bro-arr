@@ -68,10 +68,10 @@ export function deleteDuplicateEvents(events: Event[]): Event[] {
   const duplicateIds = findDuplicateIds(events);
 
   if (duplicateIds.size === 0) {
-    console.log("No duplicate events found");
+    console.log("No duplicate events found.");
     return events;
   }
 
-  console.log(`Removed ${duplicateIds.size} duplicate event(s)`);
+  console.log(`Removed ${duplicateIds.size} duplicate events.`);
   return events.filter((event) => !duplicateIds.has(event.id));
 }

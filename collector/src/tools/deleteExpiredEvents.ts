@@ -11,6 +11,6 @@ export function deleteExpiredEvents(events: Event[]): Event[] {
   const filtered = events.filter((event) => !isExpired(event));
   const removedCount = events.length - filtered.length;
 
-  console.log(removedCount > 0 ? `Removed ${removedCount} expired event(s)` : "No expired events found");
+  console.log(removedCount > 0 ? `Removed ${removedCount} expired event.` : "No expired events found.");
   return filtered;
 }
