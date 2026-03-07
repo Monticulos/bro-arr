@@ -20,6 +20,7 @@ export async function mapApifyEventToEvent(apifyEvent: ApifyEvent): Promise<Even
 export const LOCATION_MAP: Record<string, string> = {
   "Storgata 70": "Den andre puben",
   "Storgata 61": "Kred",
+  "Storgata 68": "Svang",
   "Skolegata 7": "Brønnøy bibliotek",
   "Skolegata 10": "Brønnøysund videregående skole",
   "Ytre Høgåsvei 37": "Forsamlingslokalet",

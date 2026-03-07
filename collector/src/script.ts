@@ -1,21 +1,23 @@
 import "dotenv/config";
+import type { Event } from "../../types/Event.js";
 import { TARGET_SOURCES } from "./sources.js";
-import { deleteSavedEvents } from "./tools/deleteSavedEvents.js";
 import { extractEvents } from "./tools/extractEvents.js";
 import { formatEvents } from "./llm/formatEvents.js";
-import { writeEvents } from "./tools/writeEvents.js";
+import { upsertEvents } from "./tools/writeEvents.js";
 import { sortEvents } from "./tools/sortEvents.js";
 import { deleteExpiredEvents } from "./tools/deleteExpiredEvents.js";
 import { readEventsFile } from "./tools/eventsFile.js";
 import { getValidApifyEvents } from "./api/fetchApifyEvents.js";
 import { mapApifyEventToEvent } from "./api/mapApifyEventToEvent.js";
+import { startApifyActorRun, waitForActorRun } from "./api/runApifyActor.js";
+import { shouldRunApify } from "./api/apifyConfig.js";
 
-async function collectManualEvents(): Promise<number> {
-  console.log("Starting event collection...");
-  let eventCount = 0;
+async function collectPuppeteerEvents(): Promise<number> {
+  console.log("Starting puppeteer event collection...");
+  const collectedEvents: Event[] = [];
 
   for (const source of TARGET_SOURCES) {
-    console.log(`Processing: ${source.name}...`);
+    console.log(`Processing ${source.name}...`);
 
     const rawText = await extractEvents(source);
     if (!rawText) {
@@ -27,48 +29,63 @@ async function collectManualEvents(): Promise<number> {
 
     try {
       const events = await formatEvents(source, rawText);
-      await writeEvents(events);
-      eventCount += events.length;
-      console.log(`  Formatted and saved ${events.length} event(s).`);
+      collectedEvents.push(...events);
+      console.log(`  Formatted ${events.length} event(s).`);
     } catch (error) {
       console.warn(`  Failed to format events from ${source.name}:`, error);
     }
   }
 
-  return eventCount;
+  await upsertEvents(collectedEvents);
+  return collectedEvents.length;
 }
 
-async function collectApifyEvents(): Promise<number> {
+async function collectApifyEvents(datasetId: string): Promise<number> {
   console.log("Fetching Apify events...");
-  let eventCount = 0;
+  const collectedEvents: Event[] = [];
 
-  const apifyEvents = await getValidApifyEvents();
+  const apifyEvents = await getValidApifyEvents(datasetId);
   for (const apifyEvent of apifyEvents) {
+    console.log(`  Fetched Apify event ${apifyEvent.name}`)
     try {
       const event = await mapApifyEventToEvent(apifyEvent);
-      await writeEvents([event]);
-      eventCount++;
-      console.log(`  Saved Apify event: ${event.title}`);
+      collectedEvents.push(event);
+      console.log(`  Mapped event with category ${event.category}`);
     } catch (error) {
       console.warn(`  Failed to map Apify event "${apifyEvent.name}":`, error);
     }
   }
 
-  return eventCount;
+  await upsertEvents(collectedEvents);
+  return collectedEvents.length;
 }
 
 async function main() {
-  deleteSavedEvents();
+  const runApify = shouldRunApify();
+  let apifyEventCount = 0;
+  let runId: string | undefined;
 
-  const manualEventCount = await collectManualEvents();
-  const apifyEventCount = await collectApifyEvents();
+  if (runApify) {
+    console.log("Starting Apify actor run...");
+    runId = await startApifyActorRun();
+  } else {
+    console.log("Skipping Apify today. Previous events preserved.");
+  }
 
-  sortEvents();
+  const puppeteerEventCount = await collectPuppeteerEvents();
+
+  if (runApify && runId) {
+    const datasetId = await waitForActorRun(runId);
+    apifyEventCount = await collectApifyEvents(datasetId);
+  }
+
   deleteExpiredEvents();
+  sortEvents();
 
-  if (manualEventCount === 0 || apifyEventCount === 0) {
+  const apifyFailed = runApify && apifyEventCount === 0;
+  if (puppeteerEventCount === 0 || apifyFailed) {
     throw new Error(
-      `Collection incomplete — manual: ${manualEventCount}, apify: ${apifyEventCount}. Events not updated.`
+      `Collection incomplete — puppeteer: ${puppeteerEventCount}, apify: ${apifyEventCount} (ran: ${runApify}). Events not updated.`
     );
   }
 

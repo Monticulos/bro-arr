@@ -1,5 +1,4 @@
-const APIFY_DATASET_URL =
-  "https://api.apify.com/v2/datasets/8DMf8rfXslQ8oVrUa/items";
+import { APIFY_BASE_URL, getApifyApiKey } from "./apifyConfig.js";
 
 export interface ApifyEvent {
   id: string;
@@ -26,18 +25,19 @@ export interface ApifyEvent {
   usersInterested: number;
 }
 
-export async function getValidApifyEvents(): Promise<ApifyEvent[]> {
-  const events = await fetchApifyEvents();
+export async function getValidApifyEvents(
+  datasetId: string
+): Promise<ApifyEvent[]> {
+  const events = await fetchApifyEvents(datasetId);
   return events.filter((e) => !e.isPast);
 }
 
-export async function fetchApifyEvents(): Promise<ApifyEvent[]> {
-  const apiKey = process.env.APIFY_API_KEY;
-  if (!apiKey) {
-    throw new Error("APIFY_API_KEY is not set in environment variables.");
-  }
+export async function fetchApifyEvents(
+  datasetId: string
+): Promise<ApifyEvent[]> {
+  const apiKey = getApifyApiKey();
 
-  const url = `${APIFY_DATASET_URL}?token=${apiKey}`;
+  const url = `${APIFY_BASE_URL}/datasets/${datasetId}/items?token=${apiKey}`;
   const response = await fetch(url);
 
   if (!response.ok) {
