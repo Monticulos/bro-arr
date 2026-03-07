@@ -1,5 +1,5 @@
-import { describe, it, expect } from "vitest";
-import { isExpired } from "./deleteExpiredEvents.js";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { isExpired, deleteExpiredEvents } from "./deleteExpiredEvents.js";
 import { createEvent } from "../test/createEvent.js";
 
 describe("isExpired", () => {
@@ -28,5 +28,47 @@ describe("isExpired", () => {
   it("returns false for event just inside the 12-hour window", () => {
     const justInsideEvent = createEvent({ dateTime: "2026-03-01T06:00:00Z" });
     expect(isExpired(justInsideEvent, now)).toBe(false);
+  });
+});
+
+describe("deleteExpiredEvents", () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-03-01T12:00:00Z"));
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  it("removes expired events and keeps valid ones", () => {
+    const expired = createEvent({ id: "1", dateTime: "2026-02-28T20:00:00Z" });
+    const valid = createEvent({ id: "2", dateTime: "2026-03-01T10:00:00Z" });
+
+    const result = deleteExpiredEvents([expired, valid]);
+
+    expect(result).toEqual([valid]);
+  });
+
+  it("returns all events when none are expired", () => {
+    const events = [
+      createEvent({ id: "1", dateTime: "2026-03-01T06:00:00Z" }),
+      createEvent({ id: "2", dateTime: "2026-06-01T00:00:00Z" }),
+    ];
+
+    const result = deleteExpiredEvents(events);
+
+    expect(result).toEqual(events);
+  });
+
+  it("returns empty array when all events are expired", () => {
+    const events = [
+      createEvent({ id: "1", dateTime: "2026-02-27T00:00:00Z" }),
+      createEvent({ id: "2", dateTime: "2026-02-28T00:00:00Z" }),
+    ];
+
+    const result = deleteExpiredEvents(events);
+
+    expect(result).toEqual([]);
   });
 });

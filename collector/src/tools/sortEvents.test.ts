@@ -1,14 +1,14 @@
 import { describe, it, expect } from "vitest";
-import { sortByDateTime } from "./sortEvents.js";
+import { sortEvents } from "./sortEvents.js";
 import { createEvent } from "../test/createEvent.js";
 
-describe("sortByDateTime", () => {
+describe("sortEvents", () => {
   it("sorts events chronologically by dateTime", () => {
     const later = createEvent({ title: "Later", dateTime: "2026-04-01T00:00:00" });
     const earlier = createEvent({ title: "Earlier", dateTime: "2026-03-01T00:00:00" });
     const middle = createEvent({ title: "Middle", dateTime: "2026-03-15T00:00:00" });
 
-    const sorted = sortByDateTime([later, earlier, middle]);
+    const sorted = sortEvents([later, earlier, middle]);
 
     expect(sorted[0].title).toBe("Earlier");
     expect(sorted[1].title).toBe("Middle");
@@ -16,7 +16,7 @@ describe("sortByDateTime", () => {
   });
 
   it("returns empty array for empty input", () => {
-    expect(sortByDateTime([])).toEqual([]);
+    expect(sortEvents([])).toEqual([]);
   });
 
   it("does not mutate the original array", () => {
@@ -26,7 +26,7 @@ describe("sortByDateTime", () => {
     ];
     const originalFirst = events[0];
 
-    sortByDateTime(events);
+    sortEvents(events);
 
     expect(events[0]).toBe(originalFirst);
   });

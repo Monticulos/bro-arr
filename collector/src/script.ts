@@ -7,7 +7,7 @@ import { upsertEvents } from "./tools/upsertEvents.js";
 import { sortEvents } from "./tools/sortEvents.js";
 import { deleteExpiredEvents } from "./tools/deleteExpiredEvents.js";
 import { deleteDuplicateEvents } from "./tools/deleteDuplicateEvents.js";
-import { readEventsFile } from "./tools/eventsFile.js";
+import { readEventsFile, writeEventsFile, eventCount } from "./tools/eventsFile.js";
 import { getValidApifyEvents } from "./api/fetchApifyEvents.js";
 import { mapApifyEventToEvent } from "./api/mapApifyEventToEvent.js";
 import { startApifyActorRun, waitForActorRun } from "./api/runApifyActor.js";
@@ -47,7 +47,7 @@ async function collectApifyEvents(datasetId: string): Promise<number> {
 
   const apifyEvents = await getValidApifyEvents(datasetId);
   for (const apifyEvent of apifyEvents) {
-    console.log(`  Fetched Apify event ${apifyEvent.name}`)
+    console.log(`  Fetched Apify event ${apifyEvent.name}`);
     try {
       const event = await mapApifyEventToEvent(apifyEvent);
       collectedEvents.push(event);
@@ -59,6 +59,14 @@ async function collectApifyEvents(datasetId: string): Promise<number> {
 
   await upsertEvents(collectedEvents);
   return collectedEvents.length;
+}
+
+function cleanEventsFile() {
+  const data = readEventsFile();
+  data.events = deleteExpiredEvents(data.events);
+  data.events = deleteDuplicateEvents(data.events);
+  data.events = sortEvents(data.events);
+  writeEventsFile(data);
 }
 
 async function main() {
@@ -80,9 +88,7 @@ async function main() {
     apifyEventCount = await collectApifyEvents(datasetId);
   }
 
-  deleteExpiredEvents();
-  deleteDuplicateEvents();
-  sortEvents();
+  cleanEventsFile();
 
   const apifyFailed = runApify && apifyEventCount === 0;
   if (puppeteerEventCount === 0 || apifyFailed) {
@@ -91,8 +97,7 @@ async function main() {
     );
   }
 
-  const savedEventCount = readEventsFile().events.length;
-  console.log(`Done! ${savedEventCount} events saved to file.`);
+  console.log(`Done! ${eventCount()} events saved to file.`);
 }
 
 main();

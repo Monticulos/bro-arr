@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import type { Event } from "../../../types/Event";
-import { hasSimilarTitle, isDuplicate, findDuplicateIds } from "./deleteDuplicateEvents";
+import { hasSimilarTitle, isDuplicate, findDuplicateIds, deleteDuplicateEvents } from "./deleteDuplicateEvents";
 
 function createEvent(overrides: Partial<Event> = {}): Event {
   return {
@@ -228,5 +228,40 @@ describe("findDuplicateIds", () => {
     expect(duplicateIds).toEqual(
       new Set(["Kred-2026-03-27T20:00:00.000Z", "Kred-2026-03-20T18:00:00.000Z"])
     );
+  });
+});
+
+describe("deleteDuplicateEvents", () => {
+  it("removes puppeteer duplicates and keeps apify events", () => {
+    const apifyEvent = createEvent({
+      id: "1592827455088754",
+      title: "Mat og vinkveld med Erik Strugstad",
+      dateTime: "2026-03-20T18:00:00.000Z",
+    });
+    const puppeteerDuplicate = createEvent({
+      id: "Kred-2026-03-20T18:00:00.000Z",
+      title: "Mat og Vinkveld med Erik Strugstad",
+      dateTime: "2026-03-20T18:00:00.000Z",
+    });
+    const uniqueEvent = createEvent({
+      id: "Brønnøy-kirke-2026-03-15T10:00:00.000Z",
+      title: "Gudstjeneste",
+      dateTime: "2026-03-15T10:00:00.000Z",
+    });
+
+    const result = deleteDuplicateEvents([apifyEvent, puppeteerDuplicate, uniqueEvent]);
+
+    expect(result).toEqual([apifyEvent, uniqueEvent]);
+  });
+
+  it("returns all events when there are no duplicates", () => {
+    const events = [
+      createEvent({ id: "123456789", title: "Concert A", dateTime: "2026-03-20T18:00:00.000Z" }),
+      createEvent({ id: "Kred-2026-03-21T18:00:00.000Z", title: "Concert B", dateTime: "2026-03-21T18:00:00.000Z" }),
+    ];
+
+    const result = deleteDuplicateEvents(events);
+
+    expect(result).toEqual(events);
   });
 });

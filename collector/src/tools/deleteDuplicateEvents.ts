@@ -1,5 +1,4 @@
 import type { Event } from "../../../types/Event";
-import { readEventsFile, writeEventsFile } from "./eventsFile.js";
 
 const MIN_WORD_LENGTH = 4;
 const SIMILARITY_THRESHOLD = 0.5;
@@ -65,16 +64,14 @@ export function findDuplicateIds(events: Event[]): Set<string> {
   return duplicateIds;
 }
 
-export function deleteDuplicateEvents(): void {
-  const data = readEventsFile();
-  const duplicateIds = findDuplicateIds(data.events);
+export function deleteDuplicateEvents(events: Event[]): Event[] {
+  const duplicateIds = findDuplicateIds(events);
 
   if (duplicateIds.size === 0) {
-    console.log("No duplicate events found.");
-    return;
+    console.log("No duplicate events found");
+    return events;
   }
 
-  data.events = data.events.filter((event) => !duplicateIds.has(event.id));
-  writeEventsFile(data);
-  console.log(`Removed ${duplicateIds.size} duplicate event(s).`);
+  console.log(`Removed ${duplicateIds.size} duplicate event(s)`);
+  return events.filter((event) => !duplicateIds.has(event.id));
 }

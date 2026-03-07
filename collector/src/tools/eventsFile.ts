@@ -21,3 +21,7 @@ export function readEventsFile(): EventsData {
 export function writeEventsFile(data: EventsData): void {
   writeFileSync(EVENTS_JSON_PATH, JSON.stringify(data, null, 2), "utf-8");
 }
+
+export function eventCount(): number {
+  return readEventsFile().events.length;
+}
