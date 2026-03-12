@@ -1,46 +1,6 @@
 {
-  "updatedAt": "2026-03-11T04:12:53.923Z",
+  "updatedAt": "2026-03-12T04:18:27.351Z",
   "events": [
-    {
-      "title": "Åpent folkemøte om områderegulering for Brønnøy Kalk Helgeland Museum i Velfjord",
-      "description": "Åpent folkemøte om områderegulering for Brønnøy Kalk Helgeland Museum i Velfjord",
-      "category": "kommunalt",
-      "dateTime": "2026-03-10T17:00:00.000Z",
-      "location": "Brønnøy kommune",
-      "url": "https://www.bronnoy.kommune.no/aktuelt/invitasjon-til-folkemote.17395.aspx",
-      "id": "Brønnøy-kommune-2026-03-10T17:00:00.000Z",
-      "collectedAt": "2026-03-11T04:11:53.237Z"
-    },
-    {
-      "title": "Operasjon Bever",
-      "description": "Operasjon Bever",
-      "category": "kino",
-      "dateTime": "2026-03-10T17:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-03-10T17:00:00.000Z",
-      "collectedAt": "2026-03-11T04:11:58.617Z"
-    },
-    {
-      "title": "Wuthering Heights",
-      "description": "Wuthering Heights",
-      "category": "kino",
-      "dateTime": "2026-03-10T19:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-03-10T19:00:00.000Z",
-      "collectedAt": "2026-03-11T04:11:58.617Z"
-    },
-    {
-      "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Barn og unge - Kefas",
-      "category": "barn-og-ungdom",
-      "dateTime": "2026-03-11T10:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=9b67cdaf-e874-440a-8ecd-b5e98b43692a",
-      "id": "Brønnøy-kirke-2026-03-11T10:00:00.000Z",
-      "collectedAt": "2026-03-11T04:12:53.923Z"
-    },
     {
       "id": "1240506438009961",
       "title": "Diktkveld med forfatter Ola-Jørn Tilrem",
@@ -69,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-11T19:00:00.000Z",
-      "collectedAt": "2026-03-11T04:11:58.617Z"
+      "collectedAt": "2026-03-12T04:16:05.979Z"
     },
     {
       "id": "1613391163248701",
@@ -79,7 +39,7 @@
       "dateTime": "2026-03-12T14:00:00.000Z",
       "location": "Brønnøysund videregående skole",
       "url": "https://www.facebook.com/events/1613391163248701/",
-      "collectedAt": "2026-03-10T04:13:10.987Z"
+      "collectedAt": "2026-03-12T04:18:18.946Z"
     },
     {
       "id": "26225559823797002",
@@ -89,7 +49,17 @@
       "dateTime": "2026-03-12T14:15:00.000Z",
       "location": "Brønnøysund videregående skole",
       "url": "https://www.facebook.com/events/26225559823797002/",
-      "collectedAt": "2026-03-10T04:13:20.097Z"
+      "collectedAt": "2026-03-12T04:18:24.561Z"
+    },
+    {
+      "title": "Operasjon Bever",
+      "description": "Operasjon Bever",
+      "category": "kino",
+      "dateTime": "2026-03-12T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-03-12T17:00:00.000Z",
+      "collectedAt": "2026-03-12T04:16:05.979Z"
     },
     {
       "id": "761700400299768",
@@ -99,7 +69,7 @@
       "dateTime": "2026-03-12T18:00:00.000Z",
       "location": "Forsamlingslokalet Brønnøysund",
       "url": "https://www.facebook.com/events/761700400299768/",
-      "collectedAt": "2026-03-10T04:13:13.471Z"
+      "collectedAt": "2026-03-12T04:18:19.707Z"
     },
     {
       "id": "1399574978328624",
@@ -109,7 +79,17 @@
       "dateTime": "2026-03-12T19:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1399574978328624/",
-      "collectedAt": "2026-03-10T04:13:18.231Z"
+      "collectedAt": "2026-03-12T04:18:22.565Z"
+    },
+    {
+      "title": "Wuthering Heights",
+      "description": "Wuthering Heights",
+      "category": "kino",
+      "dateTime": "2026-03-12T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-03-12T19:00:00.000Z",
+      "collectedAt": "2026-03-12T04:16:05.979Z"
     },
     {
       "title": "Møteplass for ungdom Vår 2026",
@@ -119,7 +99,17 @@
       "location": "Brønnøy kommune",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=271&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-03-12T23:00:00.000Z",
-      "collectedAt": "2026-03-11T04:11:53.237Z"
+      "collectedAt": "2026-03-12T04:16:01.205Z"
+    },
+    {
+      "title": "Scream 7",
+      "description": "Scream 7",
+      "category": "kino",
+      "dateTime": "2026-03-13T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-03-13T19:00:00.000Z",
+      "collectedAt": "2026-03-12T04:16:05.979Z"
     },
     {
       "id": "2756833241342061",
@@ -129,7 +119,7 @@
       "dateTime": "2026-03-14T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2756833241342061/",
-      "collectedAt": "2026-03-10T04:13:12.743Z"
+      "collectedAt": "2026-03-12T04:18:21.040Z"
     },
     {
       "title": "Gudstjeneste",
@@ -139,7 +129,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18&OccurenceId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18",
       "id": "Brønnøy-kirke-2026-03-15T10:00:00.000Z",
-      "collectedAt": "2026-03-11T04:12:53.923Z"
+      "collectedAt": "2026-03-12T04:16:56.000Z"
     },
     {
       "id": "2129729637781721",
@@ -149,7 +139,7 @@
       "dateTime": "2026-03-17T09:00:00.000Z",
       "location": "Kefas, Dr.Møllersgata 2, 8900 Brønnøysund",
       "url": "https://www.facebook.com/events/2129729637781721/",
-      "collectedAt": "2026-03-08T04:14:25.530Z"
+      "collectedAt": "2026-03-12T04:18:26.062Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -165,11 +155,11 @@
       "id": "1474715997583350",
       "title": "KURS Pilhjerte kr 950,- inkl. materialer",
       "description": "Artig Pilkurs med Klara pil hvor  vi lager de flotteste pilhjerter på metallramme. Koselig å ha på veggen hele året og veldig dekorativt med lys i desember 💚\nKaffe/te og kake inkl.\nPåmeldig og evt spørsmål; \nTrine Laumann(Skreddervika gård) tlf 47 24 43 41",
-      "category": "kunst-og-kultur",
+      "category": "annet",
       "dateTime": "2026-03-17T16:00:00.000Z",
       "location": "Kefas, Dr.Møllers gt 2, 8900 Brønnøysund",
       "url": "https://www.facebook.com/events/1474715997583350/",
-      "collectedAt": "2026-03-07T09:11:44.303Z"
+      "collectedAt": "2026-03-12T04:18:25.283Z"
     },
     {
       "id": "1290807762936378",
@@ -189,7 +179,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=dee8135a-44ee-4bf7-99bf-6cd2c45b17e8",
       "id": "Brønnøy-kirke-2026-03-18T10:00:00.000Z",
-      "collectedAt": "2026-03-11T04:12:53.923Z"
+      "collectedAt": "2026-03-12T04:16:56.000Z"
     },
     {
       "id": "1400890462144393",
@@ -209,7 +199,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=53891794-5db0-4f2b-9f44-01aa734b1b00&OccurenceId=53891794-5db0-4f2b-9f44-01aa734b1b00",
       "id": "Brønnøy-kirke-2026-03-19T10:30:00.000Z",
-      "collectedAt": "2026-03-11T04:12:53.923Z"
+      "collectedAt": "2026-03-12T04:16:56.000Z"
     },
     {
       "id": "1640615373946004",
@@ -219,7 +209,7 @@
       "dateTime": "2026-03-19T12:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1640615373946004/",
-      "collectedAt": "2026-03-10T04:13:19.077Z"
+      "collectedAt": "2026-03-12T04:18:25.620Z"
     },
     {
       "id": "1592827455088754",
@@ -229,7 +219,7 @@
       "dateTime": "2026-03-20T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1592827455088754/",
-      "collectedAt": "2026-03-10T04:13:13.140Z"
+      "collectedAt": "2026-03-12T04:18:21.505Z"
     },
     {
       "id": "803770719136708",
@@ -239,7 +229,7 @@
       "dateTime": "2026-03-20T19:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/803770719136708/",
-      "collectedAt": "2026-03-10T04:13:22.246Z"
+      "collectedAt": "2026-03-12T04:18:23.190Z"
     },
     {
       "title": "AllmenQuiz",
@@ -247,9 +237,9 @@
       "category": "quiz",
       "dateTime": "2026-03-21T19:00:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer#/events/b/allmenquiz---21-mars-kl-2000",
+      "url": "https://www.cafekred.no/arrangementer/b/allmenquiz---21-mars-kl-2000",
       "id": "Kred-2026-03-21T19:00:00.000Z",
-      "collectedAt": "2026-03-11T04:12:15.588Z"
+      "collectedAt": "2026-03-12T04:16:15.383Z"
     },
     {
       "title": "Gudstjeneste",
@@ -257,9 +247,9 @@
       "category": "tro-og-livssyn",
       "dateTime": "2026-03-22T10:00:00.000Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnøy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=629b5fec-acb3-43e9-b6be-e7771a0841ca&OccurenceId=629b5fec-acb3-43e9-b6be-e7771a0841ca",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=629b5fec-acb3-43e9-b6be-e7771a0841ca&OccurenceId=629b5fec-acb3-43e9-b6be-e7771a0841ca",
       "id": "Brønnøy-kirke-2026-03-22T10:00:00.000Z",
-      "collectedAt": "2026-03-11T04:12:53.923Z"
+      "collectedAt": "2026-03-12T04:16:56.000Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -279,7 +269,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=22c53a4a-b808-4114-98d3-5f805277927b",
       "id": "Brønnøy-kirke-2026-03-25T10:00:00.000Z",
-      "collectedAt": "2026-03-11T04:12:53.923Z"
+      "collectedAt": "2026-03-12T04:16:56.000Z"
     },
     {
       "id": "866619559201849",
@@ -289,7 +279,7 @@
       "dateTime": "2026-03-25T17:00:00.000Z",
       "location": "Brønnøy Frivilligsentral",
       "url": "https://www.facebook.com/events/866619559201849/",
-      "collectedAt": "2026-03-10T04:13:21.524Z"
+      "collectedAt": "2026-03-12T04:18:18.240Z"
     },
     {
       "id": "1535081147792962",
@@ -299,7 +289,7 @@
       "dateTime": "2026-03-27T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1535081147792962/",
-      "collectedAt": "2026-03-10T04:13:13.813Z"
+      "collectedAt": "2026-03-12T04:18:20.046Z"
     },
     {
       "id": "26192453483722736",
@@ -329,7 +319,7 @@
       "dateTime": "2026-04-02T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/697852660015589/",
-      "collectedAt": "2026-03-10T04:13:17.869Z"
+      "collectedAt": "2026-03-12T04:18:20.396Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -349,7 +339,7 @@
       "dateTime": "2026-04-11T17:00:00.000Z",
       "location": "FORSAMLINGSLOKALET - Brønnøysund",
       "url": "https://www.facebook.com/events/1214003247388441/",
-      "collectedAt": "2026-03-10T04:13:17.129Z"
+      "collectedAt": "2026-03-12T04:18:21.934Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -369,7 +359,7 @@
       "dateTime": "2026-04-24T16:30:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1989127691666557/",
-      "collectedAt": "2026-03-10T04:13:21.188Z"
+      "collectedAt": "2026-03-12T04:18:20.767Z"
     },
     {
       "id": "1442826520606132",
@@ -389,7 +379,7 @@
       "dateTime": "2026-04-24T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1507074540847996/",
-      "collectedAt": "2026-03-10T04:13:19.406Z"
+      "collectedAt": "2026-03-12T04:18:23.547Z"
     },
     {
       "id": "1584031199293294",
@@ -399,7 +389,7 @@
       "dateTime": "2026-05-15T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1584031199293294/",
-      "collectedAt": "2026-03-10T04:13:14.161Z"
+      "collectedAt": "2026-03-12T04:18:26.947Z"
     },
     {
       "id": "1355561149693604",
@@ -409,7 +399,7 @@
       "dateTime": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-03-10T04:13:21.867Z"
+      "collectedAt": "2026-03-12T04:18:17.901Z"
     },
     {
       "id": "1518436712711995",
@@ -419,7 +409,7 @@
       "dateTime": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-03-10T04:13:11.901Z"
+      "collectedAt": "2026-03-12T04:18:18.622Z"
     },
     {
       "title": "Espen Abrahamsen - Avantgarde",
