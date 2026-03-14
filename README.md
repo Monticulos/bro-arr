@@ -30,9 +30,10 @@ broarr/
 │       ├── sources.ts        # Target URLs with optional CSS selectors
 │       ├── prompts/          # Markdown prompts for LLM calls
 │       ├── api/              # Apify API integration
+│       ├── io/               # File I/O (events.json, sitemap)
 │       ├── llm/              # LLM formatting and categorization
 │       ├── test/             # Shared test helpers
-│       └── tools/            # File I/O and event utilities
+│       └── utils/            # Pure functions
 └── .github/workflows/
     ├── collect.yml           # GitHub Actions: run collector nightly and on demand
     ├── deploy.yml            # GitHub Actions: build + deploy after lint-test passes on main

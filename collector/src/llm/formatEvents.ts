@@ -1,13 +1,16 @@
 import { readFileSync } from "fs";
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
-import { ChatMistralAI } from "@langchain/mistralai";
 import { z } from "zod";
 import type { Event } from "../../../types/Event";
 import type { Source } from "../sources.js";
 import { CATEGORY_SLUGS } from "../../../types/categories";
-import { generateEventId } from "../tools/generateEventId.js";
-import { norwegianTimeToUtc } from "../tools/norwegianTimeToUtc.js";
+import { generateEventId } from "../utils/generateEventId.js";
+import { norwegianTimeToUtc } from "../utils/norwegianTimeToUtc.js";
+import { structuredLlmCall } from "./structuredLlmCall.js";
+
+const PROMPTS_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..", "prompts");
+const SYSTEM_PROMPT = readFileSync(resolve(PROMPTS_DIR, "format-events.md"), "utf-8");
 
 const EventSchema = z.object({
   title: z.string().describe("Event title only. Must not contain dates, times, or weekday names"),
@@ -22,22 +25,11 @@ const EventsResponseSchema = z.object({
   events: z.array(EventSchema),
 });
 
-const PROMPTS_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..", "prompts");
-const SYSTEM_PROMPT = readFileSync(resolve(PROMPTS_DIR, "format-events.md"), "utf-8");
-
 export async function formatEvents(source: Source, rawText: string): Promise<Event[]> {
   if (!rawText) return [];
 
-  const llm = new ChatMistralAI({ model: "mistral-small-latest", temperature: 0 });
-  const structuredLlm = llm.withStructuredOutput(EventsResponseSchema);
-
-  const result = await structuredLlm.invoke([
-    { role: "system", content: SYSTEM_PROMPT },
-    {
-      role: "user",
-      content: `Source: ${source.name}\nSource URL: ${source.url}\n\n${rawText}`,
-    },
-  ]);
+  const userMessage = `Source: ${source.name}\nSource URL: ${source.url}\n\n${rawText}`;
+  const result = await structuredLlmCall(EventsResponseSchema, SYSTEM_PROMPT, userMessage);
 
   return result.events.map((event) => toEvent(event, source.name));
 }

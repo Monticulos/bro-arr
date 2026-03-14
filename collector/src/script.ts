@@ -1,13 +1,13 @@
 import "dotenv/config";
 import type { Event } from "../../types/Event.js";
 import { TARGET_SOURCES } from "./sources.js";
-import { extractEvents } from "./tools/extractEvents.js";
+import { extractEvents } from "./io/extractEvents.js";
 import { formatEvents } from "./llm/formatEvents.js";
-import { upsertEvents } from "./tools/upsertEvents.js";
-import { sortEvents } from "./tools/sortEvents.js";
-import { deleteExpiredEvents } from "./tools/deleteExpiredEvents.js";
-import { deleteDuplicateEvents } from "./tools/deleteDuplicateEvents.js";
-import { readEventsFile, writeEventsFile, eventCount } from "./tools/eventsFile.js";
+import { upsertEvents } from "./io/upsertEvents.js";
+import { sortEvents } from "./utils/sortEvents.js";
+import { deleteExpiredEvents } from "./utils/deleteExpiredEvents.js";
+import { deleteDuplicateEvents } from "./utils/deleteDuplicateEvents.js";
+import { readEventsFile, writeEventsFile, eventCount } from "./io/eventsFile.js";
 import { getValidApifyEvents } from "./api/fetchApifyEvents.js";
 import { mapApifyEventToEvent } from "./api/mapApifyEventToEvent.js";
 import { startApifyActorRun, waitForActorRun } from "./api/runApifyActor.js";
@@ -51,7 +51,6 @@ async function collectApifyEvents(datasetId: string): Promise<number> {
     try {
       const event = await mapApifyEventToEvent(apifyEvent);
       collectedEvents.push(event);
-      console.log(`  Mapped event with category ${event.category}.`);
     } catch (error) {
       console.warn(`  Failed to map Apify event "${apifyEvent.name}":`, error);
     }

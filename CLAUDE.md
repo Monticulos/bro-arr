@@ -19,3 +19,4 @@
 - Tests should generally not overlap.
 - When making plans, ask if anything is unclear.
 - After writing code, double check that it follows the requirements.
+- When restructuring or renaming folders/files, update README.md to reflect the new structure.
