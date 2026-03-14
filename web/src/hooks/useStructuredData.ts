@@ -18,5 +18,9 @@ export function useStructuredData(events: Event[]): void {
     if (!scriptElement.parentNode) {
       document.head.appendChild(scriptElement);
     }
+
+    return () => {
+      scriptElement.remove();
+    };
   }, [events]);
 }

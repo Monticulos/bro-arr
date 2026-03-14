@@ -1,16 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { buildEventsJsonLd } from "./structuredData";
-import type { Event } from "../types/event";
-
-const createEvent = (overrides: Partial<Event> = {}): Event => ({
-  id: "1",
-  title: "Quiz Night",
-  description: "Weekly pub quiz",
-  category: "quiz",
-  startDate: "2025-06-15T19:00:00Z",
-  collectedAt: "2025-06-01T12:00:00Z",
-  ...overrides,
-});
+import { createEvent } from "../test/factories";
 
 describe("buildEventsJsonLd", () => {
   it("returns correct Schema.org structure for events", () => {
