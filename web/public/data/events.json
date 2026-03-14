@@ -1,66 +1,6 @@
 {
-  "updatedAt": "2026-03-13T04:15:19.189Z",
+  "updatedAt": "2026-03-14T04:14:16.351Z",
   "events": [
-    {
-      "title": "Operasjon Bever",
-      "description": "Operasjon Bever",
-      "category": "kino",
-      "dateTime": "2026-03-12T17:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-03-12T17:00:00.000Z",
-      "collectedAt": "2026-03-13T04:14:41.821Z"
-    },
-    {
-      "id": "761700400299768",
-      "title": "Misery // Forsamlingslokalet Brønnøysund, Brønnøysund",
-      "description": "Isolert. Skadet. Alene, med sin aller største beundrer.\n\nEtt hus. To mennesker. Ingen vei ut.\nVinden river i veggene. Inne i senga ligger Paula, den berømte forfatteren. Slått ut etter en bilulykke.\nIsolert og alene. Uten kontakt med omverdenen. Uten at noen vet hvor hun er.\nAnnie, sykepleieren med det milde smilet og de varme hendene, fant henne i snøen og reddet livet hennes. Paulas største beundrer, som har slukt alt hun har skrevet. Gjentatte ganger.\nNå har hun Paula helt for seg selv.\nAnnie kaller det kjærlighet. Omsorg. Hengiven pleie tilbake til livet. Men Paula forstår etter hvert at noe er galt, veldig galt.\nHun skrev for et publikum. Nå skriver hun for én.\nUhyggen kryper under huden.\n\nPsykologisk thriller om besettelse og fangenskap, av William Goldman, basert på Stephen Kings internasjonale bestselger.\n\nNoen historier slipper deg ikke. De setter seg i kroppen og blir der lenge etter at scenelyset har sluknet. Misery er teater for deg som vil kjenne pulsen stige og mørket krype under huden. Dette blir et intenst teatermøte der du sitter tett på scenen og kjenner spenningen dirre i rommet.\n\nForestillingen passer for et ungt og voksent publikum fra 16 år og oppover.\n\nPremiere: 7. februar 2026 (Vinterlysfestivalen)\n\nAv: William Goldman\nBasert på romanen av: Stephen King\nRegissør: Hanne Brincker\nSkuespillere: Vera Holte, Elisabet Sevholt og Rune Løding Storsæther\n\nVarighet: 90 minutter, uten pause\nOBS: Begrenset antall plasser, alle billetter unummerert.\n\nPriser: Ordinær kr 315 / U 30 kr 180 / Grupper 4+ kr 260\n\nVelkommen til en grufull god opplevelse!",
-      "category": "kunst-og-kultur",
-      "dateTime": "2026-03-12T18:00:00.000Z",
-      "location": "Forsamlingslokalet Brønnøysund",
-      "url": "https://www.facebook.com/events/761700400299768/",
-      "collectedAt": "2026-03-12T04:18:19.707Z"
-    },
-    {
-      "id": "1399574978328624",
-      "title": "AllmenQuiz på Kred",
-      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\n\nQuizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie: \n22. januar, 29. januar, 5. februar, 12. februar, 19. februar, 26, februar, 12. mars, 21. mars, 26. mars, 9. april, 16. april, 23. april, 30. april, 7. mai, 14. mai, 21. mai og 28. mai. ",
-      "category": "quiz",
-      "dateTime": "2026-03-12T19:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1399574978328624/",
-      "collectedAt": "2026-03-12T04:18:22.565Z"
-    },
-    {
-      "title": "Wuthering Heights",
-      "description": "Wuthering Heights",
-      "category": "kino",
-      "dateTime": "2026-03-12T19:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-03-12T19:00:00.000Z",
-      "collectedAt": "2026-03-13T04:14:41.821Z"
-    },
-    {
-      "title": "Møteplass for ungdom Vår 2026",
-      "description": "Møteplass for ungdom Vår 2026",
-      "category": "barn-og-ungdom",
-      "dateTime": "2026-03-12T23:00:00.000Z",
-      "location": "Brønnøy kommune",
-      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=271&lang=1&MId1=35",
-      "id": "Brønnøy-kommune-2026-03-12T23:00:00.000Z",
-      "collectedAt": "2026-03-12T04:16:01.205Z"
-    },
-    {
-      "title": "Møteplass for ungdom Vår 2026",
-      "description": "Møteplass for ungdom Vår 2026",
-      "category": "barn-og-ungdom",
-      "dateTime": "2026-03-13T04:14:00.000Z",
-      "location": "Brønnøy kommune",
-      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=271&amp;lang=1&amp;MId1=35",
-      "id": "Brønnøy-kommune-2026-03-13T04:14:00.000Z",
-      "collectedAt": "2026-03-13T04:14:36.037Z"
-    },
     {
       "title": "Scream 7",
       "description": "Scream 7",
@@ -69,7 +9,17 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-13T19:00:00.000Z",
-      "collectedAt": "2026-03-13T04:14:41.821Z"
+      "collectedAt": "2026-03-14T04:12:38.348Z"
+    },
+    {
+      "title": "Møteplass for ungdom Vår 2026",
+      "description": "Møteplass for ungdom Vår 2026",
+      "category": "barn-og-ungdom",
+      "dateTime": "2026-03-14T04:08:00.000Z",
+      "location": "Brønnøy kommune",
+      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=271&lang=1&MId1=35",
+      "id": "Brønnøy-kommune-2026-03-14T04:08:00.000Z",
+      "collectedAt": "2026-03-14T04:12:33.308Z"
     },
     {
       "id": "2756833241342061",
@@ -79,7 +29,7 @@
       "dateTime": "2026-03-14T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2756833241342061/",
-      "collectedAt": "2026-03-12T04:18:21.040Z"
+      "collectedAt": "2026-03-14T04:14:10.655Z"
     },
     {
       "title": "Gudstjeneste",
@@ -89,7 +39,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18&OccurenceId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18",
       "id": "Brønnøy-kirke-2026-03-15T10:00:00.000Z",
-      "collectedAt": "2026-03-13T04:15:19.189Z"
+      "collectedAt": "2026-03-14T04:13:28.136Z"
     },
     {
       "id": "2129729637781721",
@@ -112,24 +62,34 @@
       "collectedAt": "2026-03-08T15:20:11.243Z"
     },
     {
+      "id": "922874333666779",
+      "title": " Burger POP UP!!!",
+      "description": "Nå som vi har åpent færre dager i uka, har vi endelig tid til å teste prosjekter vi har sikla på lenge.\nFørstkommende tirsdag fyrer vi grillen, og kjører en ekte flammegrilla burger.\n\nKun de første 40 bestillingene.\nGjelder fra kl. 15 og helt til det er tomt på tirsdag 17.03.\n\n🍔 Hva du får\n\nBrisket + høyrygg + ribeye\nGrillet på åpen flamme\nTex mex style eller blue cheese + chipotle mayo + Ostavind\nPris: 195,-\n\n✅ Kun takeaway\n✅ Limited edition\n\n🍟 Extras\n\nFries og mayo kan kjøpes separat.\nVi har: røkt aioli, jalapeño-mayo og trøffel-mayo.\n\n🛒 Slik bestiller du\n\nBestill via linken: https://favrit.com/en-gb/menu/location/LPA7p7XOgvq\nog hent på Svang.\n\nFørste mann til mølla!",
+      "category": "mat-og-drikke",
+      "dateTime": "2026-03-17T14:00:00.000Z",
+      "location": "Svang",
+      "url": "https://www.facebook.com/events/922874333666779/",
+      "collectedAt": "2026-03-14T04:14:15.416Z"
+    },
+    {
       "id": "1474715997583350",
       "title": "KURS Pilhjerte kr 950,- inkl. materialer",
       "description": "Artig Pilkurs med Klara pil hvor  vi lager de flotteste pilhjerter på metallramme. Koselig å ha på veggen hele året og veldig dekorativt med lys i desember 💚\nKaffe/te og kake inkl.\nPåmeldig og evt spørsmål; \nTrine Laumann(Skreddervika gård) tlf 47 24 43 41",
-      "category": "annet",
+      "category": "kunst-og-kultur",
       "dateTime": "2026-03-17T16:00:00.000Z",
       "location": "Kefas, Dr.Møllers gt 2, 8900 Brønnøysund",
       "url": "https://www.facebook.com/events/1474715997583350/",
-      "collectedAt": "2026-03-12T04:18:25.283Z"
+      "collectedAt": "2026-03-14T04:14:15.800Z"
     },
     {
       "id": "1290807762936378",
-      "title": "Gründerkveld på MEIR",
+      "title": "UTSATT TIL APRIL/MAI - Gründerkveld på MEIR ",
       "description": "Velkommen til en lavterskel møteplass på Gründerhuset ME!R for du som har starta, eller er interessert i å starte, virksomhet på Sør-Helgeland. \n\nDet blir gratis pizza, nettverksbygging & inspirasjonsprat med gründere.\n\nVil du ha pizza? Husk å melde deg på: https://forms.office.com/e/hN0LgaznsC\n\nArrangementet arrangeres av de gode hjelperne (Kunnskapsparken Helgeland, Sentrum Næringshage og Kystinkubatoren) som er finansiert av Nordland Fylkeskommune.  Vertsskap er Brønnøy Næringsforum sitt nye lokale. ",
       "category": "næringsliv",
       "dateTime": "2026-03-17T18:00:00.000Z",
       "location": "Storgata 51, 8900 Brønnøysund, Norge",
       "url": "https://www.facebook.com/events/1290807762936378/",
-      "collectedAt": "2026-03-08T04:14:22.688Z"
+      "collectedAt": "2026-03-14T04:14:12.299Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -139,7 +99,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=dee8135a-44ee-4bf7-99bf-6cd2c45b17e8",
       "id": "Brønnøy-kirke-2026-03-18T10:00:00.000Z",
-      "collectedAt": "2026-03-13T04:15:19.189Z"
+      "collectedAt": "2026-03-14T04:13:28.136Z"
     },
     {
       "id": "1400890462144393",
@@ -159,7 +119,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-18T17:00:00.000Z",
-      "collectedAt": "2026-03-13T04:14:41.821Z"
+      "collectedAt": "2026-03-14T04:12:38.348Z"
     },
     {
       "title": "Hamnet",
@@ -169,7 +129,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-18T19:00:00.000Z",
-      "collectedAt": "2026-03-13T04:14:41.821Z"
+      "collectedAt": "2026-03-14T04:12:38.348Z"
     },
     {
       "title": "Gudstjeneste",
@@ -179,7 +139,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=53891794-5db0-4f2b-9f44-01aa734b1b00&OccurenceId=53891794-5db0-4f2b-9f44-01aa734b1b00",
       "id": "Brønnøy-kirke-2026-03-19T10:30:00.000Z",
-      "collectedAt": "2026-03-13T04:15:19.189Z"
+      "collectedAt": "2026-03-14T04:13:28.136Z"
     },
     {
       "id": "1640615373946004",
@@ -199,7 +159,17 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-19T17:00:00.000Z",
-      "collectedAt": "2026-03-13T04:14:41.821Z"
+      "collectedAt": "2026-03-14T04:12:38.348Z"
+    },
+    {
+      "id": "1219326520187197",
+      "title": "AFTERWORK PÅ SVANG: JERK CHICKEN!",
+      "description": "Bli med oss hver fredag året rundt på \"afterwork\". SVANG er plassen å være for deg som liker å kickstarte helgen med god stemning, street food og smaker fra hele verden, herlig musikk og vennlige priser på både mat og drikke.\nKom å feire på helg på Svang. Ta med en venn eller ti og starte helgen med stil.\nFra kl. 15 - 18, ingen bordbestilling og til vi er tømt med første man til mølla prinsippet.\nDette er konsept som er gøyal, fargerik og som vi streker oss langt for at det skal være vennlig mot pængboka 😃 Vi ser frem å møte dere på Svang, hver fredag!!\nPris: 210,-",
+      "category": "mat-og-drikke",
+      "dateTime": "2026-03-20T14:00:00.000Z",
+      "location": "Svang",
+      "url": "https://www.facebook.com/events/1219326520187197/",
+      "collectedAt": "2026-03-14T04:14:10.946Z"
     },
     {
       "title": "Minner Om Ham",
@@ -209,7 +179,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-20T17:00:00.000Z",
-      "collectedAt": "2026-03-13T04:14:41.821Z"
+      "collectedAt": "2026-03-14T04:12:38.348Z"
     },
     {
       "id": "1592827455088754",
@@ -219,7 +189,7 @@
       "dateTime": "2026-03-20T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1592827455088754/",
-      "collectedAt": "2026-03-12T04:18:21.505Z"
+      "collectedAt": "2026-03-14T04:14:09.954Z"
     },
     {
       "id": "803770719136708",
@@ -229,7 +199,7 @@
       "dateTime": "2026-03-20T19:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/803770719136708/",
-      "collectedAt": "2026-03-12T04:18:23.190Z"
+      "collectedAt": "2026-03-14T04:14:10.350Z"
     },
     {
       "title": "Ready Or Not 2: Here I Come",
@@ -239,17 +209,17 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-20T19:00:00.000Z",
-      "collectedAt": "2026-03-13T04:14:41.821Z"
+      "collectedAt": "2026-03-14T04:12:38.348Z"
     },
     {
-      "title": "AllmenQuiz",
-      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert. Quizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før. Det blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.",
+      "id": "1447165753569546",
+      "title": "AllmenQuiz på Kred",
+      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\n\nQuizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie: \n22. januar, 29. januar, 5. februar, 12. februar, 19. februar, 26, februar, 12. mars, 21. mars, 26. mars, 9. april, 16. april, 23. april, 30. april, 7. mai, 14. mai, 21. mai og 28. mai. ",
       "category": "quiz",
       "dateTime": "2026-03-21T19:00:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer/b/allmenquiz---21-mars-kl-2000",
-      "id": "Kred-2026-03-21T19:00:00.000Z",
-      "collectedAt": "2026-03-13T04:14:52.667Z"
+      "url": "https://www.facebook.com/events/1447165753569546/",
+      "collectedAt": "2026-03-14T04:14:11.722Z"
     },
     {
       "title": "Gudstjeneste",
@@ -259,7 +229,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=629b5fec-acb3-43e9-b6be-e7771a0841ca&OccurenceId=629b5fec-acb3-43e9-b6be-e7771a0841ca",
       "id": "Brønnøy-kirke-2026-03-22T10:00:00.000Z",
-      "collectedAt": "2026-03-13T04:15:19.189Z"
+      "collectedAt": "2026-03-14T04:13:28.136Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -279,17 +249,27 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=22c53a4a-b808-4114-98d3-5f805277927b",
       "id": "Brønnøy-kirke-2026-03-25T10:00:00.000Z",
-      "collectedAt": "2026-03-13T04:15:19.189Z"
+      "collectedAt": "2026-03-14T04:13:28.136Z"
     },
     {
-      "id": "866619559201849",
-      "title": "Energetic Lydbad/Gongbad Opplevelse Brønnøysund",
-      "description": "Velkommen til Lyd og Gongbad i Brønnøy Frivilligsentral, 25 Mars kl 18.\nHer kan du få muligheten til å oppleve Gongenes og frekvensenses dype hvile.\nHar og med en ny Merkaba Gong :-)\nLyd er energi og skaper frekvenser som påvirker oss både fysisk og på sjelsnivå. Gongbadet kan bidra til å frigjøre stress og blokkeringer i både kropp og sinn, rense og balansere energisenterene og bygge opp ditt energifeltet.\nHvilken lyd eller vibrasjon som er den beste for deg, avhenger av hva du trenger for stunden, og med mange gonger blir det bra spekter av frekvenser.\nLever man et rolig og avslappet liv, vil kanskje et Gong bad med mer «trøkk» gi mest påfyll. Lever man med stadig stress og jag, så vil kanskje de dypere og rolige tonene være dem som gir mest påfyll og bygger opp energifeltet ditt.\nUansett hva du måtte behøve, det som er sikkert er at du vil gå hjem annerledes enn når du kom!\nOpplev de dype frigjørende, healende tonene og vibrasjonene som Gongene og Syngebollen kan gi.\nDet blir først en kort oppvarming med Gong, med en kort deling om erfaringen, fær vi avslutter med ett lengre Lydbad. Har vi tid på slutten, er det åpen for deling.\nTA med tykt liggeunderlag, eller en god stol, for under Gongbadet er det anbefalt å ligge ned, eller sitte behagelig slik at kroppen kan slappe helt av. Tanken er å la seg flyte med i elven av lyder og vibrasjoner og la seg bade i dette vibrasjonsfeltet av lyder og frekvenser som trigger kroppens evne til healing og oppvåkning.\nInge Joar Holsen har siden 2006 drevet med Awareness meditasjon, samt utført Healinger og gitt Gongbad rundt om i Norge og verden. Han studerer og dypere Human Design programmet, og kan dele litt om det mellom Gongrundene\n\nPris: kr 550. \n\nTa med pledd, tykk matte, stol, så du kan sitte/ligge meget behagelig.\nFor mer info kontakt:\nPer Alfred Halsaunet eller\nInge Joar Holsen via E-post ijh@energeticrelease.com.",
-      "category": "annet",
-      "dateTime": "2026-03-25T17:00:00.000Z",
-      "location": "Brønnøy Frivilligsentral",
-      "url": "https://www.facebook.com/events/866619559201849/",
-      "collectedAt": "2026-03-12T04:18:18.240Z"
+      "id": "1294529529407941",
+      "title": "Ferskfisk, lever og rogn, mølje... kjært barn har mange navn",
+      "description": "På onsdag 25.03 kjører vi skikkelig tradisjonskost middag på SVANG fra kl 15:00 til 19:00 eller til vi går tomme (og det gjør vi jo).\n\n🐟Ferskfisk, lever og rogn av torsk fra Vevelstad.\nKlassisk med mandelpotet og gulrot. \n✨Ingen fiksfakseri. Bare skikkelig godt. \n🚶Drop-in i utgangspunktet\n\nPris: 395,-",
+      "category": "mat-og-drikke",
+      "dateTime": "2026-03-25T14:00:00.000Z",
+      "location": "Svang",
+      "url": "https://www.facebook.com/events/1294529529407941/",
+      "collectedAt": "2026-03-14T04:14:16.350Z"
+    },
+    {
+      "id": "1471708091343939",
+      "title": "AFTERWORK PÅ SVANG: CHILI CON CARNE",
+      "description": "Bli med oss hver fredag året rundt på \"afterwork\". SVANG er plassen å være for deg som liker å kickstarte helgen med god stemning, street food og smaker fra hele verden, herlig musikk og vennlige priser på både mat og drikke.\nKom å feire på helg på Svang. Ta med en venn eller ti og starte helgen med stil.\nFra kl. 15 - 18, ingen bordbestilling og til vi er tømt med første man til mølla prinsippet.\nDette er konsept som er gøyal, fargerik og som vi streker oss langt for at det skal være vennlig mot pængboka 😃 Vi ser frem å møte dere på Svang, hver fredag!!\nPris: 220,-",
+      "category": "mat-og-drikke",
+      "dateTime": "2026-03-27T14:00:00.000Z",
+      "location": "Svang",
+      "url": "https://www.facebook.com/events/1471708091343939/",
+      "collectedAt": "2026-03-14T04:14:09.627Z"
     },
     {
       "id": "1535081147792962",
@@ -300,6 +280,16 @@
       "location": "Kred",
       "url": "https://www.facebook.com/events/1535081147792962/",
       "collectedAt": "2026-03-12T04:18:20.046Z"
+    },
+    {
+      "id": "1148694947278358",
+      "title": "TOUR DE SKREI 🐟✨",
+      "description": "Her går vi ikke bare all in. Vi går all the way. \nVi kjører en 5-retters meny med kun skrei, og ja: inkludert dessert. 🔥🔥\n\nVi skal bruke hele råvaren og fyre løs kreativiteten. Dette blir særere, bedre og mer Svang enn det burde være.😏✨\nVi lover noe du mest sannsynlig ikke har smakt før på SVANG. Kanskje ikke noe du har smakt før i det hele tatt, hvis vi får det som vi vil.\n\nMer info kommer snart.⏳✨",
+      "category": "mat-og-drikke",
+      "dateTime": "2026-03-28T17:00:00.000Z",
+      "location": "Svang",
+      "url": "https://www.facebook.com/events/1148694947278358/",
+      "collectedAt": "2026-03-14T04:14:12.987Z"
     },
     {
       "id": "26192453483722736",
@@ -329,7 +319,7 @@
       "dateTime": "2026-04-02T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/697852660015589/",
-      "collectedAt": "2026-03-12T04:18:20.396Z"
+      "collectedAt": "2026-03-14T04:14:16.071Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -349,7 +339,7 @@
       "dateTime": "2026-04-11T17:00:00.000Z",
       "location": "FORSAMLINGSLOKALET - Brønnøysund",
       "url": "https://www.facebook.com/events/1214003247388441/",
-      "collectedAt": "2026-03-12T04:18:21.934Z"
+      "collectedAt": "2026-03-14T04:14:08.977Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -362,6 +352,16 @@
       "collectedAt": "2026-03-08T15:20:11.243Z"
     },
     {
+      "id": "866619559201849",
+      "title": "Gong/Lydbad Opplevelse Gaiasenteret",
+      "description": "Velkommen til Lyd og Gongbad på Gaiasentert 19 April kl 18.\nHer kan du få muligheten til å oppleve Gongenes og frekvensenses dype hvile.\nHar og med en ny Merkaba Gong :-)\nLyd er energi og skaper frekvenser som påvirker oss både fysisk og på sjelsnivå. Gongbadet kan bidra til å frigjøre stress og blokkeringer i både kropp og sinn, rense og balansere energisenterene og bygge opp ditt energifeltet.\nHvilken lyd eller vibrasjon som er den beste for deg, avhenger av hva du trenger for stunden, og med mange gonger blir det bra spekter av frekvenser.\nLever man et rolig og avslappet liv, vil kanskje et Gong bad med mer «trøkk» gi mest påfyll. Lever man med stadig stress og jag, så vil kanskje de dypere og rolige tonene være dem som gir mest påfyll og bygger opp energifeltet ditt.\nUansett hva du måtte behøve, det som er sikkert er at du vil gå hjem annerledes enn når du kom!\nOpplev de dype frigjørende, healende tonene og vibrasjonene som Gongene og Syngebollen kan gi.\nDet blir først en kort oppvarming med Gong, med en kort deling om erfaringen, fær vi avslutter med ett lengre Lydbad. Har vi tid på slutten, er det åpen for deling.\nTA med tykt liggeunderlag, eller en god stol, for under Gongbadet er det anbefalt å ligge ned, eller sitte behagelig slik at kroppen kan slappe helt av. Tanken er å la seg flyte med i elven av lyder og vibrasjoner og la seg bade i dette vibrasjonsfeltet av lyder og frekvenser som trigger kroppens evne til healing og oppvåkning.\nInge Joar Holsen har siden 2006 drevet med Awareness meditasjon, samt utført Healinger og gitt Gongbad rundt om i Norge og verden. Han studerer og dypere Human Design programmet, og kan dele litt om det mellom Gongrundene\n\nPris: kr 550. Påmelding via Stripe: https://buy.stripe.com/bJe28q36r3a37pd2IV1VK0y\nBindene påmeldingen, men du kan evt gi vekk plassen\n\nTa med pledd, tykk matte, stol, så du kan sitte/ligge meget behagelig.\nFor mer info kontakt:\nGaisenter,  post@gaiasenter.no  eller\nInge Joar Holsen via E-post ijh@energeticrelease.com.",
+      "category": "annet",
+      "dateTime": "2026-04-19T16:00:00.000Z",
+      "location": "Gaia Grønn Helse, Senter for livskvalitet",
+      "url": "https://www.facebook.com/events/866619559201849/",
+      "collectedAt": "2026-03-14T04:14:13.668Z"
+    },
+    {
       "id": "1989127691666557",
       "title": "Brønnøysund- Kveli Rånes Bremseth SHOW - Trøndelag du STORE tid",
       "description": "Trøndelag du STORE tid – Festen fortsetter også i 2026!\n\n«Trøndelag du STORE tid» er showet som legger den trønderske beskjedenheten til side og presenterer alt vi trøndere har å være stolte av helt siden steinalderen og fram til nå. Egenskrevet musikk og tekst veves sammen med trønderske allsangfavoritter som får stemningen helt i taket.\n\nDet startet som et VM-vorspiel og fylte åtte saler i Olavshallen i februar 2025. Avisanmelderne var samstemt begeistret. Trønder-Avisa ga showet 20 i stil og Adressa delte ut den første gullmedaljen i ski-VM til showet. De ga samtidig oppfordringen om at dette måtte lanseres som et godt nachspiel.\nVi tok oppfordringen på strak arm, og publikum strømmet til. Morsomme nachspiel har som kjent en tendens til å vare lenger enn opprinnelig planlagt. Etter 27 forestillinger i hjemfylket høsten 2025, har nærmere 10 000 personer kvittert med latterbyger, allsang og taktfast applaus.\n\nFesten fortsetter nå også i 2026!\nShowet rulles nå ut både i og utenfor Trøndelags grenser.\nFlere steder på høstturneen ble utsolgt, så det blir også en del ekstraforestillinger.\n\nHøsten 2025 ble Harald Morten Bremseth lagt inn på sykehus og det var en stund usikkert om vi kunne fullføre turneen.\nVi fikk i fellesskap justert på forestillingen og fant vikarer i egne rekker (les: kostymelager) og dermed slapp vi å avlyse. Bremseth bidro alikevel sterkt på skjerm i forestilingen.\nFram til Harald Morten er friskmeldt vil alle forestillinger spilles som planlagt med Kveli & Rånes på scenen og Bremseth på skjerm.\n\nForestillingen varer i ca 85 min.\n",
@@ -369,7 +369,7 @@
       "dateTime": "2026-04-24T16:30:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1989127691666557/",
-      "collectedAt": "2026-03-12T04:18:20.767Z"
+      "collectedAt": "2026-03-14T04:14:09.318Z"
     },
     {
       "id": "1442826520606132",
@@ -389,7 +389,7 @@
       "dateTime": "2026-04-24T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1507074540847996/",
-      "collectedAt": "2026-03-12T04:18:23.547Z"
+      "collectedAt": "2026-03-14T04:14:14.754Z"
     },
     {
       "id": "1584031199293294",
@@ -399,7 +399,7 @@
       "dateTime": "2026-05-15T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1584031199293294/",
-      "collectedAt": "2026-03-12T04:18:26.947Z"
+      "collectedAt": "2026-03-14T04:14:12.032Z"
     },
     {
       "id": "1355561149693604",
@@ -409,7 +409,7 @@
       "dateTime": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-03-12T04:18:17.901Z"
+      "collectedAt": "2026-03-14T04:14:14.416Z"
     },
     {
       "id": "1518436712711995",
@@ -419,7 +419,7 @@
       "dateTime": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-03-12T04:18:18.622Z"
+      "collectedAt": "2026-03-14T04:14:15.076Z"
     },
     {
       "title": "Espen Abrahamsen - Avantgarde",
