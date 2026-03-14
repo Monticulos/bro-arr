@@ -11,7 +11,7 @@ const MOCK_EVENTS_DATA: EventsData = {
       title: "Mock Event",
       description: "A mock event",
       category: "annet",
-      dateTime: "2099-06-20T18:00:00Z",
+      startDate: "2099-06-20T18:00:00Z",
       collectedAt: "2025-06-01T00:00:00Z",
     },
   ],

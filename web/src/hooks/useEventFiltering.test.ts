@@ -9,7 +9,7 @@ function createEvent(overrides: Partial<Event> = {}): Event {
     title: 'Test Event',
     description: 'Description',
     category: 'musikk',
-    dateTime: '2025-06-15T18:00:00Z',
+    startDate: '2025-06-15T18:00:00Z',
     collectedAt: '2025-06-01T00:00:00Z',
     ...overrides,
   };
@@ -63,12 +63,12 @@ describe('useEventFiltering', () => {
     ]);
   });
 
-  it('does not match against dateTime', () => {
+  it('does not match against startDate', () => {
     const events = [
       createEvent({
         id: '1',
         title: 'Concert',
-        dateTime: '2025-06-20T10:00:00Z',
+        startDate: '2025-06-20T10:00:00Z',
       }),
     ];
 

@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 import type { EventsData } from "../../../types/Event";
+import { writeSitemapFile } from "./sitemapFile";
 
 const currentDir = dirname(fileURLToPath(import.meta.url));
 export const EVENTS_JSON_PATH = resolve(
@@ -20,6 +21,7 @@ export function readEventsFile(): EventsData {
 
 export function writeEventsFile(data: EventsData): void {
   writeFileSync(EVENTS_JSON_PATH, JSON.stringify(data, null, 2), "utf-8");
+  writeSitemapFile(data.updatedAt);
 }
 
 export function eventCount(): number {

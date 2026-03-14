@@ -10,7 +10,7 @@ function createEvent(overrides: Partial<Event> = {}): Event {
     title: "Test Event",
     description: "A test event description",
     category: "annet",
-    dateTime: "2025-06-15T18:00:00Z",
+    startDate: "2025-06-15T18:00:00Z",
     collectedAt: "2025-06-01T00:00:00Z",
     ...overrides,
   };

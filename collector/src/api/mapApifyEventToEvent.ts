@@ -10,7 +10,7 @@ export async function mapApifyEventToEvent(apifyEvent: ApifyEvent): Promise<Even
     title: apifyEvent.name,
     description: apifyEvent.description,
     category,
-    dateTime: apifyEvent.utcStartDate,
+    startDate: apifyEvent.utcStartDate,
     location: mapLocation(apifyEvent.location.name),
     url: apifyEvent.url,
     collectedAt: new Date().toISOString(),

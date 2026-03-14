@@ -4,7 +4,7 @@ const EXPIRY_HOURS = 12;
 
 export function isExpired(event: Event, now: Date = new Date()): boolean {
   const expiryThreshold = new Date(now.getTime() - EXPIRY_HOURS * 60 * 60 * 1000);
-  return new Date(event.dateTime) < expiryThreshold;
+  return new Date(event.startDate) < expiryThreshold;
 }
 
 export function deleteExpiredEvents(events: Event[]): Event[] {
