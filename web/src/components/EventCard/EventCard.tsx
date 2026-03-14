@@ -22,8 +22,8 @@ export default function EventCard({ event, isFavorited, onToggleFavorite }: Prop
         <div className={styles.meta}>
           <div className={styles.metaLeft}>
             <CategoryBadge category={event.category} />
-            <time className={styles.date} dateTime={event.dateTime}>
-              {formatEventDate(event.dateTime)}
+            <time className={styles.date} dateTime={event.startDate}>
+              {formatEventDate(event.startDate)}
             </time>
           </div>
           <Button

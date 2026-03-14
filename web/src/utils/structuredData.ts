@@ -24,7 +24,7 @@ function mapEventToSchema(event: Event): SchemaEvent {
     "@type": "Event",
     name: event.title,
     description: event.description,
-    startDate: event.dateTime,
+    startDate: event.startDate,
   };
 
   if (event.location) {

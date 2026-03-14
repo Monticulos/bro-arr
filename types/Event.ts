@@ -5,7 +5,8 @@ export interface Event {
   title: string;
   description: string;
   category: typeof CATEGORY_SLUGS[number];
-  dateTime: string;   // ISO 8601
+  startDate: string;   // ISO 8601
+  endDate?: string;   // ISO 8601
   location?: string;
   url?: string;
   collectedAt: string;   // ISO 8601

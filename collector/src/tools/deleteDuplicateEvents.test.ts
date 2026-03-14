@@ -8,7 +8,7 @@ function createEvent(overrides: Partial<Event> = {}): Event {
     title: "Test Event",
     description: "Description",
     category: "musikk",
-    dateTime: "2026-03-07T20:00:00.000Z",
+    startDate: "2026-03-07T20:00:00.000Z",
     collectedAt: "2026-03-07T09:00:00.000Z",
     ...overrides,
   };
@@ -64,12 +64,12 @@ describe("isDuplicate", () => {
     const apifyEvent = createEvent({
       id: "123456789",
       title: "Mat og vinkveld med Erik Strugstad",
-      dateTime: "2026-03-20T18:00:00.000Z",
+      startDate: "2026-03-20T18:00:00.000Z",
     });
     const puppeteerEvent = createEvent({
       id: "Kred-2026-03-20T18:00:00.000Z",
       title: "Mat og Vinkveld med Erik Strugstad",
-      dateTime: "2026-03-20T18:00:00.000Z",
+      startDate: "2026-03-20T18:00:00.000Z",
     });
 
     expect(isDuplicate(apifyEvent, puppeteerEvent)).toBe(true);
@@ -79,12 +79,12 @@ describe("isDuplicate", () => {
     const apifyEvent = createEvent({
       id: "123456789",
       title: "Kortfilm: Nordland",
-      dateTime: "2026-03-20T17:00:00.000Z",
+      startDate: "2026-03-20T17:00:00.000Z",
     });
     const puppeteerEvent = createEvent({
       id: "Kred-2026-03-20T18:00:00.000Z",
       title: "Kortfilm: Nordland",
-      dateTime: "2026-03-20T18:00:00.000Z",
+      startDate: "2026-03-20T18:00:00.000Z",
     });
 
     expect(isDuplicate(apifyEvent, puppeteerEvent)).toBe(false);
@@ -94,12 +94,12 @@ describe("isDuplicate", () => {
     const apifyEvent = createEvent({
       id: "123456789",
       title: "Stand Up Spesial",
-      dateTime: "2026-03-20T23:30:00.000Z",
+      startDate: "2026-03-20T23:30:00.000Z",
     });
     const puppeteerEvent = createEvent({
       id: "Kred-2026-03-21T00:15:00.000Z",
       title: "Stand Up Spesial",
-      dateTime: "2026-03-21T00:15:00.000Z",
+      startDate: "2026-03-21T00:15:00.000Z",
     });
 
     expect(isDuplicate(apifyEvent, puppeteerEvent)).toBe(true);
@@ -109,12 +109,12 @@ describe("isDuplicate", () => {
     const apifyEvent = createEvent({
       id: "123456789",
       title: "Stand Up Spesial",
-      dateTime: "2026-03-20T20:00:00.000Z",
+      startDate: "2026-03-20T20:00:00.000Z",
     });
     const puppeteerEvent = createEvent({
       id: "Kred-2026-03-21T20:00:00.000Z",
       title: "Stand Up Spesial",
-      dateTime: "2026-03-21T20:00:00",
+      startDate: "2026-03-21T20:00:00",
     });
 
     expect(isDuplicate(apifyEvent, puppeteerEvent)).toBe(false);
@@ -124,12 +124,12 @@ describe("isDuplicate", () => {
     const apifyEvent = createEvent({
       id: "123456789",
       title: "AllmenQuiz",
-      dateTime: "2026-03-12T20:00:00.000Z",
+      startDate: "2026-03-12T20:00:00.000Z",
     });
     const puppeteerEvent = createEvent({
       id: "Kred-2026-03-12T20:00:00.000Z",
       title: "MusikkBingo",
-      dateTime: "2026-03-12T20:00:00.000Z",
+      startDate: "2026-03-12T20:00:00.000Z",
     });
 
     expect(isDuplicate(apifyEvent, puppeteerEvent)).toBe(false);
@@ -142,17 +142,17 @@ describe("findDuplicateIds", () => {
       createEvent({
         id: "1592827455088754",
         title: "Mat og vinkveld med Erik Strugstad",
-        dateTime: "2026-03-20T18:00:00.000Z",
+        startDate: "2026-03-20T18:00:00.000Z",
       }),
       createEvent({
         id: "Kred-2026-03-20T18:00:00.000Z",
         title: "Mat og Vinkveld med Erik Strugstad",
-        dateTime: "2026-03-20T18:00:00.000Z",
+        startDate: "2026-03-20T18:00:00.000Z",
       }),
       createEvent({
         id: "Brønnøy-kirke-2026-03-15T10:00:00.000Z",
         title: "Gudstjeneste",
-        dateTime: "2026-03-15T10:00:00.000Z",
+        startDate: "2026-03-15T10:00:00.000Z",
       }),
     ];
 
@@ -166,12 +166,12 @@ describe("findDuplicateIds", () => {
       createEvent({
         id: "123456789",
         title: "Concert A",
-        dateTime: "2026-03-20T18:00:00.000Z",
+        startDate: "2026-03-20T18:00:00.000Z",
       }),
       createEvent({
         id: "Kred-2026-03-21T18:00:00.000Z",
         title: "Concert B",
-        dateTime: "2026-03-21T18:00:00.000Z",
+        startDate: "2026-03-21T18:00:00.000Z",
       }),
     ];
 
@@ -185,12 +185,12 @@ describe("findDuplicateIds", () => {
       createEvent({
         id: "111111111",
         title: "Same Event",
-        dateTime: "2026-03-20T18:00:00.000Z",
+        startDate: "2026-03-20T18:00:00.000Z",
       }),
       createEvent({
         id: "222222222",
         title: "Same Event",
-        dateTime: "2026-03-20T19:00:00.000Z",
+        startDate: "2026-03-20T19:00:00.000Z",
       }),
     ];
 
@@ -204,22 +204,22 @@ describe("findDuplicateIds", () => {
       createEvent({
         id: "1535081147792962",
         title: "Christer Torjussen - Stand Up Spesial",
-        dateTime: "2026-03-27T20:00:00.000Z",
+        startDate: "2026-03-27T20:00:00.000Z",
       }),
       createEvent({
         id: "Kred-2026-03-27T20:00:00.000Z",
         title: "Christer Torjussen: Stand Up Spesial",
-        dateTime: "2026-03-27T20:00:00.000Z",
+        startDate: "2026-03-27T20:00:00.000Z",
       }),
       createEvent({
         id: "1592827455088754",
         title: "Mat og vinkveld med Erik Strugstad",
-        dateTime: "2026-03-20T18:00:00.000Z",
+        startDate: "2026-03-20T18:00:00.000Z",
       }),
       createEvent({
         id: "Kred-2026-03-20T18:00:00.000Z",
         title: "Mat og Vinkveld med Erik Strugstad",
-        dateTime: "2026-03-20T18:00:00.000Z",
+        startDate: "2026-03-20T18:00:00.000Z",
       }),
     ];
 
@@ -236,17 +236,17 @@ describe("deleteDuplicateEvents", () => {
     const apifyEvent = createEvent({
       id: "1592827455088754",
       title: "Mat og vinkveld med Erik Strugstad",
-      dateTime: "2026-03-20T18:00:00.000Z",
+      startDate: "2026-03-20T18:00:00.000Z",
     });
     const puppeteerDuplicate = createEvent({
       id: "Kred-2026-03-20T18:00:00.000Z",
       title: "Mat og Vinkveld med Erik Strugstad",
-      dateTime: "2026-03-20T18:00:00.000Z",
+      startDate: "2026-03-20T18:00:00.000Z",
     });
     const uniqueEvent = createEvent({
       id: "Brønnøy-kirke-2026-03-15T10:00:00.000Z",
       title: "Gudstjeneste",
-      dateTime: "2026-03-15T10:00:00.000Z",
+      startDate: "2026-03-15T10:00:00.000Z",
     });
 
     const result = deleteDuplicateEvents([apifyEvent, puppeteerDuplicate, uniqueEvent]);
@@ -256,8 +256,8 @@ describe("deleteDuplicateEvents", () => {
 
   it("returns all events when there are no duplicates", () => {
     const events = [
-      createEvent({ id: "123456789", title: "Concert A", dateTime: "2026-03-20T18:00:00.000Z" }),
-      createEvent({ id: "Kred-2026-03-21T18:00:00.000Z", title: "Concert B", dateTime: "2026-03-21T18:00:00.000Z" }),
+      createEvent({ id: "123456789", title: "Concert A", startDate: "2026-03-20T18:00:00.000Z" }),
+      createEvent({ id: "Kred-2026-03-21T18:00:00.000Z", title: "Concert B", startDate: "2026-03-21T18:00:00.000Z" }),
     ];
 
     const result = deleteDuplicateEvents(events);

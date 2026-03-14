@@ -13,7 +13,7 @@ const EventSchema = z.object({
   title: z.string().describe("Event title only. Must not contain dates, times, or weekday names"),
   description: z.string().describe("Description as is from source. If missing, use event title without dates, times, or weekday names"),
   category: z.enum(CATEGORY_SLUGS),
-  dateTime: z.string().describe("ISO 8601 datetime in Norwegian local time without Z suffix, e.g. 2026-03-07T18:00:00"),
+  startDate: z.string().describe("ISO 8601 datetime in Norwegian local time without Z suffix, e.g. 2026-03-07T18:00:00"),
   location: z.string().optional().describe("The event location, usually the source name"),
   url: z.string().optional().describe("The url to the individual event, unless it is a Brønnøy kino event. If so, it should be the source url"),
 });
@@ -45,11 +45,11 @@ export async function formatEvents(source: Source, rawText: string): Promise<Eve
 type LlmEvent = z.infer<typeof EventSchema>;
 
 function toEvent(llmEvent: LlmEvent, sourceName: string): Event {
-  const utcDateTime = norwegianTimeToUtc(llmEvent.dateTime);
+  const utcStartDate = norwegianTimeToUtc(llmEvent.startDate);
   return {
     ...llmEvent,
-    id: generateEventId(sourceName, utcDateTime),
-    dateTime: utcDateTime,
+    id: generateEventId(sourceName, utcStartDate),
+    startDate: utcStartDate,
     collectedAt: new Date().toISOString(),
   };
 }

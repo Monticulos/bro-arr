@@ -10,7 +10,7 @@ function createEvent(overrides: Partial<Event> = {}): Event {
     title: "Test Event",
     description: "Description",
     category: "annet",
-    dateTime: "2025-06-15T18:00:00Z",
+    startDate: "2025-06-15T18:00:00Z",
     collectedAt: "2025-06-01T00:00:00Z",
     ...overrides,
   };
@@ -42,7 +42,7 @@ describe("EventList", () => {
     const upcomingEvent = createEvent({
       id: "1",
       title: "Future Event",
-      dateTime: "2025-06-20T10:00:00Z",
+      startDate: "2025-06-20T10:00:00Z",
     });
 
     render(<EventList events={[upcomingEvent]} loading={false} error={null} />);
@@ -53,7 +53,7 @@ describe("EventList", () => {
     const pastEvent = createEvent({
       id: "1",
       title: "Past Event",
-      dateTime: "2025-05-01T10:00:00Z",
+      startDate: "2025-05-01T10:00:00Z",
     });
 
     render(<EventList events={[pastEvent]} loading={false} error={null} />);
@@ -62,8 +62,8 @@ describe("EventList", () => {
 
   it("does not show past events", () => {
     const events = [
-      createEvent({ id: "1", title: "Past Event", dateTime: "2025-05-01T10:00:00Z" }),
-      createEvent({ id: "2", title: "Future Event", dateTime: "2025-07-01T10:00:00Z" }),
+      createEvent({ id: "1", title: "Past Event", startDate: "2025-05-01T10:00:00Z" }),
+      createEvent({ id: "2", title: "Future Event", startDate: "2025-07-01T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -73,8 +73,8 @@ describe("EventList", () => {
 
   it("shows all events when no category filter is selected", () => {
     const events = [
-      createEvent({ id: "1", title: "Concert", category: "musikk", dateTime: "2025-06-20T10:00:00Z" }),
-      createEvent({ id: "2", title: "Football", category: "kino", dateTime: "2025-06-21T10:00:00Z" }),
+      createEvent({ id: "1", title: "Concert", category: "musikk", startDate: "2025-06-20T10:00:00Z" }),
+      createEvent({ id: "2", title: "Football", category: "kino", startDate: "2025-06-21T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -91,7 +91,7 @@ describe("EventList", () => {
     const pastEvent = createEvent({
       id: "1",
       title: "Past Event",
-      dateTime: "2025-05-01T10:00:00Z",
+      startDate: "2025-05-01T10:00:00Z",
     });
 
     render(<EventList events={[pastEvent]} loading={false} error={null} />);
@@ -99,7 +99,7 @@ describe("EventList", () => {
   });
 
   it("does not show Favoritter section by default", () => {
-    const event = createEvent({ id: "1", title: "Future Event", dateTime: "2025-06-20T10:00:00Z" });
+    const event = createEvent({ id: "1", title: "Future Event", startDate: "2025-06-20T10:00:00Z" });
 
     render(<EventList events={[event]} loading={false} error={null} />);
     expect(screen.queryByRole("heading", { name: "Favoritter" })).not.toBeInTheDocument();
@@ -109,8 +109,8 @@ describe("EventList", () => {
     localStorage.setItem("broarr-favorites", JSON.stringify(["past-1"]));
 
     const events = [
-      createEvent({ id: "past-1", title: "Past Event", dateTime: "2025-05-01T10:00:00Z" }),
-      createEvent({ id: "future-1", title: "Future Event", dateTime: "2025-06-20T10:00:00Z" }),
+      createEvent({ id: "past-1", title: "Past Event", startDate: "2025-05-01T10:00:00Z" }),
+      createEvent({ id: "future-1", title: "Future Event", startDate: "2025-06-20T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -120,7 +120,7 @@ describe("EventList", () => {
 });
 
 function createFutureEvent(overrides: Partial<Event> = {}): Event {
-  return createEvent({ dateTime: "2099-06-20T10:00:00Z", ...overrides });
+  return createEvent({ startDate: "2099-06-20T10:00:00Z", ...overrides });
 }
 
 describe("EventList favorites", () => {
@@ -156,7 +156,7 @@ describe("EventList favorites", () => {
 
     const events = [
       createFutureEvent({ id: "future-1", title: "Konsert", category: "musikk" }),
-      createFutureEvent({ id: "future-2", title: "Fotball", category: "kino", dateTime: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "future-2", title: "Fotball", category: "kino", startDate: "2099-06-21T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -207,7 +207,7 @@ describe("EventList category filtering", () => {
     const user = userEvent.setup();
     const events = [
       createFutureEvent({ id: "1", title: "Concert", category: "musikk" }),
-      createFutureEvent({ id: "2", title: "Football", category: "kino", dateTime: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "2", title: "Football", category: "kino", startDate: "2099-06-21T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -222,7 +222,7 @@ describe("EventList category filtering", () => {
     const user = userEvent.setup();
     const events = [
       createFutureEvent({ id: "1", title: "Concert", category: "musikk" }),
-      createFutureEvent({ id: "2", title: "Football", category: "kino", dateTime: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "2", title: "Football", category: "kino", startDate: "2099-06-21T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -237,7 +237,7 @@ describe("EventList category filtering", () => {
     const user = userEvent.setup();
     const events = [
       createFutureEvent({ id: "1", title: "Concert", category: "musikk" }),
-      createFutureEvent({ id: "2", title: "Football", category: "kino", dateTime: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "2", title: "Football", category: "kino", startDate: "2099-06-21T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -260,7 +260,7 @@ describe("EventList search filtering", () => {
     const user = userEvent.setup();
     const events = [
       createFutureEvent({ id: "1", title: "Konsert i kulturhuset" }),
-      createFutureEvent({ id: "2", title: "Fotballkamp", dateTime: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "2", title: "Fotballkamp", startDate: "2099-06-21T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -275,7 +275,7 @@ describe("EventList search filtering", () => {
     const user = userEvent.setup();
     const events = [
       createFutureEvent({ id: "1", title: "Event A", description: "Jazz i parken" }),
-      createFutureEvent({ id: "2", title: "Event B", description: "Håndball", dateTime: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "2", title: "Event B", description: "Håndball", startDate: "2099-06-21T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -290,7 +290,7 @@ describe("EventList search filtering", () => {
     const user = userEvent.setup();
     const events = [
       createFutureEvent({ id: "1", title: "Event A", location: "Brønnøy kulturhus" }),
-      createFutureEvent({ id: "2", title: "Event B", location: "Salhus arena", dateTime: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "2", title: "Event B", location: "Salhus arena", startDate: "2099-06-21T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -318,7 +318,7 @@ describe("EventList search filtering", () => {
     const user = userEvent.setup();
     const events = [
       createFutureEvent({ id: "1", title: "Konsert" }),
-      createFutureEvent({ id: "2", title: "Fotballkamp", dateTime: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "2", title: "Fotballkamp", startDate: "2099-06-21T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);
@@ -335,8 +335,8 @@ describe("EventList search filtering", () => {
     const user = userEvent.setup();
     const events = [
       createFutureEvent({ id: "1", title: "Jazzkonsert", category: "musikk" }),
-      createFutureEvent({ id: "2", title: "Jazzfestival", category: "annet", dateTime: "2099-06-21T10:00:00Z" }),
-      createFutureEvent({ id: "3", title: "Fotballkamp", category: "kino", dateTime: "2099-06-22T10:00:00Z" }),
+      createFutureEvent({ id: "2", title: "Jazzfestival", category: "annet", startDate: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "3", title: "Fotballkamp", category: "kino", startDate: "2099-06-22T10:00:00Z" }),
     ];
 
     render(<EventList events={events} loading={false} error={null} />);

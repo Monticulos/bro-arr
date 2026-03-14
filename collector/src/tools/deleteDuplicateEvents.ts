@@ -32,16 +32,16 @@ export function hasSimilarTitle(titleA: string, titleB: string): boolean {
   return matchCount / shorterWords.length >= SIMILARITY_THRESHOLD;
 }
 
-function hasCloseTime(dateTimeA: string, dateTimeB: string): boolean {
+function hasCloseTime(startDateA: string, startDateB: string): boolean {
   const timeDifference = Math.abs(
-    new Date(dateTimeA).getTime() - new Date(dateTimeB).getTime()
+    new Date(startDateA).getTime() - new Date(startDateB).getTime()
   );
   return timeDifference < DUPLICATE_BOUNDARY_MS;
 }
 
 export function isDuplicate(apifyEvent: Event, puppeteerEvent: Event): boolean {
   return (
-    hasCloseTime(apifyEvent.dateTime, puppeteerEvent.dateTime) &&
+    hasCloseTime(apifyEvent.startDate, puppeteerEvent.startDate) &&
     hasSimilarTitle(apifyEvent.title, puppeteerEvent.title)
   );
 }

@@ -7,7 +7,7 @@
 - Analytics
 - Consider DDD. E.g extracting upsertEvents and deleteEvents logic to a repository
 - Download calendar event (ICS or similar)
-- Consider which event schemas are needed, and which we can throw away. Use https://schema.org/Event as baseline?
+- Consider which event schemas are needed, and which we can throw away. Use https://schema.org/Event as baseline? Remember that we will likely implement fullcalendar-react later
 
 # Low priority
 - Evals for prompts/llm models

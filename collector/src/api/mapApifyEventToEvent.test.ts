@@ -33,7 +33,7 @@ describe("mapApifyEventToEvent", () => {
       title: "Rockekonsert",
       description: "En fin konsert",
       category: "musikk",
-      dateTime: "2026-03-15T19:00:00Z",
+      startDate: "2026-03-15T19:00:00Z",
       location: "Kred",
       url: "https://example.com/event",
       collectedAt: "2026-03-01T12:00:00.000Z",

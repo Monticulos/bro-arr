@@ -76,7 +76,7 @@ export default function EventList({ events, loading, error }: Props) {
           {monthGroups.map(({ monthKey, events: groupEvents }) => (
             <li key={monthKey}>
               <EventSection
-                heading={formatMonthHeading(groupEvents[0].dateTime)}
+                heading={formatMonthHeading(groupEvents[0].startDate)}
                 events={groupEvents}
                 isFavorited={isFavorite}
                 onToggleFavorite={toggleFavorite}
