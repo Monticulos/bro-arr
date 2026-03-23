@@ -1,66 +1,6 @@
 {
-  "updatedAt": "2026-03-21T04:10:45.396Z",
+  "updatedAt": "2026-03-23T04:35:25.853Z",
   "events": [
-    {
-      "title": "Minner Om Ham",
-      "description": "Minner Om Ham",
-      "category": "kino",
-      "startDate": "2026-03-20T17:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-03-20T17:00:00.000Z",
-      "collectedAt": "2026-03-21T04:10:05.279Z"
-    },
-    {
-      "id": "1592827455088754",
-      "title": "Mat og vinkveld med Erik Strugstad",
-      "description": "Kred arrangerer en spennende mat og vinkveld med Erik Strugstad. Kom å lær litt om vin, samtidig som du får deg et godt måltid. Ingen forkunnskaper om vin er nødvendig, her skal vi bare nyte og kose oss. \n\nDenne kvelden serverer vi en 4-retters meny med 5 viner til. \nAperitif - Krostini med røkelakskrem\nForrett - Husets fiskesuppe med grissini\nHovedrett - Sliders, to forskjellige smaker akkompagnert av baconkroketter. \nDessert: Sjokoladefondant med bringebærsorbet. \n\nErik er Sommelier og innehaver av Introductory Sommelier-sertifikat fra Court of Master Sommeliers.\nTidligere Head Sommelier på Britannia, vinansvarlig ved flere av Trondheims beste restauranter, tidligere Norges yngste vinkelner, første vinner av Jeunes Sommeliers Norge. Han drev også tidligere Levanch, Norges største private vinklubb. \n\nPris per pers 995kr\n(4-retter og 5 viner er inkludert). \n\nPåmelding til post@cafekred.no eller 91848747\n",
-      "category": "mat-og-drikke",
-      "startDate": "2026-03-20T18:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1592827455088754/",
-      "collectedAt": "2026-03-20T04:22:07.226Z"
-    },
-    {
-      "id": "803770719136708",
-      "title": "Distriktsmesterskap på Trekkspill 2026",
-      "description": "Det nærmer seg distriktsmesterskap på trekkspill!\nVi jobber nå med å få til arrangementet i Brønnøysund helga 20.–22. mars 2026.\n\nHer på siden vil vi fortløpende legge ut informasjon om arrangementet.\n\nHjelp oss å spre budskapet!\nInviter gjerne trekkspillvenner og andre interesserte til å bli med på ei trivelig helg i Brønnøysund.\n\nInvitasjoner med mer informasjon – blant annet om overnatting og rabattkode – sendes ut på e-post til dem vi har e-postadresse til i løpet av kort tid. Samme informasjon vil også bli lagt ut her på siden.\n\nVelkommen til ei hyggelig og musikalsk helg i Brønnøysund!\n\nNB: Det tas forbehold om tilstrekkelig deltakelse for gjennomføring av arrangementet.",
-      "category": "musikk",
-      "startDate": "2026-03-20T19:00:00.000Z",
-      "location": "Brønnøysund samfunnshus",
-      "url": "https://www.facebook.com/events/803770719136708/",
-      "collectedAt": "2026-03-20T04:22:03.439Z"
-    },
-    {
-      "title": "Ready Or Not 2: Here I Come",
-      "description": "Ready Or Not 2: Here I Come",
-      "category": "kino",
-      "startDate": "2026-03-20T19:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-03-20T19:00:00.000Z",
-      "collectedAt": "2026-03-21T04:10:05.279Z"
-    },
-    {
-      "id": "1447165753569546",
-      "title": "AllmenQuiz på Kred",
-      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\n\nQuizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie: \n22. januar, 29. januar, 5. februar, 12. februar, 19. februar, 26, februar, 12. mars, 21. mars, 26. mars, 9. april, 16. april, 23. april, 30. april, 7. mai, 14. mai, 21. mai og 28. mai. ",
-      "category": "quiz",
-      "startDate": "2026-03-21T19:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1447165753569546/",
-      "collectedAt": "2026-03-20T04:22:07.710Z"
-    },
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Brønnøy kirke",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-03-22T10:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=629b5fec-acb3-43e9-b6be-e7771a0841ca&OccurenceId=629b5fec-acb3-43e9-b6be-e7771a0841ca",
-      "id": "Brønnøy-kirke-2026-03-22T10:00:00.000Z",
-      "collectedAt": "2026-03-19T04:28:36.851Z"
-    },
     {
       "id": "1446387870323878",
       "title": "Årsmøte",
@@ -89,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-24T17:00:00.000Z",
-      "collectedAt": "2026-03-21T04:10:05.279Z"
+      "collectedAt": "2026-03-23T04:34:44.960Z"
     },
     {
       "title": "Project Hail Mary",
@@ -99,17 +39,17 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-24T19:00:00.000Z",
-      "collectedAt": "2026-03-21T04:10:05.279Z"
+      "collectedAt": "2026-03-23T04:34:44.960Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Barn og unge - Kefas",
+      "description": "Trille-Tralle-Treff (babysang)",
       "category": "barn-og-ungdom",
       "startDate": "2026-03-25T10:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=22c53a4a-b808-4114-98d3-5f805277927b",
       "id": "Brønnøy-kirke-2026-03-25T10:00:00.000Z",
-      "collectedAt": "2026-03-19T04:28:36.851Z"
+      "collectedAt": "2026-03-23T04:35:25.852Z"
     },
     {
       "id": "1294529529407941",
@@ -229,7 +169,7 @@
       "location": "Kred",
       "url": "https://www.cafekred.no/b/kreds-paaskemusikkbingo---langfredag-3-april-kl-2100",
       "id": "Kred-2026-04-03T19:00:00.000Z",
-      "collectedAt": "2026-03-21T04:10:16.848Z"
+      "collectedAt": "2026-03-23T04:34:55.665Z"
     },
     {
       "id": "1867508743969239",
