@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-03-23T04:35:25.853Z",
+  "updatedAt": "2026-03-25T04:26:52.132Z",
   "events": [
-    {
-      "id": "1446387870323878",
-      "title": "Årsmøte",
-      "description": "Alle er velkommen på årsmøte! Oppsummering av året som har gått og planer for neste år!",
-      "category": "kommunalt",
-      "startDate": "2026-03-23T17:00:00.000Z",
-      "location": "Felleskjøpet Brønnøysund (Brønnøysund)",
-      "url": "https://www.facebook.com/events/1446387870323878/",
-      "collectedAt": "2026-03-20T04:22:06.222Z"
-    },
-    {
-      "title": "Barseltreff på bibliotek",
-      "description": "Barseltreff på bibliotek",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-03-24T10:00:00.000Z",
-      "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/events/cdbf19a0-36ae-4621-b229-1927c4c002a1",
-      "id": "Brønnøy-bibliotek-2026-03-24T10:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:11.243Z"
-    },
     {
       "title": "GOAT - Drøm Stort",
       "description": "GOAT - Drøm Stort",
@@ -29,7 +9,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-24T17:00:00.000Z",
-      "collectedAt": "2026-03-23T04:34:44.960Z"
+      "collectedAt": "2026-03-25T04:26:16.366Z"
     },
     {
       "title": "Project Hail Mary",
@@ -39,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-24T19:00:00.000Z",
-      "collectedAt": "2026-03-23T04:34:44.960Z"
+      "collectedAt": "2026-03-25T04:26:16.366Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -132,6 +112,16 @@
       "collectedAt": "2026-03-08T15:20:11.243Z"
     },
     {
+      "title": "Trille-Tralle-Treff (babysang)",
+      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-04-01T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=2fa33af7-ae48-45e3-a883-2b078862dc2d",
+      "id": "Brønnøy-kirke-2026-04-01T09:00:00.000Z",
+      "collectedAt": "2026-03-25T04:26:52.131Z"
+    },
+    {
       "id": "2473214603114700",
       "title": "Onsdagsquiz på Den Andre Puben 🥳",
       "description": "Hver onsdag 20:00 AllmennQuiz hos oss på Den andre Puben🤓 Gratis å delta, og vinneren får velge gjestekategori til neste quiz pluss en liten premie🥳 ",
@@ -169,7 +159,7 @@
       "location": "Kred",
       "url": "https://www.cafekred.no/b/kreds-paaskemusikkbingo---langfredag-3-april-kl-2100",
       "id": "Kred-2026-04-03T19:00:00.000Z",
-      "collectedAt": "2026-03-23T04:34:55.665Z"
+      "collectedAt": "2026-03-25T04:26:24.430Z"
     },
     {
       "id": "1867508743969239",
@@ -192,6 +182,26 @@
       "collectedAt": "2026-03-08T15:20:11.243Z"
     },
     {
+      "title": "Trille-Tralle-Treff (babysang)",
+      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Brønnøy kirke",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-04-08T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7d24a61d-c07d-4d40-a9ab-8820ba83a1cd&OccurenceId=7d24a61d-c07d-4d40-a9ab-8820ba83a1cd",
+      "id": "Brønnøy-kirke-2026-04-08T09:00:00.000Z",
+      "collectedAt": "2026-03-25T04:26:52.131Z"
+    },
+    {
+      "title": "Lørdagskafé",
+      "description": "Lørdagskafé - Kefas",
+      "category": "mat-og-drikke",
+      "startDate": "2026-04-11T10:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=5a83111d-428e-48e5-a7c9-665d61ceabae&OccurenceId=5a83111d-428e-48e5-a7c9-665d61ceabae",
+      "id": "Brønnøy-kirke-2026-04-11T10:00:00.000Z",
+      "collectedAt": "2026-03-25T04:26:52.131Z"
+    },
+    {
       "id": "1214003247388441",
       "title": "Konsert med JONAS KNUTSSON og OBROY - distriktsmusikerne i Brønnøy",
       "description": "I to uker i april kommer den svenske saksofonisten Jonas Knutsson til Brønnøysund for å spille med lokale musikere, og til denne konserten er det med OBROY.\nJonas Knutsson har i årtier vært, og er fortsatt, en sentral og trendsettende musiker innen svensk jazz og folkemusikk. Vi i Brønnøysund har vært så heldige å få samarbeidet med han i over 20 år. \nPå denne konserten skal det spilles musikk av Jonas Knutsson og av OBROYs gitarist Ole Bjørn Nygård Berg. Med Jonas sine røtter i jazz og folkemusikk og Ole Bjørns røtter i rocken blir dette en spennende blanding med variert musikk. \n\nJonas Knutsson - saksofoner\nOle Bjørn Nygård Berg - gitarer\nRoy Bjørnli - slagverk\nSanna Frøshaug - fløyte\nEllen Gullhaug - trompet\nHans Kristian Edvardsen - tuba\n\nFORSAMLINGSLOKALET - Brønnøysund\nlørdag 11. april kl. 19.00\nBilletter: kr. 250,-",
@@ -210,6 +220,16 @@
       "url": "https://bronnoybibliotek.no/arrangementer#/events/e08bf792-51f2-401b-b98a-96c5ba64c428",
       "id": "Brønnøy-bibliotek-2026-04-14T09:00:00.000Z",
       "collectedAt": "2026-03-08T15:20:11.243Z"
+    },
+    {
+      "title": "Trille-Tralle-Treff (babysang)",
+      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-04-15T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=e00b8396-b259-4e42-8684-0bb4a1cb5b83",
+      "id": "Brønnøy-kirke-2026-04-15T09:00:00.000Z",
+      "collectedAt": "2026-03-25T04:26:52.131Z"
     },
     {
       "id": "1440347590904501",
@@ -262,6 +282,16 @@
       "collectedAt": "2026-03-18T04:29:56.583Z"
     },
     {
+      "title": "Trille-Tralle-Treff (babysang)",
+      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-04-22T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=0785b9ea-8866-4eab-b25f-1046bd9f9581",
+      "id": "Brønnøy-kirke-2026-04-22T09:00:00.000Z",
+      "collectedAt": "2026-03-25T04:26:52.131Z"
+    },
+    {
       "id": "1989127691666557",
       "title": "Brønnøysund- Kveli Rånes Bremseth SHOW - Trøndelag du STORE tid",
       "description": "Trøndelag du STORE tid – Festen fortsetter også i 2026!\n\n«Trøndelag du STORE tid» er showet som legger den trønderske beskjedenheten til side og presenterer alt vi trøndere har å være stolte av helt siden steinalderen og fram til nå. Egenskrevet musikk og tekst veves sammen med trønderske allsangfavoritter som får stemningen helt i taket.\n\nDet startet som et VM-vorspiel og fylte åtte saler i Olavshallen i februar 2025. Avisanmelderne var samstemt begeistret. Trønder-Avisa ga showet 20 i stil og Adressa delte ut den første gullmedaljen i ski-VM til showet. De ga samtidig oppfordringen om at dette måtte lanseres som et godt nachspiel.\nVi tok oppfordringen på strak arm, og publikum strømmet til. Morsomme nachspiel har som kjent en tendens til å vare lenger enn opprinnelig planlagt. Etter 27 forestillinger i hjemfylket høsten 2025, har nærmere 10 000 personer kvittert med latterbyger, allsang og taktfast applaus.\n\nFesten fortsetter nå også i 2026!\nShowet rulles nå ut både i og utenfor Trøndelags grenser.\nFlere steder på høstturneen ble utsolgt, så det blir også en del ekstraforestillinger.\n\nHøsten 2025 ble Harald Morten Bremseth lagt inn på sykehus og det var en stund usikkert om vi kunne fullføre turneen.\nVi fikk i fellesskap justert på forestillingen og fant vikarer i egne rekker (les: kostymelager) og dermed slapp vi å avlyse. Bremseth bidro alikevel sterkt på skjerm i forestilingen.\nFram til Harald Morten er friskmeldt vil alle forestillinger spilles som planlagt med Kveli & Rånes på scenen og Bremseth på skjerm.\n\nForestillingen varer i ca 85 min.\n",
@@ -300,6 +330,26 @@
       "url": "https://bronnoybibliotek.no/arrangementer#/events/f8ca5662-6d4e-4012-94e5-0f5a647c55b9",
       "id": "Brønnøy-bibliotek-2026-04-28T09:00:00.000Z",
       "collectedAt": "2026-03-18T04:29:56.583Z"
+    },
+    {
+      "title": "Trille-Tralle-Treff (babysang)",
+      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-04-29T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=a859d2db-09ec-45e4-9848-59e25c440781",
+      "id": "Brønnøy-kirke-2026-04-29T09:00:00.000Z",
+      "collectedAt": "2026-03-25T04:26:52.131Z"
+    },
+    {
+      "title": "Gudstjeneste",
+      "description": "Gudstjeneste - Sykehjemmets kapell",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-04-30T09:30:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ca944efb-d142-46b5-aa95-8404c24d9c16&OccurenceId=ca944efb-d142-46b5-aa95-8404c24d9c16",
+      "id": "Brønnøy-kirke-2026-04-30T09:30:00.000Z",
+      "collectedAt": "2026-03-25T04:26:52.131Z"
     },
     {
       "title": "Barseltreff på bibliotek",
