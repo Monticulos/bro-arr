@@ -1,36 +1,6 @@
 {
-  "updatedAt": "2026-03-27T04:39:09.675Z",
+  "updatedAt": "2026-03-29T04:43:09.972Z",
   "events": [
-    {
-      "title": "AllmenQuiz",
-      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert. Quizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før. Det blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.",
-      "category": "quiz",
-      "startDate": "2026-03-26T19:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.cafekred.no/b/allmenquiz---21-mars-kl-2000",
-      "id": "Kred-2026-03-26T19:00:00.000Z",
-      "collectedAt": "2026-03-27T04:38:42.619Z"
-    },
-    {
-      "id": "1471708091343939",
-      "title": "AFTERWORK PÅ SVANG: CHILI CON CARNE",
-      "description": "Bli med oss hver fredag året rundt på \"afterwork\". SVANG er plassen å være for deg som liker å kickstarte helgen med god stemning, street food og smaker fra hele verden, herlig musikk og vennlige priser på både mat og drikke.\nKom å feire på helg på Svang. Ta med en venn eller ti og starte helgen med stil.\nFra kl. 15 - 18, ingen bordbestilling og til vi er tømt med første man til mølla prinsippet.\nDette er konsept som er gøyal, fargerik og som vi streker oss langt for at det skal være vennlig mot pængboka 😃 Vi ser frem å møte dere på Svang, hver fredag!!\nPris: 220,-",
-      "category": "mat-og-drikke",
-      "startDate": "2026-03-27T14:00:00.000Z",
-      "location": "Svang",
-      "url": "https://www.facebook.com/events/1471708091343939/",
-      "collectedAt": "2026-03-20T04:22:11.043Z"
-    },
-    {
-      "id": "1535081147792962",
-      "title": "Christer Torjussen: Stand Up Spesial",
-      "description": "Christer Torjussen: Stand Up Spesial\n\nVelkommen til en kveld med en av landets mest rutinerte komikere! Christer er en veteran i humorfaget med over 25 års fartstid på standupscenen og har treffsikker humor, høy gjenkjennelsesfaktor og en god porsjon selvironi som varemerke. Som en anmelder skriver: Torjussen er den rene mitraljøsen, og poengene renner ut i raskt tempo!\n\nI tillegg til å være fast inventar på Latter i Oslo har han turnert konstant siden debuten i 1999 og har tre soloshow på merittlisten, blant annet “Drittpappa” som fikk strålende mottagelse og flere seksere på terningen, etterfulgt av «Idiot» og «MidtlivsChrister». Han gikk også viralt på nettet under pandemien med «Tid for Bok» hvor han byttet ut ord fra fagbøker og fikk etterhvert millioner med visninger. \n\nTorjussen har også mottatt Komiprisen for beste standup, samt den prestisjetunge Stå Opp-prisen.",
-      "category": "kunst-og-kultur",
-      "startDate": "2026-03-27T20:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1535081147792962/",
-      "collectedAt": "2026-03-20T04:22:04.882Z"
-    },
     {
       "id": "1148694947278358",
       "title": "TOUR DE SKREI 🐟✨",
@@ -50,6 +20,26 @@
       "location": "Kred",
       "url": "https://www.facebook.com/events/26192453483722736/",
       "collectedAt": "2026-03-20T04:22:12.943Z"
+    },
+    {
+      "title": "Gudstjeneste",
+      "description": "Gudstjeneste - Brønnøy kirke",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-03-29T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=e0a154ea-fa5b-464e-8c30-b4975cee43b6&OccurenceId=e0a154ea-fa5b-464e-8c30-b4975cee43b6",
+      "id": "Brønnøy-kirke-2026-03-29T09:00:00.000Z",
+      "collectedAt": "2026-03-29T04:43:09.971Z"
+    },
+    {
+      "title": "Gudstjeneste",
+      "description": "Gudstjeneste - Velfjord kirke",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-03-29T14:00:00.000Z",
+      "location": "Velfjord kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=536c54db-cfce-40b6-8685-f0e950155b61&OccurenceId=536c54db-cfce-40b6-8685-f0e950155b61",
+      "id": "Brønnøy-kirke-2026-03-29T14:00:00.000Z",
+      "collectedAt": "2026-03-29T04:43:09.971Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -109,7 +99,7 @@
       "location": "Kred",
       "url": "https://www.cafekred.no/b/kreds-paaskemusikkbingo---langfredag-3-april-kl-2100",
       "id": "Kred-2026-04-03T19:00:00.000Z",
-      "collectedAt": "2026-03-27T04:38:42.620Z"
+      "collectedAt": "2026-03-29T04:42:35.641Z"
     },
     {
       "title": "DJ R3DO",
@@ -119,7 +109,7 @@
       "location": "Kred",
       "url": "https://www.cafekred.no/b/dj-r3do---langfredag-3-april-kl-2330",
       "id": "Kred-2026-04-03T21:30:00.000Z",
-      "collectedAt": "2026-03-27T04:38:42.620Z"
+      "collectedAt": "2026-03-29T04:42:35.641Z"
     },
     {
       "id": "1867508743969239",
@@ -220,6 +210,16 @@
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1468446568207835/",
       "collectedAt": "2026-03-20T04:22:12.488Z"
+    },
+    {
+      "title": "New Orbits",
+      "description": "New Orbits - Lørdag 18. april, kl. 19.00",
+      "category": "musikk",
+      "startDate": "2026-04-18T17:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.cafekred.no/b/new-orbits---loerdag-18-april-kl-1900",
+      "id": "Kred-2026-04-18T17:00:00.000Z",
+      "collectedAt": "2026-03-29T04:42:35.642Z"
     },
     {
       "id": "866619559201849",
