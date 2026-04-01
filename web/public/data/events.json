@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-03-31T04:42:30.351Z",
+  "updatedAt": "2026-04-01T04:52:56.541Z",
   "events": [
-    {
-      "title": "Barseltreff på bibliotek",
-      "description": "Barseltreff på bibliotek",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-03-31T09:00:00.000Z",
-      "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/events/7220a075-7e96-4e78-8cc9-5e680a7fdd01",
-      "id": "Brønnøy-bibliotek-2026-03-31T09:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:11.243Z"
-    },
     {
       "title": "Trille-Tralle-Treff (babysang)",
       "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
@@ -49,7 +39,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=aadb02d1-dd48-431d-a937-6d59c08e5e77&OccurenceId=aadb02d1-dd48-431d-a937-6d59c08e5e77",
       "id": "Brønnøy-kirke-2026-04-02T14:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "title": "Skjærtorsdagsgudstjeneste",
@@ -59,7 +49,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7970a02a-b67c-40a2-8495-bf567af027d3&OccurenceId=7970a02a-b67c-40a2-8495-bf567af027d3",
       "id": "Brønnøy-kirke-2026-04-02T16:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "id": "697852660015589",
@@ -79,7 +69,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ebfa3b4f-d4a0-49bf-bf85-e2c88e80bd11&OccurenceId=ebfa3b4f-d4a0-49bf-bf85-e2c88e80bd11",
       "id": "Brønnøy-kirke-2026-04-03T09:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "title": "Kred's Påskemusikkbingo",
@@ -89,7 +79,7 @@
       "location": "Kred",
       "url": "https://www.cafekred.no/b/kreds-paaskemusikkbingo---langfredag-3-april-kl-2100",
       "id": "Kred-2026-04-03T19:00:00.000Z",
-      "collectedAt": "2026-03-31T04:41:52.847Z"
+      "collectedAt": "2026-04-01T04:52:16.574Z"
     },
     {
       "title": "DJ R3DO",
@@ -99,7 +89,7 @@
       "location": "Kred",
       "url": "https://www.cafekred.no/b/dj-r3do---langfredag-3-april-kl-2330",
       "id": "Kred-2026-04-03T21:30:00.000Z",
-      "collectedAt": "2026-03-31T04:41:52.847Z"
+      "collectedAt": "2026-04-01T04:52:16.574Z"
     },
     {
       "id": "1867508743969239",
@@ -119,7 +109,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=9487f04d-5ca8-472c-904e-6fce665ade51&OccurenceId=9487f04d-5ca8-472c-904e-6fce665ade51",
       "id": "Brønnøy-kirke-2026-04-05T09:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "title": "Gudstjeneste",
@@ -129,37 +119,37 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=32bde561-217a-4f66-98b3-84a5623d47c4&OccurenceId=32bde561-217a-4f66-98b3-84a5623d47c4",
       "id": "Brønnøy-kirke-2026-04-05T14:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-07T09:00:00.000Z",
-      "location": "Brønnøy bibliotek",
+      "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/a727dc35-bf3b-4cc7-9e0e-9779c49ecc16",
       "id": "Brønnøy-bibliotek-2026-04-07T09:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:11.243Z"
+      "collectedAt": "2026-04-01T04:52:35.673Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Brønnøy kirke",
+      "description": "Barn og unge - Brønnøy kirke",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-08T09:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7d24a61d-c07d-4d40-a9ab-8820ba83a1cd&OccurenceId=7d24a61d-c07d-4d40-a9ab-8820ba83a1cd",
       "id": "Brønnøy-kirke-2026-04-08T09:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "title": "Lørdagskafé",
-      "description": "Lørdagskafé - Kefas",
+      "description": "Kefas",
       "category": "mat-og-drikke",
       "startDate": "2026-04-11T10:00:00.000Z",
-      "location": "Kred",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=5a83111d-428e-48e5-a7c9-665d61ceabae&OccurenceId=5a83111d-428e-48e5-a7c9-665d61ceabae",
       "id": "Brønnøy-kirke-2026-04-11T10:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "id": "1214003247388441",
@@ -176,30 +166,50 @@
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-14T09:00:00.000Z",
-      "location": "Brønnøy bibliotek",
+      "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/e08bf792-51f2-401b-b98a-96c5ba64c428",
       "id": "Brønnøy-bibliotek-2026-04-14T09:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:11.243Z"
+      "collectedAt": "2026-04-01T04:52:35.673Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "description": "Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-15T09:00:00.000Z",
-      "location": "Kred",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=e00b8396-b259-4e42-8684-0bb4a1cb5b83",
       "id": "Brønnøy-kirke-2026-04-15T09:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
+    },
+    {
+      "title": "Direkte fra Litteraturhuset: Antony Beevor",
+      "description": "Direkte fra Litteraturhuset: Antony Beevor",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-04-15T17:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/439e97c6-58fa-45bf-8297-04964213c0c9",
+      "id": "Brønnøy-bibliotek-2026-04-15T17:00:00.000Z",
+      "collectedAt": "2026-04-01T04:52:35.673Z"
+    },
+    {
+      "title": "Formiddagsfilmen: Giganten (2005)",
+      "description": "Formiddagsfilmen: Giganten (2005)",
+      "category": "kino",
+      "startDate": "2026-04-16T11:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/4b87da20-859b-483a-9e7d-42f3bd9a04a0",
+      "id": "Brønnøy-bibliotek-2026-04-16T11:00:00.000Z",
+      "collectedAt": "2026-04-01T04:52:35.673Z"
     },
     {
       "title": "Gudstjeneste med aktive konfirmanter",
-      "description": "Gudstjeneste med aktive konfirmanter - Brønnøy kirke",
+      "description": "Konfirmanter, Gudstjeneste - Brønnøy kirke",
       "category": "tro-og-livssyn",
       "startDate": "2026-04-16T16:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=aa623eb4-6a5c-4b70-8e45-ce6d8a935e1f&OccurenceId=aa623eb4-6a5c-4b70-8e45-ce6d8a935e1f",
       "id": "Brønnøy-kirke-2026-04-16T16:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "id": "1440347590904501",
@@ -233,23 +243,23 @@
     },
     {
       "title": "New Orbits",
-      "description": "New Orbits - Lørdag 18. april, kl. 19.00",
+      "description": "New Orbits kommer til Kred med sin musikk.",
       "category": "musikk",
       "startDate": "2026-04-18T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.cafekred.no/b/new-orbits---loerdag-18-april-kl-1900",
       "id": "Kred-2026-04-18T17:00:00.000Z",
-      "collectedAt": "2026-03-31T04:41:52.847Z"
+      "collectedAt": "2026-04-01T04:52:16.574Z"
     },
     {
-      "title": "Gudstjeneste Med menighetens årsmøte",
-      "description": "Gudstjeneste Med menighetens årsmøte - Brønnøy kirke",
+      "title": "Gudstjeneste med menighetens årsmøte",
+      "description": "Gudstjeneste - Brønnøy kirke",
       "category": "tro-og-livssyn",
       "startDate": "2026-04-19T09:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=c97c6e97-b0c5-4a14-8dc7-5bc0abf46c8e&OccurenceId=c97c6e97-b0c5-4a14-8dc7-5bc0abf46c8e",
       "id": "Brønnøy-kirke-2026-04-19T09:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "id": "866619559201849",
@@ -262,24 +272,34 @@
       "collectedAt": "2026-03-14T04:14:13.668Z"
     },
     {
-      "title": "Barseltreff på bibliotek",
-      "description": "Barseltreff på bibliotek",
-      "category": "barn-og-ungdom",
+      "title": "Bærekraftsuka 2026: Plantebytting og frøbibliotek",
+      "description": "Bærekraftsuka 2026: Plantebytting og frøbibliotek",
+      "category": "annet",
       "startDate": "2026-04-21T09:00:00.000Z",
-      "location": "Brønnøy bibliotek",
-      "url": "https://bronnoybibliotek.no/arrangementer#/events/03281e05-5f15-4da1-9165-07e974c5b1d5",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/1ee4bc67-bc1d-4ab8-b421-bb3596868c79",
       "id": "Brønnøy-bibliotek-2026-04-21T09:00:00.000Z",
-      "collectedAt": "2026-03-18T04:29:56.583Z"
+      "collectedAt": "2026-04-01T04:52:35.673Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "description": "Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-22T09:00:00.000Z",
-      "location": "Kred",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=0785b9ea-8866-4eab-b25f-1046bd9f9581",
       "id": "Brønnøy-kirke-2026-04-22T09:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
+    },
+    {
+      "title": "Bærekraftsuka 2026: Lundefjell – egget som forsvant (2023)",
+      "description": "Bærekraftsuka 2026: Lundefjell – egget som forsvant (2023)",
+      "category": "kino",
+      "startDate": "2026-04-23T14:30:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/57e5cb16-1502-4ec0-b3cc-9e51231b78bd",
+      "id": "Brønnøy-bibliotek-2026-04-23T14:30:00.000Z",
+      "collectedAt": "2026-04-01T04:52:35.673Z"
     },
     {
       "id": "1989127691666557",
@@ -319,7 +339,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=6363cff0-47b1-4b68-9763-60ec8c5a831d&OccurenceId=6363cff0-47b1-4b68-9763-60ec8c5a831d",
       "id": "Brønnøy-kirke-2026-04-26T09:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -333,13 +353,13 @@
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "description": "Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-29T09:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=a859d2db-09ec-45e4-9848-59e25c440781",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-9a0daaf0366&OccurenceId=a859d2db-09ec-45e4-9848-59e25c440781",
       "id": "Brønnøy-kirke-2026-04-29T09:00:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "title": "Gudstjeneste",
@@ -349,7 +369,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ca944efb-d142-46b5-aa95-8404c24d9c16&OccurenceId=ca944efb-d142-46b5-aa95-8404c24d9c16",
       "id": "Brønnøy-kirke-2026-04-30T09:30:00.000Z",
-      "collectedAt": "2026-03-31T04:42:30.350Z"
+      "collectedAt": "2026-04-01T04:52:56.540Z"
     },
     {
       "title": "Barseltreff på bibliotek",
