@@ -1,46 +1,6 @@
 {
-  "updatedAt": "2026-04-03T04:36:20.767Z",
+  "updatedAt": "2026-04-05T04:43:03.626Z",
   "events": [
-    {
-      "id": "697852660015589",
-      "title": "PåskeQuiz på Kred",
-      "description": "Kred har avholdt påskequiz, (nesten) hver eneste skjærtorsdag i mange år. Dette er blitt en tradisjon for oss.\n\nDet blir å skje i år også, så velkommen til påskequiz folkens!\nTidspunkt, kl. 20.00!",
-      "category": "quiz",
-      "startDate": "2026-04-02T18:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/697852660015589/",
-      "collectedAt": "2026-03-20T04:22:10.027Z"
-    },
-    {
-      "title": "Langfredagsgudstjeneste",
-      "description": "Gudstjeneste - Brønnøy kirke",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-04-03T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ebfa3b4f-d4a0-49bf-bf85-e2c88e80bd11&OccurenceId=ebfa3b4f-d4a0-49bf-bf85-e2c88e80bd11",
-      "id": "Brønnøy-kirke-2026-04-03T09:00:00.000Z",
-      "collectedAt": "2026-04-03T04:36:20.766Z"
-    },
-    {
-      "title": "Kred's Påskemusikkbingo",
-      "description": "Det er påske og mange har ferie. Ta turen innom og bli med på Kred's Påskemusikkbingo! Ha det gøy med vårt nyeste underholdningskonsept. Temaene er ikke bestemt enda, men det blir nok noe påske- og afterskirelatert tenker vi.",
-      "category": "quiz",
-      "startDate": "2026-04-03T19:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.cafekred.no/b/kreds-paaskemusikkbingo---langfredag-3-april-kl-2100",
-      "id": "Kred-2026-04-03T19:00:00.000Z",
-      "collectedAt": "2026-04-03T04:35:43.653Z"
-    },
-    {
-      "title": "DJ R3DO",
-      "description": "(Lang)Fredag 3 april er DJ R3DO tilbake på Kred Han har spilt mange jobber for oss tidligere år og fått strålende tilbakemelding. DJ R3do lover pumpende klubbmusikk, som vil sette fyr på dansegulvet, fra start til slutt.",
-      "category": "musikk",
-      "startDate": "2026-04-03T21:30:00.000Z",
-      "location": "Kred",
-      "url": "https://www.cafekred.no/b/dj-r3do---langfredag-3-april-kl-2330",
-      "id": "Kred-2026-04-03T21:30:00.000Z",
-      "collectedAt": "2026-04-03T04:35:43.653Z"
-    },
     {
       "id": "1867508743969239",
       "title": "Catillus - Påskeaften!, 4. april ",
@@ -199,7 +159,7 @@
       "location": "Kred",
       "url": "https://www.cafekred.no/b/new-orbits---loerdag-18-april-kl-1900",
       "id": "Kred-2026-04-18T17:00:00.000Z",
-      "collectedAt": "2026-04-03T04:35:43.653Z"
+      "collectedAt": "2026-04-05T04:42:34.797Z"
     },
     {
       "title": "Gudstjeneste Med menighetens årsmøte",
