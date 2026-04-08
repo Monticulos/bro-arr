@@ -1,25 +1,15 @@
 {
-  "updatedAt": "2026-04-07T04:39:30.765Z",
+  "updatedAt": "2026-04-08T04:44:25.186Z",
   "events": [
     {
-      "title": "Barseltreff på bibliotek",
-      "description": "Barseltreff på bibliotek",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-04-07T09:00:00.000Z",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "url": "https://bronnoybibliotek.no/arrangementer#/events/a727dc35-bf3b-4cc7-9e0e-9779c49ecc16",
-      "id": "Brønnøy-bibliotek-2026-04-07T09:00:00.000Z",
-      "collectedAt": "2026-04-07T04:39:09.786Z"
-    },
-    {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Brønnøy kirke",
+      "description": "Trille-Tralle-Treff (babysang) - Barn og unge",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-08T09:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7d24a61d-c07d-4d40-a9ab-8820ba83a1cd&OccurenceId=7d24a61d-c07d-4d40-a9ab-8820ba83a1cd",
       "id": "Brønnøy-kirke-2026-04-08T09:00:00.000Z",
-      "collectedAt": "2026-04-07T04:39:30.764Z"
+      "collectedAt": "2026-04-08T04:43:27.293Z"
     },
     {
       "id": "1399574994995289",
@@ -29,17 +19,17 @@
       "startDate": "2026-04-09T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1399574994995289/",
-      "collectedAt": "2026-04-06T04:51:52.979Z"
+      "collectedAt": "2026-04-08T04:44:16.005Z"
     },
     {
       "title": "Lørdagskafé",
-      "description": "Lørdagskafé - Kefas",
+      "description": "Lørdagskafé",
       "category": "mat-og-drikke",
       "startDate": "2026-04-11T10:00:00.000Z",
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=5a83111d-428e-48e5-a7c9-665d61ceabae&OccurenceId=5a83111d-428e-48e5-a7c9-665d61ceabae",
       "id": "Brønnøy-kirke-2026-04-11T10:00:00.000Z",
-      "collectedAt": "2026-04-07T04:39:30.764Z"
+      "collectedAt": "2026-04-08T04:43:27.293Z"
     },
     {
       "id": "1214003247388441",
@@ -49,7 +39,7 @@
       "startDate": "2026-04-11T17:00:00.000Z",
       "location": "FORSAMLINGSLOKALET - Brønnøysund",
       "url": "https://www.facebook.com/events/1214003247388441/",
-      "collectedAt": "2026-03-20T04:22:04.403Z"
+      "collectedAt": "2026-04-08T04:44:10.801Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -63,13 +53,23 @@
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "description": "Trille-Tralle-Treff (babysang) - Barn og unge",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-15T09:00:00.000Z",
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=e00b8396-b259-4e42-8684-0bb4a1cb5b83",
       "id": "Brønnøy-kirke-2026-04-15T09:00:00.000Z",
-      "collectedAt": "2026-04-07T04:39:30.764Z"
+      "collectedAt": "2026-04-08T04:43:27.293Z"
+    },
+    {
+      "title": "Invitasjon til møte om frivillig innsats for eldre",
+      "description": "Invitasjon til møte om frivillig innsats for eldre",
+      "category": "kommunalt",
+      "startDate": "2026-04-15T16:00:00.000Z",
+      "location": "Kantina Brønnøy rådhus",
+      "url": "https://www.bronnoy.kommune.no/aktuelt/invitasjon-til-mote-om-frivillig-innsats-for-eldre.17428.aspx",
+      "id": "Brønnøy-kommune-2026-04-15T16:00:00.000Z",
+      "collectedAt": "2026-04-08T04:42:33.557Z"
     },
     {
       "title": "Direkte fra Litteraturhuset: Antony Beevor",
@@ -89,17 +89,17 @@
       "startDate": "2026-04-16T11:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/930228092697850/",
-      "collectedAt": "2026-04-06T04:51:48.504Z"
+      "collectedAt": "2026-04-08T04:44:14.065Z"
     },
     {
       "title": "Gudstjeneste med aktive konfirmanter",
-      "description": "Gudstjeneste med aktive konfirmanter - Konfirmanter,Gudstjeneste - Brønnøy kirke",
+      "description": "Gudstjeneste med aktive konfirmanter",
       "category": "tro-og-livssyn",
       "startDate": "2026-04-16T16:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=aa623eb4-6a5c-4b70-8e45-ce6d8a935e1f&OccurenceId=aa623eb4-6a5c-4b70-8e45-ce6d8a935e1f",
       "id": "Brønnøy-kirke-2026-04-16T16:00:00.000Z",
-      "collectedAt": "2026-04-07T04:39:30.764Z"
+      "collectedAt": "2026-04-08T04:43:27.293Z"
     },
     {
       "id": "1440347590904501",
@@ -109,7 +109,7 @@
       "startDate": "2026-04-18T07:00:00.000Z",
       "location": "Salhus Skole",
       "url": "https://www.facebook.com/events/1440347590904501/",
-      "collectedAt": "2026-04-06T04:51:51.199Z"
+      "collectedAt": "2026-04-08T04:44:18.431Z"
     },
     {
       "id": "921277794019354",
@@ -119,17 +119,17 @@
       "startDate": "2026-04-18T15:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/921277794019354/",
-      "collectedAt": "2026-04-06T04:51:54.437Z"
+      "collectedAt": "2026-04-08T04:44:12.312Z"
     },
     {
       "id": "1468446568207835",
       "title": "Trygve Hoff  \"Snart gryr en dag\"",
       "description": "Fire kor fremfører sanger av Trygve Hoff sammen med band. Dirigent er Tor Halvard Nilsen.",
-      "category": "kunst-og-kultur",
+      "category": "musikk",
       "startDate": "2026-04-18T15:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1468446568207835/",
-      "collectedAt": "2026-04-06T04:51:53.532Z"
+      "collectedAt": "2026-04-08T04:44:17.896Z"
     },
     {
       "title": "New Orbits",
@@ -142,14 +142,14 @@
       "collectedAt": "2026-04-07T04:38:54.041Z"
     },
     {
-      "title": "Gudstjeneste med menighetens årsmøte",
-      "description": "Gudstjeneste Med menighetens årsmøte - Gudstjeneste - Brønnøy kirke",
+      "title": "Gudstjeneste",
+      "description": "Gudstjeneste",
       "category": "tro-og-livssyn",
       "startDate": "2026-04-19T09:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=c97c6e97-b0c5-4a14-8dc7-5bc0abf46c8e&OccurenceId=c97c6e97-b0c5-4a14-8dc7-5bc0abf46c8e",
       "id": "Brønnøy-kirke-2026-04-19T09:00:00.000Z",
-      "collectedAt": "2026-04-07T04:39:30.764Z"
+      "collectedAt": "2026-04-08T04:43:27.293Z"
     },
     {
       "id": "866619559201849",
@@ -165,11 +165,11 @@
       "id": "912110788312677",
       "title": "Bærekraftsuka 2026: Plantebytting og frøbibliotek",
       "description": "Brønnøy bibliotek markerer bibliotekenes bærekraftsuke i uke 17!\n\nDet blir byttebord på biblioteket for planter, stiklinger og avleggere hele uka. Vi setter også opp et lite frøbibliotek!\n\nDonasjoner på forhånd tas imot i løpet av uke 16. Kom innom i bibliotekets åpningstid. ",
-      "category": "kunst-og-kultur",
+      "category": "barn-og-ungdom",
       "startDate": "2026-04-21T09:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/912110788312677/",
-      "collectedAt": "2026-04-06T04:51:47.559Z"
+      "collectedAt": "2026-04-08T04:44:20.127Z"
     },
     {
       "id": "1254491159566968",
@@ -179,17 +179,17 @@
       "startDate": "2026-04-21T09:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1254491159566968/",
-      "collectedAt": "2026-04-06T04:51:52.555Z"
+      "collectedAt": "2026-04-08T04:44:15.445Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "description": "Trille-Tralle-Treff (babysang) - Barn og unge",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-22T09:00:00.000Z",
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=0785b9ea-8866-4eab-b25f-1046bd9f9581",
       "id": "Brønnøy-kirke-2026-04-22T09:00:00.000Z",
-      "collectedAt": "2026-04-07T04:39:30.764Z"
+      "collectedAt": "2026-04-08T04:43:27.293Z"
     },
     {
       "id": "2497806390636278",
@@ -199,7 +199,7 @@
       "startDate": "2026-04-23T14:30:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/2497806390636278/",
-      "collectedAt": "2026-04-06T04:51:51.668Z"
+      "collectedAt": "2026-04-08T04:44:16.916Z"
     },
     {
       "id": "1989127691666557",
@@ -209,7 +209,7 @@
       "startDate": "2026-04-24T16:30:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1989127691666557/",
-      "collectedAt": "2026-04-06T04:51:48.065Z"
+      "collectedAt": "2026-04-08T04:44:11.334Z"
     },
     {
       "id": "1442826520606132",
@@ -229,17 +229,37 @@
       "startDate": "2026-04-24T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1507074540847996/",
-      "collectedAt": "2026-04-06T04:51:50.678Z"
+      "collectedAt": "2026-04-08T04:44:14.661Z"
     },
     {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Brønnøy kirke",
+      "title": "Gudstjeneste med menighetens årsmøte",
+      "description": "Gudstjeneste med menighetens årsmøte",
       "category": "tro-og-livssyn",
       "startDate": "2026-04-26T09:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=6363cff0-47b1-4b68-9763-60ec8c5a831d&OccurenceId=6363cff0-47b1-4b68-9763-60ec8c5a831d",
       "id": "Brønnøy-kirke-2026-04-26T09:00:00.000Z",
-      "collectedAt": "2026-04-07T04:39:30.764Z"
+      "collectedAt": "2026-04-08T04:43:27.294Z"
+    },
+    {
+      "id": "2077372976145572",
+      "title": "Foredrag med Knut J. Støvne",
+      "description": "Foredrag: Norsk-britisk etterretningssamarbeid under andre verdenskrig\n\nMøt forfatter Knut J. Støvne, som er aktuell med sin nye bok «Spioner og angivere – Agentkrig på Norskekysten 1940-45». Boken handler om de norske etterretningsagentene i britisk tjeneste, som opererte på norskekysten under andre verdenskrig.\n \nSom et viktig transittområde mellom de tyske marinebasene i Trondheimsfjorden, Ofotfjorden og Altafjorden, var Helgelandskysten sentral i det norsk-britiske etterretningssamarbeidet. En av de dyktigste agentene var John Kristoffersen fra Lurøy og senere Brønnøysund. Kristoffersen er en av hovedpersonene i Støvnes siste bok Spioner og angivere.\n\nI boken følger vi en håndfull radioagenter gjennom intense operasjoner, nervepirrende fluktforsøk og skjebnesvangre konfrontasjoner med tyskerne. Det var en kamp på liv og død, der ett feiltrinn kunne bli fatalt. Noen ble forrådt av angivere, andre måtte flykte. Flere endte i Gestapos torturkamre, noen unnslapp mirakuløst.\n \nOm forfatteren: Knut J. Støvne har bakgrunn fra Forsvaret, er utdannet ved Krigsskolen og har en mastergrad fra US Marine Corps University. Han skriver om krigshistorie for Vi Menn og debuterte som forfatter i 2022 med biografien om Torstein Raaby.\n \nBoksalg og signering i etterkant av foredraget.\n\n",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-04-27T17:00:00.000Z",
+      "location": "Storgata 32, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/2077372976145572/",
+      "collectedAt": "2026-04-08T04:44:11.820Z"
+    },
+    {
+      "id": "915420167785795",
+      "title": "Foredrag med Knut J. Støvne",
+      "description": "Foredrag: Norsk-britisk etterretningssamarbeid under andre verdenskrig\n\nMøt forfatter Knut J. Støvne, som er aktuell med sin nye bok «Spioner og angivere – Agentkrig på Norskekysten 1940-45». Boken handler om de norske etterretningsagentene i britisk tjeneste, som opererte på norskekysten under andre verdenskrig.\n \nSom et viktig transittområde mellom de tyske marinebasene i Trondheimsfjorden, Ofotfjorden og Altafjorden, var Helgelandskysten sentral i det norsk-britiske etterretningssamarbeidet. En av de dyktigste agentene var John Kristoffersen fra Lurøy og senere Brønnøysund. Kristoffersen er en av hovedpersonene i Støvnes siste bok Spioner og angivere.\n\nI boken følger vi en håndfull radioagenter gjennom intense operasjoner, nervepirrende fluktforsøk og skjebnesvangre konfrontasjoner med tyskerne. Det var en kamp på liv og død, der ett feiltrinn kunne bli fatalt. Noen ble forrådt av angivere, andre måtte flykte. Flere endte i Gestapos torturkamre, noen unnslapp mirakuløst.\n \nOm forfatteren: Knut J. Støvne har bakgrunn fra Forsvaret, er utdannet ved Krigsskolen og har en mastergrad fra US Marine Corps University. Han skriver om krigshistorie for Vi Menn og debuterte som forfatter i 2022 med biografien om Torstein Raaby.\n \nBoksalg og signering i etterkant av foredraget.\n\n",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-04-27T17:00:00.000Z",
+      "location": "Storgata 32, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/915420167785795/",
+      "collectedAt": "2026-04-08T04:44:24.565Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -253,23 +273,23 @@
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
+      "description": "Trille-Tralle-Treff (babysang) - Barn og unge",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-29T09:00:00.000Z",
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=a859d2db-09ec-45e4-9848-59e25c440781",
       "id": "Brønnøy-kirke-2026-04-29T09:00:00.000Z",
-      "collectedAt": "2026-04-07T04:39:30.764Z"
+      "collectedAt": "2026-04-08T04:43:27.294Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Sykehjemmets kapell",
+      "description": "Gudstjeneste",
       "category": "tro-og-livssyn",
       "startDate": "2026-04-30T09:30:00.000Z",
       "location": "Sykehjemmets kapell",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ca944efb-d142-46b5-aa95-8404c24d9c16&OccurenceId=ca944efb-d142-46b5-aa95-8404c24d9c16",
       "id": "Brønnøy-kirke-2026-04-30T09:30:00.000Z",
-      "collectedAt": "2026-04-07T04:39:30.764Z"
+      "collectedAt": "2026-04-08T04:43:27.294Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -285,11 +305,11 @@
       "id": "1365597658664206",
       "title": "Førstehjelpskurs 0-2 år",
       "description": "Helsestasjonen tilbyr førstehjelpskurs med fokus på HLR, kvelning og brannskader. Det vil være både teori og praktisk trening. To grupper: Kl.09-11 og 12-14\nFor påmelding: ta kontakt med ekspedisjonen\n",
-      "category": "næringsliv",
+      "category": "annet",
       "startDate": "2026-05-07T07:00:00.000Z",
       "location": "Skulesvei 13, 8904 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/1365597658664206/",
-      "collectedAt": "2026-04-06T04:51:52.122Z"
+      "collectedAt": "2026-04-08T04:44:17.409Z"
     },
     {
       "id": "1584031199293294",
@@ -299,7 +319,7 @@
       "startDate": "2026-05-15T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1584031199293294/",
-      "collectedAt": "2026-03-20T04:22:01.450Z"
+      "collectedAt": "2026-04-08T04:44:25.186Z"
     },
     {
       "id": "2024304411815352",
@@ -309,7 +329,7 @@
       "startDate": "2026-05-17T09:30:00.000Z",
       "location": "Salhus Skole",
       "url": "https://www.facebook.com/events/2024304411815352/",
-      "collectedAt": "2026-04-06T04:51:47.011Z"
+      "collectedAt": "2026-04-08T04:44:16.491Z"
     },
     {
       "id": "1355561149693604",
@@ -319,7 +339,7 @@
       "startDate": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-04-06T04:51:54.031Z"
+      "collectedAt": "2026-04-08T04:44:13.530Z"
     },
     {
       "id": "1518436712711995",
@@ -329,7 +349,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-04-06T04:51:49.649Z"
+      "collectedAt": "2026-04-08T04:44:10.268Z"
     },
     {
       "id": "1160245412989516",
@@ -339,7 +359,7 @@
       "startDate": "2026-10-02T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1160245412989516/",
-      "collectedAt": "2026-04-06T04:51:50.150Z"
+      "collectedAt": "2026-04-08T04:44:12.805Z"
     },
     {
       "title": "Espen Abrahamsen - Avantgarde",
