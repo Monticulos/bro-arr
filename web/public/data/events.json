@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09T04:40:14.448Z",
+  "updatedAt": "2026-04-10T04:54:25.504Z",
   "events": [
     {
       "id": "1399574994995289",
@@ -12,14 +12,24 @@
       "collectedAt": "2026-04-08T04:44:16.005Z"
     },
     {
+      "id": "927353193367877",
+      "title": "AFTERWORK PÅ SVANG: GYROS",
+      "description": "Bli med oss hver fredag året rundt på \"afterwork\". SVANG er plassen å være for deg som liker å kickstarte helgen med god stemning, street food og smaker fra hele verden, herlig musikk og vennlige priser på både mat og drikke.\nKom å feire på helg på Svang. Ta med en venn eller ti og starte helgen med stil.\nFra kl. 15 - 18, ingen bordbestilling og til vi er tømt med første man til mølla prinsippet.\nDette er konsept som er gøyal, fargerik og som vi streker oss langt for at det skal være vennlig mot pængboka 😃 Vi ser frem å møte dere på Svang, hver fredag!!\n",
+      "category": "mat-og-drikke",
+      "startDate": "2026-04-10T13:00:00.000Z",
+      "location": "Svang",
+      "url": "https://www.facebook.com/events/927353193367877/",
+      "collectedAt": "2026-04-10T04:54:23.242Z"
+    },
+    {
       "title": "Lørdagskafé",
-      "description": "Lørdagskafé",
+      "description": "Lørdagskafé med Kefas",
       "category": "tro-og-livssyn",
       "startDate": "2026-04-11T10:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=5a83111d-428e-48e5-a7c9-665d61ceabae&OccurenceId=5a83111d-428e-48e5-a7c9-665d61ceabae",
       "id": "Brønnøy-kirke-2026-04-11T10:00:00.000Z",
-      "collectedAt": "2026-04-09T04:40:14.447Z"
+      "collectedAt": "2026-04-10T04:53:03.787Z"
     },
     {
       "id": "1214003247388441",
@@ -29,27 +39,37 @@
       "startDate": "2026-04-11T17:00:00.000Z",
       "location": "FORSAMLINGSLOKALET - Brønnøysund",
       "url": "https://www.facebook.com/events/1214003247388441/",
-      "collectedAt": "2026-04-08T04:44:10.801Z"
+      "collectedAt": "2026-04-10T04:54:15.529Z"
+    },
+    {
+      "id": "1639133044086129",
+      "title": "Har du lyst til å bli besøksvenn?",
+      "description": "Har du lyst til å bli besøksvenn?\n\nDa er dette muligheten for deg. \nBesøksvenn er et tilbud for mennesker som av ulike grunner ønsker mer kontakt med andre mennesker. \nRøde Kors Besøksvenner bidrar til å gjøre hverdagen lettere for ensomme i alle aldre. \n\nMange mennesker i Norge savner en fortrolig venn. Ensomheten kjenner ingen alder, og det \nfinnes mange ensomme blant både eldre og yngre. Røde Kors Besøkstjeneste bidrar til å gjøre \nhverdagen lettere for flere av dem. \nFor å bli besøksvenn må du være fylt 18 år og snakke og forstå norsk godt. Du må også signere taushetserklæring. \n\nSom besøksvenn en-til-en, velger du og den du besøker selv hvor ofte dere skal møtes. \n\nBrønnøysund Røde Kors har som mål å starte opp med et slikt tilbud, og derfor trenger vi frivillige som ønsker å bli besøksvenn. Har du lyst til å vite mer om hva det vil si å være \nbesøksvenn? Eller kanskje du allerede har bestemt deg for å bli frivillig besøksvenn i Røde \nKors? Da ønsker vi med dette deg hjertelig velkommen til et hyggelig informasjonsmøte 13. april klokken 18.30 på Røde Kors huset (Gårdsøyveien 4, Brønnøysund).",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-04-14T01:30:00.000Z",
+      "location": "Gårdsøyveien 4, Brønnøysund",
+      "url": "https://www.facebook.com/events/1639133044086129/",
+      "collectedAt": "2026-04-10T04:54:23.719Z"
     },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-14T09:00:00.000Z",
-      "location": "Brønnøy bibliotek",
+      "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/e08bf792-51f2-401b-b98a-96c5ba64c428",
       "id": "Brønnøy-bibliotek-2026-04-14T09:00:00.000Z",
-      "collectedAt": "2026-04-09T04:39:58.689Z"
+      "collectedAt": "2026-04-10T04:52:46.750Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Trille-Tralle-Treff (babysang) for barn og unge",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-15T09:00:00.000Z",
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=e00b8396-b259-4e42-8684-0bb4a1cb5b83",
       "id": "Brønnøy-kirke-2026-04-15T09:00:00.000Z",
-      "collectedAt": "2026-04-09T04:40:14.447Z"
+      "collectedAt": "2026-04-10T04:53:03.787Z"
     },
     {
       "title": "Invitasjon til møte om frivillig innsats for eldre",
@@ -59,17 +79,17 @@
       "location": "Kantina Brønnøy rådhus",
       "url": "https://www.bronnoy.kommune.no/aktuelt/invitasjon-til-mote-om-frivillig-innsats-for-eldre.17428.aspx",
       "id": "Brønnøy-kommune-2026-04-15T16:00:00.000Z",
-      "collectedAt": "2026-04-09T04:39:30.777Z"
+      "collectedAt": "2026-04-10T04:52:12.954Z"
     },
     {
       "title": "Direkte fra Litteraturhuset: Antony Beevor",
       "description": "Direkte fra Litteraturhuset: Antony Beevor",
       "category": "kunst-og-kultur",
       "startDate": "2026-04-15T17:00:00.000Z",
-      "location": "Brønnøy bibliotek",
+      "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/439e97c6-58fa-45bf-8297-04964213c0c9",
       "id": "Brønnøy-bibliotek-2026-04-15T17:00:00.000Z",
-      "collectedAt": "2026-04-09T04:39:58.689Z"
+      "collectedAt": "2026-04-10T04:52:46.750Z"
     },
     {
       "id": "930228092697850",
@@ -89,7 +109,17 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=aa623eb4-6a5c-4b70-8e45-ce6d8a935e1f&OccurenceId=aa623eb4-6a5c-4b70-8e45-ce6d8a935e1f",
       "id": "Brønnøy-kirke-2026-04-16T16:00:00.000Z",
-      "collectedAt": "2026-04-09T04:40:14.447Z"
+      "collectedAt": "2026-04-10T04:53:03.787Z"
+    },
+    {
+      "id": "1399574988328623",
+      "title": "AllmenQuiz på Kred",
+      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\n\nQuizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie: \n22. januar, 29. januar, 5. februar, 12. februar, 19. februar, 26, februar, 12. mars, 21. mars, 26. mars, 9. april, 16. april, 23. april, 30. april, 7. mai, 14. mai, 21. mai og 28. mai. ",
+      "category": "quiz",
+      "startDate": "2026-04-16T18:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1399574988328623/",
+      "collectedAt": "2026-04-10T04:54:16.932Z"
     },
     {
       "id": "1440347590904501",
@@ -99,7 +129,7 @@
       "startDate": "2026-04-18T07:00:00.000Z",
       "location": "Salhus Skole",
       "url": "https://www.facebook.com/events/1440347590904501/",
-      "collectedAt": "2026-04-08T04:44:18.431Z"
+      "collectedAt": "2026-04-10T04:54:20.368Z"
     },
     {
       "id": "921277794019354",
@@ -109,17 +139,17 @@
       "startDate": "2026-04-18T15:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/921277794019354/",
-      "collectedAt": "2026-04-08T04:44:12.312Z"
+      "collectedAt": "2026-04-10T04:54:24.126Z"
     },
     {
       "id": "1468446568207835",
       "title": "Trygve Hoff  \"Snart gryr en dag\"",
       "description": "Fire kor fremfører sanger av Trygve Hoff sammen med band. Dirigent er Tor Halvard Nilsen.",
-      "category": "musikk",
+      "category": "kunst-og-kultur",
       "startDate": "2026-04-18T15:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1468446568207835/",
-      "collectedAt": "2026-04-08T04:44:17.896Z"
+      "collectedAt": "2026-04-10T04:54:22.329Z"
     },
     {
       "title": "New Orbits",
@@ -139,7 +169,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=c97c6e97-b0c5-4a14-8dc7-5bc0abf46c8e&OccurenceId=c97c6e97-b0c5-4a14-8dc7-5bc0abf46c8e",
       "id": "Brønnøy-kirke-2026-04-19T09:00:00.000Z",
-      "collectedAt": "2026-04-09T04:40:14.447Z"
+      "collectedAt": "2026-04-10T04:53:03.787Z"
     },
     {
       "id": "866619559201849",
@@ -159,7 +189,7 @@
       "startDate": "2026-04-21T09:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/912110788312677/",
-      "collectedAt": "2026-04-08T04:44:20.127Z"
+      "collectedAt": "2026-04-10T04:54:21.045Z"
     },
     {
       "id": "1254491159566968",
@@ -173,13 +203,13 @@
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Trille-Tralle-Treff (babysang) for barn og unge",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-22T09:00:00.000Z",
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=0785b9ea-8866-4eab-b25f-1046bd9f9581",
       "id": "Brønnøy-kirke-2026-04-22T09:00:00.000Z",
-      "collectedAt": "2026-04-09T04:40:14.447Z"
+      "collectedAt": "2026-04-10T04:53:03.787Z"
     },
     {
       "id": "2497806390636278",
@@ -189,7 +219,7 @@
       "startDate": "2026-04-23T14:30:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/2497806390636278/",
-      "collectedAt": "2026-04-08T04:44:16.916Z"
+      "collectedAt": "2026-04-10T04:54:25.071Z"
     },
     {
       "id": "1989127691666557",
@@ -199,7 +229,7 @@
       "startDate": "2026-04-24T16:30:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1989127691666557/",
-      "collectedAt": "2026-04-08T04:44:11.334Z"
+      "collectedAt": "2026-04-10T04:54:18.597Z"
     },
     {
       "id": "1442826520606132",
@@ -219,7 +249,7 @@
       "startDate": "2026-04-24T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1507074540847996/",
-      "collectedAt": "2026-04-08T04:44:14.661Z"
+      "collectedAt": "2026-04-10T04:54:19.034Z"
     },
     {
       "title": "Gudstjeneste med menighetens årsmøte",
@@ -229,7 +259,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=6363cff0-47b1-4b68-9763-60ec8c5a831d&OccurenceId=6363cff0-47b1-4b68-9763-60ec8c5a831d",
       "id": "Brønnøy-kirke-2026-04-26T09:00:00.000Z",
-      "collectedAt": "2026-04-09T04:40:14.447Z"
+      "collectedAt": "2026-04-10T04:53:03.787Z"
     },
     {
       "id": "2077372976145572",
@@ -239,7 +269,7 @@
       "startDate": "2026-04-27T17:00:00.000Z",
       "location": "Storgata 32, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/2077372976145572/",
-      "collectedAt": "2026-04-08T04:44:11.820Z"
+      "collectedAt": "2026-04-10T04:54:19.472Z"
     },
     {
       "id": "915420167785795",
@@ -249,27 +279,27 @@
       "startDate": "2026-04-27T17:00:00.000Z",
       "location": "Storgata 32, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/915420167785795/",
-      "collectedAt": "2026-04-08T04:44:24.565Z"
+      "collectedAt": "2026-04-10T04:54:19.955Z"
     },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-28T09:00:00.000Z",
-      "location": "Brønnøy bibliotek",
+      "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/f8ca5662-6d4e-4012-94e5-0f5a647c55b9",
       "id": "Brønnøy-bibliotek-2026-04-28T09:00:00.000Z",
-      "collectedAt": "2026-04-09T04:39:58.689Z"
+      "collectedAt": "2026-04-10T04:52:46.750Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Trille-Tralle-Treff (babysang) for barn og unge",
       "category": "barn-og-ungdom",
       "startDate": "2026-04-29T09:00:00.000Z",
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=a859d2db-09ec-45e4-9848-59e25c440781",
       "id": "Brønnøy-kirke-2026-04-29T09:00:00.000Z",
-      "collectedAt": "2026-04-09T04:40:14.447Z"
+      "collectedAt": "2026-04-10T04:53:03.787Z"
     },
     {
       "title": "Gudstjeneste",
@@ -279,7 +309,7 @@
       "location": "Sykehjemmets kapell",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ca944efb-d142-46b5-aa95-8404c24d9c16&OccurenceId=ca944efb-d142-46b5-aa95-8404c24d9c16",
       "id": "Brønnøy-kirke-2026-04-30T09:30:00.000Z",
-      "collectedAt": "2026-04-09T04:40:14.447Z"
+      "collectedAt": "2026-04-10T04:53:03.787Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -299,7 +329,7 @@
       "startDate": "2026-05-07T07:00:00.000Z",
       "location": "Skulesvei 13, 8904 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/1365597658664206/",
-      "collectedAt": "2026-04-08T04:44:17.409Z"
+      "collectedAt": "2026-04-10T04:54:24.671Z"
     },
     {
       "id": "1584031199293294",
@@ -309,7 +339,7 @@
       "startDate": "2026-05-15T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1584031199293294/",
-      "collectedAt": "2026-04-08T04:44:25.186Z"
+      "collectedAt": "2026-04-10T04:54:25.503Z"
     },
     {
       "id": "2024304411815352",
@@ -319,7 +349,7 @@
       "startDate": "2026-05-17T09:30:00.000Z",
       "location": "Salhus Skole",
       "url": "https://www.facebook.com/events/2024304411815352/",
-      "collectedAt": "2026-04-08T04:44:16.491Z"
+      "collectedAt": "2026-04-10T04:54:16.009Z"
     },
     {
       "id": "1355561149693604",
@@ -329,7 +359,7 @@
       "startDate": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-04-08T04:44:13.530Z"
+      "collectedAt": "2026-04-10T04:54:16.453Z"
     },
     {
       "id": "1518436712711995",
@@ -339,7 +369,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-04-08T04:44:10.268Z"
+      "collectedAt": "2026-04-10T04:54:18.090Z"
     },
     {
       "id": "1160245412989516",
@@ -349,17 +379,17 @@
       "startDate": "2026-10-02T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1160245412989516/",
-      "collectedAt": "2026-04-08T04:44:12.805Z"
+      "collectedAt": "2026-04-10T04:54:21.463Z"
     },
     {
+      "id": "1982982558926487",
       "title": "Espen Abrahamsen - Avantgarde",
-      "description": "Espen Abrahamsen er endelig klar med sitt første helaftens standupshow. Du kjenner ham fra TV og podkaster, men det er på scenen Espen virkelig briljerer. Siden debuten på standupscenen i 2020 har målet vært klart, et eget show og en Norgesturné.",
+      "description": "Espen Abrahamsen er endelig klar med sitt første helaftens standupshow.\n\nDu kjenner ham fra TV og podkaster, men det er på scenen Espen virkelig briljerer. Siden debuten på standupscenen i 2020 har målet vært klart, et eget show og en Norgesturné.\n\nI dette showet får du Espens helt særegne blanding av personlige historier og skarp samfunnshumor. Han tar for seg både små og store ting, fra det nære og personlige, til det som rører seg i Norge og verden.\n\nStilen hans er direkte, kompromissløs og veldig morsom. Etter at han vant “Stå opp-prisen” for årets gjennombrudd i 2024, har han hatt fullt fokus på sitt eget show.\n\nNå er det endelig klart: «Avantgarde»\n\nBilletter i salg fra torsdag 19. februar, kl. 10.00",
       "category": "kunst-og-kultur",
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer/b/espen-abrahamsen---avantgarde---10-oktober-kl-1900",
-      "id": "Kred-2026-10-10T17:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:13.150Z"
+      "url": "https://www.facebook.com/events/1982982558926487/",
+      "collectedAt": "2026-04-10T04:54:21.895Z"
     }
   ]
 }
