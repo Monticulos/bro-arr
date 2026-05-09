@@ -1,44 +1,15 @@
 # BroArr
 
-A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI collector gathers upcoming events from local websites and publishes them as a React frontend on GitHub Pages.
+A local events aggregator for Brønnøysund, Norway.
 
 ## Tech stack
 
 | Layer | Technologies |
 |-------|-------------|
 | Frontend | React 19, TypeScript, Vite, Digdir Designsystemet, Web3Forms |
-| Collector | LangChain, Mistral AI, Puppeteer, Cheerio, Apify |
+| Collector | LangChain, Mistral, Puppeteer, Cheerio, Apify |
 | Testing | Vitest, React Testing Library |
 | CI/CD | GitHub Actions, GitHub Pages |
-
-## Repo structure
-
-```
-broarr/
-├── types/                    # Shared TypeScript interfaces
-├── web/                      # React + Vite frontend (deployed to GitHub Pages)
-│   ├── public/data/
-│   │   └── events.json       # Generated event data consumed by the frontend
-│   └── src/
-│       ├── components/
-│       ├── constants/
-│       ├── hooks/
-│       └── utils/
-├── collector/                # Node.js collection script
-│   └── src/
-│       ├── script.ts         # Entry point — orchestrates the collection pipeline
-│       ├── sources.ts        # Target URLs with optional CSS selectors
-│       ├── prompts/          # Markdown prompts for LLM calls
-│       ├── api/              # Apify API integration
-│       ├── io/               # File I/O
-│       ├── llm/              # LLM formatting and categorization
-│       ├── test/             # Shared test helpers
-│       └── utils/            # Pure functions
-└── .github/workflows/
-    ├── collect.yml           # GitHub Actions: run collector nightly and on demand
-    ├── deploy.yml            # GitHub Actions: build + deploy after lint-test passes on main
-    └── lint-test.yml         # GitHub Actions: lint, typecheck and test on push and pull requests
-```
 
 ## Running the frontend locally
 
