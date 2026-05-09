@@ -10,14 +10,13 @@ const CONSECUTIVE_WHITESPACE = /\s+/g;
 const TIMEZONE = "Europe/Oslo";
 
 
-async function launchBrowserAndNavigate(url: string) {
+async function launchBrowser() {
   const browser = await puppeteer.launch({
     headless: true,
     args: process.env.CI ? ["--no-sandbox"] : [],
   });
   const page = await browser.newPage();
   await page.emulateTimezone(TIMEZONE);
-  await page.goto(url, { waitUntil: "networkidle2" });
   return { browser, page };
 }
 
@@ -34,12 +33,12 @@ export function truncateText(text: string): string {
 }
 
 export async function extractEvents(source: Source): Promise<string> {
-  const { browser, page } = await launchBrowserAndNavigate(source.url);
-  
+  const { browser, page } = await launchBrowser();
+
   try {
+    await page.goto(source.url, { waitUntil: "networkidle2" });
     const selector = source.selector ?? "body";
     const html = await page.$eval(selector, (el) => el.innerHTML);
-    
     const cleanedText = cleanHtml(html);
     return truncateText(cleanedText);
   } catch (error) {
@@ -49,3 +48,4 @@ export async function extractEvents(source: Source): Promise<string> {
     await browser.close();
   }
 }
+
