@@ -1,4 +1,4 @@
-import type { Event } from "../../../types/Event";
+import type { Event } from "../../../shared/types/Event";
 
 const MIN_WORD_LENGTH = 4;
 const SIMILARITY_THRESHOLD = 0.5;
@@ -28,13 +28,15 @@ export function hasSimilarTitle(titleA: string, titleB: string): boolean {
   const shorterWords = wordsA.length <= wordsB.length ? wordsA : wordsB;
   const longerWords = new Set(wordsA.length > wordsB.length ? wordsA : wordsB);
 
-  const matchCount = shorterWords.filter((word) => longerWords.has(word)).length;
+  const matchCount = shorterWords.filter((word) =>
+    longerWords.has(word),
+  ).length;
   return matchCount / shorterWords.length >= SIMILARITY_THRESHOLD;
 }
 
 function hasCloseTime(startDateA: string, startDateB: string): boolean {
   const timeDifference = Math.abs(
-    new Date(startDateA).getTime() - new Date(startDateB).getTime()
+    new Date(startDateA).getTime() - new Date(startDateB).getTime(),
   );
   return timeDifference < DUPLICATE_BOUNDARY_MS;
 }
@@ -53,7 +55,7 @@ export function findDuplicateIds(events: Event[]): Set<string> {
 
   for (const puppeteerEvent of puppeteerEvents) {
     const hasDuplicate = apifyEvents.some((apifyEvent) =>
-      isDuplicate(apifyEvent, puppeteerEvent)
+      isDuplicate(apifyEvent, puppeteerEvent),
     );
 
     if (hasDuplicate) {

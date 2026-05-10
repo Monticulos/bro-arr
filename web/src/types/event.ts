@@ -1,1 +1,4 @@
-export type { Event, EventsData } from "../../../types/Event";
+export type {
+  Event,
+  EventsDataSchema as EventsData,
+} from "../../../shared/types/Event";

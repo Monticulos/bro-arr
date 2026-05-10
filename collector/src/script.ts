@@ -1,5 +1,5 @@
 import "dotenv/config";
-import type { Event } from "../../types/Event.js";
+import type { Event } from "../../shared/types/Event.js";
 import { TARGET_SOURCES } from "./sources.js";
 import { extractEvents } from "./puppeteer/extractEvents.js";
 import { formatEvents } from "./llm/formatEvents.js";

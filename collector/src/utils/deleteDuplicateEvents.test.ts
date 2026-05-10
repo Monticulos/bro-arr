@@ -1,6 +1,11 @@
 import { describe, it, expect } from "vitest";
-import type { Event } from "../../../types/Event";
-import { hasSimilarTitle, isDuplicate, findDuplicateIds, deleteDuplicateEvents } from "./deleteDuplicateEvents";
+import type { Event } from "../../../shared/types/Event";
+import {
+  hasSimilarTitle,
+  isDuplicate,
+  findDuplicateIds,
+  deleteDuplicateEvents,
+} from "./deleteDuplicateEvents";
 
 function createEvent(overrides: Partial<Event> = {}): Event {
   return {
@@ -21,13 +26,19 @@ describe("hasSimilarTitle", () => {
 
   it("matches titles with different casing", () => {
     expect(
-      hasSimilarTitle("Mat og vinkveld med Erik Strugstad", "Mat og Vinkveld med Erik Strugstad")
+      hasSimilarTitle(
+        "Mat og vinkveld med Erik Strugstad",
+        "Mat og Vinkveld med Erik Strugstad",
+      ),
     ).toBe(true);
   });
 
   it("matches titles where one uses & and the other uses og", () => {
     expect(
-      hasSimilarTitle("Ole Soo og Nils-Ingar Aadne", "Ole Soo & Nils-Ingar Aadne")
+      hasSimilarTitle(
+        "Ole Soo og Nils-Ingar Aadne",
+        "Ole Soo & Nils-Ingar Aadne",
+      ),
     ).toBe(true);
   });
 
@@ -39,8 +50,8 @@ describe("hasSimilarTitle", () => {
     expect(
       hasSimilarTitle(
         "Christer Torjussen: Stand Up Spesial",
-        "Stand Up Spesial med Christer Torjussen"
-      )
+        "Stand Up Spesial med Christer Torjussen",
+      ),
     ).toBe(true);
   });
 
@@ -49,9 +60,12 @@ describe("hasSimilarTitle", () => {
   });
 
   it("does not match titles sharing only one common word", () => {
-    expect(hasSimilarTitle("Konsert med Jonas Knutsson", "Konsert med Christer Torjussen")).toBe(
-      false
-    );
+    expect(
+      hasSimilarTitle(
+        "Konsert med Jonas Knutsson",
+        "Konsert med Christer Torjussen",
+      ),
+    ).toBe(false);
   });
 
   it("does not match empty titles", () => {
@@ -226,7 +240,10 @@ describe("findDuplicateIds", () => {
     const duplicateIds = findDuplicateIds(events);
 
     expect(duplicateIds).toEqual(
-      new Set(["Kred-2026-03-27T20:00:00.000Z", "Kred-2026-03-20T18:00:00.000Z"])
+      new Set([
+        "Kred-2026-03-27T20:00:00.000Z",
+        "Kred-2026-03-20T18:00:00.000Z",
+      ]),
     );
   });
 });
@@ -249,15 +266,27 @@ describe("deleteDuplicateEvents", () => {
       startDate: "2026-03-15T10:00:00.000Z",
     });
 
-    const result = deleteDuplicateEvents([apifyEvent, puppeteerDuplicate, uniqueEvent]);
+    const result = deleteDuplicateEvents([
+      apifyEvent,
+      puppeteerDuplicate,
+      uniqueEvent,
+    ]);
 
     expect(result).toEqual([apifyEvent, uniqueEvent]);
   });
 
   it("returns all events when there are no duplicates", () => {
     const events = [
-      createEvent({ id: "123456789", title: "Concert A", startDate: "2026-03-20T18:00:00.000Z" }),
-      createEvent({ id: "Kred-2026-03-21T18:00:00.000Z", title: "Concert B", startDate: "2026-03-21T18:00:00.000Z" }),
+      createEvent({
+        id: "123456789",
+        title: "Concert A",
+        startDate: "2026-03-20T18:00:00.000Z",
+      }),
+      createEvent({
+        id: "Kred-2026-03-21T18:00:00.000Z",
+        title: "Concert B",
+        startDate: "2026-03-21T18:00:00.000Z",
+      }),
     ];
 
     const result = deleteDuplicateEvents(events);

@@ -1,9 +1,14 @@
-import type { Event } from "../../../types/Event";
+import type { Event } from "../../../shared/types/Event";
 import type { ApifyEvent } from "./fetchApifyEvents.js";
 import { categorizeEvent } from "../llm/categorizeEvent.js";
 
-export async function mapApifyEventToEvent(apifyEvent: ApifyEvent): Promise<Event> {
-  const category = await categorizeEvent(apifyEvent.name, apifyEvent.description);
+export async function mapApifyEventToEvent(
+  apifyEvent: ApifyEvent,
+): Promise<Event> {
+  const category = await categorizeEvent(
+    apifyEvent.name,
+    apifyEvent.description,
+  );
 
   return {
     id: apifyEvent.id,
@@ -25,7 +30,7 @@ export const LOCATION_MAP: Record<string, string> = {
   "Skolegata 10": "Brønnøysund videregående skole",
   "Ytre Høgåsvei 37": "Forsamlingslokalet",
   "Gårdsøyveien 5": "Felleskjøpet",
-  "Havnegata 16": "Cash bar"
+  "Havnegata 16": "Cash bar",
 };
 
 function mapLocation(location: string): string {

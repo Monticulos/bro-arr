@@ -4,12 +4,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "@digdir/designsystemet-css";
 import "@digdir/designsystemet-theme";
 import "./index.css";
-import { routes } from "./routes";
+import { routes } from "./routes/routes";
 
 const router = createBrowserRouter(routes);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
+  </StrictMode>,
 );

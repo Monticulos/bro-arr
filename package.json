@@ -6,6 +6,7 @@
     "collector": "npm start --prefix collector",
     "test": "npm test --prefix web && npm test --prefix collector",
     "lint": "npm run lint --prefix web && npm run lint --prefix collector",
-    "typecheck": "npm run typecheck --prefix web && npm run typecheck --prefix collector"
+    "typecheck": "npm run typecheck --prefix web && npm run typecheck --prefix collector",
+    "pre-commit": "npm run typecheck && npm run lint && npm run test"
   }
 }
