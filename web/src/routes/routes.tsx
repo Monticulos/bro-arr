@@ -1,7 +1,7 @@
 import type { RouteObject } from "react-router-dom";
-import App from "./App";
-import ListPage from "./pages/ListPage/ListPage";
-import CalendarPage from "./pages/CalendarPage/CalendarPage";
+import App from "../components/App/App";
+import ListPage from "./ListPage/ListPage";
+import CalendarPage from "./CalendarPage/CalendarPage";
 
 export const routes: RouteObject[] = [
   {

@@ -1,4 +1,4 @@
-import type { Event } from "../../../types/Event";
+import type { Event } from "../../../shared/types/Event";
 
 const DEFAULT_EVENT: Event = {
   id: "example-com-test-event-2026-03-15",
