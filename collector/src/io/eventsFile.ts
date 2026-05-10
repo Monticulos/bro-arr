@@ -5,7 +5,7 @@ import type { EventsDataSchema } from "../../../shared/types/Event";
 const currentDir = dirname(fileURLToPath(import.meta.url));
 export const EVENTS_JSON_PATH = resolve(
   currentDir,
-  "../../../web/public/data/events.json",
+  "../../../shared/data/events.json",
 );
 
 export function readEventsFile(): EventsDataSchema {
