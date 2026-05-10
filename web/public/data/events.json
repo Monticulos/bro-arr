@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-05-09T20:55:34.874Z",
+  "updatedAt": "2026-05-10T05:44:50.748Z",
   "events": [
-    {
-      "title": "Konfirmasjonsgudstjeneste",
-      "description": "Konfirmasjonsgudstjeneste - Brønnøy kirke",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-05-09T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=207c1467-a50d-4385-bfd3-4912c5f31d61&OccurenceId=207c1467-a50d-4385-bfd3-4912c5f31d61",
-      "id": "Brønnøy-kirke-2026-05-09T09:00:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
-    },
-    {
-      "title": "Konfirmasjonsgudstjeneste",
-      "description": "Konfirmasjonsgudstjeneste - Brønnøy kirke",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-05-09T11:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=3724e2b0-8797-4bf4-8cbb-5cea448bf673&OccurenceId=3724e2b0-8797-4bf4-8cbb-5cea448bf673",
-      "id": "Brønnøy-kirke-2026-05-09T11:00:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
-    },
     {
       "title": "Konfirmasjonsgudstjeneste",
       "description": "Konfirmasjonsgudstjeneste - Brønnøy kirke",
@@ -30,6 +10,26 @@
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=413208bb-28e7-49f3-9071-17a86806e34b&OccurenceId=413208bb-28e7-49f3-9071-17a86806e34b",
       "id": "Brønnøy-kirke-2026-05-10T09:00:00.000Z",
       "collectedAt": "2026-05-09T20:55:34.873Z"
+    },
+    {
+      "id": "1019120843793017",
+      "title": "Gründerkveld i Brønnøysund",
+      "description": "Velkommen tilbake til Gründerkveld på Me!r\n\nBli med på en inspirerende kveld for gründere og idéskapere!\n\nMandag 11. mai kl. 19:00-21.00 møtes vi på Me!r for faglig påfyll, gode historier og nye bekjentskap.\n\nSjøvold Gårdsmeieri kommer og deler sin reise - perfekt for deg som vil lære, bli inspirert eller bygge nettverk.\nArrangementet er gratis og åpent for alle, det blir servert Pizza!! \n\nVelkommen innom for en kveld med energi og gode folk!\n\nArrangementet arrangeres som en del av prosjektet Sammen om Sør-Helgeland som består av Kunnskapsparken Helgeland, Kystinkubatoren og Sentrum Næringshage. \n\nPåmelding: \nhttps://forms.office.com/e/RzY00F2MZa",
+      "category": "næringsliv",
+      "startDate": "2026-05-11T17:00:00.000Z",
+      "location": "Storgata 49, 8900 Brønnøysund, Norge",
+      "url": "https://www.facebook.com/events/1019120843793017/",
+      "collectedAt": "2026-05-10T05:44:38.227Z"
+    },
+    {
+      "id": "946453238309881",
+      "title": "Sammen om Sør-Helgeland og Innovasjon Norge i Brønnøysund",
+      "description": "Sammen om Sør-Helgeland inviterer til SANS i Brønnøysund 📅 Tirsdag 12. mai kl. 12:00-14:00\n\nVi får besøk av Innovasjon Norge som vil fortelle om hvordan de jobber, hvilke virkemidler de har, og dele gode tips til søknadsprosesser. \n\nDet blir servert snacks, og det legges opp til speed-dating: samtaler med Innovasjon Norge, KPH, KI og SNH. \nHer får dere mulighet til å presentere prosjektene deres og diskutere ideer direkte med oss. \nHver bedrift får 8 minutter før man bytter videre til neste samtale. \n\nVelkommen!\nArrangementet er åpent og gratis for alle - men husk å meld deg på. \n\nArrangementet arrangeres av prosjektgruppen Sammen om Sør-Helgeland som består av Sentrum Næringshage, Kystinkubatoren og Kunnskapsparken Helgeland, og så har vi fått med oss Innovasjon Norge på laget denne gang! \n\nPåmelding: https://forms.office.com/e/sQYqHUapeE",
+      "category": "næringsliv",
+      "startDate": "2026-05-12T10:00:00.000Z",
+      "location": "Storgata 49, 8900 Brønnøysund",
+      "url": "https://www.facebook.com/events/946453238309881/",
+      "collectedAt": "2026-05-10T05:44:44.597Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -42,6 +42,16 @@
       "collectedAt": "2026-05-09T20:55:34.873Z"
     },
     {
+      "id": "1653238979132410",
+      "title": "Formiddagsfilmen: Heftig og begeistret (2001)",
+      "description": "Formiddagsfilmen: Heftig og begeistret (2001)\n\nBrønnøy bibliotek inviterer til filmvisning på formiddagen onsdag 13. mai kl. 13:00.\n\nVi viser den norske dokumentarfilmen Heftig og begeistret. Dette er en underholdende og finurlig film om medlemmene i Berlevåg Mannssangforening; 28 menn med hver si historie, vevd sammen av korsangen, forankra i et isolert lokalsamfunn og en utsatt natur.\n\nFormiddagsfilmen er et lavterskeltilbud som er åpent for alle som ønsker seg en aktivitet på dagtid eller et samlingspunkt. Kom som du er og gå når du vil!\n\nFilmen varer i 1 time og 45 minutter.",
+      "category": "kino",
+      "startDate": "2026-05-13T11:00:00.000Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://www.facebook.com/events/1653238979132410/",
+      "collectedAt": "2026-05-10T05:44:45.566Z"
+    },
+    {
       "title": "Samtalegudstjeneste",
       "description": "Gudstjeneste - Velfjord kirke",
       "category": "tro-og-livssyn",
@@ -52,14 +62,14 @@
       "collectedAt": "2026-05-09T20:55:34.873Z"
     },
     {
-      "title": "AllmenQuiz",
-      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert. Quizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før. Det blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.",
+      "id": "1399575004995288",
+      "title": "AllmenQuiz på Kred",
+      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\n\nQuizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie: \n22. januar, 29. januar, 5. februar, 12. februar, 19. februar, 26, februar, 12. mars, 21. mars, 26. mars, 9. april, 16. april, 23. april, 30. april, 7. mai, 14. mai, 21. mai og 28. mai. ",
       "category": "quiz",
       "startDate": "2026-05-14T18:00:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/b/allmenquiz---14-mai-kl-2000",
-      "id": "Kred-2026-05-14T18:00:00.000Z",
-      "collectedAt": "2026-05-09T20:54:40.147Z"
+      "url": "https://web.facebook.com/events/1399575004995288/",
+      "collectedAt": "2026-05-10T05:44:50.748Z"
     },
     {
       "id": "1584031199293294",
@@ -69,17 +79,17 @@
       "startDate": "2026-05-15T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1584031199293294/",
-      "collectedAt": "2026-04-10T04:54:25.503Z"
+      "collectedAt": "2026-05-10T05:44:48.445Z"
     },
     {
-      "title": "Eurovision Song Contest - Finale",
-      "description": "Kred viser finalen av årets Eurovision Song Contest på storskjerm. Vi inviterer til fest og håper dere vil være med. Vi har lyd via vår egen PA, så dette kommer til å låte kule. Vi gir premie til den som vi mener har det herligste (kuleste) kostyme. Vi lager en egen spesialmeny for kvelden, med varer som ellers ikke er i våre menyer. Vi lager en quiz med spørsmål fra Eurovision og har skjema klare til dere for å ha statistikk på egne poeng for sangene. Gled dere, dette blir gøy! Og ikke minst, selvfølgelig er det gratis inngang. 18års grense",
+      "id": "2115692449222059",
+      "title": "Eurovision Song Contest - Storskjermparty på Kred",
+      "description": "Kred viser finalen av årets Eurovision Song Contest på storskjerm.\nVi inviterer til fest og håper dere vil være med. Vi har lyd via vår egen PA, så dette kommer til å låte kule.\n\nVi gir premie til den som vi mener har det herligste (kuleste) kostyme. \nVi lager en egen spesialmeny for kvelden, med varer som ellers ikke er i våre menyer.\nVi lager en quiz med spørsmål fra Eurovision og har skjema klare til dere for å ha statistikk på egne poeng for sangene.\n\nGled dere, dette blir gøy !\nOg ikke minst, selvfølgelig er det gratis inngang.\n\n18års grense",
       "category": "musikk",
       "startDate": "2026-05-16T19:00:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/b/eurovision-song-contest---finale---16-mai-kl-2100",
-      "id": "Kred-2026-05-16T19:00:00.000Z",
-      "collectedAt": "2026-05-09T20:54:40.147Z"
+      "url": "https://www.facebook.com/events/2115692449222059/",
+      "collectedAt": "2026-05-10T05:44:47.580Z"
     },
     {
       "title": "Gudstjeneste",
@@ -99,7 +109,7 @@
       "startDate": "2026-05-17T09:30:00.000Z",
       "location": "Salhus Skole",
       "url": "https://www.facebook.com/events/2024304411815352/",
-      "collectedAt": "2026-04-10T04:54:16.009Z"
+      "collectedAt": "2026-05-10T05:44:38.657Z"
     },
     {
       "title": "Gudstjeneste",
@@ -122,14 +132,24 @@
       "collectedAt": "2026-05-09T20:55:34.873Z"
     },
     {
+      "id": "999615582595019",
+      "title": "𝐅𝐨𝐨𝐝 𝐓𝐫𝐮𝐜𝐤 𝐅𝐞𝐬𝐭𝐢𝐯𝐚𝐥 𝐢 𝐁𝐫ø𝐧𝐧ø𝐲𝐬𝐮𝐧𝐝 - Street Food Norway Tour 2026",
+      "description": "𝐁𝐫ø𝐧𝐧ø𝐲𝐬𝐮𝐧𝐝 – 𝐯𝐢 𝐤𝐨𝐦𝐦𝐞𝐫! 🎉\n\nFra 21. mai til 24. mai kommer Street Food Norway til Storgata i Brønnøysund ♥️\n\nI fire dager inviterer vi til street food-festival med smaker fra hele verden, søte fristelser og god stemning. Opplev et levende matmarked med spennende konsepter og nye favoritter.\n\nTa turen innom og nyt ekte festivalfølelse 🍽️🔥\n\n👉 𝐃𝐢𝐬𝐬𝐞 𝐟𝐨𝐨𝐝 𝐭𝐫𝐮𝐜𝐤𝐞𝐧𝐞 𝐤𝐨𝐦𝐦𝐞𝐫:\n1️⃣ Piece of Greece\n2️⃣ DimBao\n3️⃣ Crepes & Dutch Poffertjes\n4️⃣ La Churreria de Manolo\n5️⃣ Los Tacos\n6️⃣ Sando\n7️⃣ Crazy Food Truck\n8️⃣ Funky Chicken\n9️⃣ Duck Eat\n🔟 Japanese Truck\n1️⃣1️⃣ Corn Dog\n1️⃣2️⃣ Korean Taco\n1️⃣3️⃣ Bakt Potet\n1️⃣4️⃣ Spekemat\n1️⃣5️⃣ Ostebua\n1️⃣6️⃣ Mediterranean Bites\n\n🍺 Larvik Mikrobryggeri blir med oss og serverer sine håndverksøl under festivalen.\n\n🕒 𝐀̊𝐩𝐧𝐢𝐧𝐠𝐬𝐭𝐢𝐝𝐞𝐫:\nTorsdag: 15:00–20:00\nFredag & lørdag: 12:00–20:00\nSøndag: 13:00–18:00\n\n🎟 Gratis inngang\n\nVi gleder oss til å besøke Brønnøysund – vi sees! 🚚✨",
+      "category": "mat-og-drikke",
+      "startDate": "2026-05-21T13:00:00.000Z",
+      "location": "Storgata 38, 8900 Brønnøysund, Norge",
+      "url": "https://www.facebook.com/events/999615582595019/",
+      "collectedAt": "2026-05-10T05:44:41.126Z"
+    },
+    {
+      "id": "940746342106332",
       "title": "Kred's Musikkbingo",
-      "description": "Våren er her! Hva passer bedre enn å ta turen innom og være med på Kred's Musikk-Bingo! Temaene er ikke bestemt enda, men det blir gøy uansett. Vår bingovert tar dere med til musikkens historie. Vi spiller musikk, du finner ut sangen og ser om den er på bingobrettet. Vanskeligere er det ikke! Alle tidligere deltakere synes dette er kjempegøy.",
+      "description": "Våren er her! Hva passer bedre enn å ta turen innom og være med på Kred's Musikk-Bingo! Temaene er ikke bestemt enda, men det blir gøy uansett.\n\nVår bingovert tar dere med til musikkens historie. Vi spiller musikk, du finner ut sangen og ser om den er på bingobrettet. Vanskeligere er det ikke! Alle tidligere deltakere synes dette er kjempegøy.\n\nVi spiller to runder med bingo. Det koster kr. 50,- for bingobrett, og du betaler bare en gang for hele kvelden.\n\nVi har 18-årsgrense.",
       "category": "quiz",
       "startDate": "2026-05-22T19:00:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/b/kreds-musikkbingo---22-mai-kl-2100",
-      "id": "Kred-2026-05-22T19:00:00.000Z",
-      "collectedAt": "2026-05-09T20:54:40.148Z"
+      "url": "https://www.facebook.com/events/940746342106332/",
+      "collectedAt": "2026-05-10T05:44:46.006Z"
     },
     {
       "title": "Konfirmasjonsgudstjeneste",
@@ -162,6 +182,26 @@
       "collectedAt": "2026-05-09T20:55:34.873Z"
     },
     {
+      "id": "1878953109410008",
+      "title": "Informasjonsmøte om humanistisk konfirmasjon",
+      "description": "Er du nysgjerrig på hva humanistisk konfirmasjon er og hvordan en humanistisk konfirmasjonsseremoni foregår?\n\n- Kom og møt seremoniansvarlig, kursleder og to av årets humanistiske konfirmanter som forteller mer om både kursene og seremonien.\n\nVi planlegger en kort orientering, for deretter å ta en av gruppeoppgavene som brukes i kursene, og avslutter med spørsmål fra salen.\n\nArrangementet er gratis og åpent for både ungdommer og foresatte. Ingen påmelding.\n\nVelkommen!\n\nTa gjerne kontakt med Pia Solli Arntsen for spørsmål Piasofie.solli@gmail.com\n\nArr.: HEF Sør-Helgeland",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-06-01T17:00:00.000Z",
+      "location": "Frivillighetssentralen i Brønnøysund, Innervegen 42",
+      "url": "https://www.facebook.com/events/1878953109410008/",
+      "collectedAt": "2026-05-10T05:44:48.934Z"
+    },
+    {
+      "id": "1341449024564049",
+      "title": "Barentssekretariatet kommer til Brønnøysund ",
+      "description": "Kunnskapsparken Helgeland inviterer, sammen med Barentssekretariatet, til en faglig og inspirerende møteplass i Brønnøysund. \n\nJobber du innen næringsliv, kultur, ungdomsarbeid, utdanning, frivillighet, idrett eller folkehelse? Da kan du søke støtte til samarbeidsprosjekter i nordområdene gjennom Barentssekretariatet.\n\nBarentssekretariatet deler årlig ut rundt 30 millioner kroner til samarbeidsprosjekter i nord.\n\nProgram:\n• Velkommen og enkel servering\n• Kunnskapsparken Helgeland: prosjekter og muligheter i regionen\n• Barentssekretariatets tilskuddsordninger\n• Spørsmål og dialog\n• Mulighet for individuelle møter\n\nDato: Torsdag 4. juni\nTid: Kl. 11.30\nSted: Grunderhuset ME!R\n\nDet er gratis å delta, og vi serverer lunsj.\nHusk å meld deg på.\n\nVelkommen!",
+      "category": "næringsliv",
+      "startDate": "2026-06-04T11:00:00.000Z",
+      "location": "Storgata 49, 8900 Brønnøysund, Norge",
+      "url": "https://www.facebook.com/events/1341449024564049/",
+      "collectedAt": "2026-05-10T05:44:37.265Z"
+    },
+    {
       "title": "Frank Arne Olsen \"Fit for Fight\"",
       "description": "Gjør deg klar for en humor kveld utenom det vanlige når Kliff-Arne inntar scenen på Kred. Bak karakteren står Frank Arne Olsen – en nordnorsk revyartist, stand-up-komiker og skuespiller fra Hammerfest, kjent fra blant annet Honningsvågrevyen og filmserien Kill Buljo. Gjennom mange år på scenen har han utviklet sin egen humorstil, hvor skarpe observasjoner fra hverdagslivet blandes med karakterkomikk, parodier og musikalske innslag.",
       "category": "musikk",
@@ -172,14 +212,34 @@
       "collectedAt": "2026-05-09T20:54:40.148Z"
     },
     {
-      "title": "Musikkfest iBrønnøy",
-      "description": "Musikkfest iBrønnøy arrangeres i år for tiende gang. Dette er en hyllest til musikken. Vi håper dere kommer for å se de lokale artistene som stiller opp gratis for å underholde. Det blir ca. 3 timer med musikk fra forskjellige lokale artister.",
+      "id": "985743820768019",
+      "title": "Musikkfest iBrønnøy 2026",
+      "description": "Musikkfest iBrønnøy arrangeres i år for tiende gang. Dette er en hyllest til musikken. Vi håper dere kommer for å se de lokale artistene som stiller opp gratis for å underholde. Det blir ca. 3 timer med musikk fra forskjellige lokale artister.\n\nDisse deltar i år:\nListe blir oppdatert om litt....\n\nDet er selvfølgelig gratis inngang. Det hele skjer på Kred, og det blir selvfølgelig servering under arrangementet. ",
       "category": "musikk",
       "startDate": "2026-06-06T09:30:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/b/musikkfest-ibroennoey---6-juni-kl-1130",
-      "id": "Kred-2026-06-06T09:30:00.000Z",
-      "collectedAt": "2026-05-09T20:54:40.148Z"
+      "url": "https://www.facebook.com/events/985743820768019/",
+      "collectedAt": "2026-05-10T05:44:47.973Z"
+    },
+    {
+      "id": "986915327203157",
+      "title": "Sommertur",
+      "description": "Påmelding åpen for alle, og det er fortsatt ledige plasser. Husk å meld deg på innen fristen. Vi gleder oss til turen 😊",
+      "category": "annet",
+      "startDate": "2026-06-10T06:00:00.000Z",
+      "location": "Åsveien 35, Brønnøysund",
+      "url": "https://www.facebook.com/events/986915327203157/",
+      "collectedAt": "2026-05-10T05:44:46.448Z"
+    },
+    {
+      "id": "1512639060460486",
+      "title": "Formiddagsfilmen: Liten Ida (1981)",
+      "description": "Formiddagsfilmen: Liten Ida (1981)\n\nBrønnøy bibliotek inviterer til filmvisning på formiddagen torsdag 11. juni kl. 13:00.\n\nVi viser den norske spillefilmen Liten Ida. Filmen, som er spilt inn i Brønnøysund, handler om ei 6 år gammel jente som opplever den siste krigsvinteren i en liten kystby, der mora arbeider for tyskerne.\n\nFormiddagsfilmen er et lavterskeltilbud som er åpent for alle som ønsker seg en aktivitet på dagtid eller et samlingspunkt. Kom som du er og gå når du vil!\n\nFilmen varer i 1 time og 18 minutter.",
+      "category": "kino",
+      "startDate": "2026-06-11T11:00:00.000Z",
+      "location": "Brønnøy bibliotek",
+      "url": "https://www.facebook.com/events/1512639060460486/",
+      "collectedAt": "2026-05-10T05:44:45.048Z"
     },
     {
       "id": "1355561149693604",
@@ -199,7 +259,17 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-04-10T04:54:18.090Z"
+      "collectedAt": "2026-05-10T05:44:40.137Z"
+    },
+    {
+      "id": "1442219523834464",
+      "title": "Maja Lunde - Skjerm barna",
+      "description": "Maja Lunde kommer til Brønnøysund for å snakke om boka si \"Skjerm barna\" på samfunnshuset i storsalen. \n\nDet er gratis inngang for alle interesserte.\n\nBli med på et inspirerende foredrag med Maja Lunde \"Skjerm barna\". Hvordan teknologien tok over barndommen og hva vi kan gjøre for å ta den tilbake.\n\nEt foredrag for deg som synes at ungene er for mye på skjerm og vil bidra til å ta barndommen tilbake! Et barn som bruker mobilen en time om dagen vil med en gjennomsnittlig levealder på 82 år bruker omlag 30.000 timer på mobilen eller 15. årsverk. Veldig mange barn og unge bruker mobilen 4 timer eller mer hver dag. Det er 60 årsverk det. Mobilen, algoritmene, eier barnas tid. Bruken rammer alt det viktige de trenger for å ha det bra; leke, sove, bevege seg, lese, dagdrømme og være sammen med andre. Samtidig stiger tallene på psykisk uhelse blant barn og ungdom, og skoleresultatene raser. \n\nVi har gitt barna fri tilgang til applikasjoner og dingser som vi voksne knapt klarer å håndtere. Til sosiale medier som krever en mental modenhet barn og unge rett og slett ikke har utviklet, fordi hjernen deres fremdeles er under ombygging. Vi har bare gjort det, fordi vi tror det digitale har kommet for å bli. De eneste som tjener på det er tek-gigantene. Men, det som ikke gjør livene våre og samfunnet bedre, det har ikke kommet for å bli. Det kan vi fjerne eller endre.\n\nDette foredraget viser deg hvordan.\n\nDette er et arrangement som er kommet i gang med initativ av noen foreldre på BBS, Utdanningsforbundet Brønnøy, Norli Bokhandel Brønnøysund, Brønnøysund Sanitetsforening og Brønnøy bibliotek. Med støtte fra alle de ovenstående og i tillegg Utdanningsforbundet Sømna, Utdanningsforbundet Vega og Brønnøy kommune v/Barne- og familietjenesten har vi fått Maja Lunde til å komme hit til Brønnøysund.",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-09-16T17:00:00.000Z",
+      "location": "Brønnøysund samfunnshus",
+      "url": "https://www.facebook.com/events/1442219523834464/",
+      "collectedAt": "2026-05-10T05:44:40.645Z"
     },
     {
       "id": "1160245412989516",
@@ -219,7 +289,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-04-10T04:54:21.895Z"
+      "collectedAt": "2026-05-10T05:44:49.400Z"
     }
   ]
 }
