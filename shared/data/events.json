@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-05-12T05:46:01.488Z",
+  "updatedAt": "2026-05-13T05:55:27.048Z",
   "events": [
-    {
-      "id": "946453238309881",
-      "title": "Sammen om Sør-Helgeland og Innovasjon Norge i Brønnøysund",
-      "description": "Sammen om Sør-Helgeland inviterer til Meir i Brønnøysund 📅 Tirsdag 12. mai kl. 12:00-14:00\n\nVi får besøk av Innovasjon Norge som vil fortelle om hvordan de jobber, hvilke virkemidler de har, og dele gode tips til søknadsprosesser. \n\nDet blir servert snacks, og det legges opp til speed-dating: samtaler med Innovasjon Norge, KPH, KI og SNH. \nHer får dere mulighet til å presentere prosjektene deres og diskutere ideer direkte med oss. \nHver bedrift får 8 minutter før man bytter videre til neste samtale. \n\nVelkommen!\nArrangementet er åpent og gratis for alle - men husk å meld deg på. \n\nArrangementet arrangeres av prosjektgruppen Sammen om Sør-Helgeland som består av Sentrum Næringshage, Kystinkubatoren og Kunnskapsparken Helgeland, og så har vi fått med oss Innovasjon Norge på laget denne gang! \n\nPåmelding: https://forms.office.com/e/sQYqHUapeE",
-      "category": "næringsliv",
-      "startDate": "2026-05-12T10:00:00.000Z",
-      "location": "Storgata 49, 8900 Brønnøysund",
-      "url": "https://www.facebook.com/events/946453238309881/",
-      "collectedAt": "2026-05-12T05:45:58.205Z"
-    },
     {
       "title": "Trille-Tralle-Treff (babysang)",
       "description": "Barn og unge - Kefas",
@@ -19,7 +9,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=7bf4f792-887e-45a0-8ea7-bf028002b8f6",
       "id": "Brønnøy-kirke-2026-05-13T09:00:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
+      "collectedAt": "2026-05-13T05:55:27.047Z"
     },
     {
       "id": "1653238979132410",
@@ -36,10 +26,10 @@
       "description": "Gudstjeneste - Velfjord kirke",
       "category": "tro-og-livssyn",
       "startDate": "2026-05-14T14:00:00.000Z",
-      "location": "Velfjord kirke",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=78ff8926-5864-4a8a-a086-fe8b93f320f0&OccurenceId=78ff8926-5864-4a8a-a086-fe8b93f320f0",
       "id": "Brønnøy-kirke-2026-05-14T14:00:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
+      "collectedAt": "2026-05-13T05:55:27.047Z"
     },
     {
       "id": "1399575004995288",
@@ -72,14 +62,24 @@
       "collectedAt": "2026-05-12T05:45:58.970Z"
     },
     {
+      "title": "Program 17. mai",
+      "description": "PROGRAM 17. MAI i BRØNNØYSUND / SALHUS / NORDHUS / VELFJORD",
+      "category": "kommunalt",
+      "startDate": "2026-05-16T22:00:00.000Z",
+      "location": "Brønnøy kommune",
+      "url": "https://www.bronnoy.kommune.no/aktuelt/program-17-mai.14226.aspx",
+      "id": "Brønnøy-kommune-2026-05-16T22:00:00.000Z",
+      "collectedAt": "2026-05-13T05:54:14.776Z"
+    },
+    {
       "title": "Gudstjeneste",
       "description": "Gudstjeneste - Velfjord kirke",
       "category": "tro-og-livssyn",
       "startDate": "2026-05-17T09:00:00.000Z",
-      "location": "Velfjord kirke",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=088391b1-17c4-40e0-8839-f83bdad42dba&OccurenceId=088391b1-17c4-40e0-8839-f83bdad42dba",
       "id": "Brønnøy-kirke-2026-05-17T09:00:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
+      "collectedAt": "2026-05-13T05:55:27.047Z"
     },
     {
       "id": "2024304411815352",
@@ -99,7 +99,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=4aa4374c-48c0-4d94-aafb-72b1245235d7&OccurenceId=4aa4374c-48c0-4d94-aafb-72b1245235d7",
       "id": "Brønnøy-kirke-2026-05-17T13:00:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
+      "collectedAt": "2026-05-13T05:55:27.047Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -109,7 +109,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=0f9b3345-f30a-45e8-86e9-6620e7a6d4fd",
       "id": "Brønnøy-kirke-2026-05-20T09:00:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
+      "collectedAt": "2026-05-13T05:55:27.047Z"
     },
     {
       "id": "999615582595019",
@@ -136,10 +136,10 @@
       "description": "Gudstjeneste - Velfjord kirke",
       "category": "tro-og-livssyn",
       "startDate": "2026-05-24T09:00:00.000Z",
-      "location": "Velfjord kirke",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=e540956a-3dce-4af1-a3bb-9b37500d6286&OccurenceId=e540956a-3dce-4af1-a3bb-9b37500d6286",
       "id": "Brønnøy-kirke-2026-05-24T09:00:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
+      "collectedAt": "2026-05-13T05:55:27.047Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -149,17 +149,17 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=01a09405-1ebe-481c-8583-4b0d4d8aea20",
       "id": "Brønnøy-kirke-2026-05-27T09:00:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
+      "collectedAt": "2026-05-13T05:55:27.047Z"
     },
     {
       "title": "Gudstjeneste",
       "description": "Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "startDate": "2026-05-28T09:30:00.000Z",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=45e0c633-0170-4bc7-a397-a5ddb47c026a&OccurenceId=45e0c633-0170-4bc7-a397-a5ddb47c026a",
       "id": "Brønnøy-kirke-2026-05-28T09:30:00.000Z",
-      "collectedAt": "2026-05-09T20:55:34.873Z"
+      "collectedAt": "2026-05-13T05:55:27.047Z"
     },
     {
       "id": "1878953109410008",
