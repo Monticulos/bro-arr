@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-18T06:23:14.106Z",
+  "updatedAt": "2026-05-19T06:16:25.572Z",
   "events": [
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -50,6 +50,16 @@
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=e540956a-3dce-4af1-a3bb-9b37500d6286&OccurenceId=e540956a-3dce-4af1-a3bb-9b37500d6286",
       "id": "Brønnøy-kirke-2026-05-24T09:00:00.000Z",
       "collectedAt": "2026-05-14T05:54:38.175Z"
+    },
+    {
+      "title": "ÅPENT MØTE OM DEMENS",
+      "description": "ÅPENT MØTE OM DEMENS - 26 MAI KL. 15:00 - RÅDHUSET",
+      "category": "kommunalt",
+      "startDate": "2026-05-26T13:00:00.000Z",
+      "location": "Brønnøy Rådhus",
+      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=276&lang=1&MId1=35",
+      "id": "Brønnøy-kommune-2026-05-26T13:00:00.000Z",
+      "collectedAt": "2026-05-19T06:15:16.946Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
