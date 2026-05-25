@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-05-24T06:10:41.019Z",
+  "updatedAt": "2026-05-25T06:43:10.680Z",
   "events": [
-    {
-      "title": "Konfirmasjonsgudstjeneste",
-      "description": "Konfirmasjonsgudstjeneste - Gudstjeneste - Velfjord kirke",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-05-24T09:00:00.000Z",
-      "location": "Velfjord kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=e540956a-3dce-4af1-a3bb-9b37500d6286&OccurenceId=e540956a-3dce-4af1-a3bb-9b37500d6286",
-      "id": "Brønnøy-kirke-2026-05-24T09:00:00.000Z",
-      "collectedAt": "2026-05-14T05:54:38.175Z"
-    },
     {
       "id": "1612499416519507",
       "title": "Rundt Torghatten - Tredje løp i Løpskarusellen 2026",
@@ -29,7 +19,7 @@
       "location": "Brønnøy Rådhus",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=276&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-05-26T13:00:00.000Z",
-      "collectedAt": "2026-05-24T06:08:03.790Z"
+      "collectedAt": "2026-05-25T06:42:11.809Z"
     },
     {
       "id": "2390558074771842",
