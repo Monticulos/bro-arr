@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-05-27T06:28:01.652Z",
+  "updatedAt": "2026-05-28T06:21:09.953Z",
   "events": [
-    {
-      "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang) - Barn og unge - Kefas",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-05-27T09:00:00.000Z",
-      "location": "Kefas",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=01a09405-1ebe-481c-8583-4b0d4d8aea20",
-      "id": "Brønnøy-kirke-2026-05-27T09:00:00.000Z",
-      "collectedAt": "2026-05-14T05:54:38.175Z"
-    },
     {
       "title": "Gudstjeneste",
       "description": "Gudstjeneste - Sykehjemmets kapell",
@@ -29,7 +19,17 @@
       "startDate": "2026-05-28T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1399575011661954/",
-      "collectedAt": "2026-05-26T06:16:13.973Z"
+      "collectedAt": "2026-05-28T06:21:04.499Z"
+    },
+    {
+      "id": "1031963689507662",
+      "title": "FotballtrøyeFredag på Havnesenteret ⚽️👕",
+      "description": "Fredag 29. mai markerer vi FotballtrøyeFredag på Havnesenteret, og vi oppfordrer alle til å ta på seg sin favorittdrakt for å vise støtte i kampen mot barnekreft 🎗️⚽️\n\nSlik kan du være med: \n1. Vipps 100,- eller valgfritt beløp til 4422\n2. Ta på deg fotballtrøya\n3. Del videre. Bruk #fotballtrøyefredag i sosiale medier. \n\nStøtt kampen mot barnekreft du også! ❤️",
+      "category": "annet",
+      "startDate": "2026-05-29T08:00:00.000Z",
+      "location": "Storgata 58, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/1031963689507662/",
+      "collectedAt": "2026-05-28T06:21:07.954Z"
     },
     {
       "id": "1878953109410008",
@@ -49,7 +49,7 @@
       "startDate": "2026-06-04T11:00:00.000Z",
       "location": "Storgata 49, 8900 Brønnøysund, Norge",
       "url": "https://www.facebook.com/events/1341449024564049/",
-      "collectedAt": "2026-05-26T06:16:10.295Z"
+      "collectedAt": "2026-05-28T06:21:08.453Z"
     },
     {
       "title": "Frank Arne Olsen \"Fit for Fight\"",
@@ -79,7 +79,7 @@
       "startDate": "2026-06-08T14:30:00.000Z",
       "location": "Jektskipperveien 4, Brønnøysund",
       "url": "https://www.facebook.com/events/1763088265056398/",
-      "collectedAt": "2026-05-26T06:16:10.801Z"
+      "collectedAt": "2026-05-28T06:21:02.571Z"
     },
     {
       "id": "2212550292834646",
@@ -89,7 +89,7 @@
       "startDate": "2026-06-08T16:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/2212550292834646/",
-      "collectedAt": "2026-05-26T06:16:16.906Z"
+      "collectedAt": "2026-05-28T06:21:08.958Z"
     },
     {
       "id": "986915327203157",
@@ -109,7 +109,7 @@
       "startDate": "2026-06-11T11:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1512639060460486/",
-      "collectedAt": "2026-05-26T06:16:16.394Z"
+      "collectedAt": "2026-05-28T06:21:07.511Z"
     },
     {
       "id": "1516706503505155",
@@ -119,7 +119,7 @@
       "startDate": "2026-06-12T09:00:00.000Z",
       "location": "Axel Gynterbergsgate 2, Brønnøysund",
       "url": "https://www.facebook.com/events/1516706503505155/",
-      "collectedAt": "2026-05-26T06:16:13.301Z"
+      "collectedAt": "2026-05-28T06:21:03.528Z"
     },
     {
       "id": "1028979016120944",
@@ -129,7 +129,7 @@
       "startDate": "2026-06-13T10:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1028979016120944/",
-      "collectedAt": "2026-05-26T06:16:14.469Z"
+      "collectedAt": "2026-05-28T06:21:03.059Z"
     },
     {
       "id": "1509143040891012",
@@ -139,7 +139,7 @@
       "startDate": "2026-06-13T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1509143040891012/",
-      "collectedAt": "2026-05-26T06:16:14.951Z"
+      "collectedAt": "2026-05-28T06:21:07.061Z"
     },
     {
       "id": "1355561149693604",
@@ -149,7 +149,7 @@
       "startDate": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-05-26T06:16:17.401Z"
+      "collectedAt": "2026-05-28T06:21:09.953Z"
     },
     {
       "id": "1518436712711995",
@@ -159,7 +159,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-05-26T06:16:12.378Z"
+      "collectedAt": "2026-05-28T06:21:05.656Z"
     },
     {
       "id": "1442219523834464",
@@ -169,7 +169,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-05-26T06:16:18.959Z"
+      "collectedAt": "2026-05-28T06:21:04.021Z"
     },
     {
       "id": "1160245412989516",
@@ -179,7 +179,7 @@
       "startDate": "2026-10-02T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1160245412989516/",
-      "collectedAt": "2026-05-26T06:16:11.299Z"
+      "collectedAt": "2026-05-28T06:21:06.595Z"
     },
     {
       "id": "1982982558926487",
@@ -189,7 +189,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-05-26T06:16:15.922Z"
+      "collectedAt": "2026-05-28T06:21:06.141Z"
     }
   ]
 }
