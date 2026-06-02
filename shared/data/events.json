@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-06-01T07:09:27.393Z",
+  "updatedAt": "2026-06-02T06:50:04.819Z",
   "events": [
-    {
-      "id": "1878953109410008",
-      "title": "Informasjonsmøte om humanistisk konfirmasjon",
-      "description": "Er du nysgjerrig på hva humanistisk konfirmasjon er og hvordan en humanistisk konfirmasjonsseremoni foregår?\n\n- Kom og møt seremoniansvarlig, kursleder og to av årets humanistiske konfirmanter som forteller mer om både kursene og seremonien.\n\nVi planlegger en kort orientering, for deretter å ta en av gruppeoppgavene som brukes i kursene, og avslutter med spørsmål fra salen.\n\nArrangementet er gratis og åpent for både ungdommer og foresatte. Ingen påmelding.\n\nVelkommen!\n\nTa gjerne kontakt med Pia Solli Arntsen for spørsmål Piasofie.solli@gmail.com\n\nArr.: HEF Sør-Helgeland",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-06-01T17:00:00.000Z",
-      "location": "Frivillighetssentralen i Brønnøysund, Innervegen 42",
-      "url": "https://www.facebook.com/events/1878953109410008/",
-      "collectedAt": "2026-05-30T05:55:22.108Z"
-    },
     {
       "id": "1341449024564049",
       "title": "Barentssekretariatet kommer til Brønnøysund ",
@@ -19,7 +9,7 @@
       "startDate": "2026-06-04T11:00:00.000Z",
       "location": "Storgata 49, 8900 Brønnøysund, Norge",
       "url": "https://www.facebook.com/events/1341449024564049/",
-      "collectedAt": "2026-05-30T05:55:20.717Z"
+      "collectedAt": "2026-06-02T06:49:58.502Z"
     },
     {
       "title": "Frank Arne Olsen \"Fit for Fight\"",
@@ -32,6 +22,16 @@
       "collectedAt": "2026-05-09T20:54:40.148Z"
     },
     {
+      "id": "1353826823227727",
+      "title": "Pubkveld med Irsk og bluegrassmusikk☘️",
+      "description": "Fredag 5.juni klokka 22.00 inviterer vi til pubkveld på Den Andre Puben😁\n\nBandet O'Gras kommer å spiller for oss☘️\nDe er fra Vega og spiller tradisjonelle irske jigs and reels. Blandet med bluegrasslåter og svingende banjotoner, skaper dette fort stemning i lokalet😁\n\nDe består av:\n\nDaniel Ulriksen: Vokal, Mandolin,Gitar\n\nKyrre Slind: Banjo, Bouzouki, gitar, vokal\n\nMarius Jenssen: Gitar, banjo, fløyter, vokal\n\nNils Gullsvåg: Bass, vokal\n\nKurt Wiggo Støylen: Trommer\n\n(Kurt Wiggo er ikke med 5.juni)\n\n\n❗Aldersgrense 18 år\n\nGratis inngang ",
+      "category": "musikk",
+      "startDate": "2026-06-05T20:00:00.000Z",
+      "location": "Den andre puben",
+      "url": "https://www.facebook.com/events/1353826823227727/",
+      "collectedAt": "2026-06-02T06:49:58.968Z"
+    },
+    {
       "id": "985743820768019",
       "title": "Musikkfest iBrønnøy 2026",
       "description": "Musikkfest iBrønnøy arrangeres i år for tiende gang. Dette er en hyllest til musikken. Vi håper dere kommer for å se de lokale artistene som stiller opp gratis for å underholde. Det blir ca. 3 timer med musikk fra forskjellige lokale artister.\n\nDisse deltar i år:\nSpoiled Brats\nOdd Walter Bakksjø\nKristian Hestås Larsen\nSøndre Gård (Einar Lohne Bjøru og Mathilde Arnes)\nShady Crows Bluegrass (Vidar, Are, Stig, Andreas og Torstein)\nVegard Benjaminsen/Thomas Iversen/Stig Angel Benjaminsen\n\nDet er selvfølgelig gratis inngang. Det hele skjer på Kred, og det blir selvfølgelig servering under arrangementet. ",
@@ -39,7 +39,7 @@
       "startDate": "2026-06-06T09:30:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/985743820768019/",
-      "collectedAt": "2026-05-30T05:55:17.816Z"
+      "collectedAt": "2026-06-02T06:50:02.808Z"
     },
     {
       "id": "1763088265056398",
@@ -49,7 +49,7 @@
       "startDate": "2026-06-08T14:30:00.000Z",
       "location": "Jektskipperveien 4, Brønnøysund",
       "url": "https://www.facebook.com/events/1763088265056398/",
-      "collectedAt": "2026-05-30T05:55:23.060Z"
+      "collectedAt": "2026-06-02T06:49:58.025Z"
     },
     {
       "id": "2212550292834646",
@@ -59,7 +59,7 @@
       "startDate": "2026-06-08T16:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/2212550292834646/",
-      "collectedAt": "2026-05-30T05:55:25.857Z"
+      "collectedAt": "2026-06-02T06:50:02.286Z"
     },
     {
       "id": "986915327203157",
@@ -69,7 +69,7 @@
       "startDate": "2026-06-10T06:00:00.000Z",
       "location": "Åsveien 35, Brønnøysund",
       "url": "https://www.facebook.com/events/986915327203157/",
-      "collectedAt": "2026-05-30T05:55:24.025Z"
+      "collectedAt": "2026-06-02T06:49:59.550Z"
     },
     {
       "id": "1512639060460486",
@@ -79,7 +79,7 @@
       "startDate": "2026-06-11T11:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1512639060460486/",
-      "collectedAt": "2026-05-30T05:55:23.576Z"
+      "collectedAt": "2026-06-02T06:50:00.016Z"
     },
     {
       "id": "1516706503505155",
@@ -89,7 +89,7 @@
       "startDate": "2026-06-12T09:00:00.000Z",
       "location": "Axel Gynterbergsgate 2, Brønnøysund",
       "url": "https://www.facebook.com/events/1516706503505155/",
-      "collectedAt": "2026-05-30T05:55:21.187Z"
+      "collectedAt": "2026-06-02T06:50:01.793Z"
     },
     {
       "id": "1028979016120944",
@@ -109,7 +109,7 @@
       "startDate": "2026-06-13T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1509143040891012/",
-      "collectedAt": "2026-05-30T05:55:25.407Z"
+      "collectedAt": "2026-06-02T06:50:01.299Z"
     },
     {
       "id": "1355561149693604",
@@ -119,7 +119,7 @@
       "startDate": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-05-30T05:55:17.392Z"
+      "collectedAt": "2026-06-02T06:50:04.332Z"
     },
     {
       "id": "35969787402636282",
@@ -129,7 +129,7 @@
       "startDate": "2026-07-11T11:00:00.000Z",
       "location": "Den andre puben",
       "url": "https://www.facebook.com/events/35969787402636282/",
-      "collectedAt": "2026-05-30T05:55:21.661Z"
+      "collectedAt": "2026-06-02T06:50:00.451Z"
     },
     {
       "id": "1518436712711995",
@@ -139,7 +139,17 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-05-30T05:55:19.472Z"
+      "collectedAt": "2026-06-02T06:50:03.867Z"
+    },
+    {
+      "title": "Drømmejobb i Brønnøy",
+      "description": "\"Drømmejobb i Brønnøy\"-arrangementet.",
+      "category": "næringsliv",
+      "startDate": "2026-07-15T22:00:00.000Z",
+      "location": "Havnegata 48",
+      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=277&lang=1&MId1=35",
+      "id": "Brønnøy-kommune-2026-07-15T22:00:00.000Z",
+      "collectedAt": "2026-06-02T06:48:29.126Z"
     },
     {
       "id": "1442219523834464",
@@ -149,7 +159,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-05-30T05:55:24.503Z"
+      "collectedAt": "2026-06-02T06:49:57.516Z"
     },
     {
       "id": "1160245412989516",
@@ -169,7 +179,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-05-30T05:55:22.538Z"
+      "collectedAt": "2026-06-02T06:50:04.819Z"
     }
   ]
 }
