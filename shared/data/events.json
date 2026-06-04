@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T07:01:55.929Z",
+  "updatedAt": "2026-06-04T06:51:12.867Z",
   "events": [
     {
       "id": "1341449024564049",
@@ -9,7 +9,7 @@
       "startDate": "2026-06-04T11:00:00.000Z",
       "location": "Storgata 49, 8900 Brønnøysund, Norge",
       "url": "https://www.facebook.com/events/1341449024564049/",
-      "collectedAt": "2026-06-02T06:49:58.502Z"
+      "collectedAt": "2026-06-04T06:51:08.062Z"
     },
     {
       "title": "Frank Arne Olsen \"Fit for Fight\"",
@@ -29,7 +29,7 @@
       "startDate": "2026-06-05T20:00:00.000Z",
       "location": "Den andre puben",
       "url": "https://www.facebook.com/events/1353826823227727/",
-      "collectedAt": "2026-06-02T06:49:58.968Z"
+      "collectedAt": "2026-06-04T06:51:07.215Z"
     },
     {
       "id": "985743820768019",
@@ -39,7 +39,17 @@
       "startDate": "2026-06-06T09:30:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/985743820768019/",
-      "collectedAt": "2026-06-02T06:50:02.808Z"
+      "collectedAt": "2026-06-04T06:51:07.633Z"
+    },
+    {
+      "id": "2065289284372700",
+      "title": "Hagevandring hos Konrad Kvanli",
+      "description": "Hagevandring hos Konrad Kvanli. Dette er en unik mulighet til å se den flotte hagen hans, midt i Brønnøysund! Rhododendron er en spesialitet, og forhåpentligvis rekker vi det mens blomstringen enda er i full gang! ",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-06-07T10:00:00.000Z",
+      "location": "Innerveien 20, 8906 Brønnøysund, Norge",
+      "url": "https://www.facebook.com/events/2065289284372700/",
+      "collectedAt": "2026-06-04T06:51:12.415Z"
     },
     {
       "id": "1763088265056398",
@@ -49,7 +59,7 @@
       "startDate": "2026-06-08T14:30:00.000Z",
       "location": "Jektskipperveien 4, Brønnøysund",
       "url": "https://www.facebook.com/events/1763088265056398/",
-      "collectedAt": "2026-06-02T06:49:58.025Z"
+      "collectedAt": "2026-06-04T06:51:09.853Z"
     },
     {
       "id": "2212550292834646",
@@ -59,7 +69,7 @@
       "startDate": "2026-06-08T16:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/2212550292834646/",
-      "collectedAt": "2026-06-02T06:50:02.286Z"
+      "collectedAt": "2026-06-04T06:51:12.867Z"
     },
     {
       "id": "986915327203157",
@@ -79,17 +89,17 @@
       "startDate": "2026-06-11T11:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1512639060460486/",
-      "collectedAt": "2026-06-02T06:50:00.016Z"
+      "collectedAt": "2026-06-04T06:51:11.130Z"
     },
     {
       "id": "1516706503505155",
       "title": "Felles kjøring til Nord-Norgetreffet",
       "description": "Hei, amcarklubben legger opp til felles kjøring til Nord-Norgetreffet i Mosjøen.\nFra kl.11:00 møter vi opp på klubblokalet og gjør oss klar.\nKl.12:00 Avgang fra Brønnøysund\nCa.kl.13:30 er vi ved Tosenkrysset, så kan eventuelt flere sørfra «henge seg på» 👍\nCa. kl.13:45/14:00 tar vi en pitstop på Trixie\nCa. kl.15:00 ankommer vi Mosjøen 👍",
-      "category": "næringsliv",
+      "category": "annet",
       "startDate": "2026-06-12T09:00:00.000Z",
       "location": "Axel Gynterbergsgate 2, Brønnøysund",
       "url": "https://www.facebook.com/events/1516706503505155/",
-      "collectedAt": "2026-06-02T06:50:01.793Z"
+      "collectedAt": "2026-06-04T06:51:10.257Z"
     },
     {
       "id": "1028979016120944",
@@ -99,7 +109,7 @@
       "startDate": "2026-06-13T10:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1028979016120944/",
-      "collectedAt": "2026-05-28T06:21:03.059Z"
+      "collectedAt": "2026-06-04T06:51:08.512Z"
     },
     {
       "id": "1509143040891012",
@@ -109,7 +119,17 @@
       "startDate": "2026-06-13T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1509143040891012/",
-      "collectedAt": "2026-06-02T06:50:01.299Z"
+      "collectedAt": "2026-06-04T06:51:10.690Z"
+    },
+    {
+      "id": "1660382928555532",
+      "title": "Frokost & medlemsmøte med NHO📍 Thon Hotell Brønnøysund",
+      "description": "🚗 NHO på Helgelandsturné, nå kommer vi til Brønnøysund!\n\nNHO Nordland inviterer til frokost & medlemsmøte i Brønnøysund som en del av vår Helgelandsturné. Dette er en møteplass for næringslivet, hvor vi deler innsikt, diskuterer aktuelle utfordringer og ser på mulighetene for vekst og verdiskaping i regionen.\n\nPå programmet:\n🔹 Aktuelle næringspolitiske saker lokalt og nasjonalt\n🔹 Internasjonale utviklingstrekk og konsekvenser for norske bedrifter\n🔹 Nytt fra NHO og medlemsfordeler\n🔹 Lokalt innlegg fra Brønnøy Kalk\n🔹 Dialog og innspill fra næringslivet på Helgeland\n\n📅 Onsdag 17. juni\n⏰ 08:00-10:00\n📍 Thon Hotel Brønnøysund\n\nDeltakelse er gratis, men påmelding er nødvendig da antall plasser er begrenset.\n\n👉 Meld deg på i dag for å sikre plass: https://www.nho.no/regionforeninger/nho-nordland/arrangementer/2026/medlemsmoter-pa-helgeland/ \n\nVi gleder oss til å møte næringslivet i Sandnessjøen!",
+      "category": "næringsliv",
+      "startDate": "2026-06-17T06:00:00.000Z",
+      "location": "Thon Hotel Brønnøysund",
+      "url": "https://www.facebook.com/events/1660382928555532/",
+      "collectedAt": "2026-06-04T06:51:09.386Z"
     },
     {
       "id": "1355561149693604",
@@ -119,7 +139,7 @@
       "startDate": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-06-02T06:50:04.332Z"
+      "collectedAt": "2026-06-04T06:51:08.956Z"
     },
     {
       "id": "35969787402636282",
@@ -129,7 +149,7 @@
       "startDate": "2026-07-11T11:00:00.000Z",
       "location": "Den andre puben",
       "url": "https://www.facebook.com/events/35969787402636282/",
-      "collectedAt": "2026-06-02T06:50:00.451Z"
+      "collectedAt": "2026-06-04T06:51:11.563Z"
     },
     {
       "id": "1518436712711995",
@@ -139,7 +159,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-06-02T06:50:03.867Z"
+      "collectedAt": "2026-06-04T06:51:06.781Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
@@ -179,7 +199,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-06-02T06:50:04.819Z"
+      "collectedAt": "2026-06-04T06:51:11.984Z"
     }
   ]
 }
