@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-06-04T06:51:12.867Z",
+  "updatedAt": "2026-06-05T06:39:26.011Z",
   "events": [
-    {
-      "id": "1341449024564049",
-      "title": "Barentssekretariatet kommer til Brønnøysund ",
-      "description": "Kunnskapsparken Helgeland inviterer, sammen med Barentssekretariatet, til en faglig og inspirerende møteplass i Brønnøysund. \n\nJobber du innen næringsliv, kultur, ungdomsarbeid, utdanning, frivillighet, idrett eller folkehelse? Da kan du søke støtte til samarbeidsprosjekter i nordområdene gjennom Barentssekretariatet.\n\nBarentssekretariatet deler årlig ut rundt 30 millioner kroner til samarbeidsprosjekter i nord.\n\nProgram:\n• Velkommen og enkel servering\n• Kunnskapsparken Helgeland: prosjekter og muligheter i regionen\n• Barentssekretariatets tilskuddsordninger\n• Spørsmål og dialog\n• Mulighet for individuelle møter\n\nDato: Torsdag 4. juni\nTid: Kl. 11.30\nSted: Grunderhuset ME!R\n\nDet er gratis å delta, og vi serverer lunsj.\nHusk å meld deg på.\n\nVelkommen!",
-      "category": "næringsliv",
-      "startDate": "2026-06-04T11:00:00.000Z",
-      "location": "Storgata 49, 8900 Brønnøysund, Norge",
-      "url": "https://www.facebook.com/events/1341449024564049/",
-      "collectedAt": "2026-06-04T06:51:08.062Z"
-    },
     {
       "title": "Frank Arne Olsen \"Fit for Fight\"",
       "description": "Gjør deg klar for en humor kveld utenom det vanlige når Kliff-Arne inntar scenen på Kred. Bak karakteren står Frank Arne Olsen – en nordnorsk revyartist, stand-up-komiker og skuespiller fra Hammerfest, kjent fra blant annet Honningsvågrevyen og filmserien Kill Buljo. Gjennom mange år på scenen har han utviklet sin egen humorstil, hvor skarpe observasjoner fra hverdagslivet blandes med karakterkomikk, parodier og musikalske innslag.",
@@ -132,6 +122,16 @@
       "collectedAt": "2026-06-04T06:51:09.386Z"
     },
     {
+      "title": "Invitasjon – oppstart av Beredskapsforum for næringsliv på Sør Helgeland",
+      "description": "Kommunene Vega, Vevelstad, Sømna og Brønnøy inviterer til oppstartsmøte for et nytt interkommunalt beredskapsforum for næringslivet.",
+      "category": "næringsliv",
+      "startDate": "2026-06-18T10:00:00.000Z",
+      "location": "Rådhuset i Brønnøysund",
+      "url": "https://www.bronnoy.kommune.no/aktuelt/invitasjon-oppstart-av-beredskapsforum-for-naringsliv-pa-sor-helgeland.17530.aspx",
+      "id": "Brønnøy-kommune-2026-06-18T10:00:00.000Z",
+      "collectedAt": "2026-06-05T06:38:25.112Z"
+    },
+    {
       "id": "1355561149693604",
       "title": "Korfestivalen 2026",
       "description": "Festivalen for glade sangere fra hele landet !\n\nVi håper du tar Torghattfestivalen for kor i Brønnøysund med i betraktningen når du planlegger aktiviteten for ditt kor i 2026. Når vi inviterer til trivelige dager i Nord-Norges sommerby Brønnøysund er du personlig og ditt kor spesielt invitert. \n\nKorfestivalen i Brønnøysund er basert på at sangerne blir satt i sentrum og vi garanterer at sangerne vil sette sitt preg på byen i gater, konsertlokaler, butikker og utesteder under hele festivalen. For å bevare intimitet og muligheten til å bli bedre kjent med andre sangere har vi satt antall deltakere til maksimalt 500 sangere. Selv om sangen står i sentrum vil i like stor grad opplevelsen av kystmiljø og tradisjon være viktige element, sammen med det uformelle under festivalen.\n\nKulinariske opplevelser som; Havets festbord på fredag kveld i pitoreske Tørrfeskbrygga og den stilfulle Festivalbanketten på Samfunnshuset lørdag er høydepunkter.\nKonserten i Torghatthullet må oppleves - en fornemmelse av høytid med naturen som katedral.\n\nKorkonkurransen  er en viktig del av den musikalske utfordringen på festivalen og vi oppfordrer alle kor til å delta på den. Konkurransen vil tradisjonen tro bestå av en profan og en sakral del. Første del foregår fredag ettermiddag like etter åpningsseremonien. Andre del foregår lørdag ettermiddag i Brønnøy kirke. Konserten i kirken vil være en obligatorisk sang for hver klasse (mannskor, damekor og blandakor) som velges ut av dommerne. Hvilke sanger dette blir vil bli annonsert i november 2025\n\nOg - det blir selvsagt premiering i samtlige klasser (dame-, manns- og blandakor)\n\nPå fredag formiddag kan dere få anledning til å glede byens hardtarbeidende befolkning med vakker korsang i lunsjen. På lørdag lager vi show i sentrum med \"Kor for folk\". Det blir også \"Kulturkafè\" på Samfunnshuset der det i tillegg til korsang blir anledning til å bidra med andre kunsteriske innslag.",
@@ -163,13 +163,13 @@
     },
     {
       "title": "Drømmejobb i Brønnøy",
-      "description": "\"Drømmejobb i Brønnøy\"-arrangementet.",
+      "description": "\"Drømmejobb i Brønnøy\" 16.juli 2026.",
       "category": "næringsliv",
       "startDate": "2026-07-15T22:00:00.000Z",
       "location": "Havnegata 48",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=277&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-15T22:00:00.000Z",
-      "collectedAt": "2026-06-02T06:48:29.126Z"
+      "collectedAt": "2026-06-05T06:38:25.112Z"
     },
     {
       "id": "1442219523834464",
