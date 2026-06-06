@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-06-05T06:39:26.011Z",
+  "updatedAt": "2026-06-06T06:00:40.553Z",
   "events": [
-    {
-      "title": "Frank Arne Olsen \"Fit for Fight\"",
-      "description": "Gjør deg klar for en humor kveld utenom det vanlige når Kliff-Arne inntar scenen på Kred. Bak karakteren står Frank Arne Olsen – en nordnorsk revyartist, stand-up-komiker og skuespiller fra Hammerfest, kjent fra blant annet Honningsvågrevyen og filmserien Kill Buljo. Gjennom mange år på scenen har han utviklet sin egen humorstil, hvor skarpe observasjoner fra hverdagslivet blandes med karakterkomikk, parodier og musikalske innslag.",
-      "category": "musikk",
-      "startDate": "2026-06-05T18:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.cafekred.no/b/frank-arne-olsen-fit-for-fight---fredag-5-juni-kl-2000",
-      "id": "Kred-2026-06-05T18:00:00.000Z",
-      "collectedAt": "2026-05-09T20:54:40.148Z"
-    },
     {
       "id": "1353826823227727",
       "title": "Pubkveld med Irsk og bluegrassmusikk☘️",
@@ -29,7 +19,7 @@
       "startDate": "2026-06-06T09:30:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/985743820768019/",
-      "collectedAt": "2026-06-04T06:51:07.633Z"
+      "collectedAt": "2026-06-06T06:00:33.252Z"
     },
     {
       "id": "2065289284372700",
@@ -39,7 +29,7 @@
       "startDate": "2026-06-07T10:00:00.000Z",
       "location": "Innerveien 20, 8906 Brønnøysund, Norge",
       "url": "https://www.facebook.com/events/2065289284372700/",
-      "collectedAt": "2026-06-04T06:51:12.415Z"
+      "collectedAt": "2026-06-06T06:00:37.618Z"
     },
     {
       "id": "1763088265056398",
@@ -49,7 +39,7 @@
       "startDate": "2026-06-08T14:30:00.000Z",
       "location": "Jektskipperveien 4, Brønnøysund",
       "url": "https://www.facebook.com/events/1763088265056398/",
-      "collectedAt": "2026-06-04T06:51:09.853Z"
+      "collectedAt": "2026-06-06T06:00:35.505Z"
     },
     {
       "id": "2212550292834646",
@@ -59,7 +49,7 @@
       "startDate": "2026-06-08T16:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/2212550292834646/",
-      "collectedAt": "2026-06-04T06:51:12.867Z"
+      "collectedAt": "2026-06-06T06:00:39.341Z"
     },
     {
       "id": "986915327203157",
@@ -69,7 +59,7 @@
       "startDate": "2026-06-10T06:00:00.000Z",
       "location": "Åsveien 35, Brønnøysund",
       "url": "https://www.facebook.com/events/986915327203157/",
-      "collectedAt": "2026-06-02T06:49:59.550Z"
+      "collectedAt": "2026-06-06T06:00:40.553Z"
     },
     {
       "id": "1512639060460486",
@@ -79,17 +69,37 @@
       "startDate": "2026-06-11T11:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1512639060460486/",
-      "collectedAt": "2026-06-04T06:51:11.130Z"
+      "collectedAt": "2026-06-06T06:00:38.903Z"
     },
     {
       "id": "1516706503505155",
       "title": "Felles kjøring til Nord-Norgetreffet",
       "description": "Hei, amcarklubben legger opp til felles kjøring til Nord-Norgetreffet i Mosjøen.\nFra kl.11:00 møter vi opp på klubblokalet og gjør oss klar.\nKl.12:00 Avgang fra Brønnøysund\nCa.kl.13:30 er vi ved Tosenkrysset, så kan eventuelt flere sørfra «henge seg på» 👍\nCa. kl.13:45/14:00 tar vi en pitstop på Trixie\nCa. kl.15:00 ankommer vi Mosjøen 👍",
-      "category": "annet",
+      "category": "næringsliv",
       "startDate": "2026-06-12T09:00:00.000Z",
       "location": "Axel Gynterbergsgate 2, Brønnøysund",
       "url": "https://www.facebook.com/events/1516706503505155/",
-      "collectedAt": "2026-06-04T06:51:10.257Z"
+      "collectedAt": "2026-06-06T06:00:38.070Z"
+    },
+    {
+      "id": "1330769461809145",
+      "title": "Feriemodus på Havnesenteret",
+      "description": "Feriemodus på Havnesenteret! 🍦\n\nHavnesenteret er i feriemodus, og det betyr morsomme aktiviteter for de minste!\n\nFredag 12. juni \n🐴 Ridedyr kl. 15-18\n🎨 Airbrush Tattoo kl. 15-18\n\nLørdag 13. juni\n🐴 Ridedyr kl. 11-15\n🧸 Bygg din egen bamse kl. 11-14\n \nBli med på en morsom helg 🎊",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-06-12T13:00:00.000Z",
+      "location": "Storgata 58, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/1330769461809145/",
+      "collectedAt": "2026-06-06T06:00:33.688Z"
+    },
+    {
+      "id": "1628220994956667",
+      "title": "kafe ved Tørrfiskbrygga",
+      "description": "Kafe ved Tørrfiskbrygga \n\n13 Juni\n\nkl 11:00 - 14:00\n(Åpent arrangement)\nForedrag: Tørrfiskbryggas historie ved Magnar Solbakk (rundt 30 minutter)\n\nTilberedning av Kamskjell og Kråkeboller.\nPresentasjon å foredrag ved Christian Niermann.\n\nDet blir salg av kaffe, brus og vaffler.\nVelkommen 😊 \n\n",
+      "category": "mat-og-drikke",
+      "startDate": "2026-06-13T09:00:00.000Z",
+      "location": "Strandveien 20, 8904 Brønnøysund ",
+      "url": "https://www.facebook.com/events/1628220994956667/",
+      "collectedAt": "2026-06-06T06:00:35.061Z"
     },
     {
       "id": "1028979016120944",
@@ -99,7 +109,7 @@
       "startDate": "2026-06-13T10:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1028979016120944/",
-      "collectedAt": "2026-06-04T06:51:08.512Z"
+      "collectedAt": "2026-06-06T06:00:40.187Z"
     },
     {
       "id": "1509143040891012",
@@ -109,7 +119,7 @@
       "startDate": "2026-06-13T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1509143040891012/",
-      "collectedAt": "2026-06-04T06:51:10.690Z"
+      "collectedAt": "2026-06-06T06:00:39.732Z"
     },
     {
       "id": "1660382928555532",
@@ -119,17 +129,17 @@
       "startDate": "2026-06-17T06:00:00.000Z",
       "location": "Thon Hotel Brønnøysund",
       "url": "https://www.facebook.com/events/1660382928555532/",
-      "collectedAt": "2026-06-04T06:51:09.386Z"
+      "collectedAt": "2026-06-06T06:00:34.102Z"
     },
     {
       "title": "Invitasjon – oppstart av Beredskapsforum for næringsliv på Sør Helgeland",
-      "description": "Kommunene Vega, Vevelstad, Sømna og Brønnøy inviterer til oppstartsmøte for et nytt interkommunalt beredskapsforum for næringslivet.",
+      "description": "Kommunene Vega, Vevelstad, Sømna og Brønnøy inviterer til oppstartsmøte for et nytt interkommunalt beredskapsforum for næringslivet torsdag 18.06.2026 klokken 12.00–14.30 på Rådhuset i Brønnøysund.",
       "category": "næringsliv",
       "startDate": "2026-06-18T10:00:00.000Z",
       "location": "Rådhuset i Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/aktuelt/invitasjon-oppstart-av-beredskapsforum-for-naringsliv-pa-sor-helgeland.17530.aspx",
       "id": "Brønnøy-kommune-2026-06-18T10:00:00.000Z",
-      "collectedAt": "2026-06-05T06:38:25.112Z"
+      "collectedAt": "2026-06-06T05:58:50.620Z"
     },
     {
       "id": "1355561149693604",
@@ -139,7 +149,7 @@
       "startDate": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-06-04T06:51:08.956Z"
+      "collectedAt": "2026-06-06T06:00:37.185Z"
     },
     {
       "id": "35969787402636282",
@@ -159,7 +169,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-06-04T06:51:06.781Z"
+      "collectedAt": "2026-06-06T06:00:36.521Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
@@ -169,7 +179,7 @@
       "location": "Havnegata 48",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=277&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-15T22:00:00.000Z",
-      "collectedAt": "2026-06-05T06:38:25.112Z"
+      "collectedAt": "2026-06-06T05:58:50.620Z"
     },
     {
       "id": "1442219523834464",
@@ -180,6 +190,16 @@
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
       "collectedAt": "2026-06-02T06:49:57.516Z"
+    },
+    {
+      "id": "1342636714447389",
+      "title": "NordNorske Tilstander",
+      "description": "Standupgallaen «Nordnorske tilstander» er på vei! Erlend Osnes tar med seg sine favorittkomikere på turné gjennom store deler av Nord-Norge for å gi publikum en kveld fylt med standup, historier og ufiltrert, nordnorsk humor på sitt beste. Opplev ekte fortellerglede og standup fra øverste hylle når Erlend Osnes, Hans Morten Hansen og Bror Hellesvik inntar scenen. Her blir det skarpe observasjoner, gjenkjennelige situasjoner og solide doser selvironi – levert med den lune og direkte stilen nordnorsk humor er kjent for.\n\nErlend Osnes: Bosatt i Bodø, er kjent som en frittalende og uredd komiker, med sin selvsikre stil, sin skarpe og trygge formidling så har han etablert seg som en av landets mest kjente og elskede komikere. En av Norges beste historiefortellere, har hysteriske betraktninger fra egen hverdag, et skrått blikk på tingenes tilstand og mye latter. Det er tidvis mørkt, tidvis på kanten, men alltid veldig morsomt.\n\nHans Morten Hansen: Stavangers store sønn har livnært seg som komiker i en mannsalder og er en av landets mest rutinerte og bejublede standupkomikere. Har satt opp en drøss soloforestillinger, har mottatt Komiprisen for «Beste Standup» to ganger. Til tross for en lang standupkarriere kjenner nok de fleste Hans Morten Hansen som karakteren Gullestad fra den populære NRK-serien ”Side om Side”. Har du ikke opplevd han på scenen er det på høy tid å se en av landets morsomste menn i sitt naturlige element.\n\nBror Hellesvik: Er en vaskekte nordlending, oppvokst på Myre i Vesterålen og representerer den nordnorske humorarven på best mulig vis. Det er saftig, direkte og hysterisk morsomt. Bror tar utgangspunkt i eget liv og utleverer gjerne seg selv og sin nærmeste familie med humor, varme og en stor fortellerglede. Hans fantastiske historier, vitser og unike beskrivelser av karakterer og situasjoner vil garantert få deg til å le. Enten du er nordlending eller søring.\n\nDette er kvelden for deg som vil flir dæ halvt i hjel – og kanskje få et nytt blikk på både relasjoner og hverdagen. Gled deg til Nordnorske tilstander!",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-09-26T17:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1342636714447389/",
+      "collectedAt": "2026-06-06T06:00:34.531Z"
     },
     {
       "id": "1160245412989516",
@@ -199,7 +219,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-06-04T06:51:11.984Z"
+      "collectedAt": "2026-06-06T06:00:38.492Z"
     }
   ]
 }
