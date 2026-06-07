@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-06-06T06:00:40.553Z",
+  "updatedAt": "2026-06-07T06:37:42.186Z",
   "events": [
-    {
-      "id": "1353826823227727",
-      "title": "Pubkveld med Irsk og bluegrassmusikk☘️",
-      "description": "Fredag 5.juni klokka 22.00 inviterer vi til pubkveld på Den Andre Puben😁\n\nBandet O'Gras kommer å spiller for oss☘️\nDe er fra Vega og spiller tradisjonelle irske jigs and reels. Blandet med bluegrasslåter og svingende banjotoner, skaper dette fort stemning i lokalet😁\n\nDe består av:\n\nDaniel Ulriksen: Vokal, Mandolin,Gitar\n\nKyrre Slind: Banjo, Bouzouki, gitar, vokal\n\nMarius Jenssen: Gitar, banjo, fløyter, vokal\n\nNils Gullsvåg: Bass, vokal\n\nKurt Wiggo Støylen: Trommer\n\n(Kurt Wiggo er ikke med 5.juni)\n\n\n❗Aldersgrense 18 år\n\nGratis inngang ",
-      "category": "musikk",
-      "startDate": "2026-06-05T20:00:00.000Z",
-      "location": "Den andre puben",
-      "url": "https://www.facebook.com/events/1353826823227727/",
-      "collectedAt": "2026-06-04T06:51:07.215Z"
-    },
-    {
-      "id": "985743820768019",
-      "title": "Musikkfest iBrønnøy 2026",
-      "description": "Musikkfest iBrønnøy arrangeres i år for tiende gang. Dette er en hyllest til musikken. Vi håper dere kommer for å se de lokale artistene som stiller opp gratis for å underholde. Det blir ca. 3 timer med musikk fra forskjellige lokale artister.\n\nDisse deltar i år:\nSpoiled Brats\nOdd Walter Bakksjø\nKristian Hestås Larsen\nSøndre Gård (Einar Lohne Bjøru og Mathilde Arnes)\nShady Crows Bluegrass (Vidar, Are, Stig, Andreas og Torstein)\nVegard Benjaminsen/Thomas Iversen/Stig Angel Benjaminsen\n\nDet er selvfølgelig gratis inngang. Det hele skjer på Kred, og det blir selvfølgelig servering under arrangementet. ",
-      "category": "musikk",
-      "startDate": "2026-06-06T09:30:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/985743820768019/",
-      "collectedAt": "2026-06-06T06:00:33.252Z"
-    },
     {
       "id": "2065289284372700",
       "title": "Hagevandring hos Konrad Kvanli",
@@ -60,6 +40,16 @@
       "location": "Åsveien 35, Brønnøysund",
       "url": "https://www.facebook.com/events/986915327203157/",
       "collectedAt": "2026-06-06T06:00:40.553Z"
+    },
+    {
+      "title": "Barn og unge - Kefas",
+      "description": "Barn og unge - Kefas",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-06-10T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=0ffdf7e8-7216-4b6b-be64-4bad120b854a",
+      "id": "Brønnøy-kirke-2026-06-10T09:00:00.000Z",
+      "collectedAt": "2026-06-07T06:37:42.185Z"
     },
     {
       "id": "1512639060460486",
@@ -122,6 +112,26 @@
       "collectedAt": "2026-06-06T06:00:39.732Z"
     },
     {
+      "title": "Gudstjeneste",
+      "description": "Gudstjeneste",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-06-14T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=be80dc3c-6f5d-42ad-af59-0fd12b27888e&OccurenceId=be80dc3c-6f5d-42ad-af59-0fd12b27888e",
+      "id": "Brønnøy-kirke-2026-06-14T09:00:00.000Z",
+      "collectedAt": "2026-06-07T06:37:42.185Z"
+    },
+    {
+      "title": "Gudstjeneste",
+      "description": "Gudstjeneste",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-06-14T14:00:00.000Z",
+      "location": "Velfjord kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=63b1befe-c38f-4d0d-bcd0-9e6126cf947e&OccurenceId=63b1befe-c38f-4d0d-bcd0-9e6126cf947e",
+      "id": "Brønnøy-kirke-2026-06-14T14:00:00.000Z",
+      "collectedAt": "2026-06-07T06:37:42.185Z"
+    },
+    {
       "id": "1660382928555532",
       "title": "Frokost & medlemsmøte med NHO📍 Thon Hotell Brønnøysund",
       "description": "🚗 NHO på Helgelandsturné, nå kommer vi til Brønnøysund!\n\nNHO Nordland inviterer til frokost & medlemsmøte i Brønnøysund som en del av vår Helgelandsturné. Dette er en møteplass for næringslivet, hvor vi deler innsikt, diskuterer aktuelle utfordringer og ser på mulighetene for vekst og verdiskaping i regionen.\n\nPå programmet:\n🔹 Aktuelle næringspolitiske saker lokalt og nasjonalt\n🔹 Internasjonale utviklingstrekk og konsekvenser for norske bedrifter\n🔹 Nytt fra NHO og medlemsfordeler\n🔹 Lokalt innlegg fra Brønnøy Kalk\n🔹 Dialog og innspill fra næringslivet på Helgeland\n\n📅 Onsdag 17. juni\n⏰ 08:00-10:00\n📍 Thon Hotel Brønnøysund\n\nDeltakelse er gratis, men påmelding er nødvendig da antall plasser er begrenset.\n\n👉 Meld deg på i dag for å sikre plass: https://www.nho.no/regionforeninger/nho-nordland/arrangementer/2026/medlemsmoter-pa-helgeland/ \n\nVi gleder oss til å møte næringslivet i Sandnessjøen!",
@@ -132,6 +142,16 @@
       "collectedAt": "2026-06-06T06:00:34.102Z"
     },
     {
+      "title": "Barn og unge - Brønnøy kirke",
+      "description": "Barn og unge - Brønnøy kirke",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-06-17T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=c6fa0cab-fb5f-478f-7b7bf-008cbf12a833&OccurenceId=c6fa0cab-fb5f-478f-b7bf-008cbf12a833",
+      "id": "Brønnøy-kirke-2026-06-17T09:00:00.000Z",
+      "collectedAt": "2026-06-07T06:37:42.185Z"
+    },
+    {
       "title": "Invitasjon – oppstart av Beredskapsforum for næringsliv på Sør Helgeland",
       "description": "Kommunene Vega, Vevelstad, Sømna og Brønnøy inviterer til oppstartsmøte for et nytt interkommunalt beredskapsforum for næringslivet torsdag 18.06.2026 klokken 12.00–14.30 på Rådhuset i Brønnøysund.",
       "category": "næringsliv",
@@ -139,7 +159,7 @@
       "location": "Rådhuset i Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/aktuelt/invitasjon-oppstart-av-beredskapsforum-for-naringsliv-pa-sor-helgeland.17530.aspx",
       "id": "Brønnøy-kommune-2026-06-18T10:00:00.000Z",
-      "collectedAt": "2026-06-06T05:58:50.620Z"
+      "collectedAt": "2026-06-07T06:36:37.554Z"
     },
     {
       "id": "1355561149693604",
@@ -150,6 +170,36 @@
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
       "collectedAt": "2026-06-06T06:00:37.185Z"
+    },
+    {
+      "title": "Gudstjeneste med de Makalause",
+      "description": "Gudstjeneste med de Makalause",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-06-21T09:00:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7d00902e-bcda-4567-b3a7-0e2987fffb5c&OccurenceId=7d00902e-bcda-4567-b3a7-0e2987fffb5c",
+      "id": "Brønnøy-kirke-2026-06-21T09:00:00.000Z",
+      "collectedAt": "2026-06-07T06:37:42.185Z"
+    },
+    {
+      "title": "Gudstjeneste",
+      "description": "Gudstjeneste",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-06-25T09:30:00.000Z",
+      "location": "Sykehjemmets kapell",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=e368ab2d-7bf9-478e-a446-d83a49a22c50&OccurenceId=e368ab2d-7bf9-478e-a446-d83a49a22c50",
+      "id": "Brønnøy-kirke-2026-06-25T09:30:00.000Z",
+      "collectedAt": "2026-06-07T06:37:42.185Z"
+    },
+    {
+      "title": "Gudstjeneste",
+      "description": "Gudstjeneste",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-06-28T14:00:00.000Z",
+      "location": "Velfjord kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=84827a37-8b8e-46d2-9076-06e97ce657e3&OccurenceId=84827a37-8b8e-46d2-9076-06e97ce657e3",
+      "id": "Brønnøy-kirke-2026-06-28T14:00:00.000Z",
+      "collectedAt": "2026-06-07T06:37:42.185Z"
     },
     {
       "id": "35969787402636282",
@@ -179,7 +229,7 @@
       "location": "Havnegata 48",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=277&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-15T22:00:00.000Z",
-      "collectedAt": "2026-06-06T05:58:50.620Z"
+      "collectedAt": "2026-06-07T06:36:37.554Z"
     },
     {
       "id": "1442219523834464",
