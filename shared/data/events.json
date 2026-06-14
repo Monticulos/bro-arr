@@ -1,36 +1,6 @@
 {
-  "updatedAt": "2026-06-13T06:24:19.783Z",
+  "updatedAt": "2026-06-14T06:50:28.284Z",
   "events": [
-    {
-      "id": "1617623336008816",
-      "title": "kafe ved Tørrfiskbrygga ",
-      "description": "Kafe ved Tørrfiskbrygga \n13 Juni\n\nkl 11:00 - 14:00\nÅpent arrangement \n\nForedrag: Tørrfiskbryggas historie ved Magnar Solbakk (rundt 30 minutter).\n\n- Tilberedning av Kamskjell og Kråkeboller. \nPresentasjon og foredrag ved Christian Niermann.\n\nDet blir salg av kaffe, brus og vaffler.\nVelkommen 😊",
-      "category": "mat-og-drikke",
-      "startDate": "2026-06-13T08:00:00.000Z",
-      "location": "Strandveien 20, 8904 Brønnøysund ",
-      "url": "https://www.facebook.com/events/1617623336008816/",
-      "collectedAt": "2026-06-12T06:51:07.637Z"
-    },
-    {
-      "id": "1628220994956667",
-      "title": "kafe ved Tørrfiskbrygga",
-      "description": "Kafe ved Tørrfiskbrygga \n\n13 Juni\n\nkl 11:00 - 14:00\n(Åpent arrangement)\nForedrag: Tørrfiskbryggas historie ved Magnar Solbakk (rundt 30 minutter)\n\nTilberedning av Kamskjell og Kråkeboller.\nPresentasjon å foredrag ved Christian Niermann.\n\nDet blir salg av kaffe, brus og vaffler.\nVelkommen 😊 \n\n",
-      "category": "mat-og-drikke",
-      "startDate": "2026-06-13T09:00:00.000Z",
-      "location": "Strandveien 20, 8904 Brønnøysund ",
-      "url": "https://www.facebook.com/events/1628220994956667/",
-      "collectedAt": "2026-06-12T06:51:02.534Z"
-    },
-    {
-      "id": "1028979016120944",
-      "title": "Afternoon Tea",
-      "description": "Vår deilige Afternoon Tea er tilbake lørdag 13.juni. \nNb! Kun ved forhåndsbestilling! \nReserver bord på post@cafekred.no eller 948 24 190 \n\nVi serverer på etasjefat i klassisk afternoon tea stil, med snitter i forskjellige varianter, croissant, ost, spekemat, frukt, bær, makroner og kaker. Vi brygger te etter ønske, og har mye godt å velge mellom. \nTe og kaffe er i kludert i prisen. Annen kald drikke, både med og uten alkohol kan kjøpes utenom. \n\nPris per pers: 465kr \nAllergier må oppgis ved bestilling. \n\nVelkommen til en koselig lørdag hos oss☺️ \n\n(Vi har åpent for andre gjester og vanlig alá carte meny også). ",
-      "category": "mat-og-drikke",
-      "startDate": "2026-06-13T10:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1028979016120944/",
-      "collectedAt": "2026-06-12T06:51:03.514Z"
-    },
     {
       "id": "1509143040891012",
       "title": "Red Smoke City",
@@ -69,7 +39,7 @@
       "startDate": "2026-06-17T06:00:00.000Z",
       "location": "Thon Hotel Brønnøysund",
       "url": "https://www.facebook.com/events/1660382928555532/",
-      "collectedAt": "2026-06-12T06:51:09.265Z"
+      "collectedAt": "2026-06-14T06:50:25.062Z"
     },
     {
       "title": "Barn og unge - Brønnøy kirke",
@@ -99,7 +69,7 @@
       "startDate": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-06-12T06:51:03.961Z"
+      "collectedAt": "2026-06-14T06:50:25.490Z"
     },
     {
       "title": "Gudstjeneste med de Makalause",
@@ -142,6 +112,16 @@
       "collectedAt": "2026-06-10T06:38:58.359Z"
     },
     {
+      "id": "1695096028301153",
+      "title": "Formiddagsfilmen: Det suser i sivet (The Wind in the Willows) (1995)",
+      "description": "Brønnøy bibliotek inviterer til filmvisning på formiddagen torsdag 9. juli kl. 13:00.\n\nMøt Mold Varp, Van Rotte, herr Padda og herr Grevling ved den idylliske elvebredden! Det suser i sivet er en animert film fra 1995 basert på barneboka med samme navn av forfatter Kenneth Grahame. Dette er en koselig og nostalgisk film som kan glede både liten og stor.\n\nFormiddagsfilmen er et lavterskeltilbud som er åpent for alle som ønsker seg en aktivitet på dagtid eller et samlingspunkt. Kom som du er og gå når du vil!\n\nFilmen varer i 1 time og 12 minutter og er på norsk. ",
+      "category": "kino",
+      "startDate": "2026-07-09T11:00:00.000Z",
+      "location": "Skolegata 1, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/1695096028301153/",
+      "collectedAt": "2026-06-14T06:50:28.284Z"
+    },
+    {
       "id": "35969787402636282",
       "title": "Konsert med Søndre Gård på Den Andre Puben ",
       "description": "11.Juli klokka 13.00 kommer Søndre Gård til Den Andre Puben og spiller konsert 🎸\n\nNordnorsk visesang møter folk-country med egne låter og tolkninger av kjente toner.\n\nGratis inngang 😁",
@@ -159,7 +139,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-06-12T06:51:08.728Z"
+      "collectedAt": "2026-06-14T06:50:27.882Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
@@ -182,6 +162,16 @@
       "collectedAt": "2026-06-13T06:23:09.298Z"
     },
     {
+      "id": "840590775474946",
+      "title": "Formiddagsfilmen: Døden på Oslo S (1990)",
+      "description": "Brønnøy bibliotek inviterer til filmvisning på formiddagen torsdag 6. august kl. 13:00.\n\nTrenger den egentlig noe introduksjon? Denne måneden viser vi Døden på Oslo S; filmen basert på Ingvar Ambjørnsens bok om radarparet Pelle og Proffen fra 1988.\n\nFormiddagsfilmen er et lavterskeltilbud som er åpent for alle som ønsker seg en aktivitet på dagtid eller et samlingspunkt. Kom som du er og gå når du vil!\n\nFilmen varer i 1 time og 39 minutter og er på norsk.",
+      "category": "kino",
+      "startDate": "2026-08-06T11:00:00.000Z",
+      "location": "Skolegata 1, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/840590775474946/",
+      "collectedAt": "2026-06-14T06:50:26.435Z"
+    },
+    {
       "id": "1442219523834464",
       "title": "Maja Lunde - Skjerm barna",
       "description": "Maja Lunde kommer til Brønnøysund for å snakke om boka si \"Skjerm barna\" på samfunnshuset i storsalen. \n\nDet er gratis inngang for alle interesserte.\n\nBli med på et inspirerende foredrag med Maja Lunde \"Skjerm barna\". Hvordan teknologien tok over barndommen og hva vi kan gjøre for å ta den tilbake.\n\nEt foredrag for deg som synes at ungene er for mye på skjerm og vil bidra til å ta barndommen tilbake! Et barn som bruker mobilen en time om dagen vil med en gjennomsnittlig levealder på 82 år bruker omlag 30.000 timer på mobilen eller 15. årsverk. Veldig mange barn og unge bruker mobilen 4 timer eller mer hver dag. Det er 60 årsverk det. Mobilen, algoritmene, eier barnas tid. Bruken rammer alt det viktige de trenger for å ha det bra; leke, sove, bevege seg, lese, dagdrømme og være sammen med andre. Samtidig stiger tallene på psykisk uhelse blant barn og ungdom, og skoleresultatene raser. \n\nVi har gitt barna fri tilgang til applikasjoner og dingser som vi voksne knapt klarer å håndtere. Til sosiale medier som krever en mental modenhet barn og unge rett og slett ikke har utviklet, fordi hjernen deres fremdeles er under ombygging. Vi har bare gjort det, fordi vi tror det digitale har kommet for å bli. De eneste som tjener på det er tek-gigantene. Men, det som ikke gjør livene våre og samfunnet bedre, det har ikke kommet for å bli. Det kan vi fjerne eller endre.\n\nDette foredraget viser deg hvordan.\n\nDette er et arrangement som er kommet i gang med initativ av noen foreldre på BBS, Utdanningsforbundet Brønnøy, Norli Bokhandel Brønnøysund, Brønnøysund Sanitetsforening og Brønnøy bibliotek. Med støtte fra alle de ovenstående og i tillegg Utdanningsforbundet Sømna, Utdanningsforbundet Vega og Brønnøy kommune v/Barne- og familietjenesten har vi fått Maja Lunde til å komme hit til Brønnøysund.",
@@ -189,7 +179,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-06-12T06:51:02.047Z"
+      "collectedAt": "2026-06-14T06:50:24.657Z"
     },
     {
       "id": "1342636714447389",
@@ -199,7 +189,7 @@
       "startDate": "2026-09-26T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-06-12T06:51:04.421Z"
+      "collectedAt": "2026-06-14T06:50:26.890Z"
     },
     {
       "id": "1160245412989516",
