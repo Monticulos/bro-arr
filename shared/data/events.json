@@ -1,36 +1,6 @@
 {
-  "updatedAt": "2026-06-14T06:50:28.284Z",
+  "updatedAt": "2026-06-15T07:29:36.835Z",
   "events": [
-    {
-      "id": "1509143040891012",
-      "title": "Red Smoke City",
-      "description": "RED SMOKE CITY\n\nFra Mo i Rana kommer Red Smoke City – et band som leverer rå bluesrock med tunge riff, groove og ekte spilleglede\n\nMed inspirasjon fra klassisk rock og blues skaper bandet en energisk liveopplevelse fylt med trøkk, stemning og sterke gitarlyder. Her handler det om ekte musikk, spilleglede og en kveld publikum skal kjenne både i kroppen og i sjela.\n\n🎤 Einar Røvassmo – Vokal\n🎸 Frank Krokå – Gitar\n🎸 Jon Dagfinn Larsen – Gitar\n🎸 Geir Ivar Sivertsen – Bass\n🥁 Tom Hillestad – Trommer\n\nRed Smoke City byr på egenkomponert musikk med karakter, nerve og rockefot.\nDette er et band som elsker scenen – og som gir alt live\n\n\n20års aldersgrense ",
-      "category": "musikk",
-      "startDate": "2026-06-13T20:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1509143040891012/",
-      "collectedAt": "2026-06-12T06:51:06.189Z"
-    },
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-06-14T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=be80dc3c-6f5d-42ad-af59-0fd12b27888e&OccurenceId=be80dc3c-6f5d-42ad-af59-0fd12b27888e",
-      "id": "Brønnøy-kirke-2026-06-14T09:00:00.000Z",
-      "collectedAt": "2026-06-10T06:38:58.359Z"
-    },
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-06-14T14:00:00.000Z",
-      "location": "Velfjord kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=63b1befe-c38f-4d0d-bcd0-9e6126cf947e&OccurenceId=63b1befe-c38f-4d0d-bcd0-9e6126cf947e",
-      "id": "Brønnøy-kirke-2026-06-14T14:00:00.000Z",
-      "collectedAt": "2026-06-10T06:38:58.359Z"
-    },
     {
       "id": "1660382928555532",
       "title": "Frokost & medlemsmøte med NHO📍 Thon Hotell Brønnøysund",
@@ -42,14 +12,14 @@
       "collectedAt": "2026-06-14T06:50:25.062Z"
     },
     {
-      "title": "Barn og unge - Brønnøy kirke",
-      "description": "Barn og unge - Brønnøy kirke",
+      "title": "Trille-Tralle-Treff (babysang)",
+      "description": "Babysang-arrangement for barn og unge.",
       "category": "barn-og-ungdom",
       "startDate": "2026-06-17T09:00:00.000Z",
       "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=c6fa0cab-fb5f-478f-7b7bf-008cbf12a833&OccurenceId=c6fa0cab-fb5f-478f-b7bf-008cbf12a833",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=c6fa0cab-fb5f-478f-b7bf-008cbf12a833&OccurenceId=c6fa0cab-fb5f-478f-b7bf-008cbf12a833",
       "id": "Brønnøy-kirke-2026-06-17T09:00:00.000Z",
-      "collectedAt": "2026-06-10T06:38:58.359Z"
+      "collectedAt": "2026-06-15T07:29:36.835Z"
     },
     {
       "title": "Invitasjon – oppstart av Beredskapsforum for næringsliv på Sør Helgeland",
@@ -73,43 +43,43 @@
     },
     {
       "title": "Gudstjeneste med de Makalause",
-      "description": "Gudstjeneste med de Makalause",
+      "description": "Gudstjeneste med musikk av de Makalause.",
       "category": "tro-og-livssyn",
       "startDate": "2026-06-21T09:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7d00902e-bcda-4567-b3a7-0e2987fffb5c&OccurenceId=7d00902e-bcda-4567-b3a7-0e2987fffb5c",
       "id": "Brønnøy-kirke-2026-06-21T09:00:00.000Z",
-      "collectedAt": "2026-06-10T06:38:58.359Z"
+      "collectedAt": "2026-06-15T07:29:36.835Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Gudstjeneste i Sykehjemmets kapell.",
       "category": "tro-og-livssyn",
       "startDate": "2026-06-25T09:30:00.000Z",
       "location": "Sykehjemmets kapell",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=e368ab2d-7bf9-478e-a446-d83a49a22c50&OccurenceId=e368ab2d-7bf9-478e-a446-d83a49a22c50",
       "id": "Brønnøy-kirke-2026-06-25T09:30:00.000Z",
-      "collectedAt": "2026-06-10T06:38:58.359Z"
+      "collectedAt": "2026-06-15T07:29:36.835Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Gudstjeneste i Brønnøy kirke.",
       "category": "tro-og-livssyn",
       "startDate": "2026-06-28T09:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=36d004cf-27a2-4c28-8145-e14bd6b811c6&OccurenceId=36d004cf-27a2-4c28-8145-e14bd6b811c6",
       "id": "Brønnøy-kirke-2026-06-28T09:00:00.000Z",
-      "collectedAt": "2026-06-10T06:38:58.359Z"
+      "collectedAt": "2026-06-15T07:29:36.835Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Gudstjeneste i Velfjord kirke.",
       "category": "tro-og-livssyn",
       "startDate": "2026-06-28T14:00:00.000Z",
       "location": "Velfjord kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=84827a37-8b8e-46d2-9076-06e97ce657e3&OccurenceId=84827a37-8b8e-46d2-9076-06e97ce657e3",
       "id": "Brønnøy-kirke-2026-06-28T14:00:00.000Z",
-      "collectedAt": "2026-06-10T06:38:58.359Z"
+      "collectedAt": "2026-06-15T07:29:36.835Z"
     },
     {
       "id": "1695096028301153",
@@ -159,7 +129,7 @@
       "location": "Havnegata 48",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=277&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-16T09:00:00.000Z",
-      "collectedAt": "2026-06-13T06:23:09.298Z"
+      "collectedAt": "2026-06-15T07:28:22.297Z"
     },
     {
       "id": "840590775474946",
