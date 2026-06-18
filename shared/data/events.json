@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-06-17T07:21:09.858Z",
+  "updatedAt": "2026-06-18T07:01:47.591Z",
   "events": [
-    {
-      "id": "1660382928555532",
-      "title": "Frokost & medlemsmøte med NHO📍 Thon Hotell Brønnøysund",
-      "description": "🚗 NHO på Helgelandsturné, nå kommer vi til Brønnøysund!\n\nNHO Nordland inviterer til frokost & medlemsmøte i Brønnøysund som en del av vår Helgelandsturné. Dette er en møteplass for næringslivet, hvor vi deler innsikt, diskuterer aktuelle utfordringer og ser på mulighetene for vekst og verdiskaping i regionen.\n\nPå programmet:\n🔹 Aktuelle næringspolitiske saker lokalt og nasjonalt\n🔹 Internasjonale utviklingstrekk og konsekvenser for norske bedrifter\n🔹 Nytt fra NHO og medlemsfordeler\n🔹 Lokalt innlegg fra Brønnøy Kalk\n🔹 Dialog og innspill fra næringslivet på Helgeland\n\n📅 Onsdag 17. juni\n⏰ 08:00-10:00\n📍 Thon Hotel Brønnøysund\n\nDeltakelse er gratis, men påmelding er nødvendig da antall plasser er begrenset.\n\n👉 Meld deg på i dag for å sikre plass: https://www.nho.no/regionforeninger/nho-nordland/arrangementer/2026/medlemsmoter-pa-helgeland/ \n\nVi gleder oss til å møte næringslivet i Sandnessjøen!",
-      "category": "næringsliv",
-      "startDate": "2026-06-17T06:00:00.000Z",
-      "location": "Thon Hotel Brønnøysund",
-      "url": "https://www.facebook.com/events/1660382928555532/",
-      "collectedAt": "2026-06-16T07:35:59.006Z"
-    },
-    {
-      "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Babysang-arrangement for barn og unge.",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-06-17T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=c6fa0cab-fb5f-478f-b7bf-008cbf12a833&OccurenceId=c6fa0cab-fb5f-478f-b7bf-008cbf12a833",
-      "id": "Brønnøy-kirke-2026-06-17T09:00:00.000Z",
-      "collectedAt": "2026-06-17T07:21:09.858Z"
-    },
     {
       "title": "Invitasjon – oppstart av Beredskapsforum for næringsliv på Sør Helgeland",
       "description": "Kommunene Vega, Vevelstad, Sømna og Brønnøy inviterer til oppstartsmøte for et nytt interkommunalt beredskapsforum for næringslivet.",
@@ -39,7 +19,7 @@
       "startDate": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-06-16T07:36:00.000Z"
+      "collectedAt": "2026-06-18T07:01:43.094Z"
     },
     {
       "id": "869545469535017",
@@ -49,7 +29,17 @@
       "startDate": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund kirke",
       "url": "https://www.facebook.com/events/869545469535017/",
-      "collectedAt": "2026-06-16T07:36:02.155Z"
+      "collectedAt": "2026-06-18T07:01:43.729Z"
+    },
+    {
+      "id": "1333239768997415",
+      "title": "Åpningsseremoni og festivalkonsert - korfestivalen 2026",
+      "description": "Fredag 19. juni kl. 17.00 inviterer Brønnøysund Mannskor til offisiell åpning av Korfestivalen 2026 i Brønnøysund Samfunnshus!\n\nÅtte kor fra fjern og nær er klare til å fylle salen med musikk: Ad Libitum, Damekoret Uredd, Hauka Mannskor, Kolvereid Mannskor, Trælnes Mannskor, Songlaget Njård, Mixdur og Hovinkoret.\n\nKvelden starter med velkomsthilsen fra ordfører, prolog og opptreden av Brønnøysund Mannskor – før korkonkurransen tar til. Alle er hjertelig velkomne! 🎵\n\n📍 Brønnøysund Samfunnshus\n📅 Fredag 19. juni 2026, kl. 17.00\n🎟️ Billetter: kr 150,-",
+      "category": "musikk",
+      "startDate": "2026-06-19T15:00:00.000Z",
+      "location": "Brønnøysund samfunnshus",
+      "url": "https://www.facebook.com/events/1333239768997415/",
+      "collectedAt": "2026-06-18T07:01:44.341Z"
     },
     {
       "title": "Gudstjeneste med de Makalause",
@@ -79,7 +69,7 @@
       "startDate": "2026-06-27T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1624686798635360/",
-      "collectedAt": "2026-06-16T07:36:02.663Z"
+      "collectedAt": "2026-06-18T07:01:47.591Z"
     },
     {
       "title": "Gudstjeneste",
@@ -109,7 +99,7 @@
       "startDate": "2026-07-09T11:00:00.000Z",
       "location": "Skolegata 1, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/1695096028301153/",
-      "collectedAt": "2026-06-16T07:36:01.645Z"
+      "collectedAt": "2026-06-18T07:01:46.007Z"
     },
     {
       "id": "35969787402636282",
@@ -129,7 +119,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-06-16T07:35:57.437Z"
+      "collectedAt": "2026-06-18T07:01:42.535Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
@@ -149,7 +139,7 @@
       "location": "Havnegata 48",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=277&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-16T09:00:00.000Z",
-      "collectedAt": "2026-06-17T07:19:53.264Z"
+      "collectedAt": "2026-06-18T06:59:17.375Z"
     },
     {
       "id": "840590775474946",
@@ -159,7 +149,7 @@
       "startDate": "2026-08-06T11:00:00.000Z",
       "location": "Skolegata 1, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/840590775474946/",
-      "collectedAt": "2026-06-16T07:36:01.093Z"
+      "collectedAt": "2026-06-18T07:01:47.097Z"
     },
     {
       "id": "1442219523834464",
@@ -169,7 +159,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-06-14T06:50:24.657Z"
+      "collectedAt": "2026-06-18T07:01:46.591Z"
     },
     {
       "id": "1342636714447389",
@@ -179,7 +169,7 @@
       "startDate": "2026-09-26T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-06-16T07:35:57.963Z"
+      "collectedAt": "2026-06-18T07:01:45.479Z"
     },
     {
       "id": "1160245412989516",
@@ -199,7 +189,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-06-16T07:35:59.525Z"
+      "collectedAt": "2026-06-18T07:01:44.884Z"
     }
   ]
 }
