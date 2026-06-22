@@ -1,25 +1,15 @@
 {
-  "updatedAt": "2026-06-21T06:58:12.675Z",
+  "updatedAt": "2026-06-22T07:34:59.004Z",
   "events": [
     {
-      "title": "Gudstjeneste med de Makalause",
-      "description": "Gudstjeneste med musikk av de Makalause.",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-06-21T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7d00902e-bcda-4567-b3a7-0e2987fffb5c&OccurenceId=7d00902e-bcda-4567-b3a7-0e2987fffb5c",
-      "id": "Brønnøy-kirke-2026-06-21T09:00:00.000Z",
-      "collectedAt": "2026-06-17T07:21:09.858Z"
-    },
-    {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste i Sykehjemmets kapell.",
+      "description": "Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "startDate": "2026-06-25T09:30:00.000Z",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=e368ab2d-7bf9-478e-a446-d83a49a22c50&OccurenceId=e368ab2d-7bf9-478e-a446-d83a49a22c50",
       "id": "Brønnøy-kirke-2026-06-25T09:30:00.000Z",
-      "collectedAt": "2026-06-17T07:21:09.858Z"
+      "collectedAt": "2026-06-22T07:33:21.172Z"
     },
     {
       "id": "1624686798635360",
@@ -29,27 +19,27 @@
       "startDate": "2026-06-27T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1624686798635360/",
-      "collectedAt": "2026-06-20T06:38:30.873Z"
+      "collectedAt": "2026-06-22T07:34:56.695Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste i Brønnøy kirke.",
+      "description": "Gudstjeneste - Brønnøy kirke",
       "category": "tro-og-livssyn",
       "startDate": "2026-06-28T09:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=36d004cf-27a2-4c28-8145-e14bd6b811c6&OccurenceId=36d004cf-27a2-4c28-8145-e14bd6b811c6",
       "id": "Brønnøy-kirke-2026-06-28T09:00:00.000Z",
-      "collectedAt": "2026-06-17T07:21:09.858Z"
+      "collectedAt": "2026-06-22T07:33:21.172Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste i Velfjord kirke.",
+      "description": "Gudstjeneste - Velfjord kirke",
       "category": "tro-og-livssyn",
       "startDate": "2026-06-28T14:00:00.000Z",
       "location": "Velfjord kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=84827a37-8b8e-46d2-9076-06e97ce657e3&OccurenceId=84827a37-8b8e-46d2-9076-06e97ce657e3",
       "id": "Brønnøy-kirke-2026-06-28T14:00:00.000Z",
-      "collectedAt": "2026-06-17T07:21:09.858Z"
+      "collectedAt": "2026-06-22T07:33:21.172Z"
     },
     {
       "id": "1695096028301153",
@@ -59,7 +49,7 @@
       "startDate": "2026-07-09T11:00:00.000Z",
       "location": "Skolegata 1, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/1695096028301153/",
-      "collectedAt": "2026-06-20T06:38:33.901Z"
+      "collectedAt": "2026-06-22T07:34:58.447Z"
     },
     {
       "id": "35969787402636282",
@@ -69,7 +59,7 @@
       "startDate": "2026-07-11T11:00:00.000Z",
       "location": "Den andre puben",
       "url": "https://www.facebook.com/events/35969787402636282/",
-      "collectedAt": "2026-06-20T06:38:31.977Z"
+      "collectedAt": "2026-06-22T07:34:55.012Z"
     },
     {
       "id": "1518436712711995",
@@ -79,7 +69,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-06-20T06:38:38.371Z"
+      "collectedAt": "2026-06-22T07:34:56.134Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
@@ -99,7 +89,7 @@
       "location": "Havnegata 48",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=277&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-16T09:00:00.000Z",
-      "collectedAt": "2026-06-21T06:57:15.212Z"
+      "collectedAt": "2026-06-22T07:32:16.678Z"
     },
     {
       "id": "840590775474946",
@@ -109,7 +99,7 @@
       "startDate": "2026-08-06T11:00:00.000Z",
       "location": "Skolegata 1, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/840590775474946/",
-      "collectedAt": "2026-06-20T06:38:33.461Z"
+      "collectedAt": "2026-06-22T07:34:54.438Z"
     },
     {
       "id": "1442219523834464",
@@ -119,7 +109,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-06-20T06:38:31.498Z"
+      "collectedAt": "2026-06-22T07:34:59.004Z"
     },
     {
       "id": "1342636714447389",
@@ -129,7 +119,7 @@
       "startDate": "2026-09-26T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-06-20T06:38:32.483Z"
+      "collectedAt": "2026-06-22T07:34:57.905Z"
     },
     {
       "id": "1160245412989516",
@@ -149,7 +139,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-06-20T06:38:38.878Z"
+      "collectedAt": "2026-06-22T07:34:57.349Z"
     }
   ]
 }
