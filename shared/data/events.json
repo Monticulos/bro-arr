@@ -1,36 +1,6 @@
 {
-  "updatedAt": "2026-06-28T06:29:36.436Z",
+  "updatedAt": "2026-06-29T06:58:03.031Z",
   "events": [
-    {
-      "id": "1624686798635360",
-      "title": "Boiler Room - Kred Edition ",
-      "description": "DJ-R3do er på plass og kjører denne kvelden et DJ-sett med inspirasjon fra det internasjonale klubbkonseptet.\n\nGratis inngang før kl. 23.30. (Cover etterpå eller re-entry). ",
-      "category": "musikk",
-      "startDate": "2026-06-27T21:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1624686798635360/",
-      "collectedAt": "2026-06-26T06:18:46.481Z"
-    },
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Brønnøy kirke",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-06-28T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=36d004cf-27a2-4c28-8145-e14bd6b811c6&OccurenceId=36d004cf-27a2-4c28-8145-e14bd6b811c6",
-      "id": "Brønnøy-kirke-2026-06-28T09:00:00.000Z",
-      "collectedAt": "2026-06-24T06:13:51.285Z"
-    },
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Velfjord kirke",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-06-28T14:00:00.000Z",
-      "location": "Velfjord kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=84827a37-8b8e-46d2-9076-06e97ce657e3&OccurenceId=84827a37-8b8e-46d2-9076-06e97ce657e3",
-      "id": "Brønnøy-kirke-2026-06-28T14:00:00.000Z",
-      "collectedAt": "2026-06-24T06:13:51.285Z"
-    },
     {
       "id": "1695096028301153",
       "title": "Formiddagsfilmen: Det suser i sivet (The Wind in the Willows) (1995)",
@@ -79,7 +49,7 @@
       "location": "Havnegata 48",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=277&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-16T09:00:00.000Z",
-      "collectedAt": "2026-06-28T06:26:12.830Z"
+      "collectedAt": "2026-06-29T06:56:53.905Z"
     },
     {
       "id": "840590775474946",
