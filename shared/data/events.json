@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T06:58:03.031Z",
+  "updatedAt": "2026-06-30T06:20:47.328Z",
   "events": [
     {
       "id": "1695096028301153",
@@ -9,7 +9,7 @@
       "startDate": "2026-07-09T11:00:00.000Z",
       "location": "Skolegata 1, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/1695096028301153/",
-      "collectedAt": "2026-06-28T06:29:34.820Z"
+      "collectedAt": "2026-06-30T06:20:44.210Z"
     },
     {
       "id": "35969787402636282",
@@ -19,7 +19,7 @@
       "startDate": "2026-07-11T11:00:00.000Z",
       "location": "Den andre puben",
       "url": "https://www.facebook.com/events/35969787402636282/",
-      "collectedAt": "2026-06-28T06:29:36.436Z"
+      "collectedAt": "2026-06-30T06:20:46.809Z"
     },
     {
       "id": "1518436712711995",
@@ -29,7 +29,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-06-28T06:29:35.896Z"
+      "collectedAt": "2026-06-30T06:20:45.299Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
@@ -49,7 +49,7 @@
       "location": "Havnegata 48",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=277&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-16T09:00:00.000Z",
-      "collectedAt": "2026-06-29T06:56:53.905Z"
+      "collectedAt": "2026-06-30T06:19:19.215Z"
     },
     {
       "id": "840590775474946",
@@ -59,7 +59,7 @@
       "startDate": "2026-08-06T11:00:00.000Z",
       "location": "Skolegata 1, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/840590775474946/",
-      "collectedAt": "2026-06-28T06:29:33.811Z"
+      "collectedAt": "2026-06-30T06:20:46.346Z"
     },
     {
       "id": "1442219523834464",
@@ -69,7 +69,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-06-28T06:29:34.353Z"
+      "collectedAt": "2026-06-30T06:20:45.797Z"
     },
     {
       "id": "1342636714447389",
@@ -79,7 +79,7 @@
       "startDate": "2026-09-26T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-06-28T06:29:32.804Z"
+      "collectedAt": "2026-06-30T06:20:47.328Z"
     },
     {
       "id": "1160245412989516",
@@ -99,7 +99,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-06-28T06:29:33.304Z"
+      "collectedAt": "2026-06-30T06:20:43.699Z"
     }
   ]
 }
