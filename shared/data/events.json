@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-07-02T06:07:20.879Z",
+  "updatedAt": "2026-07-03T06:01:17.201Z",
   "events": [
-    {
-      "title": "Minions & monstre",
-      "description": "Minions & monstre",
-      "category": "kino",
-      "startDate": "2026-07-02T16:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-02T16:00:00.000Z",
-      "collectedAt": "2026-07-02T06:06:00.509Z"
-    },
-    {
-      "title": "Supergirl",
-      "description": "Supergirl",
-      "category": "kino",
-      "startDate": "2026-07-02T18:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-02T18:00:00.000Z",
-      "collectedAt": "2026-07-02T06:06:00.509Z"
-    },
     {
       "id": "1695096028301153",
       "title": "Formiddagsfilmen: Det suser i sivet (The Wind in the Willows) (1995)",
@@ -39,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-10T16:00:00.000Z",
-      "collectedAt": "2026-07-02T06:06:00.509Z"
+      "collectedAt": "2026-07-03T06:00:01.211Z"
     },
     {
       "title": "Jackass: Best and last",
@@ -49,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-10T18:30:00.000Z",
-      "collectedAt": "2026-07-02T06:06:00.509Z"
+      "collectedAt": "2026-07-03T06:00:01.211Z"
     },
     {
       "id": "35969787402636282",
@@ -69,7 +49,7 @@
       "location": "Skarsåsen, Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=279&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-12T15:00:00.000Z",
-      "collectedAt": "2026-07-02T06:05:53.303Z"
+      "collectedAt": "2026-07-03T05:59:53.965Z"
     },
     {
       "title": "Pop up Kunstutstilling",
@@ -79,7 +59,7 @@
       "location": "Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=280&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-15T08:00:00.000Z",
-      "collectedAt": "2026-07-02T06:05:53.303Z"
+      "collectedAt": "2026-07-03T05:59:53.965Z"
     },
     {
       "id": "1518436712711995",
@@ -99,7 +79,7 @@
       "location": "Brønnøy",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=278&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-15T12:00:00.000Z",
-      "collectedAt": "2026-07-02T06:05:53.303Z"
+      "collectedAt": "2026-07-03T05:59:53.965Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
