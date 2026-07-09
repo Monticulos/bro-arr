@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-07-08T05:28:59.113Z",
+  "updatedAt": "2026-07-09T06:13:56.669Z",
   "events": [
-    {
-      "title": "Minions & monstre",
-      "description": "Minions & monstre",
-      "category": "kino",
-      "startDate": "2026-07-08T16:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-08T16:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
-    },
-    {
-      "title": "Supergirl",
-      "description": "Supergirl",
-      "category": "kino",
-      "startDate": "2026-07-08T18:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-08T18:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
-    },
     {
       "id": "1695096028301153",
       "title": "Formiddagsfilmen: Det suser i sivet (The Wind in the Willows) (1995)",
@@ -39,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-09T16:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "title": "Scary movie",
@@ -49,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-09T18:30:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "title": "Vaiana",
@@ -59,7 +39,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-10T16:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "title": "Jackass: Best and last",
@@ -69,7 +49,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-10T18:30:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "id": "2344191603018687",
@@ -92,14 +72,24 @@
       "collectedAt": "2026-07-08T05:28:57.070Z"
     },
     {
+      "title": "Norge mot England i Torghatten Arena",
+      "description": "Norge–England på storskjerm i Torghatten Arena!",
+      "category": "musikk",
+      "startDate": "2026-07-11T19:00:00.000Z",
+      "location": "Brønnøysund",
+      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=282&lang=1&MId1=35",
+      "id": "Brønnøy-kommune-2026-07-11T19:00:00.000Z",
+      "collectedAt": "2026-07-09T06:12:20.992Z"
+    },
+    {
       "title": "Gratis utekonsert i Skarsåsen",
-      "description": "DNT Sør-Helgeland inviterer til en hyggelig sommerkveld i Skarsåsen.",
+      "description": "DNT Sør-Helgeland inviterer til en hyggelig sommerkveld i Skarsåsen",
       "category": "musikk",
       "startDate": "2026-07-12T15:00:00.000Z",
       "location": "Skarsåsen, Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=279&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-12T15:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:38.331Z"
+      "collectedAt": "2026-07-09T06:12:20.992Z"
     },
     {
       "title": "Pop up Kunstutstilling",
@@ -139,7 +129,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-15T14:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "title": "Jackass: Best and last",
@@ -149,7 +139,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-15T16:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
@@ -179,7 +169,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-16T14:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "id": "899155712523222",
@@ -199,7 +189,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-17T14:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "title": "Supergirl",
@@ -209,7 +199,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-17T16:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "title": "The Odyssey",
@@ -219,7 +209,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-17T18:00:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "id": "2227329584682108",
@@ -239,7 +229,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-18T18:30:00.000Z",
-      "collectedAt": "2026-07-08T05:27:47.379Z"
+      "collectedAt": "2026-07-09T06:12:29.158Z"
     },
     {
       "id": "1029210792802196",
