@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-07-09T06:13:56.669Z",
+  "updatedAt": "2026-07-10T06:12:44.911Z",
   "events": [
-    {
-      "id": "1695096028301153",
-      "title": "Formiddagsfilmen: Det suser i sivet (The Wind in the Willows) (1995)",
-      "description": "Brønnøy bibliotek inviterer til filmvisning på formiddagen torsdag 9. juli kl. 13:00.\n\nMøt Mold Varp, Van Rotte, herr Padda og herr Grevling ved den idylliske elvebredden! Det suser i sivet er en animert film fra 1995 basert på barneboka med samme navn av forfatter Kenneth Grahame. Dette er en koselig og nostalgisk film som kan glede både liten og stor.\n\nFormiddagsfilmen er et lavterskeltilbud som er åpent for alle som ønsker seg en aktivitet på dagtid eller et samlingspunkt. Kom som du er og gå når du vil!\n\nFilmen varer i 1 time og 12 minutter og er på norsk. ",
-      "category": "kino",
-      "startDate": "2026-07-09T11:00:00.000Z",
-      "location": "Skolegata 1, 8900 Brønnøysund, Norway",
-      "url": "https://www.facebook.com/events/1695096028301153/",
-      "collectedAt": "2026-07-08T05:28:54.482Z"
-    },
-    {
-      "title": "Disclosure Day",
-      "description": "Disclosure Day",
-      "category": "kino",
-      "startDate": "2026-07-09T16:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-09T16:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
-    },
     {
       "title": "Scary movie",
       "description": "Scary movie",
@@ -29,7 +9,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-09T18:30:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "title": "Vaiana",
@@ -39,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-10T16:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "title": "Jackass: Best and last",
@@ -49,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-10T18:30:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "id": "2344191603018687",
@@ -59,7 +39,7 @@
       "startDate": "2026-07-10T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2344191603018687/",
-      "collectedAt": "2026-07-08T05:28:53.381Z"
+      "collectedAt": "2026-07-10T06:12:43.154Z"
     },
     {
       "id": "35969787402636282",
@@ -69,7 +49,7 @@
       "startDate": "2026-07-11T11:00:00.000Z",
       "location": "Den andre puben",
       "url": "https://www.facebook.com/events/35969787402636282/",
-      "collectedAt": "2026-07-08T05:28:57.070Z"
+      "collectedAt": "2026-07-10T06:12:44.911Z"
     },
     {
       "title": "Norge mot England i Torghatten Arena",
@@ -79,7 +59,7 @@
       "location": "Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=282&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-11T19:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:20.992Z"
+      "collectedAt": "2026-07-10T06:11:02.167Z"
     },
     {
       "title": "Gratis utekonsert i Skarsåsen",
@@ -89,7 +69,7 @@
       "location": "Skarsåsen, Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=279&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-12T15:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:20.992Z"
+      "collectedAt": "2026-07-10T06:11:02.167Z"
     },
     {
       "title": "Pop up Kunstutstilling",
@@ -109,7 +89,7 @@
       "startDate": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-07-08T05:28:56.586Z"
+      "collectedAt": "2026-07-10T06:12:39.993Z"
     },
     {
       "title": "Rootsfestivalen",
@@ -129,7 +109,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-15T14:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "title": "Jackass: Best and last",
@@ -139,7 +119,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-15T16:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
@@ -169,7 +149,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-16T14:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "id": "899155712523222",
@@ -179,7 +159,7 @@
       "startDate": "2026-07-16T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/899155712523222/",
-      "collectedAt": "2026-07-08T05:28:58.102Z"
+      "collectedAt": "2026-07-10T06:12:41.821Z"
     },
     {
       "title": "Minions & monstre",
@@ -189,7 +169,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-17T14:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "title": "Supergirl",
@@ -199,7 +179,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-17T16:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "title": "The Odyssey",
@@ -209,7 +189,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-17T18:00:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "id": "2227329584682108",
@@ -219,7 +199,7 @@
       "startDate": "2026-07-17T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2227329584682108/",
-      "collectedAt": "2026-07-08T05:28:59.112Z"
+      "collectedAt": "2026-07-10T06:12:44.240Z"
     },
     {
       "title": "The Odyssey",
@@ -229,7 +209,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-18T18:30:00.000Z",
-      "collectedAt": "2026-07-09T06:12:29.158Z"
+      "collectedAt": "2026-07-10T06:11:11.293Z"
     },
     {
       "id": "1029210792802196",
@@ -239,7 +219,7 @@
       "startDate": "2026-07-18T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1029210792802196/",
-      "collectedAt": "2026-07-08T05:28:58.629Z"
+      "collectedAt": "2026-07-10T06:12:42.372Z"
     },
     {
       "id": "840590775474946",
@@ -259,7 +239,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-07-08T05:28:53.958Z"
+      "collectedAt": "2026-07-10T06:12:40.546Z"
     },
     {
       "id": "1342636714447389",
@@ -269,7 +249,7 @@
       "startDate": "2026-09-26T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-07-08T05:28:55.488Z"
+      "collectedAt": "2026-07-10T06:12:43.728Z"
     },
     {
       "id": "1160245412989516",
@@ -289,7 +269,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-07-08T05:28:54.983Z"
+      "collectedAt": "2026-07-10T06:12:41.161Z"
     }
   ]
 }
