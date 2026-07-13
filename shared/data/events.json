@@ -1,35 +1,15 @@
 {
-  "updatedAt": "2026-07-12T05:36:53.033Z",
+  "updatedAt": "2026-07-13T05:45:35.616Z",
   "events": [
     {
-      "title": "Norge mot England i Torghatten Arena",
-      "description": "Norge–England på storskjerm i Torghatten Arena!",
-      "category": "musikk",
-      "startDate": "2026-07-11T19:00:00.000Z",
-      "location": "Brønnøysund",
-      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=282&lang=1&MId1=35",
-      "id": "Brønnøy-kommune-2026-07-11T19:00:00.000Z",
-      "collectedAt": "2026-07-11T05:18:55.446Z"
-    },
-    {
-      "title": "Gratis utekonsert i Skarsåsen",
-      "description": "DNT Sør-Helgeland inviterer til en hyggelig sommerkveld i Skarsåsen.",
-      "category": "musikk",
-      "startDate": "2026-07-12T15:00:00.000Z",
-      "location": "Skarsåsen, Brønnøysund",
-      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=279&lang=1&MId1=35",
-      "id": "Brønnøy-kommune-2026-07-12T15:00:00.000Z",
-      "collectedAt": "2026-07-12T05:34:42.265Z"
-    },
-    {
       "title": "Pop up Kunstutstilling",
-      "description": "BlackBox Gallery kommer til Brønnøysund.",
+      "description": "BlackBox Gallery kommer til Brønnøysund",
       "category": "kunst-og-kultur",
       "startDate": "2026-07-15T08:00:00.000Z",
       "location": "Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=280&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-15T08:00:00.000Z",
-      "collectedAt": "2026-07-12T05:34:42.265Z"
+      "collectedAt": "2026-07-13T05:44:22.204Z"
     },
     {
       "id": "840678522457804",
@@ -53,13 +33,13 @@
     },
     {
       "title": "Rootsfestivalen",
-      "description": "Helgelands største kulturarrangement.",
+      "description": "Helgelands største kulturarrangement",
       "category": "musikk",
       "startDate": "2026-07-15T12:00:00.000Z",
       "location": "Brønnøy",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=278&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-15T12:00:00.000Z",
-      "collectedAt": "2026-07-12T05:34:42.265Z"
+      "collectedAt": "2026-07-13T05:44:22.204Z"
     },
     {
       "title": "Vaiana",
@@ -69,7 +49,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-15T14:00:00.000Z",
-      "collectedAt": "2026-07-12T05:34:51.019Z"
+      "collectedAt": "2026-07-13T05:44:31.041Z"
     },
     {
       "title": "Jackass: Best and last",
@@ -79,7 +59,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-15T16:00:00.000Z",
-      "collectedAt": "2026-07-12T05:34:51.019Z"
+      "collectedAt": "2026-07-13T05:44:31.041Z"
     },
     {
       "title": "Drømmejobb i Brønnøy",
@@ -102,6 +82,16 @@
       "collectedAt": "2026-07-01T06:39:19.793Z"
     },
     {
+      "title": "Rootsløpet 2026",
+      "description": "Arrangement for store og små!",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-07-16T10:00:00.000Z",
+      "location": "Brønnøysund",
+      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=283&lang=1&MId1=35",
+      "id": "Brønnøy-kommune-2026-07-16T10:00:00.000Z",
+      "collectedAt": "2026-07-13T05:44:22.204Z"
+    },
+    {
       "title": "Flåklypa - Fra Paris til pyramidene",
       "description": "Flåklypa - Fra Paris til pyramidene",
       "category": "kino",
@@ -109,7 +99,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-16T14:00:00.000Z",
-      "collectedAt": "2026-07-12T05:34:51.019Z"
+      "collectedAt": "2026-07-13T05:44:31.041Z"
     },
     {
       "id": "899155712523222",
@@ -129,7 +119,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-17T14:00:00.000Z",
-      "collectedAt": "2026-07-12T05:34:51.019Z"
+      "collectedAt": "2026-07-13T05:44:31.041Z"
     },
     {
       "title": "Supergirl",
@@ -139,7 +129,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-17T16:00:00.000Z",
-      "collectedAt": "2026-07-12T05:34:51.019Z"
+      "collectedAt": "2026-07-13T05:44:31.041Z"
     },
     {
       "title": "The Odyssey",
@@ -149,7 +139,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-17T18:00:00.000Z",
-      "collectedAt": "2026-07-12T05:34:51.019Z"
+      "collectedAt": "2026-07-13T05:44:31.041Z"
     },
     {
       "id": "2227329584682108",
@@ -169,7 +159,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-18T18:30:00.000Z",
-      "collectedAt": "2026-07-12T05:34:51.019Z"
+      "collectedAt": "2026-07-13T05:44:31.042Z"
     },
     {
       "id": "1029210792802196",
