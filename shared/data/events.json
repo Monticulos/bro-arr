@@ -1,56 +1,6 @@
 {
-  "updatedAt": "2026-07-18T04:55:29.265Z",
+  "updatedAt": "2026-07-19T05:30:05.427Z",
   "events": [
-    {
-      "title": "The Odyssey",
-      "description": "The Odyssey",
-      "category": "kino",
-      "startDate": "2026-07-17T18:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-17T18:00:00.000Z",
-      "collectedAt": "2026-07-18T04:54:02.275Z"
-    },
-    {
-      "id": "2227329584682108",
-      "title": "Strange Kind of Purple - \"Rootsnetter\"",
-      "description": "Strange Kind of Purple spiller Deep Purple slik mange mener det skal låte – hardt, tungt og energisk.\n\nBandet hyller et av rockehistoriens mest innflytelsesrike navn, og tar publikum med tilbake til perioden fra 1970 til midten av 1980-tallet – årene som ga oss flere av hardrockens mest ikoniske låter.\n\nMed tungt orgel, drivende riff, lange soloer og tydelig spilleglede byr Strange Kind of Purple på et repertoar hentet fra album som In Rock, Machine Head, Fireball, Burn og Perfect Strangers.\n\nLåtene fremføres med respekt for originalene, samtidig som bandet tilfører egen energi og nerve. Resultatet er en konsertopplevelse for både trofaste Deep Purple-fans og publikum som ønsker å oppleve klassisk hardrock i levende format.\n\nBandet består av:\nAndre Rottem – vokal, \nPer Christian Jørstad – gitar/kor, \nLars Hyldmo – orgel/tangenter\nChristian A. Fjeseth – bass, \nSigmund Haugen – trommer\n\ncc: 220,-, 20-års aldersgrense",
-      "category": "musikk",
-      "startDate": "2026-07-17T21:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/2227329584682108/",
-      "collectedAt": "2026-07-14T04:57:56.520Z"
-    },
-    {
-      "title": "Velfjorddagan",
-      "description": "En hel uke med tradisjonsrike arrangementer.",
-      "category": "kunst-og-kultur",
-      "startDate": "2026-07-17T22:00:00.000Z",
-      "location": "Velfjord",
-      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=281&lang=1&MId1=35",
-      "id": "Brønnøy-kommune-2026-07-17T22:00:00.000Z",
-      "collectedAt": "2026-07-18T04:53:53.239Z"
-    },
-    {
-      "title": "Minions & monstre",
-      "description": "Minions & monstre",
-      "category": "kino",
-      "startDate": "2026-07-18T14:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-18T14:00:00.000Z",
-      "collectedAt": "2026-07-18T04:54:02.276Z"
-    },
-    {
-      "title": "Vaiana",
-      "description": "Vaiana",
-      "category": "kino",
-      "startDate": "2026-07-18T16:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-18T16:00:00.000Z",
-      "collectedAt": "2026-07-18T04:54:02.276Z"
-    },
     {
       "title": "The Odyssey",
       "description": "The Odyssey",
@@ -59,7 +9,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-18T18:30:00.000Z",
-      "collectedAt": "2026-07-18T04:54:02.276Z"
+      "collectedAt": "2026-07-19T05:29:02.779Z"
     },
     {
       "id": "1029210792802196",
@@ -72,6 +22,26 @@
       "collectedAt": "2026-07-18T04:55:29.265Z"
     },
     {
+      "title": "Velfjorddagan",
+      "description": "En hel uke med tradisjonsrike arrangementer.",
+      "category": "annet",
+      "startDate": "2026-07-18T22:00:00.000Z",
+      "location": "Velfjord",
+      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=281&lang=1&MId1=35",
+      "id": "Brønnøy-kommune-2026-07-18T22:00:00.000Z",
+      "collectedAt": "2026-07-19T05:28:54.196Z"
+    },
+    {
+      "title": "Midtnorsk sommertreff",
+      "description": "Brønnøy Amcar arrangerer treff!",
+      "category": "næringsliv",
+      "startDate": "2026-07-21T14:00:00.000Z",
+      "location": "Brønnøysund",
+      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=287&lang=1&MId1=35",
+      "id": "Brønnøy-kommune-2026-07-21T14:00:00.000Z",
+      "collectedAt": "2026-07-19T05:28:54.196Z"
+    },
+    {
       "title": "Supergirl",
       "description": "Supergirl",
       "category": "kino",
@@ -79,7 +49,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-21T16:00:00.000Z",
-      "collectedAt": "2026-07-18T04:54:02.276Z"
+      "collectedAt": "2026-07-19T05:29:02.779Z"
     },
     {
       "title": "The Odyssey",
@@ -89,7 +59,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-21T18:00:00.000Z",
-      "collectedAt": "2026-07-18T04:54:02.276Z"
+      "collectedAt": "2026-07-19T05:29:02.779Z"
     },
     {
       "title": "Minions & monstre",
@@ -99,7 +69,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-22T16:00:00.000Z",
-      "collectedAt": "2026-07-18T04:54:02.276Z"
+      "collectedAt": "2026-07-19T05:29:02.779Z"
     },
     {
       "title": "Spider-Man: Brand New Day",
@@ -109,7 +79,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-29T18:00:00.000Z",
-      "collectedAt": "2026-07-18T04:54:02.276Z"
+      "collectedAt": "2026-07-19T05:29:02.779Z"
     },
     {
       "id": "840590775474946",
