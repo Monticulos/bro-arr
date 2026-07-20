@@ -1,45 +1,25 @@
 {
-  "updatedAt": "2026-07-19T05:30:05.427Z",
+  "updatedAt": "2026-07-20T05:48:50.926Z",
   "events": [
     {
-      "title": "The Odyssey",
-      "description": "The Odyssey",
-      "category": "kino",
-      "startDate": "2026-07-18T18:30:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-18T18:30:00.000Z",
-      "collectedAt": "2026-07-19T05:29:02.779Z"
-    },
-    {
-      "id": "1029210792802196",
-      "title": "Truls & Livebandet - \"Rootsnetter\"",
-      "description": "Når Truls & Livebandet går på scenen, ligger alt til rette for en kveld preget av energi, allsang og god stemning.\n\nBandet har gjort det til sitt varemerke å levere fengende coverlåter med sterk publikums kontakt og høy spilleglede. Repertoaret spenner fra klassisk rock og pop til nyere hits, framført med et tydelig fokus på samspill og liveenergi.\n\nFrontfigur TrulsLIVE leder an med sitt karakteristiske scenenærvær, og sammen med bandet skapes en konsertopplevelse der avstanden mellom scene og publikum raskt forsvinner.\n\nLivebandet består av:\nChristian A. Fjeseth – gitar, \nSigmund Haugen – trommer, \nPer Christian Jørstad – bass\nAndre Rottem – tangenter/gitar/kor\n\nSammen leverer de et lydbilde preget av overskudd, groove og spilleglede. Publikum kan forvente en kveld fylt med kjente låter, allsang og en avslappet festivalstemning som passer perfekt i til avslutning på rootsnettene på Kred i 2026.",
-      "category": "musikk",
-      "startDate": "2026-07-18T21:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1029210792802196/",
-      "collectedAt": "2026-07-18T04:55:29.265Z"
-    },
-    {
       "title": "Velfjorddagan",
-      "description": "En hel uke med tradisjonsrike arrangementer.",
+      "description": "En hel uke med tradisjonsrike arrangementer",
       "category": "annet",
-      "startDate": "2026-07-18T22:00:00.000Z",
+      "startDate": "2026-07-19T22:00:00.000Z",
       "location": "Velfjord",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=281&lang=1&MId1=35",
-      "id": "Brønnøy-kommune-2026-07-18T22:00:00.000Z",
-      "collectedAt": "2026-07-19T05:28:54.196Z"
+      "id": "Brønnøy-kommune-2026-07-19T22:00:00.000Z",
+      "collectedAt": "2026-07-20T05:47:20.109Z"
     },
     {
       "title": "Midtnorsk sommertreff",
       "description": "Brønnøy Amcar arrangerer treff!",
-      "category": "næringsliv",
+      "category": "annet",
       "startDate": "2026-07-21T14:00:00.000Z",
       "location": "Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=287&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-21T14:00:00.000Z",
-      "collectedAt": "2026-07-19T05:28:54.196Z"
+      "collectedAt": "2026-07-20T05:47:20.109Z"
     },
     {
       "title": "Supergirl",
@@ -49,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-21T16:00:00.000Z",
-      "collectedAt": "2026-07-19T05:29:02.779Z"
+      "collectedAt": "2026-07-20T05:47:28.201Z"
     },
     {
       "title": "The Odyssey",
@@ -59,7 +39,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-21T18:00:00.000Z",
-      "collectedAt": "2026-07-19T05:29:02.779Z"
+      "collectedAt": "2026-07-20T05:47:28.201Z"
     },
     {
       "title": "Minions & monstre",
@@ -69,7 +49,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-22T16:00:00.000Z",
-      "collectedAt": "2026-07-19T05:29:02.779Z"
+      "collectedAt": "2026-07-20T05:47:28.201Z"
     },
     {
       "title": "Spider-Man: Brand New Day",
@@ -79,7 +59,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-29T18:00:00.000Z",
-      "collectedAt": "2026-07-19T05:29:02.779Z"
+      "collectedAt": "2026-07-20T05:47:28.201Z"
     },
     {
       "id": "840590775474946",
@@ -89,7 +69,7 @@
       "startDate": "2026-08-06T11:00:00.000Z",
       "location": "Skolegata 1, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/840590775474946/",
-      "collectedAt": "2026-07-18T04:55:27.272Z"
+      "collectedAt": "2026-07-20T05:48:49.132Z"
     },
     {
       "id": "1442219523834464",
@@ -99,7 +79,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-07-18T04:55:27.789Z"
+      "collectedAt": "2026-07-20T05:48:50.926Z"
     },
     {
       "id": "1342636714447389",
@@ -109,7 +89,7 @@
       "startDate": "2026-09-26T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-07-18T04:55:26.353Z"
+      "collectedAt": "2026-07-20T05:48:49.648Z"
     },
     {
       "id": "1160245412989516",
@@ -129,7 +109,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-07-18T04:55:28.393Z"
+      "collectedAt": "2026-07-20T05:48:50.180Z"
     },
     {
       "id": "1569737151233775",
@@ -139,7 +119,7 @@
       "startDate": "2026-10-31T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1569737151233775/",
-      "collectedAt": "2026-07-18T04:55:25.692Z"
+      "collectedAt": "2026-07-20T05:48:48.664Z"
     }
   ]
 }
