@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-07-20T05:48:50.926Z",
+  "updatedAt": "2026-07-21T05:27:41.532Z",
   "events": [
     {
       "title": "Velfjorddagan",
-      "description": "En hel uke med tradisjonsrike arrangementer",
+      "description": "En hel uke med tradisjonsrike arrangementer.",
       "category": "annet",
-      "startDate": "2026-07-19T22:00:00.000Z",
+      "startDate": "2026-07-20T22:00:00.000Z",
       "location": "Velfjord",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=281&lang=1&MId1=35",
-      "id": "Brønnøy-kommune-2026-07-19T22:00:00.000Z",
-      "collectedAt": "2026-07-20T05:47:20.109Z"
+      "id": "Brønnøy-kommune-2026-07-20T22:00:00.000Z",
+      "collectedAt": "2026-07-21T05:26:42.163Z"
     },
     {
       "title": "Midtnorsk sommertreff",
-      "description": "Brønnøy Amcar arrangerer treff!",
-      "category": "annet",
+      "description": "Brønnøy Amcar arrangerer treff.",
+      "category": "næringsliv",
       "startDate": "2026-07-21T14:00:00.000Z",
       "location": "Brønnøysund",
       "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=287&lang=1&MId1=35",
       "id": "Brønnøy-kommune-2026-07-21T14:00:00.000Z",
-      "collectedAt": "2026-07-20T05:47:20.109Z"
+      "collectedAt": "2026-07-21T05:26:42.163Z"
     },
     {
       "title": "Supergirl",
@@ -29,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-21T16:00:00.000Z",
-      "collectedAt": "2026-07-20T05:47:28.201Z"
+      "collectedAt": "2026-07-21T05:26:49.850Z"
     },
     {
       "title": "The Odyssey",
@@ -39,7 +39,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-21T18:00:00.000Z",
-      "collectedAt": "2026-07-20T05:47:28.201Z"
+      "collectedAt": "2026-07-21T05:26:49.850Z"
     },
     {
       "title": "Minions & monstre",
@@ -49,7 +49,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-22T16:00:00.000Z",
-      "collectedAt": "2026-07-20T05:47:28.201Z"
+      "collectedAt": "2026-07-21T05:26:49.850Z"
     },
     {
       "title": "Spider-Man: Brand New Day",
@@ -59,7 +59,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-29T18:00:00.000Z",
-      "collectedAt": "2026-07-20T05:47:28.201Z"
+      "collectedAt": "2026-07-21T05:26:49.850Z"
     },
     {
       "id": "840590775474946",
