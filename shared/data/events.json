@@ -1,35 +1,75 @@
 {
-  "updatedAt": "2026-07-22T05:27:05.455Z",
+  "updatedAt": "2026-07-23T05:31:58.277Z",
   "events": [
+    {
+      "title": "Evil Dead Burn",
+      "description": "Evil Dead Burn",
+      "category": "kino",
+      "startDate": "2026-07-22T18:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-07-22T18:00:00.000Z",
+      "collectedAt": "2026-07-23T05:31:01.156Z"
+    },
+    {
+      "title": "Velfjorddagan",
+      "description": "En hel uke med tradisjonsrike arrangementer",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-07-22T22:00:00.000Z",
+      "location": "Velfjord",
+      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=281&lang=1&MId1=35",
+      "id": "Brønnøy-kommune-2026-07-22T22:00:00.000Z",
+      "collectedAt": "2026-07-23T05:30:54.336Z"
+    },
+    {
+      "title": "Vaiana",
+      "description": "Vaiana",
+      "category": "kino",
+      "startDate": "2026-07-24T16:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-07-24T16:00:00.000Z",
+      "collectedAt": "2026-07-23T05:31:01.156Z"
+    },
     {
       "title": "The Odyssey",
       "description": "The Odyssey",
       "category": "kino",
-      "startDate": "2026-07-21T18:00:00.000Z",
+      "startDate": "2026-07-24T18:30:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-21T18:00:00.000Z",
-      "collectedAt": "2026-07-22T05:25:48.525Z"
+      "id": "Brønnøy-kino-2026-07-24T18:30:00.000Z",
+      "collectedAt": "2026-07-23T05:31:01.156Z"
     },
     {
-      "title": "Midtnorsk sommertreff",
-      "description": "Brønnøy Amcar arrangerer treff!",
-      "category": "næringsliv",
-      "startDate": "2026-07-21T22:00:00.000Z",
-      "location": "Brønnøysund",
-      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=287&lang=1&MId1=35",
-      "id": "Brønnøy-kommune-2026-07-21T22:00:00.000Z",
-      "collectedAt": "2026-07-22T05:25:39.723Z"
+      "title": "Vaiana",
+      "description": "Vaiana",
+      "category": "kino",
+      "startDate": "2026-07-28T16:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-07-28T16:00:00.000Z",
+      "collectedAt": "2026-07-23T05:31:01.156Z"
+    },
+    {
+      "title": "Evil Dead Burn",
+      "description": "Evil Dead Burn",
+      "category": "kino",
+      "startDate": "2026-07-28T18:30:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-07-28T18:30:00.000Z",
+      "collectedAt": "2026-07-23T05:31:01.156Z"
     },
     {
       "title": "Minions & monstre",
       "description": "Minions & monstre",
       "category": "kino",
-      "startDate": "2026-07-22T16:00:00.000Z",
+      "startDate": "2026-07-29T16:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-22T16:00:00.000Z",
-      "collectedAt": "2026-07-22T05:25:48.525Z"
+      "id": "Brønnøy-kino-2026-07-29T16:00:00.000Z",
+      "collectedAt": "2026-07-23T05:31:01.156Z"
     },
     {
       "title": "Spider-Man: Brand New Day",
@@ -39,7 +79,17 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-29T18:00:00.000Z",
-      "collectedAt": "2026-07-22T05:25:48.525Z"
+      "collectedAt": "2026-07-23T05:31:01.156Z"
+    },
+    {
+      "title": "The Odyssey",
+      "description": "The Odyssey",
+      "category": "kino",
+      "startDate": "2026-07-30T18:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-07-30T18:00:00.000Z",
+      "collectedAt": "2026-07-23T05:31:01.156Z"
     },
     {
       "id": "840590775474946",
