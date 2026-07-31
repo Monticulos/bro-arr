@@ -1,36 +1,6 @@
 {
-  "updatedAt": "2026-07-29T05:29:14.137Z",
+  "updatedAt": "2026-07-31T05:42:16.268Z",
   "events": [
-    {
-      "title": "Evil Dead Burn",
-      "description": "Evil Dead Burn",
-      "category": "kino",
-      "startDate": "2026-07-28T18:30:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-28T18:30:00.000Z",
-      "collectedAt": "2026-07-29T05:28:25.055Z"
-    },
-    {
-      "title": "Minions & monstre",
-      "description": "Minions & monstre",
-      "category": "kino",
-      "startDate": "2026-07-29T16:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-29T16:00:00.000Z",
-      "collectedAt": "2026-07-29T05:28:25.055Z"
-    },
-    {
-      "title": "Spider-Man: Brand New Day",
-      "description": "Spider-Man: Brand New Day",
-      "category": "kino",
-      "startDate": "2026-07-29T18:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-29T18:00:00.000Z",
-      "collectedAt": "2026-07-29T05:28:25.055Z"
-    },
     {
       "title": "The Odyssey",
       "description": "The Odyssey",
@@ -39,7 +9,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-07-30T18:00:00.000Z",
-      "collectedAt": "2026-07-29T05:28:25.055Z"
+      "collectedAt": "2026-07-31T05:41:25.874Z"
     },
     {
       "id": "840590775474946",
