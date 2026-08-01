@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-07-31T05:42:16.268Z",
+  "updatedAt": "2026-08-01T05:34:17.765Z",
   "events": [
-    {
-      "title": "The Odyssey",
-      "description": "The Odyssey",
-      "category": "kino",
-      "startDate": "2026-07-30T18:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-07-30T18:00:00.000Z",
-      "collectedAt": "2026-07-31T05:41:25.874Z"
-    },
     {
       "id": "840590775474946",
       "title": "Formiddagsfilmen: Døden på Oslo S (1990)",
