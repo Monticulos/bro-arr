@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T02:57:47.005Z",
+  "updatedAt": "2026-08-16T03:07:21.178Z",
   "events": [
     {
       "id": "1197868552537417",
@@ -9,7 +9,7 @@
       "startDate": "2026-08-21T19:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1197868552537417/",
-      "collectedAt": "2026-08-14T04:15:20.023Z"
+      "collectedAt": "2026-08-16T03:07:20.334Z"
     },
     {
       "id": "1056107466878794",
@@ -19,7 +19,7 @@
       "startDate": "2026-08-22T11:00:00.000Z",
       "location": "Brønnøysund",
       "url": "https://www.facebook.com/events/1056107466878794/",
-      "collectedAt": "2026-08-14T04:15:21.314Z"
+      "collectedAt": "2026-08-16T03:07:18.782Z"
     },
     {
       "id": "1112002894894336",
@@ -29,7 +29,7 @@
       "startDate": "2026-08-27T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1112002894894336/",
-      "collectedAt": "2026-08-14T04:15:20.853Z"
+      "collectedAt": "2026-08-16T03:07:21.178Z"
     },
     {
       "id": "2544074642707678",
@@ -39,7 +39,7 @@
       "startDate": "2026-08-29T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2544074642707678/",
-      "collectedAt": "2026-08-14T04:15:16.702Z"
+      "collectedAt": "2026-08-16T03:07:17.671Z"
     },
     {
       "id": "1381250244050922",
@@ -49,7 +49,17 @@
       "startDate": "2026-09-03T05:00:00.000Z",
       "location": "Storgata, utenfor SpareBank 1 Helgeland",
       "url": "https://www.facebook.com/events/1381250244050922/",
-      "collectedAt": "2026-08-14T04:15:16.270Z"
+      "collectedAt": "2026-08-16T03:07:13.206Z"
+    },
+    {
+      "id": "1387091140058992",
+      "title": "Quiz-konsert med Trio no Treble // Cash Bar",
+      "description": "Musikk i Nordland inviterer til quizkonsert med Trio no Treble! Etter en rekke samarbeid med denne trioen legger vi nok en gang ut på quizturné i Nordland fylke.\n\nTrio no Treble er i utradisjonell tro en trio med bratsj, cello og kontrabass! En trio uten diskant, kun mørke røster og dyp klang. Trioen består av Ivan Penjin (bratsj), Eivind Rossbach Heier (cello) og Jostein Bolås Brødreskift (kontrabass).\n\nTrio no Treble er kjent for sin lekne tilnærming til både klassisk musikk, folkemusikk, samt sine spreke tolkninger av ny popmusikk. Med andre ord så spiller trioen musikk i flere kategorier og til alle anledninger.\n\nLes mer om Trioen her: https://www.trionotreble.com/\n\nPris: 150,-  Billetter kjøpes i døra",
+      "category": "quiz",
+      "startDate": "2026-09-03T17:00:00.000Z",
+      "location": "Cash bar",
+      "url": "https://www.facebook.com/events/1387091140058992/",
+      "collectedAt": "2026-08-16T03:07:19.337Z"
     },
     {
       "id": "1323661416198064",
@@ -59,7 +69,7 @@
       "startDate": "2026-09-10T13:00:00.000Z",
       "location": "Storgata 34, Brønnøysund",
       "url": "https://www.facebook.com/events/1323661416198064/",
-      "collectedAt": "2026-08-14T04:15:15.786Z"
+      "collectedAt": "2026-08-16T03:07:12.147Z"
     },
     {
       "id": "1089841603371449",
@@ -69,7 +79,7 @@
       "startDate": "2026-09-12T12:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1089841603371449/",
-      "collectedAt": "2026-08-14T04:15:18.616Z"
+      "collectedAt": "2026-08-16T03:07:19.840Z"
     },
     {
       "id": "1010615158267332",
@@ -79,7 +89,7 @@
       "startDate": "2026-09-14T16:00:00.000Z",
       "location": "Brønnøysund",
       "url": "https://www.facebook.com/events/1010615158267332/",
-      "collectedAt": "2026-08-14T04:15:17.692Z"
+      "collectedAt": "2026-08-16T03:07:15.490Z"
     },
     {
       "id": "1442219523834464",
@@ -89,7 +99,17 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-08-14T04:15:15.288Z"
+      "collectedAt": "2026-08-16T03:07:14.344Z"
+    },
+    {
+      "id": "1030825266238431",
+      "title": "La Serva Padrona - Opera på Forsamlingslokalet",
+      "description": "Den rike ungkaren Uberto sliter med mye Tjenestepiken, Serpina, er nemlig i overkant bestemt og kontrollerende. Når Uberto bestemmer seg for å skaffe seg kone, trues Serpinas posisjon i husholdningen. Med den håpløse tjeneren Vespone, legger dermed Serpina planer om å forføre sin herre. Kanskje blir hun selv endelig husets frue, La serva Padrona?\n\nLa serva padrona er en 45 minutter lang komisk opera komponert av Giovanni Battista Pergolesi, etter manus av Gennaro Federico. Oprinnelig skrevet i 1733, som et morsomt pauseinnslag i barokkens ellers dramatiske og selvhøytidelige operatradisjon, regnes den idag som et tidlig eksempel på opplysningstidens utfordring av overklassens grep over samfunnet. Musikken er leken, melodiøs og karakterene vittige og moderne, sett med våre øyne. Operaen synges på norsk, og egner seg ypperlig for både små og store.\n\nHelgeland Sinfonietta skal også framføre...\nJohann Sebastian Bachs dobbelkonsert i d-moll (BWV 1043), skrevet rundt 1730, er et av barokkmusikkens mest berømte verk for to solovioliner, strykere og basso continuo.\n ◦ I. Vivace\n ◦ II. Largo ma non tanto \n ◦ III. Allegro\nVerket ble trolig komponert i Köthen, og Bach arrangerte det senere også for to cembaloer i c-moll (BWV 1062)\n\nHelgeland Sinfonietta går nok en gang inn i samarbeid med Nordland Teater, Smeltedigelen Musikkfestival, og våre distriktsmusikerkolleger i KammeRana, Vefsn-Ensemblet og Trio Nesna.\n\nForestillingen spilles på:\nUngdomslokalet, Mosjøen 17. september kl. 18\nForsamlingslokalet, Brønnøysund 18. September kl. 19\nGammel Kino`n, Sandnessjøen 19. September kl. 17\nSamfunnshuset, Nesna 20. September kl 18\nSmeltedigelen Musikkfestival, Mo i  Rana 16. September\n\nVoksen: 350,-\nHonnør: 300,-\nStudent: 150,-\nBarn u/12: gratis\n\nSerpina: Darya Katyba\n\nUberto: Espen Alvim\n\nVespone: Linda Mathisen\n\nRegi: Kristin Jørgensen\n\nMusikalsk leder: Trond Wika\n\nProdusenter: Trond Wika og Espen Alvim\n\nCembalo: Franziska Wika\nBlokkfløyte: Sjur Berglan\nFiolin: Trond Wika\nFiolin: Etleva Brandt\nBratsj: Maren Pettersen\nCello: Torleif Holm\nKontrabass: Håkan Henriksen\n\nForestillingen er støttet av Kulturrådet, Klassisk Scene, Nordland Fylkeskommune og Nesna, Rana og Vefsn Kommune.",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-09-18T17:00:00.000Z",
+      "location": "Forsamlingslokalet Brønnøysund",
+      "url": "https://www.facebook.com/events/1030825266238431/",
+      "collectedAt": "2026-08-16T03:07:18.212Z"
     },
     {
       "id": "1082670457666669",
@@ -99,7 +119,7 @@
       "startDate": "2026-09-19T19:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1082670457666669/",
-      "collectedAt": "2026-08-14T04:15:19.517Z"
+      "collectedAt": "2026-08-16T03:07:16.565Z"
     },
     {
       "id": "1342636714447389",
@@ -109,7 +129,7 @@
       "startDate": "2026-09-26T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-08-14T04:15:17.226Z"
+      "collectedAt": "2026-08-16T03:07:13.809Z"
     },
     {
       "id": "1160245412989516",
@@ -119,7 +139,7 @@
       "startDate": "2026-10-02T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1160245412989516/",
-      "collectedAt": "2026-08-14T04:15:19.055Z"
+      "collectedAt": "2026-08-16T03:07:12.676Z"
     },
     {
       "id": "1982982558926487",
@@ -129,7 +149,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-08-14T04:15:14.788Z"
+      "collectedAt": "2026-08-16T03:07:14.932Z"
     },
     {
       "id": "1569737151233775",
@@ -139,7 +159,7 @@
       "startDate": "2026-10-31T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1569737151233775/",
-      "collectedAt": "2026-08-14T04:15:18.149Z"
+      "collectedAt": "2026-08-16T03:07:15.987Z"
     }
   ]
 }
