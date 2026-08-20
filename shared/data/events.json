@@ -1,6 +1,56 @@
 {
-  "updatedAt": "2026-08-19T03:04:34.056Z",
+  "updatedAt": "2026-08-20T03:04:04.052Z",
   "events": [
+    {
+      "title": "The Invite",
+      "description": "The Invite",
+      "category": "kino",
+      "startDate": "2026-08-19T16:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-08-19T16:00:00.000Z",
+      "collectedAt": "2026-08-20T03:02:45.078Z"
+    },
+    {
+      "title": "The Odyssey",
+      "description": "The Odyssey",
+      "category": "kino",
+      "startDate": "2026-08-19T18:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-08-19T18:00:00.000Z",
+      "collectedAt": "2026-08-20T03:02:45.078Z"
+    },
+    {
+      "title": "Paw Patrol: Dinofilmen",
+      "description": "Paw Patrol: Dinofilmen",
+      "category": "kino",
+      "startDate": "2026-08-20T16:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-08-20T16:00:00.000Z",
+      "collectedAt": "2026-08-20T03:02:45.079Z"
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "description": "Spider-Man: Brand New Day",
+      "category": "kino",
+      "startDate": "2026-08-20T18:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-08-20T18:00:00.000Z",
+      "collectedAt": "2026-08-20T03:02:45.079Z"
+    },
+    {
+      "title": "Insidious: Out of the Further",
+      "description": "Insidious: Out of the Further",
+      "category": "kino",
+      "startDate": "2026-08-21T18:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-08-21T18:00:00.000Z",
+      "collectedAt": "2026-08-20T03:02:45.079Z"
+    },
     {
       "id": "1197868552537417",
       "title": "Kred's Musikkbingo",
@@ -9,7 +59,7 @@
       "startDate": "2026-08-21T19:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1197868552537417/",
-      "collectedAt": "2026-08-18T03:02:16.827Z"
+      "collectedAt": "2026-08-20T03:03:59.802Z"
     },
     {
       "id": "1056107466878794",
@@ -19,7 +69,7 @@
       "startDate": "2026-08-22T11:00:00.000Z",
       "location": "Brønnøysund",
       "url": "https://www.facebook.com/events/1056107466878794/",
-      "collectedAt": "2026-08-18T03:02:21.788Z"
+      "collectedAt": "2026-08-20T03:03:57.612Z"
     },
     {
       "id": "1112002894894336",
@@ -29,7 +79,27 @@
       "startDate": "2026-08-27T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1112002894894336/",
-      "collectedAt": "2026-08-16T03:07:21.178Z"
+      "collectedAt": "2026-08-20T03:04:02.918Z"
+    },
+    {
+      "title": "The Dog Stars",
+      "description": "The Dog Stars",
+      "category": "kino",
+      "startDate": "2026-08-28T16:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-08-28T16:00:00.000Z",
+      "collectedAt": "2026-08-20T03:02:45.079Z"
+    },
+    {
+      "title": "Pressure",
+      "description": "Pressure",
+      "category": "kino",
+      "startDate": "2026-08-28T18:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-08-28T18:00:00.000Z",
+      "collectedAt": "2026-08-20T03:02:45.079Z"
     },
     {
       "id": "2544074642707678",
@@ -39,17 +109,17 @@
       "startDate": "2026-08-29T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2544074642707678/",
-      "collectedAt": "2026-08-16T03:07:17.671Z"
+      "collectedAt": "2026-08-20T03:04:00.375Z"
     },
     {
       "id": "1381250244050922",
       "title": "Gratis Byfrokost i Brønnøysund",
-      "description": "Velkommen til gratis Byfrokost i Storgata utenfor banken den 3. september mellom kl. 7-10. Her serverer vi en frokost i hotellklasse med blant annet egg, pølser, smoothie, frukt og nystekte kanelsnurrer.\n\nNytt i år: Du må du reservere tidspunkt for når du ønsker å spise frokost. Ved å velge en frokostpulje får vi bedre plass, mindre kø og en enda hyggeligere opplevelse for alle som deltar. Når du melder deg på, velger du enkelt det klokkeslettet som passer best for deg.\n\nMeld deg på frokostpulje her: https://sparebank1helgeland.hoopla.no/event/byfrokostbronnoysund2026",
+      "description": "Velkommen til gratis Byfrokost i Storgata utenfor banken den 3. september mellom kl. 7-10. Her serverer vi en frokost i hotellklasse med blant annet egg, pølser, smoothie, frukt og nystekte kanelsnurrer.\n\nØnsker du det, kan du melde deg på en frokostpulje på forhånd og velge tidspunktet som passer best for deg.\n\nMeld deg gjerne på en frokostpulje her: https://sparebank1helgeland.hoopla.no/event/byfrokostbronnoysund2026",
       "category": "mat-og-drikke",
       "startDate": "2026-09-03T05:00:00.000Z",
       "location": "Storgata, utenfor SpareBank 1 Helgeland",
       "url": "https://www.facebook.com/events/1381250244050922/",
-      "collectedAt": "2026-08-18T03:02:14.097Z"
+      "collectedAt": "2026-08-20T03:03:56.973Z"
     },
     {
       "id": "1387091140058992",
@@ -59,7 +129,7 @@
       "startDate": "2026-09-03T17:00:00.000Z",
       "location": "Cash bar",
       "url": "https://www.facebook.com/events/1387091140058992/",
-      "collectedAt": "2026-08-18T03:02:15.678Z"
+      "collectedAt": "2026-08-20T03:04:03.488Z"
     },
     {
       "id": "1323661416198064",
@@ -69,7 +139,7 @@
       "startDate": "2026-09-10T13:00:00.000Z",
       "location": "Storgata 34, Brønnøysund",
       "url": "https://www.facebook.com/events/1323661416198064/",
-      "collectedAt": "2026-08-18T03:02:12.318Z"
+      "collectedAt": "2026-08-20T03:03:55.671Z"
     },
     {
       "id": "1089841603371449",
@@ -79,7 +149,7 @@
       "startDate": "2026-09-12T12:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1089841603371449/",
-      "collectedAt": "2026-08-18T03:02:14.603Z"
+      "collectedAt": "2026-08-20T03:04:02.275Z"
     },
     {
       "id": "1010615158267332",
@@ -89,7 +159,7 @@
       "startDate": "2026-09-14T16:00:00.000Z",
       "location": "Brønnøysund",
       "url": "https://www.facebook.com/events/1010615158267332/",
-      "collectedAt": "2026-08-18T03:02:22.875Z"
+      "collectedAt": "2026-08-20T03:03:56.431Z"
     },
     {
       "id": "1442219523834464",
@@ -99,7 +169,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-08-18T03:02:12.817Z"
+      "collectedAt": "2026-08-20T03:03:58.675Z"
     },
     {
       "id": "1030825266238431",
@@ -109,7 +179,7 @@
       "startDate": "2026-09-18T17:00:00.000Z",
       "location": "Forsamlingslokalet Brønnøysund",
       "url": "https://www.facebook.com/events/1030825266238431/",
-      "collectedAt": "2026-08-18T03:02:22.402Z"
+      "collectedAt": "2026-08-20T03:03:59.237Z"
     },
     {
       "id": "1082670457666669",
@@ -119,7 +189,7 @@
       "startDate": "2026-09-19T19:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1082670457666669/",
-      "collectedAt": "2026-08-18T03:02:21.278Z"
+      "collectedAt": "2026-08-20T03:03:58.138Z"
     },
     {
       "id": "1342636714447389",
@@ -129,7 +199,7 @@
       "startDate": "2026-09-26T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-08-18T03:02:13.413Z"
+      "collectedAt": "2026-08-20T03:04:04.052Z"
     },
     {
       "id": "1160245412989516",
@@ -139,7 +209,7 @@
       "startDate": "2026-10-02T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1160245412989516/",
-      "collectedAt": "2026-08-18T03:02:16.335Z"
+      "collectedAt": "2026-08-20T03:04:00.969Z"
     },
     {
       "id": "1982982558926487",
@@ -159,7 +229,7 @@
       "startDate": "2026-10-31T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1569737151233775/",
-      "collectedAt": "2026-08-18T03:02:15.093Z"
+      "collectedAt": "2026-08-20T03:04:01.756Z"
     }
   ]
 }
