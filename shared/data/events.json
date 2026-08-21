@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-08-20T03:04:04.052Z",
+  "updatedAt": "2026-08-21T03:09:59.781Z",
   "events": [
-    {
-      "title": "The Invite",
-      "description": "The Invite",
-      "category": "kino",
-      "startDate": "2026-08-19T16:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-08-19T16:00:00.000Z",
-      "collectedAt": "2026-08-20T03:02:45.078Z"
-    },
-    {
-      "title": "The Odyssey",
-      "description": "The Odyssey",
-      "category": "kino",
-      "startDate": "2026-08-19T18:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-08-19T18:00:00.000Z",
-      "collectedAt": "2026-08-20T03:02:45.078Z"
-    },
     {
       "title": "Paw Patrol: Dinofilmen",
       "description": "Paw Patrol: Dinofilmen",
@@ -29,7 +9,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-20T16:00:00.000Z",
-      "collectedAt": "2026-08-20T03:02:45.079Z"
+      "collectedAt": "2026-08-21T03:09:07.011Z"
     },
     {
       "title": "Spider-Man: Brand New Day",
@@ -39,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-20T18:00:00.000Z",
-      "collectedAt": "2026-08-20T03:02:45.079Z"
+      "collectedAt": "2026-08-21T03:09:07.011Z"
     },
     {
       "title": "Insidious: Out of the Further",
@@ -49,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-21T18:00:00.000Z",
-      "collectedAt": "2026-08-20T03:02:45.079Z"
+      "collectedAt": "2026-08-21T03:09:07.011Z"
     },
     {
       "id": "1197868552537417",
@@ -89,7 +69,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-28T16:00:00.000Z",
-      "collectedAt": "2026-08-20T03:02:45.079Z"
+      "collectedAt": "2026-08-21T03:09:07.011Z"
     },
     {
       "title": "Pressure",
@@ -99,7 +79,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-28T18:00:00.000Z",
-      "collectedAt": "2026-08-20T03:02:45.079Z"
+      "collectedAt": "2026-08-21T03:09:07.011Z"
     },
     {
       "id": "2544074642707678",
