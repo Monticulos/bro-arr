@@ -1,36 +1,6 @@
 {
-  "updatedAt": "2026-08-22T03:01:05.920Z",
+  "updatedAt": "2026-08-23T03:09:53.200Z",
   "events": [
-    {
-      "title": "Insidious: Out of the Further",
-      "description": "Insidious: Out of the Further",
-      "category": "kino",
-      "startDate": "2026-08-21T18:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-08-21T18:00:00.000Z",
-      "collectedAt": "2026-08-22T02:59:48.481Z"
-    },
-    {
-      "id": "1197868552537417",
-      "title": "Kred's Musikkbingo",
-      "description": "Høsten er her! Hva passer bedre enn å ta turen innom og være med på Kred's Musikk-Bingo! Temaene er ikke bestemt enda, men det blir gøy uansett.\n\nVår bingovert tar dere med til musikkens historie. Vi spiller musikk, du finner ut sangen og ser om den er på bingobrettet. Vanskeligere er det ikke! Alle tidligere deltakere synes dette er kjempegøy.\n\nVi spiller to runder med bingo. Det koster kr. 50,- for bingobrett, og du betaler bare en gang for hele kvelden.\n\nVi har 18-årsgrense.",
-      "category": "quiz",
-      "startDate": "2026-08-21T19:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1197868552537417/",
-      "collectedAt": "2026-08-20T03:03:59.802Z"
-    },
-    {
-      "id": "1056107466878794",
-      "title": "GRATIS FAMILIEKONSERT - en hyllest til LILLEBJØRN NILSEN!",
-      "description": "Velkommen til GRATIS familiekonsert med HYGGELIGUNN & GUTTA KRUTT på LILLE BRØNNØYA! \n\nTa med hele familien på en reise sammen med oss inn i Lillebjørn Nilsens eviggrønne sangunivers med konserten INNI MITT HODE ER DET MYE RART! \n\nBrønnøy Jazzforum er stolte av å presentere en lokalprodusert konsert med engasjerte musikere fra nærmiljøet.\n\nHer får alle synge med, enten du er 4 eller 80 år! Vi henter frem fantasien og utforsker sangene vi finner «Inni mitt hode», så «Sett deg oppi kørja» og bli med! Vi lover både «Haba Haba»  og besøk av «Tanta til Beate». Alle voksne og «Barn av regnbuen» er hjertelig velkommen! 🌈\n\nBandet består av:\nHildegunn Gansmo - vokal \nNils Gullsvåg - gitarer\nTerje Nilsen - gitar, gitarbanjo, munnspill\nGeir Allan Reitan - piano, trekkspill \nEinar Bastesen - bass\nTorstein Nilsen Nedrelid - trommer\n\nKonserten er gjort mulig med støtte fra Sparebank1 Helgeland, Helgeland Kraft og Kulturrådet ❤️",
-      "category": "musikk",
-      "startDate": "2026-08-22T11:00:00.000Z",
-      "location": "Brønnøysund",
-      "url": "https://www.facebook.com/events/1056107466878794/",
-      "collectedAt": "2026-08-22T03:00:59.162Z"
-    },
     {
       "id": "1112002894894336",
       "title": "AllmenQuiz på Kred",
@@ -49,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-28T16:00:00.000Z",
-      "collectedAt": "2026-08-22T02:59:48.481Z"
+      "collectedAt": "2026-08-23T03:08:51.776Z"
     },
     {
       "title": "Pressure",
@@ -59,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-28T18:00:00.000Z",
-      "collectedAt": "2026-08-22T02:59:48.481Z"
+      "collectedAt": "2026-08-23T03:08:51.776Z"
     },
     {
       "id": "2544074642707678",
