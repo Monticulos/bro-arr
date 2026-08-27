@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T03:12:43.871Z",
+  "updatedAt": "2026-08-27T12:42:05.511Z",
   "events": [
     {
       "id": "1112002894894336",
@@ -19,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-28T16:00:00.000Z",
-      "collectedAt": "2026-08-26T03:11:35.095Z"
+      "collectedAt": "2026-08-27T12:41:03.236Z"
     },
     {
       "title": "Pressure",
@@ -29,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-28T18:00:00.000Z",
-      "collectedAt": "2026-08-26T03:11:35.095Z"
+      "collectedAt": "2026-08-27T12:41:03.236Z"
     },
     {
       "id": "2544074642707678",
@@ -43,13 +43,23 @@
     },
     {
       "title": "Verdens overdosedag",
-      "description": "I fjord døde 238 mennesker som følge av overdose (illegale stoffer).",
-      "category": "annet",
+      "description": "Markering av Verdens overdosedag 31. august.",
+      "category": "kommunalt",
       "startDate": "2026-08-30T22:00:00.000Z",
       "location": "Brønnøy kommune",
       "url": "https://www.bronnoy.kommune.no/aktuelt/verdens-overdosedag-31-august.17691.aspx",
       "id": "Brønnøy-kommune-2026-08-30T22:00:00.000Z",
-      "collectedAt": "2026-08-26T03:11:28.310Z"
+      "collectedAt": "2026-08-27T12:40:56.022Z"
+    },
+    {
+      "title": "Stenger Tosentunnelen for øvelse",
+      "description": "Tirsdag 1. september blir fylkesveg 76 Tosentunnelen helt stengt på ettermiddagen på grunn av en beredskapsøvelse.",
+      "category": "kommunalt",
+      "startDate": "2026-09-01T10:00:00.000Z",
+      "location": "Brønnøy kommune",
+      "url": "https://www.bronnoy.kommune.no/aktuelt/stenger-tosentunnelen-for-ovelse.17693.aspx",
+      "id": "Brønnøy-kommune-2026-09-01T10:00:00.000Z",
+      "collectedAt": "2026-08-27T12:40:56.022Z"
     },
     {
       "id": "1381250244050922",
