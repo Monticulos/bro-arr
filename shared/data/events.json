@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-27T12:42:05.511Z",
+  "updatedAt": "2026-08-28T14:16:06.104Z",
   "events": [
     {
-      "id": "1112002894894336",
-      "title": "AllmenQuiz på Kred",
-      "description": "Quiz på Kred er inne i sitt 18 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\nQuizmaster er den samme, bare eldre, og enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie:\n27. august, 3. september, 10. september, 17. september, 24. september, 1. oktober, 8. oktober, 15. oktober, 22. oktober, 29. oktober, 5. november, 12. november, 19. november, 26. november, 3. desember og 10. desember",
-      "category": "quiz",
-      "startDate": "2026-08-27T18:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1112002894894336/",
-      "collectedAt": "2026-08-26T03:12:42.991Z"
+      "id": "4427290054203475",
+      "title": "AFTERWORK PÅ SVANG: Fish&Chips!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "description": "Bli med oss hver fredag året rundt på \"afterwork\". SVANG er plassen å være for deg som liker å kickstarte helgen med god stemning, street food og smaker fra hele verden, herlig musikk og vennlige priser på både mat og drikke.\nKom å feire på helg på Svang. Ta med en venn eller ti og starte helgen med stil.\nFra kl. 15 - 18, ingen bordbestilling og til vi er tømt med første man til mølla prinsippet.\nDette er konsept som er gøyal, fargerik og som vi streker oss langt for at det skal være vennlig mot pængboka 😃 Vi ser frem å møte dere på Svang, hver fredag!!\n",
+      "category": "mat-og-drikke",
+      "startDate": "2026-08-28T13:00:00.000Z",
+      "location": "Svang",
+      "url": "https://www.facebook.com/events/4427290054203475/",
+      "collectedAt": "2026-08-28T14:16:00.349Z"
     },
     {
       "title": "The Dog Stars",
@@ -19,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-28T16:00:00.000Z",
-      "collectedAt": "2026-08-27T12:41:03.236Z"
+      "collectedAt": "2026-08-28T14:14:31.847Z"
     },
     {
       "title": "Pressure",
@@ -29,7 +29,17 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-08-28T18:00:00.000Z",
-      "collectedAt": "2026-08-27T12:41:03.236Z"
+      "collectedAt": "2026-08-28T14:14:31.847Z"
+    },
+    {
+      "id": "1821943742332644",
+      "title": "Lørdagsfilmen: Dyrene i Hakkebakkeskogen (2016)",
+      "description": "Velkommen til \"kino\" på biblioteket! \n\nLørdag 29. august kl. 12:00 viser vi Dyrene i Hakkebakkeskogen (2016). \n\nFilmen varer i 1 t og 12 min og er på norsk. \n\nPasser for alle.",
+      "category": "kino",
+      "startDate": "2026-08-29T10:00:00.000Z",
+      "location": "Skolegata 1, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/1821943742332644/",
+      "collectedAt": "2026-08-28T14:16:01.056Z"
     },
     {
       "id": "2544074642707678",
@@ -39,7 +49,7 @@
       "startDate": "2026-08-29T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2544074642707678/",
-      "collectedAt": "2026-08-26T03:12:40.860Z"
+      "collectedAt": "2026-08-28T14:15:58.810Z"
     },
     {
       "title": "Verdens overdosedag",
@@ -50,6 +60,16 @@
       "url": "https://www.bronnoy.kommune.no/aktuelt/verdens-overdosedag-31-august.17691.aspx",
       "id": "Brønnøy-kommune-2026-08-30T22:00:00.000Z",
       "collectedAt": "2026-08-27T12:40:56.022Z"
+    },
+    {
+      "title": "Stenger Tosentunnelen for øvelse",
+      "description": "Tirsdag 1. september blir fylkesveg 76 Tosentunnelen helt stengt på ettermiddagen på grunn av en beredskapsøvelse.",
+      "category": "kommunalt",
+      "startDate": "2026-08-31T22:00:00.000Z",
+      "location": "Brønnøy kommune",
+      "url": "https://www.bronnoy.kommune.no/aktuelt/stenger-tosentunnelen-for-ovelse.17693.aspx",
+      "id": "Brønnøy-kommune-2026-08-31T22:00:00.000Z",
+      "collectedAt": "2026-08-28T14:14:22.941Z"
     },
     {
       "title": "Stenger Tosentunnelen for øvelse",
@@ -69,17 +89,27 @@
       "startDate": "2026-09-03T05:00:00.000Z",
       "location": "Storgata, utenfor SpareBank 1 Helgeland",
       "url": "https://www.facebook.com/events/1381250244050922/",
-      "collectedAt": "2026-08-26T03:12:37.028Z"
+      "collectedAt": "2026-08-28T14:15:54.745Z"
     },
     {
       "id": "1387091140058992",
       "title": "Quiz-konsert med Trio no Treble // Cash Bar",
       "description": "Musikk i Nordland inviterer til quizkonsert med Trio no Treble! Etter en rekke samarbeid med denne trioen legger vi nok en gang ut på quizturné i Nordland fylke.\n\nTrio no Treble er i utradisjonell tro en trio med bratsj, cello og kontrabass! En trio uten diskant, kun mørke røster og dyp klang. Trioen består av Ivan Penjin (bratsj), Eivind Rossbach Heier (cello) og Jostein Bolås Brødreskift (kontrabass).\n\nTrio no Treble er kjent for sin lekne tilnærming til både klassisk musikk, folkemusikk, samt sine spreke tolkninger av ny popmusikk. Med andre ord så spiller trioen musikk i flere kategorier og til alle anledninger.\n\nLes mer om Trioen her: https://www.trionotreble.com/\n\nPris: 150,-  Billetter kjøpes i døra",
-      "category": "quiz",
+      "category": "annet",
       "startDate": "2026-09-03T17:00:00.000Z",
       "location": "Cash bar",
       "url": "https://www.facebook.com/events/1387091140058992/",
-      "collectedAt": "2026-08-26T03:12:43.442Z"
+      "collectedAt": "2026-08-28T14:16:06.104Z"
+    },
+    {
+      "id": "1112002898227669",
+      "title": "AllmenQuiz på Kred",
+      "description": "Quiz på Kred er inne i sitt 18 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\nQuizmaster er den samme, bare eldre, og enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie:\n27. august, 3. september, 10. september, 17. september, 24. september, 1. oktober, 8. oktober, 15. oktober, 22. oktober, 29. oktober, 5. november, 12. november, 19. november, 26. november, 3. desember og 10. desember",
+      "category": "quiz",
+      "startDate": "2026-09-03T18:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1112002898227669/",
+      "collectedAt": "2026-08-28T14:16:01.726Z"
     },
     {
       "id": "1323661416198064",
@@ -89,7 +119,17 @@
       "startDate": "2026-09-10T13:00:00.000Z",
       "location": "Storgata 34, Brønnøysund",
       "url": "https://www.facebook.com/events/1323661416198064/",
-      "collectedAt": "2026-08-26T03:12:39.827Z"
+      "collectedAt": "2026-08-28T14:15:52.938Z"
+    },
+    {
+      "id": "1886598179190359",
+      "title": "Infomøte: Beredskap",
+      "description": "I forbindelse med Folkehelseuka 2026 inviterer Brønnøy kommune og Brønnøy bibliotek til et åpent møte om beredskap.\n\nTid: Torsdag 10. september kl. 19:00\nSted: Brønnøy bibliotek, Brønnøysund\n\nAgenda: \nKommunens beredskapsplikt\nBrønnøy kommunes beredskapsarbeid\nEgenberedskap\nÅpent for spørsmål\n\nMøtet ledes av:\nBeredskapsleder Arnt-Ståle Sæthre\nVarabrannsjef Geir Grande\nKommuneplanlegger Tove Karin Solli\n\nVel møtt!",
+      "category": "kommunalt",
+      "startDate": "2026-09-10T17:00:00.000Z",
+      "location": "Skolegata 1, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/1886598179190359/",
+      "collectedAt": "2026-08-28T14:15:55.357Z"
     },
     {
       "id": "1089841603371449",
@@ -99,7 +139,7 @@
       "startDate": "2026-09-12T12:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1089841603371449/",
-      "collectedAt": "2026-08-26T03:12:42.442Z"
+      "collectedAt": "2026-08-28T14:15:56.579Z"
     },
     {
       "id": "1010615158267332",
@@ -109,7 +149,7 @@
       "startDate": "2026-09-14T16:00:00.000Z",
       "location": "Brønnøysund",
       "url": "https://www.facebook.com/events/1010615158267332/",
-      "collectedAt": "2026-08-26T03:12:38.176Z"
+      "collectedAt": "2026-08-28T14:15:57.507Z"
     },
     {
       "id": "1442219523834464",
@@ -119,7 +159,7 @@
       "startDate": "2026-09-16T17:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-08-26T03:12:39.249Z"
+      "collectedAt": "2026-08-28T14:15:52.276Z"
     },
     {
       "id": "1030825266238431",
@@ -129,7 +169,7 @@
       "startDate": "2026-09-18T17:00:00.000Z",
       "location": "Forsamlingslokalet Brønnøysund",
       "url": "https://www.facebook.com/events/1030825266238431/",
-      "collectedAt": "2026-08-26T03:12:41.962Z"
+      "collectedAt": "2026-08-28T14:16:05.337Z"
     },
     {
       "id": "1082670457666669",
@@ -139,7 +179,7 @@
       "startDate": "2026-09-19T19:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1082670457666669/",
-      "collectedAt": "2026-08-26T03:12:37.608Z"
+      "collectedAt": "2026-08-28T14:15:53.964Z"
     },
     {
       "id": "1342636714447389",
@@ -149,7 +189,7 @@
       "startDate": "2026-09-26T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-08-26T03:12:38.721Z"
+      "collectedAt": "2026-08-28T14:15:55.969Z"
     },
     {
       "id": "2055620601982607",
@@ -159,7 +199,7 @@
       "startDate": "2026-09-26T19:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2055620601982607/",
-      "collectedAt": "2026-08-26T03:12:41.450Z"
+      "collectedAt": "2026-08-28T14:16:04.661Z"
     },
     {
       "id": "1160245412989516",
@@ -169,7 +209,7 @@
       "startDate": "2026-10-02T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1160245412989516/",
-      "collectedAt": "2026-08-24T03:10:59.388Z"
+      "collectedAt": "2026-08-28T14:16:04.024Z"
     },
     {
       "id": "1982982558926487",
@@ -179,7 +219,7 @@
       "startDate": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-08-24T03:10:54.542Z"
+      "collectedAt": "2026-08-28T14:16:02.751Z"
     },
     {
       "id": "1569737151233775",
@@ -189,7 +229,17 @@
       "startDate": "2026-10-31T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1569737151233775/",
-      "collectedAt": "2026-08-26T03:12:43.871Z"
+      "collectedAt": "2026-08-28T14:15:59.632Z"
+    },
+    {
+      "id": "27931154943206710",
+      "title": "Førstehjelpskurs 0-2år",
+      "description": "Helsestasjonen tilbyr førstehjelpskurs for foreldre med barn 0-2år med fokus på HLR, kvelning og brannskader. Det vil være både teori og praktisk øving på dukker. \nFørste gruppe: kl.09-11\nAndre gruppe:kl.12-14\nTa kontakt med resepsjonen for påmelding: tlf 750 12880",
+      "category": "annet",
+      "startDate": "2026-11-26T08:00:00.000Z",
+      "location": "Skulesvei 13, 8904 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/27931154943206710/",
+      "collectedAt": "2026-08-28T14:15:58.097Z"
     }
   ]
 }
