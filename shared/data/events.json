@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-08-31T08:31:53.609Z",
+  "updatedAt": "2026-09-01T07:38:40.168Z",
   "events": [
-    {
-      "title": "Verdens overdosedag",
-      "description": "Markering av Verdens overdosedag 31. august.",
-      "category": "kommunalt",
-      "startDate": "2026-08-30T22:00:00.000Z",
-      "location": "Brønnøy kommune",
-      "url": "https://www.bronnoy.kommune.no/aktuelt/verdens-overdosedag-31-august.17691.aspx",
-      "id": "Brønnøy-kommune-2026-08-30T22:00:00.000Z",
-      "collectedAt": "2026-08-27T12:40:56.022Z"
-    },
     {
       "title": "Stenger Tosentunnelen for øvelse",
       "description": "Tirsdag 1. september blir fylkesveg 76 Tosentunnelen helt stengt på ettermiddagen på grunn av en beredskapsøvelse.",
@@ -19,7 +9,7 @@
       "location": "Brønnøy kommune",
       "url": "https://www.bronnoy.kommune.no/aktuelt/stenger-tosentunnelen-for-ovelse.17693.aspx",
       "id": "Brønnøy-kommune-2026-08-31T22:00:00.000Z",
-      "collectedAt": "2026-08-31T08:30:46.767Z"
+      "collectedAt": "2026-09-01T07:37:34.313Z"
     },
     {
       "title": "Stenger Tosentunnelen for øvelse",
@@ -42,14 +32,24 @@
       "collectedAt": "2026-08-31T08:31:53.608Z"
     },
     {
+      "title": "Informasjonsmøte konfirmasjon 26/27",
+      "description": "Informasjonsmøte konfirmasjon 26/27",
+      "category": "tro-og-livssyn",
+      "startDate": "2026-09-01T17:45:00.000Z",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=56179f4d-486f-46cc-a837-ca09c0bf3afd&OccurenceId=56179f4d-486f-46cc-a837-ca09c0bf3afd",
+      "id": "Brønnøy-kirke-2026-09-01T17:45:00.000Z",
+      "collectedAt": "2026-09-01T07:38:40.167Z"
+    },
+    {
       "title": "Trille-Tralle-Treff (babysang)",
       "description": "Trille-Tralle-Treff (babysang)",
       "category": "barn-og-ungdom",
       "startDate": "2026-09-02T09:00:00.000Z",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=fb769dd4-503b-4195-a235-38157690f3c1",
       "id": "Brønnøy-kirke-2026-09-02T09:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "id": "1381250244050922",
@@ -89,17 +89,17 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7c32dc90-9332-4491-a0a7-4fe684e1d865&OccurenceId=7c32dc90-9332-4491-a0a7-4fe684e1d865",
       "id": "Brønnøy-kirke-2026-09-06T09:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
       "description": "Trille-Tralle-Treff (babysang)",
       "category": "barn-og-ungdom",
       "startDate": "2026-09-09T09:00:00.000Z",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=49bf33e7-df1e-465c-a7fc-41295028b8d7",
       "id": "Brønnøy-kirke-2026-09-09T09:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "id": "1323661416198064",
@@ -139,7 +139,7 @@
       "location": "Velfjord kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ab940daf-9eb1-40b6-a814-8407b80836d3&OccurenceId=ab940daf-9eb1-40b6-a814-8407b80836d3",
       "id": "Brønnøy-kirke-2026-09-13T14:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "id": "1010615158267332",
@@ -156,10 +156,10 @@
       "description": "Trille-Tralle-Treff (babysang)",
       "category": "barn-og-ungdom",
       "startDate": "2026-09-16T09:00:00.000Z",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=6693bdc4-d625-40c6-a114-3e0754b5ffaf",
       "id": "Brønnøy-kirke-2026-09-16T09:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "id": "1442219523834464",
@@ -196,10 +196,10 @@
       "description": "Trille-Tralle-Treff (babysang)",
       "category": "barn-og-ungdom",
       "startDate": "2026-09-23T09:00:00.000Z",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=176871e3-2d47-4af4-9f71-be13c001ea3f",
       "id": "Brønnøy-kirke-2026-09-23T09:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "title": "Gudstjeneste",
@@ -209,7 +209,7 @@
       "location": "Sykehjemmets kapell",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=571d554c-068c-43a9-bdf7-361958a91671&OccurenceId=571d554c-068c-43a9-bdf7-361958a91671",
       "id": "Brønnøy-kirke-2026-09-24T09:30:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "id": "1342636714447389",
@@ -239,7 +239,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=6a6b1629-92eb-410e-af53-69276ce44dcf&OccurenceId=6a6b1629-92eb-410e-af53-69276ce44dcf",
       "id": "Brønnøy-kirke-2026-09-27T09:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "title": "Gudstjeneste",
@@ -249,17 +249,17 @@
       "location": "Velfjord kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=2eab3462-7f41-4b17-bcb4-7a06cd3f6ec4&OccurenceId=2eab3462-7f41-4b17-bcb4-7a06cd3f6ec4",
       "id": "Brønnøy-kirke-2026-09-27T14:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
       "description": "Trille-Tralle-Treff (babysang)",
       "category": "barn-og-ungdom",
       "startDate": "2026-09-30T09:00:00.000Z",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=140bb5dc-eebd-4e2f-bfef-83d2d7e4fe8b",
       "id": "Brønnøy-kirke-2026-09-30T09:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
+      "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
       "id": "1160245412989516",
