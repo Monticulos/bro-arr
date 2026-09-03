@@ -1,56 +1,6 @@
 {
-  "updatedAt": "2026-09-01T07:38:40.168Z",
+  "updatedAt": "2026-09-03T07:05:15.312Z",
   "events": [
-    {
-      "title": "Stenger Tosentunnelen for øvelse",
-      "description": "Tirsdag 1. september blir fylkesveg 76 Tosentunnelen helt stengt på ettermiddagen på grunn av en beredskapsøvelse.",
-      "category": "kommunalt",
-      "startDate": "2026-08-31T22:00:00.000Z",
-      "location": "Brønnøy kommune",
-      "url": "https://www.bronnoy.kommune.no/aktuelt/stenger-tosentunnelen-for-ovelse.17693.aspx",
-      "id": "Brønnøy-kommune-2026-08-31T22:00:00.000Z",
-      "collectedAt": "2026-09-01T07:37:34.313Z"
-    },
-    {
-      "title": "Stenger Tosentunnelen for øvelse",
-      "description": "Tirsdag 1. september blir fylkesveg 76 Tosentunnelen helt stengt på ettermiddagen på grunn av en beredskapsøvelse.",
-      "category": "kommunalt",
-      "startDate": "2026-09-01T10:00:00.000Z",
-      "location": "Brønnøy kommune",
-      "url": "https://www.bronnoy.kommune.no/aktuelt/stenger-tosentunnelen-for-ovelse.17693.aspx",
-      "id": "Brønnøy-kommune-2026-09-01T10:00:00.000Z",
-      "collectedAt": "2026-08-27T12:40:56.022Z"
-    },
-    {
-      "title": "Informasjonsmøte konfirmasjon 26/27",
-      "description": "Informasjonsmøte konfirmasjon 26/27",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-09-01T17:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=56179f4d-486f-46cc-a837-ca09c0bf3afd&OccurenceId=56179f4d-486f-46cc-a837-ca09c0bf3afd",
-      "id": "Brønnøy-kirke-2026-09-01T17:00:00.000Z",
-      "collectedAt": "2026-08-31T08:31:53.608Z"
-    },
-    {
-      "title": "Informasjonsmøte konfirmasjon 26/27",
-      "description": "Informasjonsmøte konfirmasjon 26/27",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-09-01T17:45:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=56179f4d-486f-46cc-a837-ca09c0bf3afd&OccurenceId=56179f4d-486f-46cc-a837-ca09c0bf3afd",
-      "id": "Brønnøy-kirke-2026-09-01T17:45:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
-    },
-    {
-      "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-09-02T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=fb769dd4-503b-4195-a235-38157690f3c1",
-      "id": "Brønnøy-kirke-2026-09-02T09:00:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
-    },
     {
       "id": "1381250244050922",
       "title": "Gratis Byfrokost i Brønnøysund",
@@ -60,6 +10,16 @@
       "location": "Storgata, utenfor SpareBank 1 Helgeland",
       "url": "https://www.facebook.com/events/1381250244050922/",
       "collectedAt": "2026-08-30T08:11:45.038Z"
+    },
+    {
+      "title": "Paw Patrol: Dinofilmen",
+      "description": "Paw Patrol: Dinofilmen",
+      "category": "kino",
+      "startDate": "2026-09-03T16:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-09-03T16:00:00.000Z",
+      "collectedAt": "2026-09-03T07:04:20.216Z"
     },
     {
       "id": "1387091140058992",
@@ -82,6 +42,36 @@
       "collectedAt": "2026-08-30T08:11:48.908Z"
     },
     {
+      "title": "The Invite",
+      "description": "The Invite",
+      "category": "kino",
+      "startDate": "2026-09-03T18:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-09-03T18:00:00.000Z",
+      "collectedAt": "2026-09-03T07:04:20.216Z"
+    },
+    {
+      "title": "Insidious: Out of the Further",
+      "description": "Insidious: Out of the Further",
+      "category": "kino",
+      "startDate": "2026-09-04T16:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-09-04T16:00:00.000Z",
+      "collectedAt": "2026-09-03T07:04:20.216Z"
+    },
+    {
+      "title": "The Dog Stars",
+      "description": "The Dog Stars",
+      "category": "kino",
+      "startDate": "2026-09-04T18:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-09-04T18:00:00.000Z",
+      "collectedAt": "2026-09-03T07:04:20.216Z"
+    },
+    {
       "title": "Gudstjeneste med presentasjon av konfirmantene",
       "description": "Gudstjeneste med presentasjon av konfirmantene",
       "category": "tro-og-livssyn",
@@ -90,6 +80,26 @@
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7c32dc90-9332-4491-a0a7-4fe684e1d865&OccurenceId=7c32dc90-9332-4491-a0a7-4fe684e1d865",
       "id": "Brønnøy-kirke-2026-09-06T09:00:00.000Z",
       "collectedAt": "2026-09-01T07:38:40.167Z"
+    },
+    {
+      "title": "Fjord",
+      "description": "Fjord",
+      "category": "kino",
+      "startDate": "2026-09-08T16:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-09-08T16:00:00.000Z",
+      "collectedAt": "2026-09-03T07:04:20.216Z"
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "description": "Spider-Man: Brand New Day",
+      "category": "kino",
+      "startDate": "2026-09-08T18:30:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-09-08T18:30:00.000Z",
+      "collectedAt": "2026-09-03T07:04:20.216Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
