@@ -1,265 +1,15 @@
 {
-  "updatedAt": "2026-09-03T07:05:15.312Z",
+  "updatedAt": "2026-09-29T08:15:52.567Z",
   "events": [
     {
-      "id": "1381250244050922",
-      "title": "Gratis Byfrokost i Brønnøysund",
-      "description": "Velkommen til gratis Byfrokost i Storgata utenfor banken den 3. september mellom kl. 7-10. Her serverer vi en frokost i hotellklasse med blant annet egg, pølser, smoothie, frukt og nystekte kanelsnurrer.\n\nNytt i år: Du må du reservere tidspunkt for når du ønsker å spise frokost. Ved å velge en frokostpulje får vi bedre plass, mindre kø og en enda hyggeligere opplevelse for alle som deltar. Når du melder deg på, velger du enkelt det klokkeslettet som passer best for deg.\n\nMeld deg på en frokostpulje her: https://sparebank1helgeland.hoopla.no/event/byfrokostbronnoysund2026",
-      "category": "mat-og-drikke",
-      "startDate": "2026-09-03T05:00:00.000Z",
-      "location": "Storgata, utenfor SpareBank 1 Helgeland",
-      "url": "https://www.facebook.com/events/1381250244050922/",
-      "collectedAt": "2026-08-30T08:11:45.038Z"
-    },
-    {
-      "title": "Paw Patrol: Dinofilmen",
-      "description": "Paw Patrol: Dinofilmen",
-      "category": "kino",
-      "startDate": "2026-09-03T16:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-09-03T16:00:00.000Z",
-      "collectedAt": "2026-09-03T07:04:20.216Z"
-    },
-    {
-      "id": "1387091140058992",
-      "title": "Quiz-konsert med Trio no Treble // Cash Bar",
-      "description": "Musikk i Nordland inviterer til quizkonsert med Trio no Treble! Etter en rekke samarbeid med denne trioen legger vi nok en gang ut på quizturné i Nordland fylke.\n\nTrio no Treble er i utradisjonell tro en trio med bratsj, cello og kontrabass! En trio uten diskant, kun mørke røster og dyp klang. Trioen består av Ivan Penjin (bratsj), Eivind Rossbach Heier (cello) og Jostein Bolås Brødreskift (kontrabass).\n\nTrio no Treble er kjent for sin lekne tilnærming til både klassisk musikk, folkemusikk, samt sine spreke tolkninger av ny popmusikk. Med andre ord så spiller trioen musikk i flere kategorier og til alle anledninger.\n\nLes mer om Trioen her: https://www.trionotreble.com/\n\nPris: 150,-  Billetter kjøpes i døra",
-      "category": "quiz",
-      "startDate": "2026-09-03T17:00:00.000Z",
-      "location": "Cash bar",
-      "url": "https://www.facebook.com/events/1387091140058992/",
-      "collectedAt": "2026-08-30T08:11:52.493Z"
-    },
-    {
-      "id": "1112002898227669",
-      "title": "AllmenQuiz på Kred",
-      "description": "Quiz på Kred er inne i sitt 18 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\nQuizmaster er den samme, bare eldre, og enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie:\n27. august, 3. september, 10. september, 17. september, 24. september, 1. oktober, 8. oktober, 15. oktober, 22. oktober, 29. oktober, 5. november, 12. november, 19. november, 26. november, 3. desember og 10. desember",
-      "category": "quiz",
-      "startDate": "2026-09-03T18:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1112002898227669/",
-      "collectedAt": "2026-08-30T08:11:48.908Z"
-    },
-    {
-      "title": "The Invite",
-      "description": "The Invite",
-      "category": "kino",
-      "startDate": "2026-09-03T18:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-09-03T18:00:00.000Z",
-      "collectedAt": "2026-09-03T07:04:20.216Z"
-    },
-    {
-      "title": "Insidious: Out of the Further",
-      "description": "Insidious: Out of the Further",
-      "category": "kino",
-      "startDate": "2026-09-04T16:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-09-04T16:00:00.000Z",
-      "collectedAt": "2026-09-03T07:04:20.216Z"
-    },
-    {
-      "title": "The Dog Stars",
-      "description": "The Dog Stars",
-      "category": "kino",
-      "startDate": "2026-09-04T18:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-09-04T18:00:00.000Z",
-      "collectedAt": "2026-09-03T07:04:20.216Z"
-    },
-    {
-      "title": "Gudstjeneste med presentasjon av konfirmantene",
-      "description": "Gudstjeneste med presentasjon av konfirmantene",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-09-06T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=7c32dc90-9332-4491-a0a7-4fe684e1d865&OccurenceId=7c32dc90-9332-4491-a0a7-4fe684e1d865",
-      "id": "Brønnøy-kirke-2026-09-06T09:00:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
-    },
-    {
-      "title": "Fjord",
-      "description": "Fjord",
-      "category": "kino",
-      "startDate": "2026-09-08T16:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-09-08T16:00:00.000Z",
-      "collectedAt": "2026-09-03T07:04:20.216Z"
-    },
-    {
-      "title": "Spider-Man: Brand New Day",
-      "description": "Spider-Man: Brand New Day",
-      "category": "kino",
-      "startDate": "2026-09-08T18:30:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-09-08T18:30:00.000Z",
-      "collectedAt": "2026-09-03T07:04:20.216Z"
-    },
-    {
-      "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "title": "Barseltreff på biblioteket",
+      "description": "Barseltreff på biblioteket",
       "category": "barn-og-ungdom",
-      "startDate": "2026-09-09T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=49bf33e7-df1e-465c-a7fc-41295028b8d7",
-      "id": "Brønnøy-kirke-2026-09-09T09:00:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
-    },
-    {
-      "id": "1323661416198064",
-      "title": "𝐅𝐨𝐨𝐝 𝐓𝐫𝐮𝐜𝐤 𝐅𝐞𝐬𝐭𝐢𝐯𝐚𝐥 𝐢 𝐁𝐫ø𝐧𝐧ø𝐲𝐬𝐮𝐧𝐝 - Street Food Norway Tour 2026",
-      "description": "𝐁𝐫ø𝐧𝐧ø𝐲𝐬𝐮𝐧𝐝 – 𝐯𝐢 𝐞𝐫 𝐭𝐢𝐥𝐛𝐚𝐤𝐞! 🎉\n\nFra torsdag 10. september til søndag 13. september kommer Street Food Norway tilbake til Brønnøysund ♥️\n\nDet er en stund siden sist vi besøkte denne fantastiske byen, og derfor gleder vi oss ekstra mye til å komme tilbake! I fire dager fylles området med spennende smaker fra hele verden, fristende dufter og ekte street food-stemning.\n\nTa med venner og familie og bli med på en smakfull opplevelse – her finner du noe for enhver smak 🍽️🔥\n\n👉 𝐃𝐢𝐬𝐬𝐞 𝐟𝐨𝐨𝐝 𝐭𝐫𝐮𝐜𝐤𝐞𝐧𝐞 𝐤𝐨𝐦𝐦𝐞𝐫:\n1️⃣ Piece of Greece\n2️⃣ DimSum\n3️⃣ Bao Buns\n4️⃣ La Churreria de Manolo\n5️⃣ Los Tacos\n6️⃣ Crepes & Dutch Poffertjes\n7️⃣ Crazy Food Truck\n8️⃣ Funky Chicken\n9️⃣ Duck Eat\n🔟 Japanese Truck\n1️⃣1️⃣ Corn Dog\n1️⃣2️⃣ Korean Taco\n1️⃣3️⃣ Bakt Potet\n1️⃣4️⃣ Spekemat\n1️⃣5️⃣ Ostebua\n1️⃣6️⃣ Mediterranean Bites\n\n🕒 𝐀̊𝐩𝐧𝐢𝐧𝐠𝐬𝐭𝐢𝐝𝐞𝐫:\nTorsdag: 15:00–20:00\nFredag & Lørdag: 12:00–20:00\nSøndag: 13:00–18:00\n\n🎟 Gratis inngang\n\nVi gleder oss til å besøke Brønnøysund – håper vi sees! 🚚✨",
-      "category": "mat-og-drikke",
-      "startDate": "2026-09-10T13:00:00.000Z",
-      "location": "Storgata 34, Brønnøysund",
-      "url": "https://www.facebook.com/events/1323661416198064/",
-      "collectedAt": "2026-08-30T08:11:47.777Z"
-    },
-    {
-      "id": "1886598179190359",
-      "title": "Infomøte: Beredskap",
-      "description": "I forbindelse med Folkehelseuka 2026 inviterer Brønnøy kommune og Brønnøy bibliotek til et åpent møte om beredskap.\n\nTid: Torsdag 10. september kl. 19:00\nSted: Brønnøy bibliotek, Brønnøysund\n\nAgenda: \nKommunens beredskapsplikt\nBrønnøy kommunes beredskapsarbeid\nEgenberedskap\nÅpent for spørsmål\n\nMøtet ledes av:\nBeredskapsleder Arnt-Ståle Sæthre\nVarabrannsjef Geir Grande\nKommuneplanlegger Tove Karin Solli\n\nVel møtt!",
-      "category": "kommunalt",
-      "startDate": "2026-09-10T17:00:00.000Z",
-      "location": "Skolegata 1, 8900 Brønnøysund, Norway",
-      "url": "https://www.facebook.com/events/1886598179190359/",
-      "collectedAt": "2026-08-30T08:11:53.564Z"
-    },
-    {
-      "id": "1089841603371449",
-      "title": "Lørdagsscenen på Kred - med \"Shady Crows Bluegrass Unit\"",
-      "description": "Da er programmet satt for den første Lørdagsscenen på Kred!\n\nDette er i første omgang fire lørdager i året fra kl 14-16. I det tidsrommet er det masse folk som allikevel er i byen for å handle og ta en lunsj eller kaffe. \n\nIdeen er å skape en møteplass der vi får vist fram livemusikk og hva man faktisk går glipp av med å ikke komme på konserter.\nHer skal de yngre få vist seg fram, noen av de gamle også i vante eller ny konstellasjoner. Og ikke minst vil musikere på tvers av sjangre møtes i en setting med dagslys og sosialt samvær. Kanskje dannes det nye band? Musikere og gjester får nye venner? \n\nDenne lørdagen blir det først en halvtimes akustisk innledning før dagens hovedattraksjon går på scenen.\n\n\"Shady Crows Bluegrass Unit\" blir første band og hovedattraksjon. Vi gleder oss til å oppleve de, og møte nye og gamle venner!\n\nKom du også! \nIngen covercharge. ",
-      "category": "musikk",
-      "startDate": "2026-09-12T12:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1089841603371449/",
-      "collectedAt": "2026-08-30T08:11:58.431Z"
-    },
-    {
-      "title": "Gudstjeneste med dåp",
-      "description": "Gudstjeneste med dåp",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-09-13T14:00:00.000Z",
-      "location": "Velfjord kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ab940daf-9eb1-40b6-a814-8407b80836d3&OccurenceId=ab940daf-9eb1-40b6-a814-8407b80836d3",
-      "id": "Brønnøy-kirke-2026-09-13T14:00:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
-    },
-    {
-      "id": "1010615158267332",
-      "title": "Arctic Innovation Festival",
-      "description": "Velkommen til den aller første Arctic Innovation Festival! \n\nSted: Brønnøysund\nDato: 14.–17. september 2026\n\nArctic Innovation Festival er en ny møteplass for teknologi, innovasjon og samarbeid i Arktis. I løpet av flere innholdsrike dager samler vi utviklere, gründere, næringsliv, studenter, forskningsmiljøer og offentlig sektor for å utforske morgendagens løsninger og skape nye samarbeid.\n\nFestivalen har et internasjonalt perspektiv og vil samle deltakere og bidragsytere fra arktiske regioner i Norge, Sverige, Finland, Canada og USA.\n\nDette kan du oppleve:\n🔹 Konferansedag med inspirasjon fra toppledere og fagspesialister\n🔹 Workshops og kompetansepåfyll\n🔹 Hackathon der idéer blir til prototyper\n🔹 Pitchekonkurranse for innovative idèer\n🔹 Nettverksbygging og spennende møteplasser\n\nEnten du jobber med teknologi, driver en startup, er student, jobber i offentlig sektor eller bare er nysgjerrig på innovasjon og framtidens muligheter, er dette festivalen for deg.\n\nMeld deg på i bilettlenka!📨\n\nFølg med på nettsiden for programslipp, foredragsholdere og flere spennende nyheter: https://www.arcticinnovationfestival.no/\n\nVi gleder oss til å samle innovasjonsmiljøer fra hele Norge og Arktis til fire inspirerende dager i Brønnøysund! 🚀",
-      "category": "næringsliv",
-      "startDate": "2026-09-14T16:00:00.000Z",
-      "location": "Brønnøysund",
-      "url": "https://www.facebook.com/events/1010615158267332/",
-      "collectedAt": "2026-08-30T08:11:45.565Z"
-    },
-    {
-      "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-09-16T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=6693bdc4-d625-40c6-a114-3e0754b5ffaf",
-      "id": "Brønnøy-kirke-2026-09-16T09:00:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
-    },
-    {
-      "id": "1442219523834464",
-      "title": "Maja Lunde - Skjerm barna",
-      "description": "Maja Lunde kommer til Brønnøysund for å snakke om boka si \"Skjerm barna\" på samfunnshuset i storsalen. \n\nDet er gratis inngang for alle interesserte.\n\nBli med på et inspirerende foredrag med Maja Lunde \"Skjerm barna\". Hvordan teknologien tok over barndommen og hva vi kan gjøre for å ta den tilbake.\n\nEt foredrag for deg som synes at ungene er for mye på skjerm og vil bidra til å ta barndommen tilbake! Et barn som bruker mobilen en time om dagen vil med en gjennomsnittlig levealder på 82 år bruker omlag 30.000 timer på mobilen eller 15. årsverk. Veldig mange barn og unge bruker mobilen 4 timer eller mer hver dag. Det er 60 årsverk det. Mobilen, algoritmene, eier barnas tid. Bruken rammer alt det viktige de trenger for å ha det bra; leke, sove, bevege seg, lese, dagdrømme og være sammen med andre. Samtidig stiger tallene på psykisk uhelse blant barn og ungdom, og skoleresultatene raser. \n\nVi har gitt barna fri tilgang til applikasjoner og dingser som vi voksne knapt klarer å håndtere. Til sosiale medier som krever en mental modenhet barn og unge rett og slett ikke har utviklet, fordi hjernen deres fremdeles er under ombygging. Vi har bare gjort det, fordi vi tror det digitale har kommet for å bli. De eneste som tjener på det er tek-gigantene. Men, det som ikke gjør livene våre og samfunnet bedre, det har ikke kommet for å bli. Det kan vi fjerne eller endre.\n\nDette foredraget viser deg hvordan.\n\nDette er et arrangement som er kommet i gang med initativ av noen foreldre på BBS, Utdanningsforbundet Brønnøy, Norli Bokhandel Brønnøysund, Brønnøysund Sanitetsforening og Brønnøy bibliotek. Med støtte fra alle de ovenstående og i tillegg Utdanningsforbundet Sømna, Utdanningsforbundet Vega og Brønnøy kommune v/Barne- og familietjenesten har vi fått Maja Lunde til å komme hit til Brønnøysund.",
-      "category": "kunst-og-kultur",
-      "startDate": "2026-09-16T17:00:00.000Z",
-      "location": "Brønnøysund samfunnshus",
-      "url": "https://www.facebook.com/events/1442219523834464/",
-      "collectedAt": "2026-08-30T08:11:44.537Z"
-    },
-    {
-      "id": "1030825266238431",
-      "title": "La Serva Padrona - Opera på Forsamlingslokalet",
-      "description": "Den rike ungkaren Uberto sliter med mye Tjenestepiken, Serpina, er nemlig i overkant bestemt og kontrollerende. Når Uberto bestemmer seg for å skaffe seg kone, trues Serpinas posisjon i husholdningen. Med den håpløse tjeneren Vespone, legger dermed Serpina planer om å forføre sin herre. Kanskje blir hun selv endelig husets frue, La serva Padrona?\n\nLa serva padrona er en 45 minutter lang komisk opera komponert av Giovanni Battista Pergolesi, etter manus av Gennaro Federico. Oprinnelig skrevet i 1733, som et morsomt pauseinnslag i barokkens ellers dramatiske og selvhøytidelige operatradisjon, regnes den idag som et tidlig eksempel på opplysningstidens utfordring av overklassens grep over samfunnet. Musikken er leken, melodiøs og karakterene vittige og moderne, sett med våre øyne. Operaen synges på norsk, og egner seg ypperlig for både små og store.\n\nHelgeland Sinfonietta skal også framføre...\nJohann Sebastian Bachs dobbelkonsert i d-moll (BWV 1043), skrevet rundt 1730, er et av barokkmusikkens mest berømte verk for to solovioliner, strykere og basso continuo.\n ◦ I. Vivace\n ◦ II. Largo ma non tanto \n ◦ III. Allegro\nVerket ble trolig komponert i Köthen, og Bach arrangerte det senere også for to cembaloer i c-moll (BWV 1062)\n\nHelgeland Sinfonietta går nok en gang inn i samarbeid med Nordland Teater, Smeltedigelen Musikkfestival, og våre distriktsmusikerkolleger i KammeRana, Vefsn-Ensemblet og Trio Nesna.\n\nForestillingen spilles på:\nUngdomslokalet, Mosjøen 17. september kl. 18\nForsamlingslokalet, Brønnøysund 18. September kl. 19\nGammel Kino`n, Sandnessjøen 19. September kl. 17\nSamfunnshuset, Nesna 20. September kl 18\nSmeltedigelen Musikkfestival, Mo i  Rana 16. September\n\nVoksen: 350,-\nHonnør: 300,-\nStudent: 150,-\nBarn u/12: gratis\n\nSerpina: Darya Katyba\n\nUberto: Espen Alvim\n\nVespone: Linda Mathisen\n\nRegi: Kristin Jørgensen\n\nMusikalsk leder: Trond Wika\n\nProdusenter: Trond Wika og Espen Alvim\n\nCembalo: Franziska Wika\nBlokkfløyte: Sjur Berglan\nFiolin: Trond Wika\nFiolin: Etleva Brandt\nBratsj: Maren Pettersen\nCello: Torleif Holm\nKontrabass: Håkan Henriksen\n\nForestillingen er støttet av Kulturrådet, Klassisk Scene, Nordland Fylkeskommune og Nesna, Rana og Vefsn Kommune.",
-      "category": "kunst-og-kultur",
-      "startDate": "2026-09-18T17:00:00.000Z",
-      "location": "Forsamlingslokalet Brønnøysund",
-      "url": "https://www.facebook.com/events/1030825266238431/",
-      "collectedAt": "2026-08-30T08:11:54.620Z"
-    },
-    {
-      "id": "1082670457666669",
-      "title": "Moondog Jam - Jubileumskonsert for \"The Last Waltz\" - 50 år",
-      "description": "Senhøsten 1976 kom The Band sitt avskjedsalbum og avskjedsturné «The Last Waltz» ut på Lp. Musikken og de gode sangene fra The Band, Levon Helm, Rick Danko, var i 2015 inspirasjonen til at Moondog Jam ble til et band. Da som et rent The Band-tribute band på Rootsfestivalen samme år. \n\nSiden da har Moondog Jam fokusert også på artistene som bidro på dette legendariske albumet, som f.eks. Joni Mitchell, Van Morrison, Bob Dylan m.fl.\n\nNå ønsker bandet å samle publikum til en koselig musikalsk kveldsstund. Dette i anledning albumets 50-årsjubileum, men også til ære for Stig, vår kjære keyboardist/vokalist, som desverre gikk bort så alt for tidlig i fjor og som også skulle fylt 50 år i høst.\n\nMoondog Jam er som vanlig et ganske stort band som som oftest teller ti musikere, men for anledningen vil det nok også dukke opp et par hyggelige overraskelser i form av noen, for de fleste, kjente gjester.\n\nHåper vi ses.",
-      "category": "musikk",
-      "startDate": "2026-09-19T19:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1082670457666669/",
-      "collectedAt": "2026-08-30T08:11:46.737Z"
-    },
-    {
-      "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-09-23T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=176871e3-2d47-4af4-9f71-be13c001ea3f",
-      "id": "Brønnøy-kirke-2026-09-23T09:00:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
-    },
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-09-24T09:30:00.000Z",
-      "location": "Sykehjemmets kapell",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=571d554c-068c-43a9-bdf7-361958a91671&OccurenceId=571d554c-068c-43a9-bdf7-361958a91671",
-      "id": "Brønnøy-kirke-2026-09-24T09:30:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
-    },
-    {
-      "id": "1342636714447389",
-      "title": "NordNorske Tilstander",
-      "description": "Standupgallaen «Nordnorske tilstander» er på vei! Erlend Osnes tar med seg sine favorittkomikere på turné gjennom store deler av Nord-Norge for å gi publikum en kveld fylt med standup, historier og ufiltrert, nordnorsk humor på sitt beste. Opplev ekte fortellerglede og standup fra øverste hylle når Erlend Osnes, Hans Morten Hansen og Bror Hellesvik inntar scenen. Her blir det skarpe observasjoner, gjenkjennelige situasjoner og solide doser selvironi – levert med den lune og direkte stilen nordnorsk humor er kjent for.\n\nErlend Osnes: Bosatt i Bodø, er kjent som en frittalende og uredd komiker, med sin selvsikre stil, sin skarpe og trygge formidling så har han etablert seg som en av landets mest kjente og elskede komikere. En av Norges beste historiefortellere, har hysteriske betraktninger fra egen hverdag, et skrått blikk på tingenes tilstand og mye latter. Det er tidvis mørkt, tidvis på kanten, men alltid veldig morsomt.\n\nHans Morten Hansen: Stavangers store sønn har livnært seg som komiker i en mannsalder og er en av landets mest rutinerte og bejublede standupkomikere. Har satt opp en drøss soloforestillinger, har mottatt Komiprisen for «Beste Standup» to ganger. Til tross for en lang standupkarriere kjenner nok de fleste Hans Morten Hansen som karakteren Gullestad fra den populære NRK-serien ”Side om Side”. Har du ikke opplevd han på scenen er det på høy tid å se en av landets morsomste menn i sitt naturlige element.\n\nBror Hellesvik: Er en vaskekte nordlending, oppvokst på Myre i Vesterålen og representerer den nordnorske humorarven på best mulig vis. Det er saftig, direkte og hysterisk morsomt. Bror tar utgangspunkt i eget liv og utleverer gjerne seg selv og sin nærmeste familie med humor, varme og en stor fortellerglede. Hans fantastiske historier, vitser og unike beskrivelser av karakterer og situasjoner vil garantert få deg til å le. Enten du er nordlending eller søring.\n\nDette er kvelden for deg som vil flir dæ halvt i hjel – og kanskje få et nytt blikk på både relasjoner og hverdagen. Gled deg til Nordnorske tilstander!",
-      "category": "kunst-og-kultur",
-      "startDate": "2026-09-26T17:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1342636714447389/",
-      "collectedAt": "2026-08-30T08:11:46.182Z"
-    },
-    {
-      "id": "2055620601982607",
-      "title": "NordNorske Tilstander - Ekstraforestilling!",
-      "description": "Standupgallaen «Nordnorske tilstander» er på vei! Erlend Osnes tar med seg sine favorittkomikere på turné gjennom store deler av Nord-Norge for å gi publikum en kveld fylt med standup, historier og ufiltrert, nordnorsk humor på sitt beste. Opplev ekte fortellerglede og standup fra øverste hylle når Erlend Osnes, Hans Morten Hansen og Bror Hellesvik inntar scenen. Her blir det skarpe observasjoner, gjenkjennelige situasjoner og solide doser selvironi – levert med den lune og direkte stilen nordnorsk humor er kjent for.\n\nErlend Osnes: Bosatt i Bodø, er kjent som en frittalende og uredd komiker, med sin selvsikre stil, sin skarpe og trygge formidling så har han etablert seg som en av landets mest kjente og elskede komikere. En av Norges beste historiefortellere, har hysteriske betraktninger fra egen hverdag, et skrått blikk på tingenes tilstand og mye latter. Det er tidvis mørkt, tidvis på kanten, men alltid veldig morsomt.\n\nHans Morten Hansen: Stavangers store sønn har livnært seg som komiker i en mannsalder og er en av landets mest rutinerte og bejublede standupkomikere. Har satt opp en drøss soloforestillinger, har mottatt Komiprisen for «Beste Standup» to ganger. Til tross for en lang standupkarriere kjenner nok de fleste Hans Morten Hansen som karakteren Gullestad fra den populære NRK-serien ”Side om Side”. Har du ikke opplevd han på scenen er det på høy tid å se en av landets morsomste menn i sitt naturlige element.\n\nBror Hellesvik: Er en vaskekte nordlending, oppvokst på Myre i Vesterålen og representerer den nordnorske humorarven på best mulig vis. Det er saftig, direkte og hysterisk morsomt. Bror tar utgangspunkt i eget liv og utleverer gjerne seg selv og sin nærmeste familie med humor, varme og en stor fortellerglede. Hans fantastiske historier, vitser og unike beskrivelser av karakterer og situasjoner vil garantert få deg til å le. Enten du er nordlending eller søring.\n\nDette er kvelden for deg som vil flir dæ halvt i hjel – og kanskje få et nytt blikk på både relasjoner og hverdagen. Gled deg til Nordnorske tilstander!",
-      "category": "kunst-og-kultur",
-      "startDate": "2026-09-26T19:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/2055620601982607/",
-      "collectedAt": "2026-08-30T08:11:47.247Z"
-    },
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-09-27T09:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=6a6b1629-92eb-410e-af53-69276ce44dcf&OccurenceId=6a6b1629-92eb-410e-af53-69276ce44dcf",
-      "id": "Brønnøy-kirke-2026-09-27T09:00:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
-    },
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-09-27T14:00:00.000Z",
-      "location": "Velfjord kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=2eab3462-7f41-4b17-bcb4-7a06cd3f6ec4&OccurenceId=2eab3462-7f41-4b17-bcb4-7a06cd3f6ec4",
-      "id": "Brønnøy-kirke-2026-09-27T14:00:00.000Z",
-      "collectedAt": "2026-09-01T07:38:40.167Z"
+      "startDate": "2026-09-29T09:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/aeed4db3-0f37-4d76-8876-36e01266a262",
+      "id": "Brønnøy-bibliotek-2026-09-29T09:00:00.000Z",
+      "collectedAt": "2026-09-29T08:15:38.006Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -272,6 +22,16 @@
       "collectedAt": "2026-09-01T07:38:40.167Z"
     },
     {
+      "title": "Frode Grytten i samtale med Erlend Loe - Strømming fra litteraturhuset",
+      "description": "Frode Grytten i samtale med Erlend Loe - Strømming fra litteraturhuset",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-09-30T17:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/13382955-28cb-4ff9-ab38-eae25757e062",
+      "id": "Brønnøy-bibliotek-2026-09-30T17:00:00.000Z",
+      "collectedAt": "2026-09-29T08:15:38.006Z"
+    },
+    {
       "id": "1160245412989516",
       "title": "Karen Moe",
       "description": "Konserten er utsatt fra 13. mars til 2. oktober 2026\n\nKaren Moe, Norges nye countrystjerne, tar steget ut til et større publikum. Denne unge artisten fra Verdal bringer med seg en autentisk lyd dypt forankret i både norsk gårdsjord og countrysjangerens beste tradisjoner.\n\nKaren nevner artister som The Chicks, Jo Dee Messina, Ella Langley, Tanya Tucker, Dolly Parton og Shania Twain som sine største inspirasjonskilder. Hun har siden 14-årsalderen stått på små og store scener, og spilt opp til dans i bursdager, bryllup, julebord og andre arrangementer - alltid med en stødig stemme og en tydelig kjærlighet for musikken hun formidler.\n\nMed sin varme formidlingsevne, ektefølte tekster og tydelige røtter i countrytradisjonen, står Karen Moe klar til å ta steget ut til et større publikum.\n\nKaren slipper stadig ny musikk, \"Sei du vil ha mæ\", kom 30. januar.",
@@ -280,6 +40,16 @@
       "location": "Kred",
       "url": "https://www.facebook.com/events/1160245412989516/",
       "collectedAt": "2026-08-28T14:16:04.024Z"
+    },
+    {
+      "title": "Barseltreff på biblioteket",
+      "description": "Barseltreff på biblioteket",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-10-06T09:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/8093ebb5-c39e-44ae-997d-32beb9322123",
+      "id": "Brønnøy-bibliotek-2026-10-06T09:00:00.000Z",
+      "collectedAt": "2026-09-29T08:15:38.006Z"
     },
     {
       "id": "1982982558926487",
@@ -292,6 +62,36 @@
       "collectedAt": "2026-08-30T08:11:53.002Z"
     },
     {
+      "title": "Barseltreff på biblioteket",
+      "description": "Barseltreff på biblioteket",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-10-13T09:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/d42c02d2-9dec-49a4-9216-407860f9aa06",
+      "id": "Brønnøy-bibliotek-2026-10-13T09:00:00.000Z",
+      "collectedAt": "2026-09-29T08:15:38.006Z"
+    },
+    {
+      "title": "Barseltreff på biblioteket",
+      "description": "Barseltreff på biblioteket",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-10-20T09:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/b5e477dd-011a-4641-a2e2-44c74865b9fb",
+      "id": "Brønnøy-bibliotek-2026-10-20T09:00:00.000Z",
+      "collectedAt": "2026-09-29T08:15:38.006Z"
+    },
+    {
+      "title": "Barseltreff på biblioteket",
+      "description": "Barseltreff på biblioteket",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-10-27T10:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/b4a18a13-8fdc-43e3-8d22-272ef6f746a5",
+      "id": "Brønnøy-bibliotek-2026-10-27T10:00:00.000Z",
+      "collectedAt": "2026-09-29T08:15:38.006Z"
+    },
+    {
       "id": "1569737151233775",
       "title": "Kings of Queen",
       "description": "Kings of Queen består av en rekke erfarne musikere med et stort hjerte for et av de største bandene gjennom tidene. Queen er i vinden som aldri før, og selv om Freddie er borte lever musikken og låtene videre!\n\nKings of Queen er klare til å gi deg en konsertopplevelse hentet fra originalbandets brede og mektige låtkatalog. Her får du høre alle de låtene som bare må være med i en Queen konsert, pluss en del perler som ikke er så mye spilt fra før. Kom og hør Bohemian Rapsody, Love of my life, We will Rock you, We are the champions og mange flere. Ja det er ganske enkelt ”a kind of magic” !\n\nDet er en erfaren gjeng med musikere du får møte i konserten med bandet Kings of Queen:\n\nVokal: Leif Terje Nilsen\nLeif Terje har bred erfaring som vokalist og sanger, og har mange år som profesjonell utøver bak seg i duoen Nilsen Aalberg. Med musikalske forbilder som Freddie Mercury (selvfølgelig), David Coverdale, og Luciano Pavarotti, skulle det ligge godt an til gode Queen tolkninger fra den fronten. Leif Terje har også vært med i TV produksjonen Beat for Beat to ganger, og også i en rekke andre programmer på skjermen. Det har også blitt noen musikal produskjoner, og utgivelser av egenprodusert materiale.\n\nBass: Lars Erik Fisknes\nHar spilt og turnert inn og utland med bl.a bluesgitaristen Peer Gynt og Nilsen Aalberg show. Mye brukt teater og studiobassist i Trøndelag. Lars Erik turnerte også fast med Hans Rotmo.\n\nTrommer: Tony Waade\nHar produsert og spilt på hundrevis av plateinnspillinger. Har turnert og vært orkesterleder i teater og tv sammenhenger, lokalt og nasjonalt. Ref.: Stephen Ackles, Nilsen Aalberg show. Skei og PT.\n\nGitar: Tore Haugmark\nTore har spilt i en rekke band, og er også brukt som studio-og teatermusiker i trøndelag. Tore har også vært en del av Nilsen Aalberg show gjennom flere år.\n\nKeyboards: Stein Larsen\nStein var med i Stjørdalsbandet Sphinx som bl.a. ble Trønderske mestre i rock. Han har også spilt med Dag Ingebrigtsen noen år, samt Travelling Trønders med Ingebrigtsen/Flakne og en rekke konstellasjoner med musikere i Stjørdalsområdet. Stein har også gitt ut en god del egenprodusert musikk.\n\nBilletter i salg fra: 20. juli kl. 10.00 på Ticketmaster. ",
@@ -300,6 +100,26 @@
       "location": "Kred",
       "url": "https://www.facebook.com/events/1569737151233775/",
       "collectedAt": "2026-08-30T08:11:54.073Z"
+    },
+    {
+      "title": "Barseltreff på biblioteket",
+      "description": "Barseltreff på biblioteket",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-11-03T10:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/399f707a-99c8-44f0-a807-51243fcf4665",
+      "id": "Brønnøy-bibliotek-2026-11-03T10:00:00.000Z",
+      "collectedAt": "2026-09-29T08:15:38.006Z"
+    },
+    {
+      "title": "Barseltreff på biblioteket",
+      "description": "Barseltreff på biblioteket",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-11-10T10:00:00.000Z",
+      "location": "Brønnøy bibliotek Brønnøysund",
+      "url": "https://bronnoybibliotek.no/arrangementer#/events/7d392d79-4732-4a92-8998-41f5ec3a3ecd",
+      "id": "Brønnøy-bibliotek-2026-11-10T10:00:00.000Z",
+      "collectedAt": "2026-09-29T08:15:38.006Z"
     },
     {
       "id": "27931154943206710",
