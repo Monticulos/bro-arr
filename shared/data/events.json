@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T08:28:39.759Z",
+  "updatedAt": "2026-10-09T08:48:40.341Z",
   "events": [
     {
       "id": "1982982558926487",
@@ -30,6 +30,16 @@
       "location": "Ytre høgåsvei, Brønnøysund",
       "url": "https://www.facebook.com/events/1063491696573708/",
       "collectedAt": "2026-09-30T08:16:57.647Z"
+    },
+    {
+      "title": "Årets TV-aksjon er 18. oktober og går til NRC Flyktninghjelpen",
+      "description": "Med din hjelp kan vi gi over 400 000 mennesker på flukt i Syria, Gaza, Afghanistan, Tsjad, Sudan og DR Kongo et trygt hjem og håp for fremtiden.",
+      "category": "annet",
+      "startDate": "2026-10-17T22:00:00.000Z",
+      "location": "Brønnøy kommune",
+      "url": "https://www.bronnoy.kommune.no/aktuelt/arets-tv-aksjon-er-18-oktober-og-gar-til-nrc-flyktninghjelpen.17756.aspx",
+      "id": "Brønnøy-kommune-2026-10-17T22:00:00.000Z",
+      "collectedAt": "2026-10-09T08:48:01.232Z"
     },
     {
       "title": "Barseltreff på biblioteket",
