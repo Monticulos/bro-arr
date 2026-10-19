@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-10-17T06:48:40.255Z",
+  "updatedAt": "2026-10-19T07:35:14.036Z",
   "events": [
-    {
-      "title": "Årets TV-aksjon er 18. oktober og går til NRC Flyktninghjelpen",
-      "description": "Med din hjelp kan vi gi over 400 000 mennesker på flukt i Syria, Gaza, Afghanistan, Tsjad, Sudan og DR Kongo et trygt hjem og håp for fremtiden.",
-      "category": "annet",
-      "startDate": "2026-10-17T22:00:00.000Z",
-      "location": "Brønnøy kommune",
-      "url": "https://www.bronnoy.kommune.no/aktuelt/arets-tv-aksjon-er-18-oktober-og-gar-til-nrc-flyktninghjelpen.17756.aspx",
-      "id": "Brønnøy-kommune-2026-10-17T22:00:00.000Z",
-      "collectedAt": "2026-10-15T07:14:24.451Z"
-    },
     {
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
@@ -23,33 +13,33 @@
     },
     {
       "title": "Pensjonskuppet",
-      "description": "Pensjonskuppet",
+      "description": "Visning av filmen Pensjonskuppet på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-10-20T16:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-10-20T16:00:00.000Z",
-      "collectedAt": "2026-10-17T06:48:10.373Z"
+      "collectedAt": "2026-10-19T07:34:37.848Z"
     },
     {
       "title": "Digger",
-      "description": "Digger",
+      "description": "Visning av filmen Digger på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-10-22T18:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-10-22T18:00:00.000Z",
-      "collectedAt": "2026-10-17T06:48:10.373Z"
+      "collectedAt": "2026-10-19T07:34:37.848Z"
     },
     {
       "title": "Other Mommy",
-      "description": "Other Mommy",
+      "description": "Visning av filmen Other Mommy på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-10-23T16:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-10-23T16:00:00.000Z",
-      "collectedAt": "2026-10-17T06:48:10.373Z"
+      "collectedAt": "2026-10-19T07:34:37.848Z"
     },
     {
       "id": "1380993204246164",
@@ -83,13 +73,13 @@
     },
     {
       "title": "Markens grøde",
-      "description": "Markens grøde",
+      "description": "Visning av filmen Markens grøde på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-10-30T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-10-30T19:00:00.000Z",
-      "collectedAt": "2026-10-17T06:48:10.373Z"
+      "collectedAt": "2026-10-19T07:34:37.848Z"
     },
     {
       "id": "1569737151233775",
