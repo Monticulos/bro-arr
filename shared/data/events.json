@@ -1,25 +1,15 @@
 {
-  "updatedAt": "2026-10-19T07:35:14.036Z",
+  "updatedAt": "2026-10-21T07:23:50.315Z",
   "events": [
     {
-      "title": "Barseltreff på biblioteket",
-      "description": "Barseltreff på biblioteket",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-10-20T09:00:00.000Z",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "url": "https://bronnoybibliotek.no/arrangementer#/events/b5e477dd-011a-4641-a2e2-44c74865b9fb",
-      "id": "Brønnøy-bibliotek-2026-10-20T09:00:00.000Z",
-      "collectedAt": "2026-09-29T08:15:38.006Z"
-    },
-    {
-      "title": "Pensjonskuppet",
-      "description": "Visning av filmen Pensjonskuppet på Brønnøy kino.",
+      "title": "Digger",
+      "description": "Digger",
       "category": "kino",
-      "startDate": "2026-10-20T16:00:00.000Z",
+      "startDate": "2026-10-22T16:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-10-20T16:00:00.000Z",
-      "collectedAt": "2026-10-19T07:34:37.848Z"
+      "id": "Brønnøy-kino-2026-10-22T16:00:00.000Z",
+      "collectedAt": "2026-10-21T07:23:18.592Z"
     },
     {
       "title": "Digger",
@@ -33,13 +23,13 @@
     },
     {
       "title": "Other Mommy",
-      "description": "Visning av filmen Other Mommy på Brønnøy kino.",
+      "description": "Other Mommy",
       "category": "kino",
       "startDate": "2026-10-23T16:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-10-23T16:00:00.000Z",
-      "collectedAt": "2026-10-19T07:34:37.848Z"
+      "collectedAt": "2026-10-21T07:23:18.592Z"
     },
     {
       "id": "1380993204246164",
@@ -50,6 +40,16 @@
       "location": "Kred",
       "url": "https://www.facebook.com/events/1380993204246164/",
       "collectedAt": "2026-09-30T08:16:52.231Z"
+    },
+    {
+      "title": "Eldredagen 2026",
+      "description": "Eldredagen 2026 arrangeres den 26. oktober kl. 14:00.",
+      "category": "kommunalt",
+      "startDate": "2026-10-26T13:00:00.000Z",
+      "location": "Brønnøy Rådhus",
+      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=291&lang=1&MId1=35",
+      "id": "Brønnøy-kommune-2026-10-26T13:00:00.000Z",
+      "collectedAt": "2026-10-21T07:23:12.219Z"
     },
     {
       "title": "Barseltreff på biblioteket",
@@ -73,13 +73,13 @@
     },
     {
       "title": "Markens grøde",
-      "description": "Visning av filmen Markens grøde på Brønnøy kino.",
+      "description": "Markens grøde",
       "category": "kino",
       "startDate": "2026-10-30T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-10-30T19:00:00.000Z",
-      "collectedAt": "2026-10-19T07:34:37.848Z"
+      "collectedAt": "2026-10-21T07:23:18.592Z"
     },
     {
       "id": "1569737151233775",
