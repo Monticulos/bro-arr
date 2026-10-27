@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-10-25T07:29:46.087Z",
+  "updatedAt": "2026-10-27T07:37:22.781Z",
   "events": [
-    {
-      "title": "Eldredagen 2026",
-      "description": "Eldredagen 2026 arrangeres den 26. oktober kl. 14:00.",
-      "category": "kommunalt",
-      "startDate": "2026-10-26T13:00:00.000Z",
-      "location": "Brønnøy Rådhus",
-      "url": "https://www.bronnoy.kommune.no/Kalender/CalendarEvent.aspx?Id=291&lang=1&MId1=35",
-      "id": "Brønnøy-kommune-2026-10-26T13:00:00.000Z",
-      "collectedAt": "2026-10-25T07:29:03.488Z"
-    },
     {
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
@@ -33,13 +23,13 @@
     },
     {
       "title": "Markens grøde",
-      "description": "Aktuelle filmerKinoDato Markens grøde 30.10.26 kl. 20:00",
+      "description": "Markens grøde",
       "category": "kino",
       "startDate": "2026-10-30T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-10-30T19:00:00.000Z",
-      "collectedAt": "2026-10-25T07:29:09.758Z"
+      "collectedAt": "2026-10-27T07:36:51.293Z"
     },
     {
       "id": "1569737151233775",
