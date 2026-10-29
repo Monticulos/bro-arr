@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-10-27T07:37:22.781Z",
+  "updatedAt": "2026-10-29T08:18:17.272Z",
   "events": [
-    {
-      "title": "Barseltreff på biblioteket",
-      "description": "Barseltreff på biblioteket",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-10-27T10:00:00.000Z",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "url": "https://bronnoybibliotek.no/arrangementer#/events/b4a18a13-8fdc-43e3-8d22-272ef6f746a5",
-      "id": "Brønnøy-bibliotek-2026-10-27T10:00:00.000Z",
-      "collectedAt": "2026-09-29T08:15:38.006Z"
-    },
     {
       "id": "3175012476034609",
       "title": "Girls just want to have fond - Brønnøysund",
@@ -22,14 +12,34 @@
       "collectedAt": "2026-09-30T08:16:55.969Z"
     },
     {
+      "title": "Pensjonskuppet",
+      "description": "Pensjonskuppet vises på Brønnøy kino.",
+      "category": "kino",
+      "startDate": "2026-10-29T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-10-29T17:00:00.000Z",
+      "collectedAt": "2026-10-29T08:17:39.863Z"
+    },
+    {
+      "title": "Other Mommy",
+      "description": "Other Mommy vises på Brønnøy kino.",
+      "category": "kino",
+      "startDate": "2026-10-29T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-10-29T19:00:00.000Z",
+      "collectedAt": "2026-10-29T08:17:39.863Z"
+    },
+    {
       "title": "Markens grøde",
-      "description": "Markens grøde",
+      "description": "Markens grøde vises på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-10-30T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-10-30T19:00:00.000Z",
-      "collectedAt": "2026-10-27T07:36:51.293Z"
+      "collectedAt": "2026-10-29T08:17:39.863Z"
     },
     {
       "id": "1569737151233775",
@@ -62,6 +72,56 @@
       "collectedAt": "2026-09-29T08:15:38.006Z"
     },
     {
+      "title": "Sauen Shaun - Gårdens fårbannelse",
+      "description": "Sauen Shaun - Gårdens fårbannelse vises på Brønnøy kino.",
+      "category": "kino",
+      "startDate": "2026-11-03T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-03T17:00:00.000Z",
+      "collectedAt": "2026-10-29T08:17:39.863Z"
+    },
+    {
+      "title": "Verity",
+      "description": "Verity vises på Brønnøy kino.",
+      "category": "kino",
+      "startDate": "2026-11-03T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-03T19:00:00.000Z",
+      "collectedAt": "2026-10-29T08:17:39.863Z"
+    },
+    {
+      "title": "Clayface",
+      "description": "Clayface vises på Brønnøy kino.",
+      "category": "kino",
+      "startDate": "2026-11-04T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-04T19:00:00.000Z",
+      "collectedAt": "2026-10-29T08:17:39.863Z"
+    },
+    {
+      "title": "Pensjonskuppet",
+      "description": "Pensjonskuppet vises på Brønnøy kino.",
+      "category": "kino",
+      "startDate": "2026-11-05T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-05T17:00:00.000Z",
+      "collectedAt": "2026-10-29T08:17:39.863Z"
+    },
+    {
+      "title": "Markens grøde",
+      "description": "Markens grøde vises på Brønnøy kino.",
+      "category": "kino",
+      "startDate": "2026-11-05T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-05T19:00:00.000Z",
+      "collectedAt": "2026-10-29T08:17:39.863Z"
+    },
+    {
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "category": "barn-og-ungdom",
@@ -70,6 +130,16 @@
       "url": "https://bronnoybibliotek.no/arrangementer#/events/7d392d79-4732-4a92-8998-41f5ec3a3ecd",
       "id": "Brønnøy-bibliotek-2026-11-10T10:00:00.000Z",
       "collectedAt": "2026-09-29T08:15:38.006Z"
+    },
+    {
+      "title": "Black Week på Havnesenteret",
+      "description": "Velkommen til Black Week på Havnesenteret 🖤 Gjør deg klar for årets største salgsuke ! Fra mandag 23. november til lørdag 28. november kan du gjøre gode kupp hos butikkene våre og kanskje få unna litt av førjulshandelen på samme tid. Takk for at dere støtter lokal handel 🖤 Vi sees på Havnesenteret!",
+      "category": "næringsliv",
+      "startDate": "2026-11-23T09:00:00.000Z",
+      "location": "Havnesenteret",
+      "url": "https://www.havnesenteret.no/dette-skjer/black-week-26",
+      "id": "Havnesenteret-2026-11-23T09:00:00.000Z",
+      "collectedAt": "2026-10-29T08:18:03.637Z"
     },
     {
       "id": "27931154943206710",
