@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-01T09:00:20.681Z",
+  "updatedAt": "2026-11-02T09:14:03.835Z",
   "events": [
     {
       "id": "3618346714990488",
       "title": "Heia Helgeland Brønnøysund (Gratis)",
-      "description": "Velkommen til en festkveld der vi heier på ildsjelene som skaper aktivitet, engasjement og fellesskap på Helgeland!\n\nLokalbanken inviterer til Heia Helgeland – en festkveld der vi feirer den uvurderlige innsatsen som legges ned hver eneste dag i lokalsamfunn over hele Helgeland.\n\n🎭 Konferansier Erlend Osnes\n🏆 Utdeling av Drivkraftprisen\n🥂 God stemning og sosialt fellesskap\n👏 Hyllest til frivilligheten på Helgeland\n\nPåmeldingen er nå åpnet. Arrangementet er gratis, men har begrenset antall plasser: https://www.sparebank1.no/nb/helgeland/privat/info/heia-helgeland.html\n\nBrønnøysund: 2. november | 17:00 | Brønnøysundregisteret",
-      "category": "kunst-og-kultur",
+      "description": "Velkommen til en festkveld der vi heier på ildsjelene som skaper aktivitet, engasjement og fellesskap på Helgeland!\n\nLokalbanken inviterer til Heia Helgeland – en festkveld der vi feirer den uvurderlige innsatsen som legges ned hver eneste dag i lokalsamfunn over hele Helgeland.\n\n🎭 Konferansier Erlend Osnes\n🏆 Utdeling av Drivkraftprisen\n🥂 God stemning og sosialt fellesskap\n👏 Hyllest til frivilligheten på Helgeland\n\nPåmeldingen er nå åpnet. Arrangementet er gratis, men har begrenset antall plasser: https://www.sparebank1.no/nb/helgeland/privat/info/heia-helgeland.html\n\nBrønnøysund: 2. november | 17:00 | Brønnøysundregisteret\n\nHvem fortjener årets Drivkraftpris? ❤️\n Kjenner du en frivillig drivkraft som gjør Helgeland til et enda bedre sted å bo og leve? Nå kan du nominere din kandidat til Drivkraftprisen! I år deles det ut fire priser på 50.000 kroner, én i hver by under Heia Helgeland. Vinnerne får gi pengepremien videre til et samfunnsnyttig formål.\n\n👉 Nominer din kandidat innen 25. oktober:\n https://forms.cloud.microsoft/e/xTUMGd6Akx",
+      "category": "næringsliv",
       "startDate": "2026-11-02T16:00:00.000Z",
       "location": "Brønnøysundregistrene",
       "url": "https://www.facebook.com/events/3618346714990488/",
-      "collectedAt": "2026-09-30T08:16:51.736Z"
+      "collectedAt": "2026-11-02T09:13:52.934Z"
     },
     {
       "title": "Barseltreff på biblioteket",
@@ -22,14 +22,14 @@
       "collectedAt": "2026-09-29T08:15:38.006Z"
     },
     {
-      "title": "Sauen Shaun - Gårdens fårbannelse",
-      "description": "Sauen Shaun - Gårdens fårbannelse",
+      "title": "Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
+      "description": "Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
       "category": "kino",
       "startDate": "2026-11-03T17:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-03T17:00:00.000Z",
-      "collectedAt": "2026-11-01T08:59:46.971Z"
+      "collectedAt": "2026-11-02T09:13:17.530Z"
     },
     {
       "title": "Verity",
@@ -39,7 +39,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-03T19:00:00.000Z",
-      "collectedAt": "2026-11-01T08:59:46.971Z"
+      "collectedAt": "2026-11-02T09:13:17.530Z"
     },
     {
       "title": "Clayface",
@@ -49,7 +49,17 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-04T19:00:00.000Z",
-      "collectedAt": "2026-11-01T08:59:46.971Z"
+      "collectedAt": "2026-11-02T09:13:17.530Z"
+    },
+    {
+      "id": "2317962549024283",
+      "title": "Tur i nærområdet",
+      "description": "Turgrupper i Trollfjell\n\nKom å bli med oss på korte, lettgåtte og lett tilgjengelige turer i vårt nærområde. Om du er ung eller voksen - velkommen skal du være :-)\n\nVi møtes på Frivillighuset i Innerveien 42, går en tur og avslutter med enkel servering.\n\nFørste gang blir torsdag 5.11.26 kl 1100 :-)\n\n«Turgruppa arrangeres i samarbeid med Trollfjell Friluftsråd og er økonomisk støttet av Miljødirektoratet og Nordland fylkeskommune.»\n\nTa med godt humør og kom, kom, kom...... :-)\n\nhttps://bronnoy.frivilligsentral.no/aktivitet?tur-i-neromradet&Id=19639",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-11-05T10:00:00.000Z",
+      "location": "Innerveien 42, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/2317962549024283/",
+      "collectedAt": "2026-11-02T09:14:01.202Z"
     },
     {
       "title": "Pensjonskuppet",
@@ -59,7 +69,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-05T17:00:00.000Z",
-      "collectedAt": "2026-11-01T08:59:46.971Z"
+      "collectedAt": "2026-11-02T09:13:17.530Z"
     },
     {
       "title": "Markens grøde",
@@ -69,7 +79,77 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-05T19:00:00.000Z",
-      "collectedAt": "2026-11-01T08:59:46.971Z"
+      "collectedAt": "2026-11-02T09:13:17.530Z"
+    },
+    {
+      "id": "1131768772917748",
+      "title": "AllmenQuiz på Kred",
+      "description": "Quiz på Kred er inne i sitt 18 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\nQuizmaster er den samme, bare eldre, og enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie:\n27. august, 3. september, 11. september, 17. september, 24. september, 1. oktober, 8. oktober, 15. oktober, 22. oktober, 29. oktober, 5. november, 12. november, 19. november, 26. november, 3. desember og 10. desember",
+      "category": "quiz",
+      "startDate": "2026-11-05T19:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1131768772917748/",
+      "collectedAt": "2026-11-02T09:14:03.322Z"
+    },
+    {
+      "id": "1876406173737268",
+      "title": "Kred's Musikkbingo",
+      "description": "Høsten er i full gang, og vi har hatt mange arrangement og derfor pauset musikkbingo litt.  Men nå kjører vi på igjen. Så hva passer bedre enn å ta turen innom og være med på Kred's Musikk-Bingo! Temaene er ikke bestemt enda, men det blir gøy uansett.\n\nVår bingovert tar dere med til musikkens historie. Vi spiller musikk, du finner ut sangen og ser om den er på bingobrettet. Vanskeligere er det ikke! Alle tidligere deltakere synes dette er kjempegøy.\n\nVi spiller to runder med bingo. Det koster kr. 50,- for bingobrett, og du betaler bare en gang for hele kvelden.\n\nVi har 18-årsgrense.",
+      "category": "quiz",
+      "startDate": "2026-11-06T19:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1876406173737268/",
+      "collectedAt": "2026-11-02T09:13:56.719Z"
+    },
+    {
+      "id": "1043958105338944",
+      "title": "Kunstverksted for barn: Vi maler Den lille larven Aldrimett!",
+      "description": "KUNSTVERKSTED FOR BARN 🎨\n\nVi maler Den lille larven Aldrimett ... Sammen!\n\nLarva skal vi henge opp i biblioteket til slutt. 🐛\n\nAlle får sin egen del å male på, og utstyr har vi. Det eneste du trenger å ta med deg (eller på deg) er klær som kan males i. 🥰\n\nNår: Lørdag 7. november kl. 12:00\nHvor: Biblioteket (Skolegata 1)\n\nDette passer best for storbarn i barnehage og for barn fra 1. klasse og opp, men alle som kommer får være med. Vi ønsker at barna kommer sammen med en voksen som kan være ansvarlig under arrangementet og være med å veilede underveis.\n\nGratis inngang og enkel servering. ☺️",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-11-07T11:00:00.000Z",
+      "location": "Skolegata 1, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/1043958105338944/",
+      "collectedAt": "2026-11-02T09:14:00.117Z"
+    },
+    {
+      "id": "1116561817691280",
+      "title": "Mixed Media Art Pop Up Utstilling med Jenny Widding",
+      "description": "Lørdag 7. november Blir det Mixed Media Art Pop Up Utstilling 😎\n\nKunstneren er Jenny Widding og prosjektene hennes er langt fra ukjent hos oss våre kunder da flere av tegningene Jenny har laget allerede er i dekoret vårt 🤘\n\nSå ta en tur innom Den Andre Puben 07.11.2026 for å se noe kunst utenom det vanlige da Jenny vil stille opp med alt mulig av tegninger, prints og figurer 🧐\nFlere av verkene vil også være til salgs. ",
+      "category": "kunst-og-kultur",
+      "startDate": "2026-11-07T11:00:00.000Z",
+      "location": "Den andre puben",
+      "url": "https://www.facebook.com/events/1116561817691280/",
+      "collectedAt": "2026-11-02T09:14:00.673Z"
+    },
+    {
+      "id": "1370738791568289",
+      "title": "Lørdagsscenen på Kred - med \"Tiril og Runa / Blå Bjørn\"",
+      "description": "Vi gjør nå klart for den andre \"Lørdagsscenen på Kred!\"\n\nVi har planer om seks til åtte lørdager i året fra kl 14-16. I det tidsrommet er det masse folk som allikevel er i byen for å handle og ta en lunsj eller kaffe. \n\nIdeen er å skape en møteplass der vi får vist fram livemusikk og hva man faktisk går glipp av med å ikke komme på konserter.\nHer skal de yngre få vist seg fram, noen av de gamle også i vante eller ny konstellasjoner. Og ikke minst vil musikere på tvers av sjangre møtes i en setting med dagslys og sosialt samvær. Kanskje dannes det nye band? Musikere og gjester får nye venner? \n\nDenne lørdagen blir det først en halvtimes akustisk innledning før dagens hovedattraksjon går på scenen.\n\nTiril og Runa, går i 9. klasse, og er elever ved kulturskolen. begge synger og spiller flere instrumenter. \nDette er deres første konsert, premiere!!!\nTiril Brekke Arntzen - gitar, vokal\nRuna Marie Engen - piano, vokal \n\nVi gleder oss til å oppleve Tiril og Runa, og støtte opp på deres første konsert. \n\nEtterpå stiller Blå Bjørn (Rune Brennvik, Bjørn Peder Johansen og Bjørn Kristiansen) opp, og tar med seg et par venner til på scenen.\nDet blir mye herlige sanger og uventede krumspring. \n\nKom du også! \nIngen covercharge. ",
+      "category": "musikk",
+      "startDate": "2026-11-07T13:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1370738791568289/",
+      "collectedAt": "2026-11-02T09:14:02.752Z"
+    },
+    {
+      "id": "2084072828980597",
+      "title": "Diversnight 2026",
+      "description": "Tradisjonen tro gjennomfører vi årets Diversnight i gjestehavna i Brønnøysund.\nAlle må være under vann kl. 20:26, og tar sikte på å gå i vannet senest klokken 20:00. Ta med fulladet lykt og møt opp i gjestehavna.\n\nEtter dykket spanderer klubben en kaffe og en kakebit på et av byens spisesteder.\nFridykkere er selvfølgelig også hjertelig velkommen!\n\nTa kontakt om du ønsker å dykke, men mangler lykt, så kan vi se hva vi får til :)\n\nhttps://www.diversnight.com/",
+      "category": "annet",
+      "startDate": "2026-11-07T18:00:00.000Z",
+      "location": "Brønnøysund Gjestehavn",
+      "url": "https://www.facebook.com/events/2084072828980597/",
+      "collectedAt": "2026-11-02T09:13:59.639Z"
+    },
+    {
+      "id": "1131190526229066",
+      "title": "Nordens RÅESTE Neonparty - Kred, Brønnøysund",
+      "description": "🔥NORDENS RÅESTE NEONPARTY KOMMER ENDELIG TIL BRØNNØYSUND!! 🔥\n\nNeonparty.no har i mange år arrangert Norges råeste neonparty, med en utstyrspakke ingen andre i landet er i nærheten av å levere! Med masse UV-lys, lasere, røyk! og oppgraderte høsten 2024 pakkene ytterligere for å legge ut på en enda mer massiv turne!\n\n💥 UVLYS 💥 LASERE 💥 RØYK 💥 STROBER 💥 SPESIALEFFEKTER\n\n🤑 Vi selger også UV maling, briller og andre Glow og neonprodukter 🤑\n\n💥Kveldens DJ sørger for stemningen!\n\n🎫 BILLETTER & INFORMASJON \n🎫 EARLYBIRD - Kr. 200,- \nFORHÅNDSSALG kr. 250,- \nLAST DAY / I DØRA Kr. 300,- \nPrisene er eksl. billettavgift\n18-årsgrense\n\nKjøpes her: \nhttps://neonparty.hoopla.no/event/2048144570\n\n🌏 KRED BRØNNØYSUND \n",
+      "category": "musikk",
+      "startDate": "2026-11-07T21:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1131190526229066/",
+      "collectedAt": "2026-11-02T09:14:03.835Z"
     },
     {
       "title": "Barseltreff på biblioteket",
@@ -82,14 +162,94 @@
       "collectedAt": "2026-09-29T08:15:38.006Z"
     },
     {
-      "title": "Black Week på Havnesenteret",
-      "description": "Velkommen til Black Week på Havnesenteret 🖤 Gjør deg klar for årets største salgsuke ! Fra mandag 23. november til lørdag 28. november kan du gjøre gode kupp hos butikkene våre og kanskje få unna litt av førjulshandelen på samme tid. Takk for at dere støtter lokal handel 🖤 Vi sees på Havnesenteret!",
+      "title": "Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
+      "description": "Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
+      "category": "kino",
+      "startDate": "2026-11-10T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-10T17:00:00.000Z",
+      "collectedAt": "2026-11-02T09:13:17.530Z"
+    },
+    {
+      "title": "Drapet på Benjamin Hermansen",
+      "description": "Drapet på Benjamin Hermansen",
+      "category": "kino",
+      "startDate": "2026-11-10T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-10T19:00:00.000Z",
+      "collectedAt": "2026-11-02T09:13:17.530Z"
+    },
+    {
+      "title": "En nasjon i sjakk",
+      "description": "En nasjon i sjakk",
+      "category": "kino",
+      "startDate": "2026-11-11T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-11T19:00:00.000Z",
+      "collectedAt": "2026-11-02T09:13:17.530Z"
+    },
+    {
+      "title": "Pensjonskuppet",
+      "description": "Pensjonskuppet",
+      "category": "kino",
+      "startDate": "2026-11-12T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-12T17:00:00.000Z",
+      "collectedAt": "2026-11-02T09:13:17.530Z"
+    },
+    {
+      "title": "Markens grøde",
+      "description": "Markens grøde",
+      "category": "kino",
+      "startDate": "2026-11-12T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-12T19:00:00.000Z",
+      "collectedAt": "2026-11-02T09:13:17.530Z"
+    },
+    {
+      "title": "Ebenezer (Premerie)",
+      "description": "Ebenezer (Premerie)",
+      "category": "kino",
+      "startDate": "2026-11-13T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-13T19:00:00.000Z",
+      "collectedAt": "2026-11-02T09:13:17.530Z"
+    },
+    {
+      "id": "945613228307305",
+      "title": "Rune & Tor Even Brennvik",
+      "description": "Rune & Tor-Even Brennvik er tilbake på Kred, to og et halvt år siden siste spillejobb hos oss. \n\nDe to meget unge brødrene Rune og Tor-Even har lang fartstid bak seg i musikkbransjen, og brødrekonseptet begynner nå å bli snart 25 år gammelt.\n\nI alle år har brødrene reist ut på utallige spillejobber og er kjent for å finne på et og annet veldig eller mindre gjennomtenkt stunt. \n\nHumor, glede og spontanitet er stikkord de bruker når de beskrives av publikum, men selv sier de at musikken skal svinge...og at det er det er det som er viktig. Det serveres alt fra Avicii, Britney Spears og Spice Girls til mer Rock'n roll.\n\nBrødrene håper mange glade sjeler finner veien ut på Kred på lørdag, og er klare for det meste.\n\ncc 130,-",
+      "category": "musikk",
+      "startDate": "2026-11-14T21:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/945613228307305/",
+      "collectedAt": "2026-11-02T09:13:54.853Z"
+    },
+    {
+      "id": "1759930691717212",
+      "title": "Catillus ",
+      "description": "Catillus debuterte på Kred i mai i 2023, og du har kanskje hørt dem i senere på Kred? Og ikke minst i Rootsteltet der de har høstet stående applaus🤩 \nCatillus har et bredbeint musikalsk nedslagsfelt som omfavner kategorier som rock, blues, pop, jazz og fusion. \n\nCatillus er bandet som spiller låtene, og de musikalske perlene som publikum alltid ønsker seg, men sjelden får høre fra en scene. De spiller alt fra de mest følsomme låtene til hardtslående rockelåter, og er sikre på at publikum blir tilfreds. \n\nBandet består av:\nDaniel Ulriksen: Vokal/gitar\nRolf Ivar Logan: Keyboard/piano/kor.m.m.\nBjørn Helge Reitan: Bass/kor\nStian Tjosaas: Trommer\nKjetil Rørmark: Gitar/kor",
+      "category": "musikk",
+      "startDate": "2026-11-21T21:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1759930691717212/",
+      "collectedAt": "2026-11-02T09:13:58.144Z"
+    },
+    {
+      "id": "2645710689214828",
+      "title": "Black Week på Havnesenteret 🖤",
+      "description": "Velkommen til Black Week på Havnesenteret 🖤\n\nGjør deg klar for årets største salgsuke! \n\nFra mandag 23. november til lørdag 28. november kan du gjøre gode kupp hos butikkene våre og kanskje få unna litt av førjulshandelen på samme tid.\n\nTakk for at dere handler lokalt 🖤\n\nVi sees på Havnesenteret!",
       "category": "næringsliv",
       "startDate": "2026-11-23T09:00:00.000Z",
-      "location": "Havnesenteret",
-      "url": "https://www.havnesenteret.no/dette-skjer/black-week-26",
-      "id": "Havnesenteret-2026-11-23T09:00:00.000Z",
-      "collectedAt": "2026-11-01T09:00:07.895Z"
+      "location": "Storgata 58, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/2645710689214828/",
+      "collectedAt": "2026-11-02T09:13:57.232Z"
     },
     {
       "id": "27931154943206710",
@@ -99,7 +259,67 @@
       "startDate": "2026-11-26T08:00:00.000Z",
       "location": "Skulesvei 13, 8904 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/27931154943206710/",
-      "collectedAt": "2026-09-30T08:16:54.857Z"
+      "collectedAt": "2026-11-02T09:14:01.711Z"
+    },
+    {
+      "id": "1095611339918740",
+      "title": "Julebord for Tekna i Brønnøysund",
+      "description": "Dette arrangementet er åpent for Tekna-medlemmer.\n\nTekna Helgeland inviterer sine medlemmer i Brønnøysund til hyggelig julebord på Kred AS!\n\nLes mer og meld deg på her: https://www.tekna.no/kurs/julebord-for-tekna-i-bronnoysund-54413/",
+      "category": "næringsliv",
+      "startDate": "2026-11-27T17:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1095611339918740/",
+      "collectedAt": "2026-11-02T09:13:53.677Z"
+    },
+    {
+      "id": "1558998812644654",
+      "title": "Et lys i mørketida - julekonsert med BMK og Susanne Larsen",
+      "description": "Velkommen til en magisk førjulskveld med Brønnøysund Musikkorps og solist Susanne Larsen!\n\nLa deg fylle av julestemning gjennom et variert repertoar med både kjente og kjære jule favoritter, samt musikalske overraskelser. Sammen ønsker vi å skape en stemningsfull konsertopplevelse for hele familien.\n\nVi håper du vil dele denne kvelden med oss.\n\nBillett selges i døra.\nPris er 250 kr. for voksne og 100 kr. for barn.",
+      "category": "musikk",
+      "startDate": "2026-11-27T18:00:00.000Z",
+      "location": "Brønnøysund samfunnshus",
+      "url": "https://www.facebook.com/events/1558998812644654/",
+      "collectedAt": "2026-11-02T09:13:58.660Z"
+    },
+    {
+      "id": "2581114842404722",
+      "title": "Julekonsert med BUGGE WESSELTOFT - og Gunnar Pedersen som gjest!",
+      "description": "Det finnes knapt en bedre måte å senke skuldrene før jul på enn med Bugge Wesseltofts tidløse julemusikk.\n\nI snart 30 år har It’s Snowing On My Piano vært en moderne norsk juleklassiker. Albumet ble først utgitt i 1997 og har solgt over 160 000 eksemplarer. De vakre, neddempede tolkningene av kjente julesanger har blitt selve lydsporet til en roligere og mer ettertenksom førjulstid for mange.\n\nNå kommer Bugge Wesseltoft til Brønnøysund med sin eksklusive julekonsert – og denne gangen får han med seg en helt spesiell gjesteartist: Gunnar Pedersen.\n\nWesseltofts julekonserter handler ikke om glitter, mas og julestress. Tvert imot. Musikken ble til ut fra et ønske om ro og fred – og om å ta en pause fra forventningen om at julen alltid skal være travel, lykkelig og perfekt.\n\nSom Wesseltoft selv sier:\n«Det å være glad i hverandre og ha tid til hverandre er det viktigste vi kan drive med i julen.»\n\nMed sitt karakteristiske pianospill inviterer Wesseltoft publikum inn i et musikalsk rom preget av stillhet, varme og nærhet. Her får kjente julesanger nye farger, med plass til både ettertanke og detaljer for den våkne lytteren.\n\nGunnar Pedersen er en av Helgelands og norsk musikklivs markante gitarister. Han har vært fast gitarist i Åge Aleksandersens Sambandet siden 1981 og har gjennom en lang karriere medvirket på innspillinger og turneer med en rekke kjente norske artister.\n\nPedersen flyttet til Brønnøysund i 1977 og ble raskt en del av det lokale musikklivet, blant annet som medlem av Torghatten Band. Han har også spilt og gjort innspillinger med blant andre Halvdan Sivertsen, 3 Busserulls, Hans Rotmo, Hilde Heltberg og Björn Afzelius.\n\nNår disse to musikerne møtes på Samfunnshuset, ligger det til rette for en helt spesiell konsertopplevelse.\n\n✨ En kveld for å puste ut.\n✨ En kveld for vakker musikk.\n✨ En kveld for å finne juleroen.\n\nVelkommen til Bugge Wesseltoft – It’s Snowing On My Piano, med Gunnar Pedersen som gjesteartist.\n",
+      "category": "musikk",
+      "startDate": "2026-12-03T19:00:00.000Z",
+      "location": "Brønnøysund samfunnshus",
+      "url": "https://www.facebook.com/events/2581114842404722/",
+      "collectedAt": "2026-11-02T09:13:54.345Z"
+    },
+    {
+      "id": "1140168441812076",
+      "title": "Humorquiz med Jompa",
+      "description": "For påmelding og billetter, Ring Cash Bar. Tlf +47 973 22 307",
+      "category": "quiz",
+      "startDate": "2026-12-04T18:00:00.000Z",
+      "location": "Cash bar",
+      "url": "https://www.facebook.com/events/1140168441812076/",
+      "collectedAt": "2026-11-02T09:13:55.598Z"
+    },
+    {
+      "id": "2920660318327284",
+      "title": "Putti Plutti Pott og Julenissens skjegg ",
+      "description": "Putti Plutti Pott har i år igjen rappa Julenissens trylleskjegg. Vil skjegget og Putti Plutti Pott komme til rette? Kom på forestilling å se da vel!\nDørene åpner kl.13.00 for de som ønsker å nyte noe godt i kafeen før forestillingen begynner eller ønsker å kjøpe billetter direkte.\nBillettpriser\nBarn: 175,-\nVoksen: 250,-\nFamilie (2+2): 700,-\nHusk at du også kan kjøpe billetter via hoopla.no",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-12-05T13:00:00.000Z",
+      "location": "Samfunnshuset Brønnøysund",
+      "url": "https://www.facebook.com/events/2920660318327284/",
+      "collectedAt": "2026-11-02T09:13:56.243Z"
+    },
+    {
+      "id": "1106724755591969",
+      "title": "Putti Plutti Pott og Julenissens skjegg ",
+      "description": "Putti Plutti Pott har i år igjen rappa Julenissens trylleskjegg. Vil skjegget og Putti Plutti Pott komme til rette? Kom på forestilling å se da vel!\nDørene åpner kl.15.00 for de som ønsker å nyte noe godt i kafeen før forestillingen begynner eller ønsker å kjøpe billetter direkte.\nBillettpriser\nBarn: 175,-\nVoksen: 250,-\nFamilie (2+2): 700,-\nHusk at du også kan kjøpe billetter via hoopla.no",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-12-06T15:00:00.000Z",
+      "location": "Samfunnshuset Brønnøysund",
+      "url": "https://www.facebook.com/events/1106724755591969/",
+      "collectedAt": "2026-11-02T09:13:51.754Z"
     },
     {
       "id": "2268287840675045",
@@ -109,7 +329,7 @@
       "startDate": "2026-12-12T13:00:00.000Z",
       "location": "Brønnøysund Samfunnshus",
       "url": "https://www.facebook.com/events/2268287840675045/",
-      "collectedAt": "2026-09-30T08:16:55.427Z"
+      "collectedAt": "2026-11-02T09:13:51.025Z"
     },
     {
       "id": "1606410390921610",
@@ -119,7 +339,27 @@
       "startDate": "2026-12-12T17:00:00.000Z",
       "location": "Brønnøysund Samfunnshus",
       "url": "https://www.facebook.com/events/1606410390921610/",
-      "collectedAt": "2026-09-30T08:16:52.729Z"
+      "collectedAt": "2026-11-02T09:13:52.272Z"
+    },
+    {
+      "id": "2269617557153650",
+      "title": "Texas",
+      "description": "Texas er et band med rutinerte musikere som spiller melodiøse perler og festglad musikk innen en salig blanding av rock, pop, blues og country.\nBandet ble stiftet sommeren 1989 og har hatt ulik besetning gjennom årene. \n\nDagens besetning oppstod med å spille i teltet på Rootsfestivalen 2022 under settingen «Kjetil med venner».\nStemning og høy trivselsfaktor blant både publikum og band er det viktigste når Texas spiller.\n\nGruppa består av:\nBjørn Arve Øksnes …… vokal\nSverre Rande …………… bass\nKjetil Rørmark …………. gitar\nArne Flatmo …………… gitar og orgel\nStian Tjosaas………….. trommer\n\nCC: 180,-\nAldersgrene: 20år",
+      "category": "musikk",
+      "startDate": "2026-12-12T21:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/2269617557153650/",
+      "collectedAt": "2026-11-02T09:14:02.226Z"
+    },
+    {
+      "id": "1452828786732314",
+      "title": "En Førbainna Nordlending - Per Kjerstad",
+      "description": "Det verbale fyrverkeriet fra Tjeldsund i Troms har i de siste årene tatt hele Norge med storm. Per er kjent fra utallige filmer og tv-serier. Han er med i tv-suksessen “Lykkeland” og har et langt og dønn solid sceneliv bak seg. Han står også bak den populære podcasten “Psykodrama” sammen med skuespiller-makker Ole Christoffer Ertvaag. Alt denne mannen tar i ender i stående applaus, og vi kaster velvillig superlativene etter Per Kjerstad – fordi han fortjener dem! \n\nOg her er hans første one-man-show! I “En førbainna nordlending” vil du som publikum få oppleve en av landets ypperste sceneformidlere i en slagkraftig og morsom, særdeles ærlig og innimellom i overkant alvorlig time i en deilig hybrid mellom standup og storytelling. Per Kjerstad skal slå i hjel en time og ønsker at du skal slå den i hjel sammen med ham.\n\nGod fornøyelse, kjære publikum!\n\nLes Per Kjerstads egne ord og regissørens ord, bror Morten Kjerstad, under her:\n\n«Et heftig temperament er ikke bare en liten forbannelse, det er også en stor drivkraft.» Jeg elsker folk like mye som jeg ikke kan fordra dem. Jeg aksepterer ikke døden. Heller ikke vinteren. Jeg har egentlig mest lyst til å drikke vin og røyke på dagtid. Hver dag. Hvorfor er det så vanskelig for kona, ungene og hunden min å forstå?\n\n- Per Kjerstad\n\nMin bror klatra alltid høyest i trærne. Antakelig forsto jeg instinktivt at en stjerne og konkurrent var født, da jeg høflig ba min mor om å putte den tre dager gamle babyen tilbake der han kom fra. Per er det eneste mennesket fra Tjeldøya i Vestfjorden som ble født samme året som Elvis døde, og han var eneste elev i sin klasse gjennom hele barneskolen. Kreativiteten ble, forståelig nok, overstimulert fra tidlig alder – og når han ble lei av å danse eller bygge trehytte, kunne han bare smelle en knyttneve i skulderen min også ble det action og gøy og gråt.\n\nDa jeg som storebror karret til meg alle former for oppmerksomhet etter at våre foreldre ble skilt, påtok Per seg ansvaret å være klovnen i familien, han kunne ikke fordra ufred eller urettferdighet, og han kunne strekke seg langt for å skape god stemning. At bygdedyret kunne opplyse oss om evig fortapelse på grunn av valget foreldrene våre tok, gjorde nok sitt til at Per allerede som 5-åring begynte å undre seg over at mennesker oppfører seg sånn eller sånn i en gitt situasjon.\n\nOg etter hvert begynte han å stille seg spørsmålet: Hvorfor? Et spørsmål han fortsatt plager seg selv, og andre, med. Jakten på det sanne og ikke minst morsomme i alt som foregår rundt oss, er noe som har fulgt Per gjennom hele livet, og gjort han til en mester i å analysere folk, stemninger og situasjoner.\n\nSlik ble en skuespiller født; ut fra behovet for å få svar, og å bli hørt. Og det må jo ha vært en ikke ubetydelig tilfredsstillelse å vite at de samme som messet om moral og fortapelse, nå var dømt til å se han på tv. Daglig.\n\nPer kan være lys og mild som midnattssola, mørk og farlig som et polart lavtrykk. Han klatrer fortsatt i trær, men står nå også med egne røtter, godt plantet i saftig jord. Søken etter det sanne og rettferdige har skapt en Humanistisk Hissigpropp; og han skal dere få møte i kveld!\n\n- Morten Kjerstad",
+      "category": "kunst-og-kultur",
+      "startDate": "2027-01-22T18:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1452828786732314/",
+      "collectedAt": "2026-11-02T09:13:59.153Z"
     }
   ]
 }
