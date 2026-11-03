@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-11-02T09:14:03.835Z",
+  "updatedAt": "2026-11-03T09:19:27.061Z",
   "events": [
-    {
-      "id": "3618346714990488",
-      "title": "Heia Helgeland Brønnøysund (Gratis)",
-      "description": "Velkommen til en festkveld der vi heier på ildsjelene som skaper aktivitet, engasjement og fellesskap på Helgeland!\n\nLokalbanken inviterer til Heia Helgeland – en festkveld der vi feirer den uvurderlige innsatsen som legges ned hver eneste dag i lokalsamfunn over hele Helgeland.\n\n🎭 Konferansier Erlend Osnes\n🏆 Utdeling av Drivkraftprisen\n🥂 God stemning og sosialt fellesskap\n👏 Hyllest til frivilligheten på Helgeland\n\nPåmeldingen er nå åpnet. Arrangementet er gratis, men har begrenset antall plasser: https://www.sparebank1.no/nb/helgeland/privat/info/heia-helgeland.html\n\nBrønnøysund: 2. november | 17:00 | Brønnøysundregisteret\n\nHvem fortjener årets Drivkraftpris? ❤️\n Kjenner du en frivillig drivkraft som gjør Helgeland til et enda bedre sted å bo og leve? Nå kan du nominere din kandidat til Drivkraftprisen! I år deles det ut fire priser på 50.000 kroner, én i hver by under Heia Helgeland. Vinnerne får gi pengepremien videre til et samfunnsnyttig formål.\n\n👉 Nominer din kandidat innen 25. oktober:\n https://forms.cloud.microsoft/e/xTUMGd6Akx",
-      "category": "næringsliv",
-      "startDate": "2026-11-02T16:00:00.000Z",
-      "location": "Brønnøysundregistrene",
-      "url": "https://www.facebook.com/events/3618346714990488/",
-      "collectedAt": "2026-11-02T09:13:52.934Z"
-    },
     {
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
@@ -29,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-03T17:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "title": "Verity",
@@ -39,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-03T19:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "title": "Clayface",
@@ -49,7 +39,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-04T19:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "id": "2317962549024283",
@@ -69,7 +59,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-05T17:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "title": "Markens grøde",
@@ -79,7 +69,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-05T19:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "id": "1131768772917748",
@@ -169,7 +159,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-10T17:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "title": "Drapet på Benjamin Hermansen",
@@ -179,7 +169,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-10T19:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "title": "En nasjon i sjakk",
@@ -189,7 +179,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-11T19:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "title": "Pensjonskuppet",
@@ -199,7 +189,17 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T17:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
+    },
+    {
+      "title": "Juleåpning på Havnesenteret",
+      "description": "Velkommen til den store juleåpningen på Havnesenteret torsdag 12. november Vi åpner juletida med et spektakulært fyrverkeri og julekonsert med Julebyen 🎆🎅 18:00 - Fyrverkeri 18:15 - Konsert med Julebyen ved Havnecafeen Bli med på feiringen av juletida sammen med oss 🎄 Av hensyn til sikkerheten kan fyrverkeriet bli noen minutter forsinket eller avlyst dersom værforholdene gjør det nødvendig. Sikkerheten kommer alltid først.",
+      "category": "musikk",
+      "startDate": "2026-11-12T17:00:00.000Z",
+      "location": "Havnesenteret",
+      "url": "https://www.havnesenteret.no/dette-skjer/juleapning-pa-havnesenteret-fyrverkeri-og-konsert-med-julebyen",
+      "id": "Havnesenteret-2026-11-12T17:00:00.000Z",
+      "collectedAt": "2026-11-03T09:19:14.910Z"
     },
     {
       "title": "Markens grøde",
@@ -209,7 +209,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T19:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "title": "Ebenezer (Premerie)",
@@ -219,7 +219,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-13T19:00:00.000Z",
-      "collectedAt": "2026-11-02T09:13:17.530Z"
+      "collectedAt": "2026-11-03T09:18:58.460Z"
     },
     {
       "id": "945613228307305",
