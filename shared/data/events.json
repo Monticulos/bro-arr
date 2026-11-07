@@ -1,76 +1,6 @@
 {
-  "updatedAt": "2026-11-05T09:17:25.306Z",
+  "updatedAt": "2026-11-07T08:37:19.621Z",
   "events": [
-    {
-      "id": "2317962549024283",
-      "title": "Tur i nærområdet",
-      "description": "Turgrupper i Trollfjell\n\nKom å bli med oss på korte, lettgåtte og lett tilgjengelige turer i vårt nærområde. Om du er ung eller voksen - velkommen skal du være :-)\n\nVi møtes på Frivillighuset i Innerveien 42, går en tur og avslutter med enkel servering.\n\nFørste gang blir torsdag 5.11.26 kl 1100 :-)\n\n«Turgruppa arrangeres i samarbeid med Trollfjell Friluftsråd og er økonomisk støttet av Miljødirektoratet og Nordland fylkeskommune.»\n\nTa med godt humør og kom, kom, kom...... :-)\n\nhttps://bronnoy.frivilligsentral.no/aktivitet?tur-i-neromradet&Id=19639",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-11-05T10:00:00.000Z",
-      "location": "Innerveien 42, 8900 Brønnøysund, Norway",
-      "url": "https://www.facebook.com/events/2317962549024283/",
-      "collectedAt": "2026-11-02T09:14:01.202Z"
-    },
-    {
-      "title": "Pensjonskuppet",
-      "description": "Pensjonskuppet",
-      "category": "kino",
-      "startDate": "2026-11-05T17:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-05T17:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
-    },
-    {
-      "title": "Markens grøde",
-      "description": "Markens grøde",
-      "category": "kino",
-      "startDate": "2026-11-05T19:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-05T19:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
-    },
-    {
-      "id": "1131768772917748",
-      "title": "AllmenQuiz på Kred",
-      "description": "Quiz på Kred er inne i sitt 18 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\nQuizmaster er den samme, bare eldre, og enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie:\n27. august, 3. september, 11. september, 17. september, 24. september, 1. oktober, 8. oktober, 15. oktober, 22. oktober, 29. oktober, 5. november, 12. november, 19. november, 26. november, 3. desember og 10. desember",
-      "category": "quiz",
-      "startDate": "2026-11-05T19:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1131768772917748/",
-      "collectedAt": "2026-11-02T09:14:03.322Z"
-    },
-    {
-      "title": "Pensjonskuppet",
-      "description": "Pensjonskuppet",
-      "category": "kino",
-      "startDate": "2026-11-06T17:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-06T17:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
-    },
-    {
-      "id": "1876406173737268",
-      "title": "Kred's Musikkbingo",
-      "description": "Høsten er i full gang, og vi har hatt mange arrangement og derfor pauset musikkbingo litt.  Men nå kjører vi på igjen. Så hva passer bedre enn å ta turen innom og være med på Kred's Musikk-Bingo! Temaene er ikke bestemt enda, men det blir gøy uansett.\n\nVår bingovert tar dere med til musikkens historie. Vi spiller musikk, du finner ut sangen og ser om den er på bingobrettet. Vanskeligere er det ikke! Alle tidligere deltakere synes dette er kjempegøy.\n\nVi spiller to runder med bingo. Det koster kr. 50,- for bingobrett, og du betaler bare en gang for hele kvelden.\n\nVi har 18-årsgrense.",
-      "category": "quiz",
-      "startDate": "2026-11-06T19:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1876406173737268/",
-      "collectedAt": "2026-11-02T09:13:56.719Z"
-    },
-    {
-      "title": "Markens grøde",
-      "description": "Markens grøde",
-      "category": "kino",
-      "startDate": "2026-11-06T19:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-06T19:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
-    },
     {
       "id": "1043958105338944",
       "title": "Kunstverksted for barn: Vi maler Den lille larven Aldrimett!",
@@ -129,7 +59,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=3b4375e2-aae8-4cbe-ab4c-b90dda1b786a&OccurenceId=3b4375e2-aae8-4cbe-ab4c-b90dda1b786a",
       "id": "Brønnøy-kirke-2026-11-08T17:00:00.000Z",
-      "collectedAt": "2026-11-05T09:17:25.305Z"
+      "collectedAt": "2026-11-07T08:37:19.621Z"
     },
     {
       "title": "Barseltreff på biblioteket",
@@ -143,23 +73,23 @@
     },
     {
       "title": "*Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
-      "description": "*Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
+      "description": "*Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst vises på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-11-10T17:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-10T17:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
+      "collectedAt": "2026-11-07T08:36:51.693Z"
     },
     {
       "title": "Clayface",
-      "description": "Clayface",
+      "description": "Clayface vises på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-11-10T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-10T19:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
+      "collectedAt": "2026-11-07T08:36:51.693Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -169,27 +99,27 @@
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=f596ad0a-05ee-4def-9251-2ec17aa999ed",
       "id": "Brønnøy-kirke-2026-11-11T10:00:00.000Z",
-      "collectedAt": "2026-11-05T09:17:25.305Z"
+      "collectedAt": "2026-11-07T08:37:19.621Z"
     },
     {
       "title": "*En nasjon i sjakk",
-      "description": "*En nasjon i sjakk",
+      "description": "*En nasjon i sjakk vises på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-11-11T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-11T19:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
+      "collectedAt": "2026-11-07T08:36:51.693Z"
     },
     {
       "title": "Pensjonskuppet",
-      "description": "Pensjonskuppet",
+      "description": "Pensjonskuppet vises på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-11-12T17:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T17:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
+      "collectedAt": "2026-11-07T08:36:51.693Z"
     },
     {
       "title": "Juleåpning på Havnesenteret",
@@ -199,27 +129,27 @@
       "location": "Havnesenteret",
       "url": "https://www.havnesenteret.no/dette-skjer/juleapning-pa-havnesenteret-fyrverkeri-og-konsert-med-julebyen",
       "id": "Havnesenteret-2026-11-12T17:00:00.000Z",
-      "collectedAt": "2026-11-05T09:17:13.372Z"
+      "collectedAt": "2026-11-07T08:37:09.210Z"
     },
     {
       "title": "Markens grøde",
-      "description": "Markens grøde",
+      "description": "Markens grøde vises på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-11-12T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T19:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
+      "collectedAt": "2026-11-07T08:36:51.693Z"
     },
     {
       "title": "Ebenezer (Premerie)",
-      "description": "Ebenezer (Premerie)",
+      "description": "Ebenezer (Premerie) vises på Brønnøy kino.",
       "category": "kino",
       "startDate": "2026-11-13T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-13T19:00:00.000Z",
-      "collectedAt": "2026-11-05T09:16:54.509Z"
+      "collectedAt": "2026-11-07T08:36:51.693Z"
     },
     {
       "id": "945613228307305",
@@ -239,7 +169,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=89bb9c00-e619-4359-8da7-65ffd1184cc4&OccurenceId=89bb9c00-e619-4359-8da7-65ffd1184cc4",
       "id": "Brønnøy-kirke-2026-11-15T10:00:00.000Z",
-      "collectedAt": "2026-11-05T09:17:25.305Z"
+      "collectedAt": "2026-11-07T08:37:19.621Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -249,7 +179,7 @@
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=a293174b-41ec-486f-98bb-2ec14df37068",
       "id": "Brønnøy-kirke-2026-11-18T10:00:00.000Z",
-      "collectedAt": "2026-11-05T09:17:25.305Z"
+      "collectedAt": "2026-11-07T08:37:19.621Z"
     },
     {
       "id": "1759930691717212",
@@ -269,7 +199,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f202fc6a-c287-4819-a298-ec3a75d47967&OccurenceId=f202fc6a-c287-4819-a298-ec3a75d47967",
       "id": "Brønnøy-kirke-2026-11-22T10:00:00.000Z",
-      "collectedAt": "2026-11-05T09:17:25.305Z"
+      "collectedAt": "2026-11-07T08:37:19.621Z"
     },
     {
       "id": "2645710689214828",
@@ -289,7 +219,7 @@
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=3fd20971-9f27-4ea8-88e5-9c3e3d5a9c13",
       "id": "Brønnøy-kirke-2026-11-25T10:00:00.000Z",
-      "collectedAt": "2026-11-05T09:17:25.305Z"
+      "collectedAt": "2026-11-07T08:37:19.621Z"
     },
     {
       "id": "27931154943206710",
@@ -309,7 +239,7 @@
       "location": "Sykehjemmets kapell",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=b3b6d79d-a06d-4934-8685-15563e0d1e80&OccurenceId=b3b6d79d-a06d-4934-8685-15563e0d1e80",
       "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z",
-      "collectedAt": "2026-11-05T09:17:25.305Z"
+      "collectedAt": "2026-11-07T08:37:19.621Z"
     },
     {
       "id": "1095611339918740",
@@ -339,7 +269,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5&OccurenceId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5",
       "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
-      "collectedAt": "2026-11-05T09:17:25.305Z"
+      "collectedAt": "2026-11-07T08:37:19.621Z"
     },
     {
       "title": "Gudstjeneste",
@@ -349,7 +279,7 @@
       "location": "Velfjord kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=99633440-8026-4a82-b801-7a613295cbbe&OccurenceId=99633440-8026-4a82-b801-7a613295cbbe",
       "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
-      "collectedAt": "2026-11-05T09:17:25.305Z"
+      "collectedAt": "2026-11-07T08:37:19.621Z"
     },
     {
       "id": "2581114842404722",
