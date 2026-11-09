@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-11-08T08:51:42.673Z",
+  "updatedAt": "2026-11-09T09:33:20.548Z",
   "events": [
-    {
-      "id": "1131190526229066",
-      "title": "Nordens RÅESTE Neonparty - Kred, Brønnøysund",
-      "description": "🔥NORDENS RÅESTE NEONPARTY KOMMER ENDELIG TIL BRØNNØYSUND!! 🔥\n\nNeonparty.no har i mange år arrangert Norges råeste neonparty, med en utstyrspakke ingen andre i landet er i nærheten av å levere! Med masse UV-lys, lasere, røyk! og oppgraderte høsten 2024 pakkene ytterligere for å legge ut på en enda mer massiv turne!\n\n💥 UVLYS 💥 LASERE 💥 RØYK 💥 STROBER 💥 SPESIALEFFEKTER\n\n🤑 Vi selger også UV maling, briller og andre Glow og neonprodukter 🤑\n\n💥Kveldens DJ sørger for stemningen!\n\n🎫 BILLETTER & INFORMASJON \n🎫 EARLYBIRD - Kr. 200,- \nFORHÅNDSSALG kr. 250,- \nLAST DAY / I DØRA Kr. 300,- \nPrisene er eksl. billettavgift\n18-årsgrense\n\nKjøpes her: \nhttps://neonparty.hoopla.no/event/2048144570\n\n🌏 KRED BRØNNØYSUND \n",
-      "category": "musikk",
-      "startDate": "2026-11-07T21:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1131190526229066/",
-      "collectedAt": "2026-11-02T09:14:03.835Z"
-    },
-    {
-      "title": "Orgelkonsert i Brønnøy kirke",
-      "description": "Orgelkonsert i Brønnøy kirke",
-      "category": "tro-og-livssyn",
-      "startDate": "2026-11-08T17:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=3b4375e2-aae8-4cbe-ab4c-b90dda1b786a&OccurenceId=3b4375e2-aae8-4cbe-ab4c-b90dda1b786a",
-      "id": "Brønnøy-kirke-2026-11-08T17:00:00.000Z",
-      "collectedAt": "2026-11-08T08:51:33.087Z"
-    },
     {
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
@@ -33,23 +13,23 @@
     },
     {
       "title": "*Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
-      "description": "*Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst vises på Brønnøy kino.",
+      "description": "*Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
       "category": "kino",
       "startDate": "2026-11-10T17:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-10T17:00:00.000Z",
-      "collectedAt": "2026-11-08T08:50:57.267Z"
+      "collectedAt": "2026-11-09T09:32:42.578Z"
     },
     {
       "title": "Clayface",
-      "description": "Clayface vises på Brønnøy kino.",
+      "description": "Clayface",
       "category": "kino",
       "startDate": "2026-11-10T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-10T19:00:00.000Z",
-      "collectedAt": "2026-11-08T08:50:57.267Z"
+      "collectedAt": "2026-11-09T09:32:42.578Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -63,23 +43,23 @@
     },
     {
       "title": "*En nasjon i sjakk",
-      "description": "*En nasjon i sjakk vises på Brønnøy kino.",
+      "description": "*En nasjon i sjakk",
       "category": "kino",
       "startDate": "2026-11-11T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-11T19:00:00.000Z",
-      "collectedAt": "2026-11-08T08:50:57.267Z"
+      "collectedAt": "2026-11-09T09:32:42.578Z"
     },
     {
       "title": "Pensjonskuppet",
-      "description": "Pensjonskuppet vises på Brønnøy kino.",
+      "description": "Pensjonskuppet",
       "category": "kino",
       "startDate": "2026-11-12T17:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T17:00:00.000Z",
-      "collectedAt": "2026-11-08T08:50:57.267Z"
+      "collectedAt": "2026-11-09T09:32:42.578Z"
     },
     {
       "id": "1055575537494283",
@@ -93,13 +73,13 @@
     },
     {
       "title": "Markens grøde",
-      "description": "Markens grøde vises på Brønnøy kino.",
+      "description": "Markens grøde",
       "category": "kino",
       "startDate": "2026-11-12T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T19:00:00.000Z",
-      "collectedAt": "2026-11-08T08:50:57.267Z"
+      "collectedAt": "2026-11-09T09:32:42.578Z"
     },
     {
       "id": "1131768756251083",
@@ -113,13 +93,13 @@
     },
     {
       "title": "Ebenezer (Premerie)",
-      "description": "Ebenezer (Premerie) vises på Brønnøy kino.",
+      "description": "Ebenezer (Premerie)",
       "category": "kino",
       "startDate": "2026-11-13T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-13T19:00:00.000Z",
-      "collectedAt": "2026-11-08T08:50:57.267Z"
+      "collectedAt": "2026-11-09T09:32:42.578Z"
     },
     {
       "id": "945613228307305",
