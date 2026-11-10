@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T09:33:20.548Z",
+  "updatedAt": "2026-11-10T09:34:39.445Z",
   "events": [
     {
       "title": "Barseltreff på biblioteket",
@@ -19,7 +19,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-10T17:00:00.000Z",
-      "collectedAt": "2026-11-09T09:32:42.578Z"
+      "collectedAt": "2026-11-10T09:33:44.665Z"
     },
     {
       "title": "Clayface",
@@ -29,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-10T19:00:00.000Z",
-      "collectedAt": "2026-11-09T09:32:42.578Z"
+      "collectedAt": "2026-11-10T09:33:44.665Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -49,7 +49,17 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-11T19:00:00.000Z",
-      "collectedAt": "2026-11-09T09:32:42.578Z"
+      "collectedAt": "2026-11-10T09:33:44.665Z"
+    },
+    {
+      "id": "1486661083353687",
+      "title": "Tur i nærområdet",
+      "description": "Turgrupper i Trollfjell\n\nKom å bli med oss på korte, lettgåtte og lett tilgjengelige turer i vårt nærområde. Om du er ung eller voksen - velkommen skal du være :-)\n\nVi møtes på Frivillighuset i Innerveien 42, går en tur og avslutter med enkel servering.\n\nFor resten av november møtes vi torsdager kl 1100 den :\n12.11.26\n19.11.26\n26.11.26\n\nTurgruppa arrangeres i samarbeid med Trollfjell Friluftsråd og er økonomisk støttet av Miljødirektoratet og Nordland fylkeskommune.\n\nTa med godt humør og kom, kom, kom...... :-)\n\nhttps://bronnoy.frivilligsentral.no/aktivitet?tur-i-neromradet&Id=19639",
+      "category": "barn-og-ungdom",
+      "startDate": "2026-11-12T10:00:00.000Z",
+      "location": "Innerveien 42, 8900 Brønnøysund, Norway",
+      "url": "https://www.facebook.com/events/1486661083353687/",
+      "collectedAt": "2026-11-10T09:34:38.122Z"
     },
     {
       "title": "Pensjonskuppet",
@@ -59,7 +69,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T17:00:00.000Z",
-      "collectedAt": "2026-11-09T09:32:42.578Z"
+      "collectedAt": "2026-11-10T09:33:44.665Z"
     },
     {
       "id": "1055575537494283",
@@ -69,7 +79,7 @@
       "startDate": "2026-11-12T17:00:00.000Z",
       "location": "Storgata 58, 8900 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/1055575537494283/",
-      "collectedAt": "2026-11-08T08:51:42.672Z"
+      "collectedAt": "2026-11-10T09:34:35.847Z"
     },
     {
       "title": "Markens grøde",
@@ -79,7 +89,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T19:00:00.000Z",
-      "collectedAt": "2026-11-09T09:32:42.578Z"
+      "collectedAt": "2026-11-10T09:33:44.665Z"
     },
     {
       "id": "1131768756251083",
@@ -89,7 +99,7 @@
       "startDate": "2026-11-12T19:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1131768756251083/",
-      "collectedAt": "2026-11-08T08:51:39.439Z"
+      "collectedAt": "2026-11-10T09:34:34.705Z"
     },
     {
       "title": "Ebenezer (Premerie)",
@@ -99,7 +109,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-13T19:00:00.000Z",
-      "collectedAt": "2026-11-09T09:32:42.578Z"
+      "collectedAt": "2026-11-10T09:33:44.665Z"
     },
     {
       "id": "945613228307305",
@@ -109,7 +119,7 @@
       "startDate": "2026-11-14T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/945613228307305/",
-      "collectedAt": "2026-11-08T08:51:38.184Z"
+      "collectedAt": "2026-11-10T09:34:37.584Z"
     },
     {
       "title": "Gudstjeneste med dåp",
@@ -139,7 +149,7 @@
       "startDate": "2026-11-21T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1759930691717212/",
-      "collectedAt": "2026-11-08T08:51:37.693Z"
+      "collectedAt": "2026-11-10T09:34:36.995Z"
     },
     {
       "title": "Gudstjeneste",
@@ -179,7 +189,7 @@
       "startDate": "2026-11-26T08:00:00.000Z",
       "location": "Skulesvei 13, 8904 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/27931154943206710/",
-      "collectedAt": "2026-11-08T08:51:40.158Z"
+      "collectedAt": "2026-11-10T09:34:35.159Z"
     },
     {
       "title": "Gudstjeneste",
@@ -199,7 +209,7 @@
       "startDate": "2026-11-27T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1095611339918740/",
-      "collectedAt": "2026-11-08T08:51:34.105Z"
+      "collectedAt": "2026-11-10T09:34:39.445Z"
     },
     {
       "id": "1558998812644654",
@@ -209,7 +219,7 @@
       "startDate": "2026-11-27T18:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1558998812644654/",
-      "collectedAt": "2026-11-08T08:51:41.480Z"
+      "collectedAt": "2026-11-10T09:34:36.474Z"
     },
     {
       "title": "LysVåken-gudstjeneste",
@@ -239,7 +249,7 @@
       "startDate": "2026-12-03T19:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/2581114842404722/",
-      "collectedAt": "2026-11-08T08:51:37.109Z"
+      "collectedAt": "2026-11-10T09:34:29.328Z"
     },
     {
       "id": "1140168441812076",
@@ -249,7 +259,7 @@
       "startDate": "2026-12-04T18:00:00.000Z",
       "location": "Cash bar",
       "url": "https://www.facebook.com/events/1140168441812076/",
-      "collectedAt": "2026-11-08T08:51:40.899Z"
+      "collectedAt": "2026-11-10T09:34:33.433Z"
     },
     {
       "id": "2920660318327284",
@@ -259,17 +269,17 @@
       "startDate": "2026-12-05T13:00:00.000Z",
       "location": "Samfunnshuset Brønnøysund",
       "url": "https://www.facebook.com/events/2920660318327284/",
-      "collectedAt": "2026-11-08T08:51:35.869Z"
+      "collectedAt": "2026-11-10T09:34:28.215Z"
     },
     {
       "id": "1106724755591969",
       "title": "Putti Plutti Pott og Julenissens skjegg ",
       "description": "Putti Plutti Pott har i år igjen rappa Julenissens trylleskjegg. Vil skjegget og Putti Plutti Pott komme til rette? Kom på forestilling å se da vel!\nDørene åpner kl.15.00 for de som ønsker å nyte noe godt i kafeen før forestillingen begynner eller ønsker å kjøpe billetter direkte.\nBillettpriser\nBarn: 175,-\nVoksen: 250,-\nFamilie (2+2): 700,-\nHusk at du også kan kjøpe billetter via hoopla.no",
-      "category": "barn-og-ungdom",
+      "category": "annet",
       "startDate": "2026-12-06T15:00:00.000Z",
       "location": "Samfunnshuset Brønnøysund",
       "url": "https://www.facebook.com/events/1106724755591969/",
-      "collectedAt": "2026-11-08T08:51:34.696Z"
+      "collectedAt": "2026-11-10T09:34:32.929Z"
     },
     {
       "id": "2268287840675045",
@@ -279,7 +289,7 @@
       "startDate": "2026-12-12T13:00:00.000Z",
       "location": "Brønnøysund Samfunnshus",
       "url": "https://www.facebook.com/events/2268287840675045/",
-      "collectedAt": "2026-11-08T08:51:38.705Z"
+      "collectedAt": "2026-11-10T09:34:29.862Z"
     },
     {
       "id": "1606410390921610",
@@ -289,7 +299,7 @@
       "startDate": "2026-12-12T17:00:00.000Z",
       "location": "Brønnøysund Samfunnshus",
       "url": "https://www.facebook.com/events/1606410390921610/",
-      "collectedAt": "2026-11-08T08:51:36.511Z"
+      "collectedAt": "2026-11-10T09:34:30.628Z"
     },
     {
       "id": "2269617557153650",
@@ -299,7 +309,7 @@
       "startDate": "2026-12-12T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2269617557153650/",
-      "collectedAt": "2026-11-08T08:51:42.076Z"
+      "collectedAt": "2026-11-10T09:34:34.064Z"
     },
     {
       "id": "1452828786732314",
@@ -309,7 +319,7 @@
       "startDate": "2027-01-22T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1452828786732314/",
-      "collectedAt": "2026-11-02T09:13:59.153Z"
+      "collectedAt": "2026-11-10T09:34:31.996Z"
     }
   ]
 }
