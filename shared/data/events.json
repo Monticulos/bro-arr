@@ -1,36 +1,6 @@
 {
-  "updatedAt": "2026-11-10T09:34:39.445Z",
+  "updatedAt": "2026-11-11T09:09:25.467Z",
   "events": [
-    {
-      "title": "Barseltreff på biblioteket",
-      "description": "Barseltreff på biblioteket",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-11-10T10:00:00.000Z",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "url": "https://bronnoybibliotek.no/arrangementer#/events/7d392d79-4732-4a92-8998-41f5ec3a3ecd",
-      "id": "Brønnøy-bibliotek-2026-11-10T10:00:00.000Z",
-      "collectedAt": "2026-09-29T08:15:38.006Z"
-    },
-    {
-      "title": "*Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
-      "description": "*Sauen Shaun - Gården fårbannelse: Engelsk tale, norsk tekst",
-      "category": "kino",
-      "startDate": "2026-11-10T17:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-10T17:00:00.000Z",
-      "collectedAt": "2026-11-10T09:33:44.665Z"
-    },
-    {
-      "title": "Clayface",
-      "description": "Clayface",
-      "category": "kino",
-      "startDate": "2026-11-10T19:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-10T19:00:00.000Z",
-      "collectedAt": "2026-11-10T09:33:44.665Z"
-    },
     {
       "title": "Trille-Tralle-Treff (babysang)",
       "description": "Trille-Tralle-Treff (babysang)",
@@ -69,7 +39,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T17:00:00.000Z",
-      "collectedAt": "2026-11-10T09:33:44.665Z"
+      "collectedAt": "2026-11-11T09:08:52.147Z"
     },
     {
       "id": "1055575537494283",
@@ -89,7 +59,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-12T19:00:00.000Z",
-      "collectedAt": "2026-11-10T09:33:44.665Z"
+      "collectedAt": "2026-11-11T09:08:52.147Z"
     },
     {
       "id": "1131768756251083",
@@ -109,7 +79,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-13T19:00:00.000Z",
-      "collectedAt": "2026-11-10T09:33:44.665Z"
+      "collectedAt": "2026-11-11T09:08:52.147Z"
     },
     {
       "id": "945613228307305",
