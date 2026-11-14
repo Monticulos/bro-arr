@@ -24,8 +24,8 @@ const QUIZ = createUncategorizedEvent({
   description: "Quiz med premier.",
 });
 
-function choiceAnswer(choice: string, confidence = 0.9) {
-  return { type: "choice", choice, confidence };
+function choiceAnswer(choice: string) {
+  return { type: "choice", choice, confidence: 0.9 };
 }
 
 describe("categorizeEvents", () => {
@@ -63,6 +63,7 @@ describe("categorizeEvents", () => {
       },
       CATEGORY_CRITERIA,
       { event1: CONCERT, event2: QUIZ },
+      expect.any(Number),
     );
   });
 
@@ -77,6 +78,7 @@ describe("categorizeEvents", () => {
       { event1: expect.any(String) },
       CATEGORY_CRITERIA,
       { event1: QUIZ },
+      expect.any(Number),
     );
   });
 
@@ -94,8 +96,7 @@ describe("categorizeEvents", () => {
   });
 
   it.each([
-    ["refuses to answer", null],
-    ["is torn between categories", choiceAnswer("musikk", 0.2)],
+    ["gives no answer", null],
     ["chooses a category that does not exist", choiceAnswer("sport")],
   ])("falls back to annet when the model %s", async (_, answer) => {
     choices.mockResolvedValue({ event1: answer });

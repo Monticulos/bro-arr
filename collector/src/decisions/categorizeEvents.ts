@@ -1,6 +1,6 @@
 import type { DecisionsChoiceAnswer } from "@openrouter/sdk/models";
 import type { Event, UncategorizedEvent } from "../../../shared/types/Event";
-import { aboveConfidence, DecisionModel } from "./DecisionModel.js";
+import { DecisionModel } from "./DecisionModel.js";
 import {
   CATEGORY_CRITERIA,
   isEventCategory,
@@ -43,6 +43,7 @@ async function chooseCategories(
       toQuestions(events),
       CATEGORY_CRITERIA,
       toState(events),
+      MIN_CONFIDENCE,
     );
   } catch (error) {
     warnDetail(`Failed to categorize ${events.length} events:`, error);
@@ -72,6 +73,6 @@ function eventKey(index: number): string {
 }
 
 function toCategory(answer: DecisionsChoiceAnswer | null): EventCategory {
-  const choice = aboveConfidence(answer, MIN_CONFIDENCE)?.choice ?? null;
+  const choice = answer?.choice ?? null;
   return isEventCategory(choice) ? choice : "annet";
 }

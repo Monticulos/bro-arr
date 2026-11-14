@@ -73,7 +73,7 @@ await decisions.score(
 
 ## `scores`
 
-The whole answer per name, on a low / medium / high scale. You pick the threshold for each.
+The whole answer per name, on a low / medium / high scale.
 
 ```ts
 await decisions.scores(
@@ -83,6 +83,7 @@ await decisions.scores(
   },
   ["low", "medium", "high"],
   "hey, can u send the report asap? thx",
+  0.5,
 );
 // {
 //   formality: { type: "score", score: 0.2, confidence: 0.9, probabilities: { ... },
@@ -116,7 +117,7 @@ await decisions.choice(
 
 ## `choices`
 
-The whole answer per name, all from the same criteria. You pick the threshold for each.
+The whole answer per name, all from the same criteria.
 
 ```ts
 await decisions.choices(
@@ -126,6 +127,7 @@ await decisions.choices(
   },
   FEELINGS,
   "Love the new look, but it's slow and way too expensive.",
+  0.5,
 );
 // {
 //   price: { type: "choice", choice: "negative", confidence: 0.95,
