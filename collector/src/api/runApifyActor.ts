@@ -1,4 +1,5 @@
 import { APIFY_BASE_URL, getApifyApiKey } from "./apifyConfig.js";
+import { logDetail, warnDetail } from "../utils/logger.js";
 
 const FACEBOOK_EVENTS_ACTOR_ID = "UZBnerCFBo5FgGouO";
 const BRONNOEYSUND_LOCATION_ID = "103758419663407";
@@ -74,7 +75,7 @@ export async function startApifyActorRun(): Promise<string> {
   }
 
   const result = (await response.json()) as ActorRunResponse;
-  console.log(`Apify actor run started (ID: ${result.data.id})`);
+  logDetail(`Apify actor run started (ID: ${result.data.id})`);
   return result.data.id;
 }
 
@@ -98,7 +99,7 @@ export async function waitForActorRun(runId: string): Promise<string> {
     datasetId = defaultDatasetId;
 
     if (status === ActorRunStatus.SUCCEEDED || status === ActorRunStatus.TIMED_OUT) {
-      console.log(`Apify actor run completed (dataset: ${datasetId}).`);
+      logDetail(`Apify actor run completed (dataset: ${datasetId}).`);
       return datasetId;
     }
 
@@ -106,11 +107,11 @@ export async function waitForActorRun(runId: string): Promise<string> {
       throw new Error(`Apify actor run failed with status: ${status}`);
     }
 
-    console.log("Waiting for Apify actor run to complete...");
+    logDetail("Waiting for Apify actor run to complete...");
     await sleep(POLL_INTERVAL_MS);
   }
 
-  console.warn(`Did not receive expected actor response after ${COLLECTOR_POLL_TIMEOUT_SECONDS}s.`);
+  warnDetail(`Did not receive expected actor response after ${COLLECTOR_POLL_TIMEOUT_SECONDS}s.`);
   return datasetId;
 }
 

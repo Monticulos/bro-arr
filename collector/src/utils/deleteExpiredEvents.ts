@@ -1,4 +1,5 @@
 import type { Event } from "../../../shared/types/Event";
+import { logPhase } from "./logger.js";
 
 const EXPIRY_HOURS = 12;
 
@@ -13,7 +14,7 @@ export function deleteExpiredEvents(events: Event[]): Event[] {
   const filtered = events.filter((event) => !isExpired(event));
   const removedCount = events.length - filtered.length;
 
-  console.log(
+  logPhase(
     removedCount > 0
       ? `Removed ${removedCount} expired events.`
       : "No expired events found.",

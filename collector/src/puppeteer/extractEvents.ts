@@ -1,6 +1,7 @@
 import puppeteer from "puppeteer";
 import * as cheerio from "cheerio";
 import type { Source } from "../sources.js";
+import { warnDetail } from "../utils/logger.js";
 
 const MAX_TEXT_LENGTH = 8000;
 const TRUNCATION_MARKER = "\n...[truncated]";
@@ -42,7 +43,7 @@ export async function extractEvents(source: Source): Promise<string> {
     const cleanedText = cleanHtml(html);
     return truncateText(cleanedText);
   } catch (error) {
-    console.warn(`Failed to extract events from ${source.name}:`, error);
+    warnDetail(`Failed to extract events from ${source.name}:`, error);
     return "";
   } finally {
     await browser.close();

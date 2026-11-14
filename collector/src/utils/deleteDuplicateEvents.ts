@@ -1,4 +1,5 @@
 import type { Event } from "../../../shared/types/Event";
+import { logPhase } from "./logger.js";
 
 const MIN_WORD_LENGTH = 4;
 const SIMILARITY_THRESHOLD = 0.5;
@@ -70,10 +71,10 @@ export function deleteDuplicateEvents(events: Event[]): Event[] {
   const duplicateIds = findDuplicateIds(events);
 
   if (duplicateIds.size === 0) {
-    console.log("No duplicate events found.");
+    logPhase("No duplicate events found.");
     return events;
   }
 
-  console.log(`Removed ${duplicateIds.size} duplicate events.`);
+  logPhase(`Removed ${duplicateIds.size} duplicate events.`);
   return events.filter((event) => !duplicateIds.has(event.id));
 }

@@ -4,6 +4,7 @@ import {
   isEventCategory,
   type EventCategory,
 } from "./categoryCriteria.js";
+import { warnDetail } from "../utils/logger.js";
 
 /** Below this the model is only guessing between categories, so the event is left uncategorized. */
 const MIN_CONFIDENCE = 0.3;
@@ -33,7 +34,7 @@ async function chooseCategory(
       MIN_CONFIDENCE,
     );
   } catch (error) {
-    console.warn(`  Failed to categorize "${event.title}":`, error);
+    warnDetail(`Failed to categorize "${event.title}":`, error);
     return null;
   }
 }
