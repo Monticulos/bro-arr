@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { mapApifyEventToEvent, LOCATION_MAP } from "./mapApifyEventToEvent.js";
 import { createApifyEvent } from "../test/createApifyEvent.js";
 
-vi.mock("../llm/categorizeEvent.js", () => ({
+vi.mock("../decisions/categorizeEvent.js", () => ({
   categorizeEvent: vi.fn().mockResolvedValue("musikk"),
 }));
 
@@ -40,13 +40,21 @@ describe("mapApifyEventToEvent", () => {
     });
   });
 
-  it("uses categorizeEvent with the event name and description", async () => {
-    const { categorizeEvent } = await import("../llm/categorizeEvent.js");
-    const apifyEvent = createApifyEvent({ name: "Stand-up show", description: "Morsomt!" });
+  it("uses categorizeEvent with the event name, description and mapped location", async () => {
+    const { categorizeEvent } = await import("../decisions/categorizeEvent.js");
+    const apifyEvent = createApifyEvent({
+      name: "Stand-up show",
+      description: "Morsomt!",
+      location: { id: "loc1", name: "Storgata 61", latitude: 0, longitude: 0 },
+    });
 
     await mapApifyEventToEvent(apifyEvent);
 
-    expect(categorizeEvent).toHaveBeenCalledWith("Stand-up show", "Morsomt!");
+    expect(categorizeEvent).toHaveBeenCalledWith({
+      title: "Stand-up show",
+      description: "Morsomt!",
+      location: "Kred",
+    });
   });
 
   describe("mapLocation", () => {

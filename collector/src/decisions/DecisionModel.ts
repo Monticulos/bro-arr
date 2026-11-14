@@ -1,101 +1,159 @@
 /**
- * A thin wrapper around OpenAI's Decisions API.
+ * A thin wrapper around OpenRouter's Decisions API.
  *
- * Every helper returns null for an answer the model refused.
- * score and choice also return null below minConfidence. The batched methods leave
- * the threshold to the caller: predicates return the probability, and scores and
- * choices return each answer's confidence.
+ * Each method is named after the question type it asks, and answers keep the API's
+ * own types. Every helper returns null for an answer the model refused. The singular
+ * methods unwrap the answer and also return null below minConfidence; the batched
+ * methods leave the threshold to the caller.
  */
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-nocheck -- openai is not a declared dependency of the collector yet
-import OpenAI from "openai";
-import type { Decision, DecisionCreateParams } from "openai/resources/decisions";
+import { OpenRouter } from "@openrouter/sdk";
+import type {
+  DecisionsChoiceAnswer,
+  DecisionsChoiceQuestion,
+  DecisionsChoiceQuestionInstructions,
+  DecisionsRequest,
+  DecisionsResponse,
+  DecisionsScoreAnswer,
+  DecisionsScoreQuestion,
+} from "@openrouter/sdk/models";
+import { retryTransientFailures } from "./retryTransientFailures.js";
 
-export interface Level {
-  label: string;
-  description?: string;
-}
+export type State = DecisionsRequest["state"];
+export type Answers = DecisionsResponse["answers"];
+export type Instructions = DecisionsChoiceQuestionInstructions;
+export type ChoiceCriteria = DecisionsChoiceQuestion["criteria"];
+export type ScoreCriteria = DecisionsScoreQuestion["criteria"];
 
-export interface Choice {
-  value: string;
-  description?: string;
-}
-
-export interface ScoreAnswer {
-  score: number;
-  confidence: number;
-}
-
-export interface ChoiceAnswer {
-  choice: string;
-  confidence: number;
-}
+/** The SDK's own retry runs for up to an hour */
+const client = new OpenRouter({ retryConfig: { strategy: "none" } });
 
 export class DecisionModel {
-  readonly client: OpenAI;
+  constructor(readonly model: string) {}
 
-  constructor(readonly model: string, client?: OpenAI) {
-    this.client = client ?? new OpenAI();
-  }
-
-  /** Returns the probability (0 to 1) that the condition is true, or null. */
-  async predicate(instructions: string, input: string): Promise<number | null> {
-    return (await this.predicates({ answer: instructions }, input)).answer;
+  /** Returns the probability (0 to 1) that the statement is true, or null. */
+  async noul(instructions: Instructions, state: State): Promise<number | null> {
+    return singleAnswer(await this.nouls(singleQuestion(instructions), state));
   }
 
   /** Returns { name: probability } for several yes/no questions. */
-  async predicates(questions: Record<string, string>,
-    input: string): Promise<Record<string, number | null>> {
-    const names = Object.keys(questions);
+  async nouls(
+    questions: Record<string, Instructions>,
+    state: State,
+  ): Promise<Record<string, number | null>> {
     const { answers } = await this.create({
-      input, questions: names.map((name) => (
-        { type: "predicate", name, instructions: questions[name] }))
+      state,
+      questions: mapValues(questions, (instructions) => ({
+        type: "noul",
+        instructions,
+      })),
     });
-    return Object.fromEntries(answers.map((a) => (
-      [a.name!, a.type === "predicate" ? a.probability : null])));
+    return mapValues(answers, (answer) =>
+      answer.type === "noul" ? answer.noul : null,
+    );
   }
 
-  /** Returns a level index from 0 to levels.length - 1, or null. */
-  async score(instructions: string, levels: Level[], input: string,
-    minConfidence: number): Promise<number | null> {
-    const r = (await this.scores({ answer: instructions }, levels, input)).answer;
-    return r && r.confidence >= minConfidence ? r.score : null;
+  /** Returns a score from 0 to criteria.length - 1, or null. */
+  async score(
+    instructions: Instructions,
+    criteria: ScoreCriteria,
+    state: State,
+    minConfidence: number,
+  ): Promise<number | null> {
+    const answers = await this.scores(
+      singleQuestion(instructions),
+      criteria,
+      state,
+    );
+    const answer = aboveConfidence(singleAnswer(answers), minConfidence);
+    return answer && answer.score;
   }
 
-  /** Returns { name: { score, confidence } } for several questions on the same scale. */
-  async scores(questions: Record<string, string>, levels: Level[],
-    input: string): Promise<Record<string, ScoreAnswer | null>> {
-    const names = Object.keys(questions);
+  /** Returns { name: answer } for several questions on the same scale. */
+  async scores(
+    questions: Record<string, Instructions>,
+    criteria: ScoreCriteria,
+    state: State,
+  ): Promise<Record<string, DecisionsScoreAnswer | null>> {
     const { answers } = await this.create({
-      input, questions: names.map((name) => (
-        { type: "score", name, instructions: questions[name], levels }))
+      state,
+      questions: mapValues(questions, (instructions) => ({
+        type: "score",
+        instructions,
+        criteria,
+      })),
     });
-    return Object.fromEntries(answers.map((a) => (
-      [a.name!, a.type === "score" ? { score: a.score, confidence: a.confidence } : null])));
+    return mapValues(answers, (answer) =>
+      answer.type === "score" ? answer : null,
+    );
   }
 
-  /** Returns the chosen value, or null. */
-  async choice(instructions: string, choices: Choice[], input: string,
-    minConfidence: number): Promise<string | null> {
-    const r = (await this.choices({ answer: instructions }, choices, input)).answer;
-    return r && r.confidence >= minConfidence ? r.choice : null;
+  /** Returns the name of the chosen criterion, or null. */
+  async choice(
+    instructions: Instructions,
+    criteria: ChoiceCriteria,
+    state: State,
+    minConfidence: number,
+  ): Promise<string | null> {
+    const answers = await this.choices(
+      singleQuestion(instructions),
+      criteria,
+      state,
+    );
+    const answer = aboveConfidence(singleAnswer(answers), minConfidence);
+    return answer && answer.choice;
   }
 
-  /** Returns { name: { choice, confidence } } for several questions with the same options. */
-  async choices(questions: Record<string, string>, choices: Choice[],
-    input: string): Promise<Record<string, ChoiceAnswer | null>> {
-    const names = Object.keys(questions);
+  /** Returns { name: answer } for several questions with the same criteria. */
+  async choices(
+    questions: Record<string, Instructions>,
+    criteria: ChoiceCriteria,
+    state: State,
+  ): Promise<Record<string, DecisionsChoiceAnswer | null>> {
     const { answers } = await this.create({
-      input, questions: names.map((name) => (
-        { type: "choice", name, instructions: questions[name], choices }))
+      state,
+      questions: mapValues(questions, (instructions) => ({
+        type: "choice",
+        instructions,
+        criteria,
+      })),
     });
-    return Object.fromEntries(answers.map((a) => (
-      [a.name!, a.type === "choice" ? { choice: String(a.choice), confidence: a.confidence }
-        : null])));
+    return mapValues(answers, (answer) =>
+      answer.type === "choice" ? answer : null,
+    );
   }
 
   /** Returns the raw API response, for any mix of questions. */
-  create(params: Omit<DecisionCreateParams, "model">): Promise<Decision> {
-    return this.client.decisions.create({ model: this.model, ...params });
+  create(request: Omit<DecisionsRequest, "model">): Promise<DecisionsResponse> {
+    return retryTransientFailures(() =>
+      client.alpha.decisions.create({
+        decisionsRequest: { model: this.model, ...request },
+      }),
+    );
   }
+}
+
+function singleQuestion(
+  instructions: Instructions,
+): Record<string, Instructions> {
+  return { answer: instructions };
+}
+
+function singleAnswer<Answer>(answers: Record<string, Answer>): Answer {
+  return Object.values(answers)[0];
+}
+
+function aboveConfidence<Answer extends { confidence?: number }>(
+  answer: Answer | null,
+  minConfidence: number,
+): Answer | null {
+  return answer && (answer.confidence ?? 0) >= minConfidence ? answer : null;
+}
+
+function mapValues<Value, Mapped>(
+  record: Record<string, Value>,
+  mapValue: (value: Value) => Mapped,
+): Record<string, Mapped> {
+  return Object.fromEntries(
+    Object.entries(record).map(([key, value]) => [key, mapValue(value)]),
+  );
 }

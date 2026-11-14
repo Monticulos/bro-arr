@@ -1,14 +1,16 @@
 import type { Event } from "../../../shared/types/Event";
 import type { ApifyEvent } from "./fetchApifyEvents.js";
-import { categorizeEvent } from "../llm/categorizeEvent.js";
+import { categorizeEvent } from "../decisions/categorizeEvent.js";
 
 export async function mapApifyEventToEvent(
   apifyEvent: ApifyEvent,
 ): Promise<Event> {
-  const category = await categorizeEvent(
-    apifyEvent.name,
-    apifyEvent.description,
-  );
+  const location = mapLocation(apifyEvent.location.name);
+  const category = await categorizeEvent({
+    title: apifyEvent.name,
+    description: apifyEvent.description,
+    location,
+  });
 
   return {
     id: apifyEvent.id,
@@ -16,7 +18,7 @@ export async function mapApifyEventToEvent(
     description: apifyEvent.description,
     category,
     startDate: apifyEvent.utcStartDate,
-    location: mapLocation(apifyEvent.location.name),
+    location,
     url: apifyEvent.url,
     collectedAt: new Date().toISOString(),
   };
