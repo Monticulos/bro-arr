@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 import { z } from "zod";
 import type { Event } from "../../../shared/types/Event";
 import type { Source } from "../sources.js";
-import { CATEGORY_SLUGS } from "../../../shared/constants";
+import { categorizeEvent } from "../decisions/categorizeEvent.js";
 import { generateEventId } from "../utils/generateEventId.js";
 import { norwegianTimeToUtc } from "../utils/norwegianTimeToUtc.js";
 import { structuredLlmCall } from "./structuredLlmCall.js";
@@ -30,7 +30,6 @@ const EventSchema = z.object({
     .describe(
       "Description as is from source. If missing, use event title without dates, times, or weekday names",
     ),
-  category: z.enum(CATEGORY_SLUGS),
   startDate: z
     .string()
     .describe(
@@ -65,16 +64,17 @@ export async function formatEvents(
     userMessage,
   );
 
-  return result.events.map((event) => toEvent(event, source.name));
+  return Promise.all(result.events.map((event) => toEvent(event, source.name)));
 }
 
 type LlmEvent = z.infer<typeof EventSchema>;
 
-function toEvent(llmEvent: LlmEvent, sourceName: string): Event {
+async function toEvent(llmEvent: LlmEvent, sourceName: string): Promise<Event> {
   const utcStartDate = norwegianTimeToUtc(llmEvent.startDate);
   return {
     ...llmEvent,
     id: generateEventId(sourceName, utcStartDate),
+    category: await categorizeEvent(llmEvent),
     startDate: utcStartDate,
     collectedAt: new Date().toISOString(),
   };

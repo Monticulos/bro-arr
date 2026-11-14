@@ -8,16 +8,3 @@ Extract structured events from the provided webpage text. Follow these rules str
 4. Dates must be in ISO 8601 local time format (no Z suffix, e.g. 2026-03-07T18:00:00). If only a date is given without time, use T00:00:00.
 5. For Brønnøy bibliotek URLs, stitch the source URL and event URL, like "https://bronnoybibliotek.no/arrangementer#/events/0c7370ef-3e62-4e37-9bdb-895a5706b4f0"
 6. Events at Kred should have the location "Kred", never "Cafe Kred".
-
-Guidelines for deciding category:
-
-- "musikk" — concerts, live music, music festivals, rootsfestivalen, band performances, choir and song events
-- "kino" — cinema screenings, film showings, movie nights
-- "quiz" — pub quizzes, trivia nights, quiz competitions, music bingos
-- "mat-og-drikke" — food festivals, tastings, restaurant events, brewery tours, café events
-- "barn-og-ungdom" — children's events, youth activities, family-friendly activities, school events
-- "næringsliv" — business networking, trade fairs, professional seminars, entrepreneur events, retail sales and store events
-- "kunst-og-kultur" — theatre, exhibitions, art shows, cultural performances, stand-up, dance, opera, literary events
-- "kommunalt" — municipal meetings, town hall meetings, public hearings, local government events
-- "tro-og-livssyn" — church services, religious gatherings, faith community events, spiritual events, philosophy groups
-- "annet" — everything else that doesn't fit the above categories
