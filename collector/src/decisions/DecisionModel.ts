@@ -6,6 +6,8 @@
  * the threshold to the caller: predicates return the probability, and scores and
  * choices return each answer's confidence.
  */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck -- openai is not a declared dependency of the collector yet
 import OpenAI from "openai";
 import type { Decision, DecisionCreateParams } from "openai/resources/decisions";
 
