@@ -2,24 +2,26 @@
 
 One call and a typical result for each method. The outputs are made up to show their shape and what they mean; real values will vary.
 
-The input is the `state`: a string, or an object whose field names give the model context, like `location` below.
-
 ## Setup
 
 ```ts
-import { DecisionModel, type Criteria, type Levels } from "./DecisionModel";
+import {
+  DecisionModel,
+  type ChoiceCriteria,
+  type ScoreCriteria,
+} from "./DecisionModel";
 
 const decisions = new DecisionModel("google/gemini-decision-1");
 
-const URGENCY: Levels = ["can wait", "today", "right now"];
+const URGENCY: ScoreCriteria = ["can wait", "today", "right now"];
 
-const TEAMS: Criteria = {
+const TEAMS: ChoiceCriteria = {
   billing: "Payments, invoices and refunds",
   technical: "Bugs and broken features",
   sales: "Questions about buying",
 };
 
-const FEELINGS: Criteria = {
+const FEELINGS: ChoiceCriteria = {
   positive: "The reviewer is happy with it",
   negative: "The reviewer is unhappy with it",
   mixed: "The reviewer is both happy and unhappy with it",
@@ -27,24 +29,24 @@ const FEELINGS: Criteria = {
 };
 ```
 
-## `predicate`
+## `noul`
 
 One probability.
 
 ```ts
-await decisions.predicate(
+await decisions.noul(
   "Is this message spam?",
   "Congratulations! You've won a free iPhone. Click here to claim it.",
 );
 // 0.97
 ```
 
-## `predicates`
+## `nouls`
 
 One probability per name. Here, the ticket is missing what the customer expected.
 
 ```ts
-await decisions.predicates(
+await decisions.nouls(
   {
     order_number: "Does the message include an order number?",
     problem: "Does the message describe what went wrong?",
@@ -57,7 +59,7 @@ await decisions.predicates(
 
 ## `score`
 
-A level index. With can wait / today / right now, 1.9 means almost "right now".
+A score between 0 and the last criterion. With can wait / today / right now, 1.9 means almost "right now".
 
 ```ts
 await decisions.score(
@@ -71,28 +73,28 @@ await decisions.score(
 
 ## `scores`
 
-One level index per name, with its confidence, on a low / medium / high scale. You pick the threshold for each.
+The whole answer per name, on a low / medium / high scale. You pick the threshold for each.
 
 ```ts
 await decisions.scores(
   {
     formality: "How formal is this text?",
-    friendliness: "How friendly does this text sound?",
     clarity: "How clear is the main point?",
   },
   ["low", "medium", "high"],
   "hey, can u send the report asap? thx",
 );
 // {
-//   formality: { score: 0.2, confidence: 0.9 },
-//   friendliness: { score: 1.3, confidence: 0.55 },
-//   clarity: { score: 1.8, confidence: 0.85 },
+//   formality: { type: "score", score: 0.2, confidence: 0.9, probabilities: { ... },
+//                legend: { "0": "low", "1": "medium", "2": "high" } },
+//   clarity: { type: "score", score: 1.8, confidence: 0.85, probabilities: { ... },
+//              legend: { "0": "low", "1": "medium", "2": "high" } },
 // }
 ```
 
 ## `choice`
 
-One option name, or `null` when the model is torn.
+The name of one criterion, or `null` when the model is torn.
 
 ```ts
 await decisions.choice(
@@ -114,41 +116,48 @@ await decisions.choice(
 
 ## `choices`
 
-One option name per name, with its confidence, all from the same options. You pick the threshold for each.
+The whole answer per name, all from the same criteria. You pick the threshold for each.
 
 ```ts
 await decisions.choices(
   {
     price: "How does the reviewer feel about the price?",
-    design: "How does the reviewer feel about the design?",
     speed: "How does the reviewer feel about the app's speed?",
   },
   FEELINGS,
   "Love the new look, but it's slow and way too expensive.",
 );
 // {
-//   price: { choice: "negative", confidence: 0.95 },
-//   design: { choice: "positive", confidence: 0.9 },
-//   speed: { choice: "negative", confidence: 0.8 },
+//   price: { type: "choice", choice: "negative", confidence: 0.95,
+//            probabilities: { negative: 0.95, mixed: 0.03, ... } },
+//   speed: { type: "choice", choice: "negative", confidence: 0.8,
+//            probabilities: { negative: 0.8, mixed: 0.15, ... } },
 // }
 ```
 
 ## `create`
 
-The raw API response, for any mix of questions. OpenRouter calls a yes/no question a `noul`.
+The raw API response, for any mix of questions. The API has a fourth question type, `box`, which draws one bounding box around a target in an image. Nothing here needs it, so it has no method of its own — ask it through `create`, with `typesafe/jev-1.14`, which is the only model that answers it.
 
 ```ts
 await decisions.create({
   state: { title: "Humorquiz med Jompa", location: "Cash bar" },
   questions: {
-    is_recurring: { type: "noul", instructions: "Does this event repeat weekly?" },
-    category: { type: "choice", instructions: "Which category fits?", criteria: TEAMS },
+    is_recurring: {
+      type: "noul",
+      instructions: "Does this event repeat weekly?",
+    },
+    team: {
+      type: "choice",
+      instructions: "Which team should handle this?",
+      criteria: TEAMS,
+    },
   },
 });
 // {
 //   answers: {
 //     is_recurring: { type: "noul", noul: 0.88 },
-//     category: { type: "choice", choice: "sales", confidence: 0.41, probabilities: { ... } },
+//     team: { type: "choice", choice: "sales", confidence: 0.41, probabilities: { ... } },
 //   },
 //   model: "google/gemini-decision-1",
 //   usage: { inputTokens: 212, outputTokens: 0, cost: 0.0000212 },

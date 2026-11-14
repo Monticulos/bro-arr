@@ -1,6 +1,13 @@
 import { describe, it, expect, vi } from "vitest";
-import type { OpenRouter } from "@openrouter/sdk";
-import { DecisionModel, type Answer } from "./DecisionModel.js";
+import { DecisionModel, type Answers } from "./DecisionModel.js";
+
+const { create } = vi.hoisted(() => ({ create: vi.fn() }));
+
+vi.mock("@openrouter/sdk", () => ({
+  OpenRouter: class {
+    alpha = { decisions: { create } };
+  },
+}));
 
 const MODEL = "test/decision-1";
 const STATE = { ticket: "The checkout page is blank." };
@@ -10,25 +17,25 @@ const TEAMS = {
 };
 const URGENCY = ["Can wait", "Today", "Right now"];
 
-function createDecisionModel(answers: Record<string, Answer>) {
-  const create = vi.fn().mockResolvedValue({
+function createDecisionModel(answers: Answers) {
+  create.mockReset();
+  create.mockResolvedValue({
     answers,
     model: MODEL,
     usage: { inputTokens: 10, outputTokens: 0 },
   });
-  const client = { alpha: { decisions: { create } } } as unknown as OpenRouter;
 
-  return { decisions: new DecisionModel(MODEL, client), create };
+  return { decisions: new DecisionModel(MODEL), create };
 }
 
 describe("DecisionModel", () => {
-  describe("predicate", () => {
-    it("returns the probability that the condition is true", async () => {
+  describe("noul", () => {
+    it("returns the probability that the statement is true", async () => {
       const { decisions, create } = createDecisionModel({
         answer: { type: "noul", noul: 0.97 },
       });
 
-      const probability = await decisions.predicate("Is this spam?", STATE);
+      const probability = await decisions.noul("Is this spam?", STATE);
 
       expect(probability).toBe(0.97);
       expect(create).toHaveBeenCalledWith({
@@ -43,20 +50,22 @@ describe("DecisionModel", () => {
     });
 
     it("returns null when the model refuses to answer", async () => {
-      const { decisions } = createDecisionModel({ answer: { type: "refusal" } });
+      const { decisions } = createDecisionModel({
+        answer: { type: "refusal" },
+      });
 
-      expect(await decisions.predicate("Is this spam?", STATE)).toBeNull();
+      expect(await decisions.noul("Is this spam?", STATE)).toBeNull();
     });
   });
 
-  describe("predicates", () => {
+  describe("nouls", () => {
     it("returns one probability per question", async () => {
       const { decisions, create } = createDecisionModel({
         hasOrderNumber: { type: "noul", noul: 0.99 },
         hasExpectation: { type: "noul", noul: 0.12 },
       });
 
-      const probabilities = await decisions.predicates(
+      const probabilities = await decisions.nouls(
         {
           hasOrderNumber: "Does the message include an order number?",
           hasExpectation: "Does the message say what the customer expected?",
@@ -88,7 +97,7 @@ describe("DecisionModel", () => {
   });
 
   describe("score", () => {
-    it("returns the level index when the model is confident enough", async () => {
+    it("returns the score when the model is confident enough", async () => {
       const { decisions, create } = createDecisionModel({
         answer: { type: "score", score: 1.9, confidence: 0.8 },
       });
@@ -131,7 +140,22 @@ describe("DecisionModel", () => {
       expect(score).toBeNull();
     });
 
-    it("returns the lowest level instead of null", async () => {
+    it("returns null when the answer has no confidence", async () => {
+      const { decisions } = createDecisionModel({
+        answer: { type: "score", score: 1.9 },
+      });
+
+      const score = await decisions.score(
+        "How urgent is this?",
+        URGENCY,
+        STATE,
+        0.6,
+      );
+
+      expect(score).toBeNull();
+    });
+
+    it("returns the lowest score instead of null", async () => {
       const { decisions } = createDecisionModel({
         answer: { type: "score", score: 0, confidence: 0.9 },
       });
@@ -148,10 +172,15 @@ describe("DecisionModel", () => {
   });
 
   describe("scores", () => {
-    it("returns the score and confidence per question", async () => {
+    it("returns the answer per question", async () => {
       const { decisions } = createDecisionModel({
         formality: { type: "score", score: 0.2, confidence: 0.9 },
-        clarity: { type: "score", score: 1.8, confidence: 0.85 },
+        clarity: {
+          type: "score",
+          score: 1.8,
+          confidence: 0.85,
+          legend: { "0": "low", "1": "medium", "2": "high" },
+        },
       });
 
       const scores = await decisions.scores(
@@ -161,28 +190,19 @@ describe("DecisionModel", () => {
       );
 
       expect(scores).toEqual({
-        formality: { score: 0.2, confidence: 0.9 },
-        clarity: { score: 1.8, confidence: 0.85 },
+        formality: { type: "score", score: 0.2, confidence: 0.9 },
+        clarity: {
+          type: "score",
+          score: 1.8,
+          confidence: 0.85,
+          legend: { "0": "low", "1": "medium", "2": "high" },
+        },
       });
-    });
-
-    it("treats a missing confidence as no confidence", async () => {
-      const { decisions } = createDecisionModel({
-        formality: { type: "score", score: 0.2 },
-      });
-
-      const scores = await decisions.scores(
-        { formality: "How formal is this?" },
-        URGENCY,
-        STATE,
-      );
-
-      expect(scores.formality).toEqual({ score: 0.2, confidence: 0 });
     });
   });
 
   describe("choice", () => {
-    it("returns the chosen option when the model is confident enough", async () => {
+    it("returns the chosen criterion when the model is confident enough", async () => {
       const { decisions, create } = createDecisionModel({
         answer: { type: "choice", choice: "technical", confidence: 0.84 },
       });
@@ -205,7 +225,7 @@ describe("DecisionModel", () => {
       });
     });
 
-    it("returns null when the model is torn between options", async () => {
+    it("returns null when the model is torn between criteria", async () => {
       const { decisions } = createDecisionModel({
         answer: { type: "choice", choice: "technical", confidence: 0.42 },
       });
@@ -216,7 +236,9 @@ describe("DecisionModel", () => {
     });
 
     it("returns null when the model refuses to answer", async () => {
-      const { decisions } = createDecisionModel({ answer: { type: "refusal" } });
+      const { decisions } = createDecisionModel({
+        answer: { type: "refusal" },
+      });
 
       expect(
         await decisions.choice("Which team?", TEAMS, STATE, 0.8),
@@ -225,9 +247,14 @@ describe("DecisionModel", () => {
   });
 
   describe("choices", () => {
-    it("returns the choice and confidence per question", async () => {
+    it("returns the answer per question", async () => {
       const { decisions } = createDecisionModel({
-        pricing: { type: "choice", choice: "billing", confidence: 0.95 },
+        pricing: {
+          type: "choice",
+          choice: "billing",
+          confidence: 0.95,
+          probabilities: { billing: 0.95, technical: 0.05 },
+        },
         crash: { type: "choice", choice: "technical", confidence: 0.8 },
       });
 
@@ -238,8 +265,13 @@ describe("DecisionModel", () => {
       );
 
       expect(choices).toEqual({
-        pricing: { choice: "billing", confidence: 0.95 },
-        crash: { choice: "technical", confidence: 0.8 },
+        pricing: {
+          type: "choice",
+          choice: "billing",
+          confidence: 0.95,
+          probabilities: { billing: 0.95, technical: 0.05 },
+        },
+        crash: { type: "choice", choice: "technical", confidence: 0.8 },
       });
     });
 
@@ -256,8 +288,36 @@ describe("DecisionModel", () => {
       );
 
       expect(choices).toEqual({
-        pricing: { choice: "billing", confidence: 0.95 },
+        pricing: { type: "choice", choice: "billing", confidence: 0.95 },
         crash: null,
+      });
+    });
+  });
+
+  describe("create", () => {
+    it("passes through question types without a wrapper method", async () => {
+      const { decisions, create } = createDecisionModel({
+        logo: {
+          type: "box",
+          box: { top: 0.1, bottom: 0.2, left: 0.3, right: 0.4 },
+        },
+      });
+
+      const response = await decisions.create({
+        state: STATE,
+        questions: { logo: { type: "box", instructions: "the logo" } },
+      });
+
+      expect(response.answers.logo).toEqual({
+        type: "box",
+        box: { top: 0.1, bottom: 0.2, left: 0.3, right: 0.4 },
+      });
+      expect(create).toHaveBeenCalledWith({
+        decisionsRequest: {
+          model: MODEL,
+          state: STATE,
+          questions: { logo: { type: "box", instructions: "the logo" } },
+        },
       });
     });
   });
