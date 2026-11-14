@@ -1,10 +1,6 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
 import { mapApifyEventToEvent, LOCATION_MAP } from "./mapApifyEventToEvent.js";
 import { createApifyEvent } from "../test/createApifyEvent.js";
-
-vi.mock("../decisions/categorizeEvent.js", () => ({
-  categorizeEvent: vi.fn().mockResolvedValue("musikk"),
-}));
 
 describe("mapApifyEventToEvent", () => {
   beforeEach(() => {
@@ -16,7 +12,7 @@ describe("mapApifyEventToEvent", () => {
     vi.useRealTimers();
   });
 
-  it("maps Apify event fields to Event", async () => {
+  it("maps Apify event fields to an uncategorized event", () => {
     const apifyEvent = createApifyEvent({
       id: "abc123",
       name: "Rockekonsert",
@@ -26,13 +22,12 @@ describe("mapApifyEventToEvent", () => {
       location: { id: "loc1", name: "Kred", latitude: 0, longitude: 0 },
     });
 
-    const result = await mapApifyEventToEvent(apifyEvent);
+    const result = mapApifyEventToEvent(apifyEvent);
 
     expect(result).toEqual({
       id: "abc123",
       title: "Rockekonsert",
       description: "En fin konsert",
-      category: "musikk",
       startDate: "2026-03-15T19:00:00Z",
       location: "Kred",
       url: "https://example.com/event",
@@ -40,49 +35,32 @@ describe("mapApifyEventToEvent", () => {
     });
   });
 
-  it("uses categorizeEvent with the event name, description and mapped location", async () => {
-    const { categorizeEvent } = await import("../decisions/categorizeEvent.js");
-    const apifyEvent = createApifyEvent({
-      name: "Stand-up show",
-      description: "Morsomt!",
-      location: { id: "loc1", name: "Storgata 61", latitude: 0, longitude: 0 },
-    });
-
-    await mapApifyEventToEvent(apifyEvent);
-
-    expect(categorizeEvent).toHaveBeenCalledWith({
-      title: "Stand-up show",
-      description: "Morsomt!",
-      location: "Kred",
-    });
-  });
-
   describe("mapLocation", () => {
     it.each(Object.entries(LOCATION_MAP))(
       "maps address '%s' to venue '%s'",
-      async (address, expectedVenue) => {
+      (address, expectedVenue) => {
         const apifyEvent = createApifyEvent({ location: { id: "loc1", name: address, latitude: 0, longitude: 0 } });
 
-        const result = await mapApifyEventToEvent(apifyEvent);
+        const result = mapApifyEventToEvent(apifyEvent);
 
         expect(result.location).toBe(expectedVenue);
       }
     );
 
-    it("maps address embedded in a longer string", async () => {
+    it("maps address embedded in a longer string", () => {
       const apifyEvent = createApifyEvent({
         location: { id: "loc1", name: "Storgata 70, 8900 Brønnøysund", latitude: 0, longitude: 0 },
       });
 
-      const result = await mapApifyEventToEvent(apifyEvent);
+      const result = mapApifyEventToEvent(apifyEvent);
 
       expect(result.location).toBe(LOCATION_MAP["Storgata 70"]);
     });
 
-    it("returns the location unchanged when no address matches", async () => {
+    it("returns the location unchanged when no address matches", () => {
       const apifyEvent = createApifyEvent({ location: { id: "loc1", name: "Ukjent sted", latitude: 0, longitude: 0 } });
 
-      const result = await mapApifyEventToEvent(apifyEvent);
+      const result = mapApifyEventToEvent(apifyEvent);
 
       expect(result.location).toBe("Ukjent sted");
     });

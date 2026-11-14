@@ -2,9 +2,8 @@ import { readFileSync } from "fs";
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 import { z } from "zod";
-import type { Event } from "../../../shared/types/Event";
+import type { UncategorizedEvent } from "../../../shared/types/Event";
 import type { Source } from "../sources.js";
-import { categorizeEvent } from "../decisions/categorizeEvent.js";
 import { generateEventId } from "../utils/generateEventId.js";
 import {
   norwegianDateToday,
@@ -57,7 +56,7 @@ const EventsResponseSchema = z.object({
 export async function formatEvents(
   source: Source,
   rawText: string,
-): Promise<Event[]> {
+): Promise<UncategorizedEvent[]> {
   if (!rawText) return [];
 
   const userMessage = `Today's date: ${norwegianDateToday()}\nSource: ${source.name}\nSource URL: ${source.url}\n\n${rawText}`;
@@ -67,17 +66,16 @@ export async function formatEvents(
     userMessage,
   );
 
-  return Promise.all(result.events.map((event) => toEvent(event, source.name)));
+  return result.events.map((event) => toEvent(event, source.name));
 }
 
 type LlmEvent = z.infer<typeof EventSchema>;
 
-async function toEvent(llmEvent: LlmEvent, sourceName: string): Promise<Event> {
+function toEvent(llmEvent: LlmEvent, sourceName: string): UncategorizedEvent {
   const utcStartDate = norwegianTimeToUtc(llmEvent.startDate);
   return {
     ...llmEvent,
     id: generateEventId(sourceName, utcStartDate),
-    category: await categorizeEvent(llmEvent),
     startDate: utcStartDate,
     collectedAt: new Date().toISOString(),
   };

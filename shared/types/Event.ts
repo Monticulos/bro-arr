@@ -16,3 +16,5 @@ export interface Event {
   url?: string;
   collectedAt: string; // ISO 8601
 }
+
+export type UncategorizedEvent = Omit<Event, "category">;

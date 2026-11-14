@@ -1,24 +1,15 @@
-import type { Event } from "../../../shared/types/Event";
+import type { UncategorizedEvent } from "../../../shared/types/Event";
 import type { ApifyEvent } from "./fetchApifyEvents.js";
-import { categorizeEvent } from "../decisions/categorizeEvent.js";
 
-export async function mapApifyEventToEvent(
+export function mapApifyEventToEvent(
   apifyEvent: ApifyEvent,
-): Promise<Event> {
-  const location = mapLocation(apifyEvent.location.name);
-  const category = await categorizeEvent({
-    title: apifyEvent.name,
-    description: apifyEvent.description,
-    location,
-  });
-
+): UncategorizedEvent {
   return {
     id: apifyEvent.id,
     title: apifyEvent.name,
     description: apifyEvent.description,
-    category,
     startDate: apifyEvent.utcStartDate,
-    location,
+    location: mapLocation(apifyEvent.location.name),
     url: apifyEvent.url,
     collectedAt: new Date().toISOString(),
   };

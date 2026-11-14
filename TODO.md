@@ -1,13 +1,9 @@
 # High priority
 - Download calendar event (ICS or similar)
 
-# Medium priority
-- Add a calendar function on a separate page
-
 # Low priority
 - Review `!important` overrides in `web/src/pages/CalendarPage/CalendarPage.module.css` — needed to override FullCalendar's inline styles, but may be reducible
 - Evals for prompts/llm models
-- Categorize all events at the end, to reduce number of LLM calls
 - Favorite button tooltip and other a11y improvements
 
 # Not planned

@@ -1,8 +1,9 @@
 import "dotenv/config";
-import type { Event } from "../../shared/types/Event.js";
+import type { UncategorizedEvent } from "../../shared/types/Event.js";
 import { TARGET_SOURCES } from "./sources.js";
 import { extractEvents } from "./puppeteer/extractEvents.js";
 import { formatEvents } from "./llm/formatEvents.js";
+import { categorizeEvents } from "./decisions/categorizeEvents.js";
 import { upsertEvents } from "./io/upsertEvents.js";
 import { sortEvents } from "./utils/sortEvents.js";
 import { deleteExpiredEvents } from "./utils/deleteExpiredEvents.js";
@@ -23,9 +24,9 @@ import {
   warnDetail,
 } from "./utils/logger.js";
 
-async function collectPuppeteerEvents(): Promise<number> {
+async function collectPuppeteerEvents(): Promise<UncategorizedEvent[]> {
   logPhase("Starting Puppeteer event collection.");
-  const collectedEvents: Event[] = [];
+  const collectedEvents: UncategorizedEvent[] = [];
 
   for (const source of TARGET_SOURCES) {
     logPhase(`Processing ${source.name}...`);
@@ -47,27 +48,26 @@ async function collectPuppeteerEvents(): Promise<number> {
     }
   }
 
-  await upsertEvents(collectedEvents);
-  return collectedEvents.length;
+  return collectedEvents;
 }
 
-async function collectApifyEvents(datasetId: string): Promise<number> {
+async function collectApifyEvents(
+  datasetId: string,
+): Promise<UncategorizedEvent[]> {
   logPhase("Fetching Apify events...");
-  const collectedEvents: Event[] = [];
+  const collectedEvents: UncategorizedEvent[] = [];
 
   const apifyEvents = await getValidApifyEvents(datasetId);
   for (const apifyEvent of apifyEvents) {
     logDetail(`Fetched Apify event ${apifyEvent.name}.`);
     try {
-      const event = await mapApifyEventToEvent(apifyEvent);
-      collectedEvents.push(event);
+      collectedEvents.push(mapApifyEventToEvent(apifyEvent));
     } catch (error) {
       warnDetail(`Failed to map Apify event "${apifyEvent.name}":`, error);
     }
   }
 
-  await upsertEvents(collectedEvents);
-  return collectedEvents.length;
+  return collectedEvents;
 }
 
 function cleanEventsFile() {
@@ -80,7 +80,7 @@ function cleanEventsFile() {
 
 async function main() {
   const runApify = shouldRunApify();
-  let apifyEventCount = 0;
+  let apifyEvents: UncategorizedEvent[] = [];
   let runId: string | undefined;
 
   if (runApify) {
@@ -90,22 +90,28 @@ async function main() {
     logPhase("Skipping Apify today - rest day.");
   }
 
-  const puppeteerEventCount = await collectPuppeteerEvents();
-  logPhase(`Added ${puppeteerEventCount} Puppeteer events.`);
+  const puppeteerEvents = await collectPuppeteerEvents();
+  logPhase(`Collected ${puppeteerEvents.length} Puppeteer events.`);
 
   if (runApify && runId) {
     const datasetId = await waitForActorRun(runId);
-    apifyEventCount = await collectApifyEvents(datasetId);
-    logPhase(`Added ${apifyEventCount} Apify event.`);
+    apifyEvents = await collectApifyEvents(datasetId);
+    logPhase(`Collected ${apifyEvents.length} Apify events.`);
   }
+
+  const collectedEvents = [...puppeteerEvents, ...apifyEvents];
+  logPhase(`Categorizing ${collectedEvents.length} collected events...`);
+  await upsertEvents(
+    await categorizeEvents(collectedEvents, readEventsFile().events),
+  );
 
   cleanEventsFile();
 
-  if (runApify && apifyEventCount === 0) {
+  if (runApify && apifyEvents.length === 0) {
     warnPhase("Apify returned no events. Keeping events from the previous run.");
   }
 
-  if (puppeteerEventCount === 0) {
+  if (puppeteerEvents.length === 0) {
     throw new Error(
       `No events collected from any of the ${TARGET_SOURCES.length} Puppeteer sources.`,
     );

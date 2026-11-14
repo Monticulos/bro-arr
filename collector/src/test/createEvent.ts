@@ -1,14 +1,19 @@
-import type { Event } from "../../../shared/types/Event";
+import type { Event, UncategorizedEvent } from "../../../shared/types/Event";
 
-const DEFAULT_EVENT: Event = {
+const DEFAULT_EVENT: UncategorizedEvent = {
   id: "example-com-test-event-2026-03-15",
   title: "Test Event",
   description: "A test event description",
-  category: "annet",
   startDate: "2026-03-15T19:00:00",
   collectedAt: "2026-02-28T12:00:00",
 };
 
-export function createEvent(overrides: Partial<Event> = {}): Event {
+export function createUncategorizedEvent(
+  overrides: Partial<UncategorizedEvent> = {},
+): UncategorizedEvent {
   return { ...DEFAULT_EVENT, ...overrides };
+}
+
+export function createEvent(overrides: Partial<Event> = {}): Event {
+  return { category: "annet", ...DEFAULT_EVENT, ...overrides };
 }
