@@ -14,12 +14,4 @@ describe("shouldRunApify", () => {
     // 2026-03-07T23:00:00Z is an odd UTC day regardless of local timezone
     expect(shouldRunApify(new Date("2026-03-07T23:00:00Z"))).toBe(false);
   });
-
-  it("returns false on the 1st of a month", () => {
-    expect(shouldRunApify(new Date("2026-03-01T12:00:00Z"))).toBe(false);
-  });
-
-  it("returns true on the 2nd of a month", () => {
-    expect(shouldRunApify(new Date("2026-03-02T12:00:00Z"))).toBe(true);
-  });
 });

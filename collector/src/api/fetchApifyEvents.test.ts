@@ -38,6 +38,17 @@ describe("getValidApifyEvents", () => {
     expect(result[0].id).toBe("upcoming");
   });
 
+  it("filters out canceled events", async () => {
+    const canceledEvent = createApifyEvent({ id: "canceled", isCanceled: true });
+    const upcomingEvent = createApifyEvent({ id: "upcoming" });
+    mockFetchResponse([canceledEvent, upcomingEvent]);
+
+    const result = await getValidApifyEvents(TEST_DATASET_ID);
+
+    expect(result).toHaveLength(1);
+    expect(result[0].id).toBe("upcoming");
+  });
+
   it("returns empty array when all events are past", async () => {
     mockFetchResponse([createApifyEvent({ isPast: true })]);
 
