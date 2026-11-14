@@ -16,6 +16,7 @@ import type {
   DecisionsScoreAnswer,
   DecisionsScoreQuestion,
 } from "@openrouter/sdk/models";
+import { retryTransientFailures } from "./retryTransientFailures.js";
 
 export type State = DecisionsRequest["state"];
 export type Answers = DecisionsResponse["answers"];
@@ -23,11 +24,10 @@ export type Instructions = DecisionsChoiceQuestionInstructions;
 export type ChoiceCriteria = DecisionsChoiceQuestion["criteria"];
 export type ScoreCriteria = DecisionsScoreQuestion["criteria"];
 
-export class DecisionModel {
-  private readonly client = new OpenRouter({
-    serverURL: "https://openrouter.ai",
-  });
+/** The SDK's own retry runs for up to an hour */
+const client = new OpenRouter({ retryConfig: { strategy: "none" } });
 
+export class DecisionModel {
   constructor(readonly model: string) {}
 
   /** Returns the probability (0 to 1) that the statement is true, or null. */
@@ -124,9 +124,11 @@ export class DecisionModel {
 
   /** Returns the raw API response, for any mix of questions. */
   create(request: Omit<DecisionsRequest, "model">): Promise<DecisionsResponse> {
-    return this.client.alpha.decisions.create({
-      decisionsRequest: { model: this.model, ...request },
-    });
+    return retryTransientFailures(() =>
+      client.alpha.decisions.create({
+        decisionsRequest: { model: this.model, ...request },
+      }),
+    );
   }
 }
 

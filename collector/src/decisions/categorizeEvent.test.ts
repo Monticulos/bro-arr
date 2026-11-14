@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { categorizeEvent } from "./categorizeEvent.js";
 import { CATEGORY_CRITERIA } from "./categoryCriteria.js";
 
@@ -19,6 +19,10 @@ const CONCERT = {
 describe("categorizeEvent", () => {
   beforeEach(() => {
     choice.mockReset();
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
   });
 
   it("returns the category the decision model chose", async () => {
@@ -42,8 +46,17 @@ describe("categorizeEvent", () => {
     );
   });
 
-  it("falls back to annet when the model is not confident enough", async () => {
+  it("falls back to annet when the model returns no category", async () => {
     choice.mockResolvedValue(null);
+
+    const category = await categorizeEvent(CONCERT);
+
+    expect(category).toBe("annet");
+  });
+
+  it("falls back to annet when the decisions api fails", async () => {
+    vi.spyOn(console, "warn").mockImplementation(() => {});
+    choice.mockRejectedValue(new Error("Service unavailable"));
 
     const category = await categorizeEvent(CONCERT);
 

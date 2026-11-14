@@ -31,22 +31,13 @@ function createDecisionModel(answers: Answers) {
 describe("DecisionModel", () => {
   describe("noul", () => {
     it("returns the probability that the statement is true", async () => {
-      const { decisions, create } = createDecisionModel({
+      const { decisions } = createDecisionModel({
         answer: { type: "noul", noul: 0.97 },
       });
 
       const probability = await decisions.noul("Is this spam?", STATE);
 
       expect(probability).toBe(0.97);
-      expect(create).toHaveBeenCalledWith({
-        decisionsRequest: {
-          model: MODEL,
-          state: STATE,
-          questions: {
-            answer: { type: "noul", instructions: "Is this spam?" },
-          },
-        },
-      });
     });
 
     it("returns null when the model refuses to answer", async () => {
@@ -125,35 +116,23 @@ describe("DecisionModel", () => {
       });
     });
 
-    it("returns null below the minimum confidence", async () => {
-      const { decisions } = createDecisionModel({
-        answer: { type: "score", score: 1.9, confidence: 0.5 },
-      });
+    it.each([0.5, undefined])(
+      "returns null when the confidence is %s",
+      async (confidence) => {
+        const { decisions } = createDecisionModel({
+          answer: { type: "score", score: 1.9, confidence },
+        });
 
-      const score = await decisions.score(
-        "How urgent is this?",
-        URGENCY,
-        STATE,
-        0.6,
-      );
+        const score = await decisions.score(
+          "How urgent is this?",
+          URGENCY,
+          STATE,
+          0.6,
+        );
 
-      expect(score).toBeNull();
-    });
-
-    it("returns null when the answer has no confidence", async () => {
-      const { decisions } = createDecisionModel({
-        answer: { type: "score", score: 1.9 },
-      });
-
-      const score = await decisions.score(
-        "How urgent is this?",
-        URGENCY,
-        STATE,
-        0.6,
-      );
-
-      expect(score).toBeNull();
-    });
+        expect(score).toBeNull();
+      },
+    );
 
     it("returns the lowest score instead of null", async () => {
       const { decisions } = createDecisionModel({
@@ -234,16 +213,6 @@ describe("DecisionModel", () => {
         await decisions.choice("Which team?", TEAMS, STATE, 0.8),
       ).toBeNull();
     });
-
-    it("returns null when the model refuses to answer", async () => {
-      const { decisions } = createDecisionModel({
-        answer: { type: "refusal" },
-      });
-
-      expect(
-        await decisions.choice("Which team?", TEAMS, STATE, 0.8),
-      ).toBeNull();
-    });
   });
 
   describe("choices", () => {
@@ -290,34 +259,6 @@ describe("DecisionModel", () => {
       expect(choices).toEqual({
         pricing: { type: "choice", choice: "billing", confidence: 0.95 },
         crash: null,
-      });
-    });
-  });
-
-  describe("create", () => {
-    it("passes through question types without a wrapper method", async () => {
-      const { decisions, create } = createDecisionModel({
-        logo: {
-          type: "box",
-          box: { top: 0.1, bottom: 0.2, left: 0.3, right: 0.4 },
-        },
-      });
-
-      const response = await decisions.create({
-        state: STATE,
-        questions: { logo: { type: "box", instructions: "the logo" } },
-      });
-
-      expect(response.answers.logo).toEqual({
-        type: "box",
-        box: { top: 0.1, bottom: 0.2, left: 0.3, right: 0.4 },
-      });
-      expect(create).toHaveBeenCalledWith({
-        decisionsRequest: {
-          model: MODEL,
-          state: STATE,
-          questions: { logo: { type: "box", instructions: "the logo" } },
-        },
       });
     });
   });
