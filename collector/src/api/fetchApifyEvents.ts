@@ -1,4 +1,5 @@
 import { APIFY_BASE_URL, getApifyApiKey } from "./apifyConfig.js";
+import { warnDetail } from "../utils/logger.js";
 
 export interface ApifyEvent {
   id: string;
@@ -25,6 +26,11 @@ export interface ApifyEvent {
   usersInterested: number;
 }
 
+interface ApifyDatasetError {
+  error: string;
+  errorDescription: string;
+}
+
 export async function getValidApifyEvents(
   datasetId: string
 ): Promise<ApifyEvent[]> {
@@ -46,5 +52,15 @@ export async function fetchApifyEvents(
     );
   }
 
-  return response.json() as Promise<ApifyEvent[]>;
+  const items = (await response.json()) as (ApifyEvent | ApifyDatasetError)[];
+  const datasetError = items.find((item) => "error" in item);
+
+  if (datasetError) {
+    warnDetail(
+      `Apify returned no events (${datasetError.error}): ${datasetError.errorDescription}`
+    );
+    return [];
+  }
+
+  return items as ApifyEvent[];
 }
