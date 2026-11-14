@@ -35,7 +35,7 @@ export async function getValidApifyEvents(
   datasetId: string
 ): Promise<ApifyEvent[]> {
   const events = await fetchApifyEvents(datasetId);
-  return events.filter((e) => !e.isPast);
+  return events.filter((event) => !event.isPast && !event.isCanceled);
 }
 
 export async function fetchApifyEvents(

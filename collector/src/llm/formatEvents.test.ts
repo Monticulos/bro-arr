@@ -61,6 +61,16 @@ describe("formatEvents", () => {
     expect(categorizeEvent).toHaveBeenCalledWith(EXTRACTED_EVENT);
   });
 
+  it("tells the model today's date, so dates without a year are not guessed", async () => {
+    await formatEvents(SOURCE, "Noe tekst");
+
+    expect(structuredLlmCall).toHaveBeenCalledWith(
+      expect.anything(),
+      expect.anything(),
+      expect.stringContaining("Today's date: 1. mars 2026"),
+    );
+  });
+
   it("returns no events without asking the models when the source has no text", async () => {
     const events = await formatEvents(SOURCE, "");
 

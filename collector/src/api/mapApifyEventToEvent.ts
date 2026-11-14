@@ -33,6 +33,7 @@ export const LOCATION_MAP: Record<string, string> = {
   "Ytre Høgåsvei 37": "Forsamlingslokalet",
   "Gårdsøyveien 5": "Felleskjøpet",
   "Havnegata 16": "Cash bar",
+  "Storgata 58": "Havnesenteret",
 };
 
 function mapLocation(location: string): string {

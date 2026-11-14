@@ -6,7 +6,10 @@ import type { Event } from "../../../shared/types/Event";
 import type { Source } from "../sources.js";
 import { categorizeEvent } from "../decisions/categorizeEvent.js";
 import { generateEventId } from "../utils/generateEventId.js";
-import { norwegianTimeToUtc } from "../utils/norwegianTimeToUtc.js";
+import {
+  norwegianDateToday,
+  norwegianTimeToUtc,
+} from "../utils/norwegianTime.js";
 import { structuredLlmCall } from "./structuredLlmCall.js";
 
 const PROMPTS_DIR = resolve(
@@ -57,7 +60,7 @@ export async function formatEvents(
 ): Promise<Event[]> {
   if (!rawText) return [];
 
-  const userMessage = `Source: ${source.name}\nSource URL: ${source.url}\n\n${rawText}`;
+  const userMessage = `Today's date: ${norwegianDateToday()}\nSource: ${source.name}\nSource URL: ${source.url}\n\n${rawText}`;
   const result = await structuredLlmCall(
     EventsResponseSchema,
     SYSTEM_PROMPT,

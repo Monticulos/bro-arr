@@ -16,19 +16,9 @@ export const TARGET_SOURCES: Source[] = [
     selector: ".InnholdTabell",
   },
   {
-    url: "https://cashbar.no/arrangementer",
-    name: "Cash bar",
-    selector: ".entry-content",
-  },
-  {
     url: "https://bronnoybibliotek.no/arrangementer#/",
     name: "Brønnøy bibliotek",
     selector: ".arena-events-container",
-  },
-  {
-    url: "https://www.havnesenteret.no/dette-skjer",
-    name: "Havnesenteret",
-    selector: "main",
   },
   {
     url: "https://www.bronnoy.kirken.no/Kalender",
