@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-11-14T23:08:17.837Z",
+  "updatedAt": "2026-11-15T09:04:27.711Z",
   "events": [
-    {
-      "id": "945613228307305",
-      "title": "Rune & Tor Even Brennvik",
-      "description": "Rune & Tor-Even Brennvik er tilbake på Kred, to og et halvt år siden siste spillejobb hos oss. \n\nDe to meget unge brødrene Rune og Tor-Even har lang fartstid bak seg i musikkbransjen, og brødrekonseptet begynner nå å bli snart 25 år gammelt.\n\nI alle år har brødrene reist ut på utallige spillejobber og er kjent for å finne på et og annet veldig eller mindre gjennomtenkt stunt. \n\nHumor, glede og spontanitet er stikkord de bruker når de beskrives av publikum, men selv sier de at musikken skal svinge...og at det er det er det som er viktig. Det serveres alt fra Avicii, Britney Spears og Spice Girls til mer Rock'n roll.\n\nBrødrene håper mange glade sjeler finner veien ut på Kred på lørdag, og er klare for det meste.\n\ncc 130,-",
-      "category": "musikk",
-      "startDate": "2026-11-14T21:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/945613228307305/",
-      "collectedAt": "2026-11-10T09:34:37.584Z"
-    },
     {
       "title": "Gudstjeneste med dåp",
       "description": "Gudstjeneste med dåp - Brønnøy kirke",
@@ -18,7 +8,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=89bb9c00-e619-4359-8da7-65ffd1184cc4&OccurenceId=89bb9c00-e619-4359-8da7-65ffd1184cc4",
       "id": "Brønnøy-kirke-2026-11-15T10:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:45.447Z",
+      "collectedAt": "2026-11-15T09:04:27.257Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -28,7 +18,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/35215c08-b8f3-4495-90cb-c3697e651b59",
       "id": "Brønnøy-bibliotek-2026-11-17T10:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:38.302Z",
+      "collectedAt": "2026-11-15T09:04:18.810Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -58,7 +48,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f202fc6a-c287-4819-a298-ec3a75d47967&OccurenceId=f202fc6a-c287-4819-a298-ec3a75d47967",
       "id": "Brønnøy-kirke-2026-11-22T10:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:45.447Z",
+      "collectedAt": "2026-11-15T09:04:27.257Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -78,7 +68,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/e2607289-b695-400e-931a-e4e510d35f93",
       "id": "Brønnøy-bibliotek-2026-11-24T10:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:38.302Z",
+      "collectedAt": "2026-11-15T09:04:18.810Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -88,7 +78,7 @@
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=3fd20971-9f27-4ea8-88e5-9c3e3d5a9c13",
       "id": "Brønnøy-kirke-2026-11-25T10:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:45.447Z",
+      "collectedAt": "2026-11-15T09:04:27.257Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -108,7 +98,7 @@
       "location": "Sykehjemmets kapell",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=b3b6d79d-a06d-4934-8685-15563e0d1e80&OccurenceId=b3b6d79d-a06d-4934-8685-15563e0d1e80",
       "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z",
-      "collectedAt": "2026-11-14T23:07:45.447Z",
+      "collectedAt": "2026-11-15T09:04:27.258Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -138,7 +128,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5&OccurenceId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5",
       "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:45.447Z",
+      "collectedAt": "2026-11-15T09:04:27.258Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -148,7 +138,7 @@
       "location": "Velfjord kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=99633440-8026-4a82-b801-7a613295cbbe&OccurenceId=99633440-8026-4a82-b801-7a613295cbbe",
       "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:45.448Z",
+      "collectedAt": "2026-11-15T09:04:27.258Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -158,7 +148,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/6375e174-16c1-411e-a36c-3ae0087dad49",
       "id": "Brønnøy-bibliotek-2026-12-01T10:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:38.302Z",
+      "collectedAt": "2026-11-15T09:04:18.810Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -168,7 +158,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/8a242be5-9686-4988-bfbd-3469cb565c19",
       "id": "Brønnøy-bibliotek-2026-12-02T18:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:38.302Z",
+      "collectedAt": "2026-11-15T09:04:18.810Z",
       "category": "annet"
     },
     {
@@ -218,7 +208,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/78618b53-0c45-446b-9a7c-8375c3ec541f",
       "id": "Brønnøy-bibliotek-2026-12-08T10:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:38.302Z",
+      "collectedAt": "2026-11-15T09:04:18.810Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -258,7 +248,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/dacfeb49-3581-448f-8ef7-f84e7a3f1d46",
       "id": "Brønnøy-bibliotek-2026-12-15T10:00:00.000Z",
-      "collectedAt": "2026-11-14T23:07:38.302Z",
+      "collectedAt": "2026-11-15T09:04:18.810Z",
       "category": "barn-og-ungdom"
     },
     {
