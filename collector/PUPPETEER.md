@@ -1,87 +1,86 @@
 # Puppeteer Collection
 
-The collector reads events straight off each source's own page. A decision model is asked which
-elements are events and what each piece of text means, but it never writes any text — every title,
+The collector reads events straight off each source's own page. A decision model is asked whether
+the page lists events and what each piece of text means, but it never writes any text — every title,
 date and venue is copied from the markup, so an event can only be mislabelled, never invented.
 
 ## How it works
 
 ```mermaid
 flowchart TD
-    Start([For each source in TARGET_SOURCES]) --> Fetch
+    Read["<b>readEventPieces</b><br/>Puppeteer, Europe/Oslo<br/>visible leaf elements · tag · text · block · href"]
+    Read --> Ask
 
-    Fetch["<b>fetchSourceHtml</b><br/>Puppeteer, Europe/Oslo<br/>source.selector as outerHTML"]
-    Fetch --> Groups
+    Ask{{"<b>One request</b> · every piece shares one state<br/>noul: does the page list events?<br/>choice per piece: what does it say?"}}
+    Ask -->|"below 0.5"| Nothing(["return []"])
+    Ask -->|"0.5 and up"| Split
 
-    Groups["<b>findCandidateGroups</b><br/>repeated sibling elements"]
-    Groups --> Choice
-
-    Choice{{"<b>Call 1 · choice</b><br/>Which element is one event?"}}
-    Choice -->|"group&lt;n&gt;"| Containers["containers = the group's members"]
-    Choice -->|whole| Whole["containers = the whole section"]
-    Choice -->|"none / null"| Nothing(["return []"])
-
-    Containers --> Pieces
-    Whole --> Pieces
-
-    Pieces["<b>readPieces</b><br/>leaf elements: tag, text, href"]
-    Pieces --> Label
-
-    Label{{"<b>Call 2 · choices</b><br/>one question per piece"}}
-    Label --> Fields["title · date · startTime · endTime<br/>location · description · other"]
-    Fields --> Split
-
-    Split["<b>splitAtTitles</b><br/>one event per title"]
+    Split["<b>groupByBlock → splitAtTitles</b><br/>one event per title, never across a block"]
     Split --> Build
 
-    Build["<b>toEvent</b> · our own code<br/>parse date, map venue, resolve url, make id"]
+    Build["<b>toEvent</b> · our own code<br/>parse date, map venue, pick url, make id"]
     Build --> Keep{"title and date?"}
 
     Keep -->|no| Drop(["dropped"])
-    Keep -->|yes| Event(["Event"])
-
-    Event --> Rest["categorize → upsert → expire → dedupe"]
+    Keep -->|yes| Done(["Event → categorize → upsert → expire → dedupe"])
 ```
 
-Two requests per source. The whole page goes out as one `state` object shared by both calls, so the
-second is prompt-cached.
+One request per source, answered in under a second.
 
-## Why the structure decides how many events there are
+## Why the markup decides how many events there are
 
-The model is never asked to count. The number of events is whatever the markup says it is —
-`containers.length` for the chosen group, plus one more for each extra title inside a container.
-A count question was tried and removed: it could only ever estimate a figure the DOM states exactly,
-and the one job it did do, stopping on a page with no events, is already covered by the `none`
-answer in call 1 (Brønnøy kommune's news list is rejected at 0.92 confidence).
+The model is never asked to count. A page states how many events it has by repeating the markup of
+one, so `readEventPieces` gives every piece the **outermost ancestor that stands among look-alike
+siblings** — the card, row or item holding a single event. Pieces of one block never join another,
+and a block holding a whole day is split again at its titles.
+
+Grouping by title alone was tried and failed: when one card carries a piece fewer than its
+neighbour, its closing time sits nearer the next card's title and attaches there.
 
 ## What the model decides, and what it cannot
 
 | | Decided by the model | Decided by our code |
 |---|---|---|
-| Which elements are events | ✅ call 1 | |
-| How many events | | ✅ `containers.length` + titles |
-| What a piece of text means | ✅ call 2 | |
+| Whether the page lists events | ✅ `listsEvents` | |
+| How many events | | ✅ blocks + titles |
+| What a piece of text means | ✅ one choice per piece | |
 | The text of every field | | ✅ copied verbatim |
 | Date and time | | ✅ `parseNorwegianDate` |
 | Venue name | | ✅ `mapLocation` |
-| Event URL | | ✅ first same-host link |
+| Event URL | | ✅ the title's own link |
 
 A piece whose answer is `other`, or that comes back below `MIN_CONFIDENCE` (0.6), is ignored. An
 event with no title or no readable date is dropped — that is what removes the cinema table's
-`Siste dag *` row, which has a date but no film.
+`Siste dag *` row, which has a date but no film. A page scoring below `MIN_EVENT_LIST_PROBABILITY`
+(0.5) yields nothing at all, which is what rejects Brønnøy kommune's news list at 0.07.
+
+Where a page writes a field label beside its value, the label is `other` and the value is the field.
+The model wobbles on this at the margin, so `toEvent` takes the **last** of an event's location
+texts: a page writes "Plassering" before the venue, and the street after the house.
+
+## What the browser does for us
+
+Reading the live DOM rather than its HTML means the browser has already done the work:
+`innerText` collapses whitespace, `checkVisibility` hides what a reader cannot see, and an anchor
+resolves its own `href` and `origin`, so a link that leaves the site is dropped without parsing a
+single URL.
+
+> `toPieces` is stringified and sent to the browser, so nothing inside it may name a function — not
+> even an arrow in a `const`. The build rewrites named functions with a helper the page does not have.
 
 ## Sources and what they look like
 
-| Source | `selector` | Event container | Notes |
+| Source | `selector` | Event block | Notes |
 |---|---|---|---|
-| Brønnøy kino | `.InnholdTabell` | `tr.InnholdTabellTekst` | A table. `outerHTML` matters here: given a bare `<caption><thead><tbody>` fragment, cheerio drops every `<tr>`. |
+| Brønnøy kino | `.InnholdTabell` | `tr.InnholdTabellTekst` | A table. The film's own link leaves for filmweb, so the event keeps the cinema page. |
 | Brønnøy kirke | `.calendar` | `div.calendar-item` | One item can hold a whole day, so `splitAtTitles` separates the services and the second borrows the day's date. The time is written *above* its title. |
-| Brønnøy bibliotek | `.arena-events-container` | `div.col-md-6.col-sm-12` | JavaScript-rendered. Carries a closing time, so these events get an `endDate`. |
-| Brønnøy kommune | `#bottom-boxes` | — | A news list, structurally identical to an event list. Call 1 answers `none`. |
+| Brønnøy bibliotek | `.arena-events-container` | `div.col-md-6.col-sm-12` | JavaScript-rendered, and it renders *after* the network goes quiet — `waitForRenderedLinks` waits for it. Carries a closing time, so these events get an `endDate`. |
+| Brønnøy kommune | `#bottom-boxes` | — | A news list, structurally identical to an event list. `listsEvents` answers 0.07. |
 
 ## Failure handling
 
-Every model call sits inside a `try`/`catch` that warns and returns an empty result, so one source
+The model call sits inside a `try`/`catch` that warns and returns an empty result, so one source
 failing costs that source's events and nothing else. HTTP 429 and 5xx are retried by
-`retryTransientFailures` before that. `script.ts` throws only if *every* Puppeteer source came back
-empty, which keeps a broken run from committing an empty events file.
+`retryTransientFailures` before that. A page that renders nothing is read as it is rather than
+throwing. `script.ts` throws only if *every* Puppeteer source came back empty, which keeps a broken
+run from committing an empty events file.

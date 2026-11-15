@@ -19,6 +19,7 @@ import type {
 import { retryTransientFailures } from "./retryTransientFailures.js";
 
 export type State = DecisionsRequest["state"];
+export type Questions = DecisionsRequest["questions"];
 export type Answers = DecisionsResponse["answers"];
 export type Instructions = DecisionsChoiceQuestionInstructions;
 export type ChoiceCriteria = DecisionsChoiceQuestion["criteria"];

@@ -1,7 +1,7 @@
 import "dotenv/config";
 import type { Event } from "../../shared/src/types/Event.js";
 import { TARGET_SOURCES } from "./sources.js";
-import { fetchSourceHtml } from "./puppeteer/fetchSourceHtml.js";
+import { readEventPieces } from "./puppeteer/readEventPieces.js";
 import { parseEvents } from "./decisions/parseEvents.js";
 import { categorizeEvents } from "./decisions/categorizeEvents.js";
 import { upsertEvents } from "./io/upsertEvents.js";
@@ -31,16 +31,16 @@ async function collectPuppeteerEvents(): Promise<Event[]> {
   for (const source of TARGET_SOURCES) {
     logPhase(`Processing ${source.name}...`);
 
-    const html = await fetchSourceHtml(source);
-    if (!html) {
-      logDetail(`Skipping ${source.name} - no content extracted.`);
+    const pieces = await readEventPieces(source);
+    if (pieces.length === 0) {
+      logDetail(`Skipping ${source.name} - nothing readable on the page.`);
       continue;
     }
 
-    logDetail(`Fetched HTML from ${source.url}.`);
+    logDetail(`Read ${pieces.length} pieces from ${source.url}.`);
 
     try {
-      const events = await parseEvents(source, html);
+      const events = await parseEvents(source, pieces);
       collectedEvents.push(...events);
       logDetail(`Found ${events.length} events.`);
     } catch (error) {

@@ -32,19 +32,16 @@ _Avoid_: database, store, feed
 
 ### Extraction
 
-**Candidate group**:
-Sibling elements on a Source page that share a tag and their classes, so each one is likely to hold
-one event. The Decision model picks which group, if any, is the list of events.
-_Avoid_: cluster, bucket
-
-**Event container**:
-The one element holding everything about a single event and nothing about any other. On a page
-listing a single event it is the whole section.
-_Avoid_: card, item, node
+**Block**:
+The card, row or item on a Source page holding one event, or one day of them. The collector finds
+it as the outermost ancestor of a Piece standing among look-alike siblings, so the page's own
+markup decides where one event ends and the next begins.
+_Avoid_: candidate group, event container, cluster, card, item, node
 
 **Piece**:
-An element inside an Event container that holds text and nothing but text — a title, a date, a
-venue. The Decision model labels each one, and the label decides which field it fills.
+An element on a Source page holding text and nothing but text — a title, a date, a venue. The
+collector reads every visible one straight off the live page, and the Decision model labels each,
+which decides the field it fills.
 _Avoid_: fragment, chunk, token
 
 ### Events

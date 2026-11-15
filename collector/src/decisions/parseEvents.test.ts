@@ -1,16 +1,13 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { parseEvents } from "./parseEvents.js";
+import type { Piece } from "../puppeteer/readEventPieces.js";
 import type { Source } from "../sources.js";
 
-const { choice, choices } = vi.hoisted(() => ({
-  choice: vi.fn(),
-  choices: vi.fn(),
-}));
+const { create } = vi.hoisted(() => ({ create: vi.fn() }));
 
 vi.mock("./DecisionModel.js", () => ({
   DecisionModel: class {
-    choice = choice;
-    choices = choices;
+    create = create;
   },
 }));
 
@@ -28,40 +25,83 @@ const KIRKE: Source = {
   selector: ".calendar",
 };
 
-const KINO_TABLE = `<table class="InnholdTabell"><tbody>
-  <tr class="InnholdTabellTekst"><td><span><a href="https://www.filmweb.no/film/EDI20251675">Ebenezer (Premerie)</a></span></td><td><span>13.11.26 kl. 20:00</span></td></tr>
-  <tr class="InnholdTabellTekst"><td><span></span></td><td><span>Siste dag *</span></td></tr>
-</tbody></table>`;
+const KINO_PIECES: Piece[] = [
+  { tag: "th", text: "Kino", block: 0 },
+  { tag: "th", text: "Dato", block: 1 },
+  { tag: "a", text: "Ebenezer (Premerie)", block: 2 },
+  { tag: "span", text: "13.11.26 kl. 20:00", block: 2 },
+  { tag: "span", text: "Siste dag *", block: 3 },
+];
 
-const KIRKE_ITEM = `<div class="calendar-item">
-  <div class="calendar-date">15.11 </div><div class="event-time">kl.11.00</div>
-  <p class="info-text"><a href="CalendarPage?EventId=89bb">Gudstjeneste med dåp</a></p>
-  <span class="calendar-location">Brønnøy kirke</span>
-</div>`;
+const KINO_FIELDS = ["other", "other", "title", "date", "other"];
 
-const KIRKE_DAY = `<div class="calendar-item">
-  <div class="calendar-date">29.11 </div>
-  <div class="event"><div class="event-time">kl.11.00</div><p><a href="CalendarPage?EventId=aaa">Gudstjeneste</a></p><span class="calendar-location">Brønnøy kirke</span></div>
-  <div class="event"><div class="event-time">kl.15.00</div><p><a href="CalendarPage?EventId=bbb">Gudstjeneste</a></p><span class="calendar-location">Velfjord kirke</span></div>
-</div>`;
+/** One calendar item holding a whole day, the way the church writes two services under one date. */
+const KIRKE_DAY_PIECES: Piece[] = [
+  { tag: "div", text: "29.11", block: 0 },
+  { tag: "div", text: "kl.11.00", block: 0 },
+  { tag: "a", text: "Gudstjeneste", href: `${KIRKE.url}?EventId=aaa`, block: 0 },
+  { tag: "span", text: "Brønnøy kirke", block: 0 },
+  { tag: "div", text: "kl.15.00", block: 0 },
+  { tag: "a", text: "Julekonsert", href: `${KIRKE.url}?EventId=bbb`, block: 0 },
+  { tag: "span", text: "Velfjord kirke", block: 0 },
+];
 
-function choiceAnswer(chosen: string) {
-  return { type: "choice", choice: chosen, confidence: 0.9 };
-}
+const KIRKE_DAY_FIELDS = [
+  "date",
+  "startTime",
+  "title",
+  "location",
+  "startTime",
+  "title",
+  "location",
+];
 
-function chooseGroupHolding(signature: string) {
-  return (_: string, criteria: Record<string, string>) =>
-    Object.keys(criteria).find((key) =>
-      criteria[key].includes(`<${signature}>`),
-    ) ?? null;
+/** Two cards whose pieces do not line up, which is where a nearest-title guess drifts across them. */
+const UNEVEN_CARDS: Piece[] = [
+  { tag: "h3", text: "Naturtreff", block: 0 },
+  { tag: "span", text: "2.12", block: 0 },
+  { tag: "time", text: "19:00", block: 0 },
+  { tag: "time", text: "20:30", block: 0 },
+  { tag: "h3", text: "Barseltreff", block: 1 },
+  { tag: "span", text: "8.12", block: 1 },
+  { tag: "time", text: "11:00", block: 1 },
+  { tag: "time", text: "14:00", block: 1 },
+  { tag: "span", text: "Brønnøy bibliotek", block: 1 },
+];
+
+const UNEVEN_FIELDS = [
+  "title",
+  "date",
+  "startTime",
+  "endTime",
+  "title",
+  "date",
+  "startTime",
+  "endTime",
+  "location",
+];
+
+/** A model answer per piece, where null stands for a piece the model refused to label. */
+function answered(listsEvents: number, fields: (string | null)[], confidence = 0.9) {
+  return {
+    answers: {
+      listsEvents: { type: "noul", noul: listsEvents },
+      ...Object.fromEntries(
+        fields.flatMap((field, index) =>
+          field === null
+            ? []
+            : [[`piece${index + 1}`, { type: "choice", choice: field, confidence }]],
+        ),
+      ),
+    },
+  };
 }
 
 describe("parseEvents", () => {
   beforeEach(() => {
     vi.useFakeTimers();
     vi.setSystemTime(NOW);
-    choice.mockReset().mockResolvedValue("whole");
-    choices.mockReset().mockResolvedValue({});
+    create.mockReset().mockResolvedValue(answered(0.9, []));
   });
 
   afterEach(() => {
@@ -69,15 +109,10 @@ describe("parseEvents", () => {
     vi.restoreAllMocks();
   });
 
-  it("builds an event out of the row the model labeled", async () => {
-    choice.mockImplementation(chooseGroupHolding("tr.InnholdTabellTekst"));
-    choices.mockResolvedValue({
-      event1piece1: choiceAnswer("title"),
-      event1piece2: choiceAnswer("date"),
-      event2piece1: choiceAnswer("date"),
-    });
+  it("builds an event out of the pieces the model labeled", async () => {
+    create.mockResolvedValue(answered(0.99, KINO_FIELDS));
 
-    const events = await parseEvents(KINO, KINO_TABLE);
+    const events = await parseEvents(KINO, KINO_PIECES);
 
     expect(events).toEqual([
       {
@@ -92,109 +127,122 @@ describe("parseEvents", () => {
     ]);
   });
 
-  it("offers the model every repeated group, the whole section and no events at all", async () => {
-    await parseEvents(KINO, KINO_TABLE);
+  it("asks about the page and every piece of it in a single request", async () => {
+    await parseEvents(KINO, KINO_PIECES);
 
-    expect(choice).toHaveBeenCalledTimes(1);
-    expect(choice.mock.calls[0][1]).toEqual({
-      group1: expect.stringContaining("<tr.InnholdTabellTekst>"),
-      group2: expect.stringContaining("<td>"),
-      whole: expect.any(String),
-      none: expect.any(String),
-    });
-  });
+    expect(create).toHaveBeenCalledTimes(1);
+    const [{ state, questions }] = create.mock.calls[0];
 
-  it("asks about every piece of every event in a single call", async () => {
-    choice.mockImplementation(chooseGroupHolding("tr.InnholdTabellTekst"));
-
-    await parseEvents(KINO, KINO_TABLE);
-
-    expect(choices).toHaveBeenCalledTimes(1);
-    expect(choices.mock.calls[0][0]).toEqual({
-      event1piece1: expect.stringContaining("event1piece1"),
-      event1piece2: expect.stringContaining("event1piece2"),
-      event2piece1: expect.stringContaining("event2piece1"),
-    });
-    expect(choices.mock.calls[0][2]).toEqual({
+    expect(state).toEqual({
       source: KINO.name,
-      event1piece1: { tag: "a", text: "Ebenezer (Premerie)" },
-      event1piece2: { tag: "span", text: "13.11.26 kl. 20:00" },
-      event2piece1: { tag: "span", text: "Siste dag *" },
+      piece1: { tag: "th", text: "Kino" },
+      piece2: { tag: "th", text: "Dato" },
+      piece3: { tag: "a", text: "Ebenezer (Premerie)" },
+      piece4: { tag: "span", text: "13.11.26 kl. 20:00" },
+      piece5: { tag: "span", text: "Siste dag *" },
     });
-  });
-
-  it("reads a page holding a single event as one whole event", async () => {
-    choices.mockResolvedValue({
-      event1piece1: choiceAnswer("date"),
-      event1piece2: choiceAnswer("startTime"),
-      event1piece3: choiceAnswer("title"),
-      event1piece4: choiceAnswer("location"),
-    });
-
-    const events = await parseEvents(KIRKE, KIRKE_ITEM);
-
-    expect(events).toEqual([
-      expect.objectContaining({
-        title: "Gudstjeneste med dåp",
-        startDate: "2026-11-15T10:00:00.000Z",
-        location: "Brønnøy kirke",
-        url: "https://www.bronnoy.kirken.no/CalendarPage?EventId=89bb",
-      }),
+    expect(questions.piece3.instructions).toContain("piece3");
+    expect(Object.keys(questions)).toEqual([
+      "listsEvents",
+      "piece1",
+      "piece2",
+      "piece3",
+      "piece4",
+      "piece5",
     ]);
+    expect(questions.listsEvents.type).toBe("noul");
+    expect(questions.piece3.type).toBe("choice");
   });
 
-  it("splits a container holding a whole day into one event per title", async () => {
-    choices.mockResolvedValue({
-      event1piece1: choiceAnswer("date"),
-      event1piece2: choiceAnswer("startTime"),
-      event1piece3: choiceAnswer("title"),
-      event1piece4: choiceAnswer("location"),
-      event1piece5: choiceAnswer("startTime"),
-      event1piece6: choiceAnswer("title"),
-      event1piece7: choiceAnswer("location"),
-    });
+  it("splits one long list into an event per title", async () => {
+    create.mockResolvedValue(answered(0.97, KIRKE_DAY_FIELDS));
 
-    const events = await parseEvents(KIRKE, KIRKE_DAY);
+    const events = await parseEvents(KIRKE, KIRKE_DAY_PIECES);
 
     expect(events).toEqual([
       expect.objectContaining({
         title: "Gudstjeneste",
         startDate: "2026-11-29T10:00:00.000Z",
         location: "Brønnøy kirke",
-        url: "https://www.bronnoy.kirken.no/CalendarPage?EventId=aaa",
+        url: `${KIRKE.url}?EventId=aaa`,
       }),
       expect.objectContaining({
-        title: "Gudstjeneste",
+        title: "Julekonsert",
         startDate: "2026-11-29T14:00:00.000Z",
         location: "Velfjord kirke",
-        url: "https://www.bronnoy.kirken.no/CalendarPage?EventId=bbb",
+        url: `${KIRKE.url}?EventId=bbb`,
       }),
     ]);
   });
 
-  it("gives a location the name the site uses for that venue", async () => {
-    const container = `<li><span>17.11</span><span>Barseltreff</span><span>Brønnøy bibliotek Brønnøysund</span></li>`;
-    choices.mockResolvedValue({
-      event1piece1: choiceAnswer("date"),
-      event1piece2: choiceAnswer("title"),
-      event1piece3: choiceAnswer("location"),
-    });
+  it("gives an event without a date of its own the day written above it", async () => {
+    create.mockResolvedValue(answered(0.97, KIRKE_DAY_FIELDS));
 
-    const [event] = await parseEvents(KIRKE, container);
+    const [, second] = await parseEvents(KIRKE, KIRKE_DAY_PIECES);
+
+    expect(second.startDate).toBe("2026-11-29T14:00:00.000Z");
+  });
+
+  it("keeps a card's pieces out of the card next to it", async () => {
+    create.mockResolvedValue(answered(0.95, UNEVEN_FIELDS));
+
+    const events = await parseEvents(KIRKE, UNEVEN_CARDS);
+
+    expect(events).toEqual([
+      expect.objectContaining({
+        title: "Naturtreff",
+        startDate: "2026-12-02T18:00:00.000Z",
+        endDate: "2026-12-02T19:30:00.000Z",
+      }),
+      expect.objectContaining({
+        title: "Barseltreff",
+        startDate: "2026-12-08T10:00:00.000Z",
+        endDate: "2026-12-08T13:00:00.000Z",
+      }),
+    ]);
+  });
+
+  it("takes the venue a page writes after the word introducing it", async () => {
+    const pieces: Piece[] = [
+      { tag: "h3", text: "Barseltreff", block: 0 },
+      { tag: "span", text: "17.11", block: 0 },
+      { tag: "span", text: "Plassering", block: 0 },
+      { tag: "span", text: "Kefas", block: 0 },
+    ];
+    create.mockResolvedValue(
+      answered(0.9, ["title", "date", "location", "location"]),
+    );
+
+    const [event] = await parseEvents(KIRKE, pieces);
+
+    expect(event.location).toBe("Kefas");
+  });
+
+  it("gives a location the name the site uses for that venue", async () => {
+    const pieces: Piece[] = [
+      { tag: "span", text: "17.11", block: 0 },
+      { tag: "span", text: "Barseltreff", block: 0 },
+      { tag: "span", text: "Brønnøy bibliotek Brønnøysund", block: 0 },
+    ];
+    create.mockResolvedValue(answered(0.9, ["date", "title", "location"]));
+
+    const [event] = await parseEvents(KIRKE, pieces);
 
     expect(event.location).toBe("Brønnøy bibliotek");
   });
 
   it("gives an event an end when the page writes a closing time", async () => {
-    const container = `<li><span>17.11</span><span>Barseltreff</span><time>11:00</time><time>14:00</time></li>`;
-    choices.mockResolvedValue({
-      event1piece1: choiceAnswer("date"),
-      event1piece2: choiceAnswer("title"),
-      event1piece3: choiceAnswer("startTime"),
-      event1piece4: choiceAnswer("endTime"),
-    });
+    const pieces: Piece[] = [
+      { tag: "span", text: "17.11", block: 0 },
+      { tag: "span", text: "Barseltreff", block: 0 },
+      { tag: "time", text: "11:00", block: 0 },
+      { tag: "time", text: "14:00", block: 0 },
+    ];
+    create.mockResolvedValue(
+      answered(0.9, ["date", "title", "startTime", "endTime"]),
+    );
 
-    const [event] = await parseEvents(KIRKE, container);
+    const [event] = await parseEvents(KIRKE, pieces);
 
     expect(event.startDate).toBe("2026-11-17T10:00:00.000Z");
     expect(event.endDate).toBe("2026-11-17T13:00:00.000Z");
@@ -204,77 +252,64 @@ describe("parseEvents", () => {
     ["no closing time was found", "other"],
     ["the closing time is not after the start", "endTime"],
   ])("leaves an event without an end when %s", async (_, lastField) => {
-    const container = `<li><span>17.11</span><span>Barseltreff</span><time>14:00</time><time>11:00</time></li>`;
-    choices.mockResolvedValue({
-      event1piece1: choiceAnswer("date"),
-      event1piece2: choiceAnswer("title"),
-      event1piece3: choiceAnswer("startTime"),
-      event1piece4: choiceAnswer(lastField),
-    });
+    const pieces: Piece[] = [
+      { tag: "span", text: "17.11", block: 0 },
+      { tag: "span", text: "Barseltreff", block: 0 },
+      { tag: "time", text: "14:00", block: 0 },
+      { tag: "time", text: "11:00", block: 0 },
+    ];
+    create.mockResolvedValue(
+      answered(0.9, ["date", "title", "startTime", lastField]),
+    );
 
-    const [event] = await parseEvents(KIRKE, container);
+    const [event] = await parseEvents(KIRKE, pieces);
 
     expect(event.endDate).toBeUndefined();
   });
 
   it("gives an event its own description when the model found one", async () => {
-    choices.mockResolvedValue({
-      event1piece1: choiceAnswer("date"),
-      event1piece2: choiceAnswer("startTime"),
-      event1piece3: choiceAnswer("title"),
-      event1piece4: choiceAnswer("description"),
-    });
+    create.mockResolvedValue(
+      answered(0.97, ["date", "startTime", "title", "description"]),
+    );
 
-    const [event] = await parseEvents(KIRKE, KIRKE_ITEM);
+    const [event] = await parseEvents(KIRKE, KIRKE_DAY_PIECES.slice(0, 4));
 
     expect(event.description).toBe("Brønnøy kirke");
     expect(event.location).toBe(KIRKE.name);
   });
 
-  it.each([
-    ["the model found no list of events", "none"],
-    ["the model could not decide", null],
-  ])("collects nothing when %s", async (_, answer) => {
-    choice.mockResolvedValue(answer);
+  it("collects nothing when the page lists no events", async () => {
+    create.mockResolvedValue(answered(0.07, KINO_FIELDS));
 
-    expect(await parseEvents(KINO, KINO_TABLE)).toEqual([]);
-    expect(choice).toHaveBeenCalledTimes(1);
-    expect(choices).not.toHaveBeenCalled();
+    expect(await parseEvents(KINO, KINO_PIECES)).toEqual([]);
+  });
+
+  it("ignores a piece the model is unsure about", async () => {
+    create.mockResolvedValue(answered(0.99, KINO_FIELDS, 0.4));
+
+    expect(await parseEvents(KINO, KINO_PIECES)).toEqual([]);
   });
 
   it.each([
-    ["has no title", "other"],
-    ["has no answer at all", null],
-  ])("drops an event whose only piece %s", async (_, answer) => {
-    choice.mockImplementation(chooseGroupHolding("tr.InnholdTabellTekst"));
-    choices.mockResolvedValue({
-      event1piece1: answer && choiceAnswer(answer),
-      event1piece2: choiceAnswer("date"),
-    });
+    ["has no title", ["other", "date"]],
+    ["has no answer at all", [null, null]],
+  ])("drops an event whose pieces say it %s", async (_, fields) => {
+    create.mockResolvedValue(answered(0.9, fields));
 
-    expect(await parseEvents(KINO, KINO_TABLE)).toEqual([]);
+    expect(await parseEvents(KINO, KINO_PIECES.slice(2, 4))).toEqual([]);
   });
 
   it("drops an event whose date cannot be read", async () => {
-    choices.mockResolvedValue({
-      event1piece1: choiceAnswer("title"),
-      event1piece2: choiceAnswer("other"),
-      event1piece3: choiceAnswer("other"),
-      event1piece4: choiceAnswer("other"),
-    });
+    const pieces: Piece[] = [{ tag: "p", text: "Konsert en gang", block: 0 }];
+    create.mockResolvedValue(answered(0.9, ["title"]));
 
-    expect(await parseEvents(KIRKE, "<div><p>Konsert en gang</p></div>")).toEqual(
-      [],
-    );
+    expect(await parseEvents(KIRKE, pieces)).toEqual([]);
   });
 
-  it.each([
-    ["finding the events", choice],
-    ["labeling the pieces", choices],
-  ])("collects nothing when the decisions api fails while %s", async (_, failing) => {
+  it("collects nothing when the decisions api fails", async () => {
     vi.spyOn(console, "warn").mockImplementation(() => {});
-    failing.mockRejectedValue(new Error("Service unavailable"));
+    create.mockRejectedValue(new Error("Service unavailable"));
 
-    expect(await parseEvents(KINO, KINO_TABLE)).toEqual([]);
+    expect(await parseEvents(KINO, KINO_PIECES)).toEqual([]);
   });
 });
