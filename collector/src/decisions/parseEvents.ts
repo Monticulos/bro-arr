@@ -16,6 +16,9 @@ import { logDetail } from "../utils/logger.js";
 const MIN_CONFIDENCE = 0.6;
 const MIN_PROBABILITY = 0.5;
 
+/** How much wider than its usual line spacing a page has to open up before a part has ended. */
+const PART_BREAK_MULTIPLE = 3;
+
 const EVENT_FIELDS = [
   "title",
   "date",
@@ -173,19 +176,41 @@ function toEventField(choice: string | undefined): EventField | undefined {
     : undefined;
 }
 
-/** Every line joins the event that started above it, and anything before the first one is page furniture. */
+/**
+ * Every line joins the event that started above it. Anything before the first start is page
+ * furniture, and so is anything after the page leaves a gap: an event ends either where the next
+ * one begins or where the page moves on to something else, whichever comes first.
+ */
 function splitWhereEventsStart(
   lines: LabelledLine[],
   startsEvent: boolean[],
 ): LabelledLine[][] {
+  const partBreak = gapBetweenParts(lines);
   const events: LabelledLine[][] = [];
+  let reading = false;
 
   lines.forEach((line, index) => {
-    if (startsEvent[index]) events.push([]);
-    events[events.length - 1]?.push(line);
+    if (index > 0 && line.top - lines[index - 1].top > partBreak) reading = false;
+    if (startsEvent[index]) {
+      events.push([]);
+      reading = true;
+    }
+    if (reading) events[events.length - 1].push(line);
   });
 
   return events;
+}
+
+/** A page puts more room between its parts than inside them, so the usual gap sets the scale. */
+function gapBetweenParts(lines: LabelledLine[]): number {
+  const gaps = lines
+    .slice(1)
+    .map((line, index) => line.top - lines[index].top)
+    .filter((gap) => gap > 0)
+    .sort((first, second) => first - second);
+
+  const median = gaps[Math.floor(gaps.length / 2)];
+  return median ? median * PART_BREAK_MULTIPLE : Infinity;
 }
 
 /** A calendar writes the day once above several events, so an event without one borrows the day above it. */

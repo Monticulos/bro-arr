@@ -71,17 +71,24 @@ location lines: a page writes "Plassering" before the venue, and the street afte
 > `toLines` is stringified and sent to the browser, so nothing inside it may name a function — not
 > even an arrow in a `const`. The build rewrites named functions with a helper the page does not have.
 
+## Where an event ends
+
+An event runs until the next one begins — or until the page opens up, whichever comes first. A
+page puts more room between its parts than inside them, so the median gap between lines sets the
+scale, and a gap more than `PART_BREAK_MULTIPLE` (3) times that ends the part being read.
+
+That is what keeps the footer out of the last event on a page. Without it the cinema took its
+venue from the address at the bottom of the page, since that address was the last line of the only
+event on it.
+
 ## Known weakness
 
-An event runs until the next one begins, and the last event on a page has nothing to end it, so
-the footer joins it. The cinema takes its venue from the address in the footer rather than from
-the page, because that address is the last line of the only event on it.
+The municipality's front page yields one event it probably should not: a news article carrying a
+real date reads like an event once question 3 sees only its title, date and venue. A page-wide
+gate used to reject that page outright at 0.07; judged one event at a time, the headline passes.
 
-The same gap lets a news article survive: the municipality's front page yields one event it should
-not, since question 3 is asked of a headline that has collected a real date from the lines below.
-
-Both want the same thing — a way for an event to end as well as begin. Trailing lines answered
-`other` already fall away; it is the ones that genuinely look like a venue or a date that stay.
+The church occasionally doubles a title, where a line repeating the name joins the event that
+already has one.
 
 ## Failure handling
 

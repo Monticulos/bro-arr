@@ -18,6 +18,11 @@ vi.mock("./DecisionModel.js", async (importOriginal) => ({
 
 const NOW = new Date("2026-11-10T09:00:00.000Z");
 
+/** Lines printed evenly down the page, the way one part of it reads. */
+const LINE_SPACING = 30;
+function printed(texts: Omit<Line, "top">[]): Line[] {
+  return texts.map((line, index) => ({ ...line, top: index * LINE_SPACING }));
+}
 const KINO: Source = {
   url: "https://www.bronnoy.kommune.no/kino/",
   name: "Brønnøy kino",
@@ -28,13 +33,13 @@ const KIRKE: Source = {
   name: "Brønnøy kirke",
 };
 
-const KINO_LINES: Line[] = [
+const KINO_LINES: Line[] = printed([
   { text: "Kino Dato" },
   { text: "Ebenezer (Premerie) 13.11.26 kl. 20:00" },
-];
+]);
 
 /** The church writes the day once, then a time, a title and a venue per service under it. */
-const KIRKE_DAY_LINES: Line[] = [
+const KIRKE_DAY_LINES: Line[] = printed([
   { text: "Søndag 29.11" },
   { text: "kl.11.00" },
   { text: "Gudstjeneste", href: `${KIRKE.url}?EventId=aaa` },
@@ -42,7 +47,7 @@ const KIRKE_DAY_LINES: Line[] = [
   { text: "kl.15.00" },
   { text: "Julekonsert", href: `${KIRKE.url}?EventId=bbb` },
   { text: "Velfjord kirke" },
-];
+]);
 
 /** Answers question one: which lines begin an event. */
 function startsOn(...lineNumbers: number[]) {
@@ -96,11 +101,11 @@ describe("parseEvents", () => {
       .mockImplementationOnce(allReal);
     choices.mockImplementation(saying({ 1: "other", 2: "title", 3: "date" }));
 
-    const events = await parseEvents(KINO, [
+    const events = await parseEvents(KINO, printed([
       { text: "Kino Dato" },
       { text: "Ebenezer (Premerie)" },
       { text: "13.11.26 kl. 20:00" },
-    ]);
+    ]));
 
     expect(events).toEqual([
       {
@@ -119,11 +124,11 @@ describe("parseEvents", () => {
     nouls.mockImplementationOnce(startsOn(2)).mockImplementationOnce(allReal);
     choices.mockImplementation(saying({ 2: "title", 3: "date" }));
 
-    await parseEvents(KINO, [
+    await parseEvents(KINO, printed([
       { text: "Kino Dato" },
       { text: "Ebenezer (Premerie)" },
       { text: "13.11.26 kl. 20:00" },
-    ]);
+    ]));
 
     const [startQuestions, startState] = nouls.mock.calls[0];
     const [, , fieldState] = choices.mock.calls[0];
@@ -142,11 +147,11 @@ describe("parseEvents", () => {
     nouls.mockImplementationOnce(startsOn(2)).mockImplementationOnce(allReal);
     choices.mockImplementation(saying({ 1: "title", 2: "title", 3: "date" }));
 
-    const events = await parseEvents(KINO, [
+    const events = await parseEvents(KINO, printed([
       { text: "Hopp til innhold" },
       { text: "Ebenezer (Premerie)" },
       { text: "13.11.26 kl. 20:00" },
-    ]);
+    ]));
 
     expect(events).toHaveLength(1);
     expect(events[0].title).toBe("Ebenezer (Premerie)");
@@ -202,16 +207,32 @@ describe("parseEvents", () => {
     expect(second.startDate).toBe("2026-11-29T14:00:00.000Z");
   });
 
+  it("ends an event where the page opens up, so the footer stays out of it", async () => {
+    nouls.mockImplementationOnce(startsOn(1)).mockImplementationOnce(allReal);
+    choices.mockImplementation(
+      saying({ 1: "title", 2: "date", 3: "location", 4: "location" }),
+    );
+
+    const [event] = await parseEvents(KINO, [
+      { text: "Ebenezer (Premerie)", top: 0 },
+      { text: "13.11.26 kl. 20:00", top: 30 },
+      { text: "Brønnøy kino", top: 60 },
+      { text: "8905 Brønnøysund", top: 900 },
+    ]);
+
+    expect(event.location).toBe("Brønnøy kino");
+  });
+
   it("drops an event the model says is not one", async () => {
     nouls
       .mockImplementationOnce(startsOn(1))
       .mockImplementationOnce(() => ({ event1: 0.04 }));
     choices.mockImplementation(saying({ 1: "title", 2: "date" }));
 
-    const events = await parseEvents(KINO, [
+    const events = await parseEvents(KINO, printed([
       { text: "Voksenvaksinasjon 2026" },
       { text: "11.11.2026" },
-    ]);
+    ]));
 
     expect(events).toEqual([]);
   });
@@ -222,12 +243,12 @@ describe("parseEvents", () => {
       saying({ 1: "title", 2: "date", 3: "location", 4: "location" }),
     );
 
-    const [event] = await parseEvents(KIRKE, [
+    const [event] = await parseEvents(KIRKE, printed([
       { text: "Barseltreff" },
       { text: "17.11" },
       { text: "Plassering" },
       { text: "Kefas" },
-    ]);
+    ]));
 
     expect(event.location).toBe("Kefas");
   });
@@ -236,11 +257,11 @@ describe("parseEvents", () => {
     nouls.mockImplementationOnce(startsOn(1)).mockImplementationOnce(allReal);
     choices.mockImplementation(saying({ 1: "title", 2: "date", 3: "location" }));
 
-    const [event] = await parseEvents(KIRKE, [
+    const [event] = await parseEvents(KIRKE, printed([
       { text: "Barseltreff" },
       { text: "17.11" },
       { text: "Brønnøy bibliotek Brønnøysund" },
-    ]);
+    ]));
 
     expect(event.location).toBe("Brønnøy bibliotek");
   });
@@ -251,12 +272,12 @@ describe("parseEvents", () => {
       saying({ 1: "title", 2: "date", 3: "startTime", 4: "endTime" }),
     );
 
-    const [event] = await parseEvents(KIRKE, [
+    const [event] = await parseEvents(KIRKE, printed([
       { text: "Barseltreff" },
       { text: "17.11" },
       { text: "11:00" },
       { text: "14:00" },
-    ]);
+    ]));
 
     expect(event.startDate).toBe("2026-11-17T10:00:00.000Z");
     expect(event.endDate).toBe("2026-11-17T13:00:00.000Z");
@@ -271,12 +292,12 @@ describe("parseEvents", () => {
       saying({ 1: "title", 2: "date", 3: "startTime", 4: lastField }),
     );
 
-    const [event] = await parseEvents(KIRKE, [
+    const [event] = await parseEvents(KIRKE, printed([
       { text: "Barseltreff" },
       { text: "17.11" },
       { text: "14:00" },
       { text: "11:00" },
-    ]);
+    ]));
 
     expect(event.endDate).toBeUndefined();
   });
@@ -305,7 +326,7 @@ describe("parseEvents", () => {
     nouls.mockImplementationOnce(startsOn(1)).mockImplementationOnce(allReal);
     choices.mockImplementation(saying({ 1: "title" }));
 
-    expect(await parseEvents(KIRKE, [{ text: "Konsert en gang" }])).toEqual([]);
+    expect(await parseEvents(KIRKE, printed([{ text: "Konsert en gang" }]))).toEqual([]);
   });
 
   it("asks nothing at all about a page with no lines", async () => {

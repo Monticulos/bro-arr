@@ -10,6 +10,8 @@ const SETTLE_DELAY = 1_000;
 /** One line of the page, the way it would come out of a printer. */
 export interface Line {
   text: string;
+  /** How far down the page it is painted, which is how a gap between parts is spotted. */
+  top: number;
   /** A link on this line that stays on the source's own site, so off-site tickets never win. */
   href?: string;
 }
@@ -65,7 +67,7 @@ async function readSettledLines(page: Page): Promise<Line[]> {
 function toLines(root: Element): Line[] {
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   const range = document.createRange();
-  const lines: (Line & { top: number; left: number })[] = [];
+  const lines: (Line & { left: number })[] = [];
 
   let node = walker.nextNode();
   while (node) {
@@ -96,5 +98,5 @@ function toLines(root: Element): Line[] {
 
   lines.sort((first, second) => first.top - second.top || first.left - second.left);
 
-  return lines.map(({ text, href }) => ({ text, href }));
+  return lines.map(({ text, top, href }) => ({ text, top, href }));
 }
