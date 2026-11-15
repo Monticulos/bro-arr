@@ -52,7 +52,8 @@ async function waitForRenderedContent(page: Page, source: Source): Promise<void>
 
 /**
  * Runs inside the browser, where innerText collapses the whitespace, checkVisibility hides what
- * the reader cannot see, and an anchor resolves its own href and origin.
+ * the reader cannot see, and an anchor resolves its own href and origin. Only HTML elements
+ * qualify: an SVG leaf such as a <path> is an Element with no innerText at all.
  *
  * A page states how many events it has by repeating the markup of one: the outermost ancestor
  * standing among look-alike siblings is the card, row or item holding a single event.
@@ -63,8 +64,13 @@ async function waitForRenderedContent(page: Page, source: Source): Promise<void>
 function toPieces(root: Element): Piece[] {
   const blocks: Element[] = [];
 
-  return [...root.querySelectorAll<HTMLElement>("*")]
-    .filter((element) => element.children.length === 0 && element.checkVisibility())
+  return [...root.querySelectorAll("*")]
+    .filter(
+      (element): element is HTMLElement =>
+        element instanceof HTMLElement &&
+        element.children.length === 0 &&
+        element.checkVisibility(),
+    )
     .map((element) => {
       let block: Element | null = null;
       for (
