@@ -25,4 +25,5 @@
     "noUncheckedSideEffectImports": true,
   },
   "include": ["src", "../shared/src"],
+  "exclude": ["../shared/src/test", "../shared/src/**/*.test.ts"],
 }
