@@ -30,6 +30,23 @@ The committed snapshot of every known event. It is the collector's only output a
 input.
 _Avoid_: database, store, feed
 
+### Extraction
+
+**Candidate group**:
+Sibling elements on a Source page that share a tag and their classes, so each one is likely to hold
+one event. The Decision model picks which group, if any, is the list of events.
+_Avoid_: cluster, bucket
+
+**Event container**:
+The one element holding everything about a single event and nothing about any other. On a page
+listing a single event it is the whole section.
+_Avoid_: card, item, node
+
+**Piece**:
+An element inside an Event container that holds text and nothing but text — a title, a date, a
+venue. The Decision model labels each one, and the label decides which field it fills.
+_Avoid_: fragment, chunk, token
+
 ### Events
 
 **Event**:
@@ -56,11 +73,8 @@ Duplicate.
 
 ### Models
 
-**Extraction model**:
-The language model that turns a Source's text into structured Events.
-_Avoid_: parser, formatter, LLM
-
 **Decision model**:
-The model that answers closed questions about Events — picking a Category, or judging whether a
-Candidate pair is a Duplicate. It answers with a probability or a labelled choice, never prose.
+The model that answers closed questions about Events — reading one out of a Source page, picking a
+Category, or judging whether a Candidate pair is a Duplicate. It answers with a probability or a
+labelled choice, never prose, so every word of an Event is copied from its Source.
 _Avoid_: classifier, judge, LLM

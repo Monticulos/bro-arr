@@ -1,8 +1,8 @@
 import "dotenv/config";
 import type { Event } from "../../shared/src/types/Event.js";
 import { TARGET_SOURCES } from "./sources.js";
-import { extractEvents } from "./puppeteer/extractEvents.js";
-import { formatEvents } from "./llm/formatEvents.js";
+import { fetchSourceHtml } from "./puppeteer/fetchSourceHtml.js";
+import { parseEvents } from "./decisions/parseEvents.js";
 import { categorizeEvents } from "./decisions/categorizeEvents.js";
 import { upsertEvents } from "./io/upsertEvents.js";
 import { sortEvents } from "./utils/sortEvents.js";
@@ -31,20 +31,20 @@ async function collectPuppeteerEvents(): Promise<Event[]> {
   for (const source of TARGET_SOURCES) {
     logPhase(`Processing ${source.name}...`);
 
-    const rawText = await extractEvents(source);
-    if (!rawText) {
+    const html = await fetchSourceHtml(source);
+    if (!html) {
       logDetail(`Skipping ${source.name} - no content extracted.`);
       continue;
     }
 
-    logDetail(`Extracted content from ${source.url}.`);
+    logDetail(`Fetched HTML from ${source.url}.`);
 
     try {
-      const events = await formatEvents(source, rawText);
+      const events = await parseEvents(source, html);
       collectedEvents.push(...events);
       logDetail(`Found ${events.length} events.`);
     } catch (error) {
-      warnDetail(`Failed to format events from ${source.name}:`, error);
+      warnDetail(`Failed to parse events from ${source.name}:`, error);
     }
   }
 

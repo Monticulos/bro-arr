@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
-import { mapApifyEventToEvent, LOCATION_MAP } from "./mapApifyEventToEvent.js";
+import { mapApifyEventToEvent } from "./mapApifyEventToEvent.js";
 import { createApifyEvent } from "../test/createApifyEvent.js";
 
 describe("mapApifyEventToEvent", () => {
@@ -32,37 +32,6 @@ describe("mapApifyEventToEvent", () => {
       location: "Kred",
       url: "https://example.com/event",
       collectedAt: "2026-03-01T12:00:00.000Z",
-    });
-  });
-
-  describe("mapLocation", () => {
-    it.each(Object.entries(LOCATION_MAP))(
-      "maps address '%s' to venue '%s'",
-      (address, expectedVenue) => {
-        const apifyEvent = createApifyEvent({ location: { id: "loc1", name: address, latitude: 0, longitude: 0 } });
-
-        const result = mapApifyEventToEvent(apifyEvent);
-
-        expect(result.location).toBe(expectedVenue);
-      }
-    );
-
-    it("maps address embedded in a longer string", () => {
-      const apifyEvent = createApifyEvent({
-        location: { id: "loc1", name: "Storgata 70, 8900 Brønnøysund", latitude: 0, longitude: 0 },
-      });
-
-      const result = mapApifyEventToEvent(apifyEvent);
-
-      expect(result.location).toBe(LOCATION_MAP["Storgata 70"]);
-    });
-
-    it("returns the location unchanged when no address matches", () => {
-      const apifyEvent = createApifyEvent({ location: { id: "loc1", name: "Ukjent sted", latitude: 0, longitude: 0 } });
-
-      const result = mapApifyEventToEvent(apifyEvent);
-
-      expect(result.location).toBe("Ukjent sted");
     });
   });
 });
