@@ -1,8 +1,8 @@
 import puppeteer, { type Page } from "puppeteer";
 import type { Source } from "../sources.js";
+import { TIMEZONE } from "../utils/norwegianTime.js";
 import { warnDetail } from "../utils/logger.js";
 
-const TIMEZONE = "Europe/Oslo";
 const RENDER_TIMEOUT = 10_000;
 
 /** One element holding text and nothing but text, such as a title or a date. */
@@ -27,7 +27,7 @@ export async function readEventPieces(source: Source): Promise<Piece[]> {
     const page = await browser.newPage();
     await page.emulateTimezone(TIMEZONE);
     await page.goto(source.url, { waitUntil: "networkidle2" });
-    await waitForRenderedLinks(page, selector);
+    await waitForRenderedContent(page, source);
     return await page.$eval(selector, toPieces);
   } catch (error) {
     warnDetail(`Failed to read ${source.name}:`, error);
@@ -37,16 +37,17 @@ export async function readEventPieces(source: Source): Promise<Piece[]> {
   }
 }
 
-/** The library renders its events after the network goes quiet, so a loaded page is not a filled one. */
-async function waitForRenderedLinks(page: Page, selector: string): Promise<void> {
+/** A source that fills itself in after loading says so, since a loaded page is not a filled one. */
+async function waitForRenderedContent(page: Page, source: Source): Promise<void> {
+  if (!source.waitFor) return;
+
   await page
-    .waitForFunction(
-      (section: string) =>
-        document.querySelector(section)?.querySelector("a[href]") != null,
-      { timeout: RENDER_TIMEOUT },
-      selector,
-    )
-    .catch(() => warnDetail(`Nothing rendered in ${selector}. Reading it as it is.`));
+    .waitForSelector(`${source.selector} ${source.waitFor}`, {
+      timeout: RENDER_TIMEOUT,
+    })
+    .catch(() =>
+      warnDetail(`No ${source.waitFor} rendered on ${source.name}. Reading it as it is.`),
+    );
 }
 
 /**

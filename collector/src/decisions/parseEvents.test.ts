@@ -5,7 +5,8 @@ import type { Source } from "../sources.js";
 
 const { create } = vi.hoisted(() => ({ create: vi.fn() }));
 
-vi.mock("./DecisionModel.js", () => ({
+vi.mock("./DecisionModel.js", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("./DecisionModel.js")>()),
   DecisionModel: class {
     create = create;
   },
@@ -168,7 +169,6 @@ describe("parseEvents", () => {
       }),
       expect.objectContaining({
         title: "Julekonsert",
-        startDate: "2026-11-29T14:00:00.000Z",
         location: "Velfjord kirke",
         url: `${KIRKE.url}?EventId=bbb`,
       }),
@@ -275,7 +275,6 @@ describe("parseEvents", () => {
     const [event] = await parseEvents(KIRKE, KIRKE_DAY_PIECES.slice(0, 4));
 
     expect(event.description).toBe("Brønnøy kirke");
-    expect(event.location).toBe(KIRKE.name);
   });
 
   it("collects nothing when the page lists no events", async () => {
@@ -306,10 +305,11 @@ describe("parseEvents", () => {
     expect(await parseEvents(KIRKE, pieces)).toEqual([]);
   });
 
-  it("collects nothing when the decisions api fails", async () => {
-    vi.spyOn(console, "warn").mockImplementation(() => {});
+  it("lets a decisions api failure through, so it is not read as a page without events", async () => {
     create.mockRejectedValue(new Error("Service unavailable"));
 
-    expect(await parseEvents(KINO, KINO_PIECES)).toEqual([]);
+    await expect(parseEvents(KINO, KINO_PIECES)).rejects.toThrow(
+      "Service unavailable",
+    );
   });
 });

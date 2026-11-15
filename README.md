@@ -7,7 +7,7 @@ A local events aggregator for Brønnøysund, Norway.
 | Layer | Technologies |
 |-------|-------------|
 | Frontend | React 19, TypeScript, Vite, Digdir Designsystemet, Web3Forms |
-| Collector | OpenRouter, Puppeteer, Cheerio, Apify |
+| Collector | OpenRouter, Puppeteer, Apify |
 | Testing | Vitest, React Testing Library |
 | CI/CD | GitHub Actions, GitHub Pages |
 

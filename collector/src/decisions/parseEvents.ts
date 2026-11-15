@@ -2,6 +2,7 @@ import type { Event } from "../../../shared/src/types/Event";
 import type { Source } from "../sources.js";
 import {
   DecisionModel,
+  aboveConfidence,
   type Answers,
   type ChoiceCriteria,
   type Questions,
@@ -11,7 +12,7 @@ import { parseNorwegianDate } from "../utils/parseNorwegianDate.js";
 import { norwegianTimeToUtc } from "../utils/norwegianTime.js";
 import { generateEventId } from "../utils/generateEventId.js";
 import { mapLocation } from "../utils/mapLocation.js";
-import { logDetail, warnDetail } from "../utils/logger.js";
+import { logDetail } from "../utils/logger.js";
 
 /** Below this the model is only guessing, and a guess here invents an event that is not on the page. */
 const MIN_CONFIDENCE = 0.6;
@@ -65,38 +66,38 @@ export async function parseEvents(
 /** The markup decides where one event ends and the next begins, so a block is never crossed. */
 function groupByBlock(pieces: LabelledPiece[]): LabelledPiece[][] {
   const blocks = new Map<number, LabelledPiece[]>();
-  pieces.forEach((piece) =>
-    blocks.set(piece.block, [...(blocks.get(piece.block) ?? []), piece]),
-  );
+  pieces.forEach((piece) => {
+    const block = blocks.get(piece.block) ?? [];
+    blocks.set(piece.block, block);
+    block.push(piece);
+  });
 
   return [...blocks.values()];
 }
 
-/** One request asks whether the page lists events at all and what every piece of it says. */
+/**
+ * One request asks whether the page lists events at all and what every piece of it says. A failure
+ * is left to the caller, so one source going quiet is never mistaken for a page without events.
+ */
 async function labelPieces(
   source: Source,
   pieces: Piece[],
 ): Promise<LabelledPiece[]> {
-  try {
-    const { answers } = await new DecisionModel().create({
-      state: {
-        source: source.name,
-        ...pieceEntries(pieces, ({ tag, text }) => ({ tag, text })),
-      },
-      questions: toQuestions(source, pieces),
-    });
+  const { answers } = await new DecisionModel().create({
+    state: {
+      source: source.name,
+      ...pieceEntries(pieces, ({ tag, text }) => ({ tag, text })),
+    },
+    questions: toQuestions(source, pieces),
+  });
 
-    const probability = eventListProbability(answers);
-    if (probability < MIN_EVENT_LIST_PROBABILITY) {
-      logDetail(`${source.name} lists no events (${probability.toFixed(2)}).`);
-      return [];
-    }
-
-    return toLabelledPieces(pieces, answers);
-  } catch (error) {
-    warnDetail(`Failed to read the events on ${source.name}:`, error);
+  const probability = eventListProbability(answers);
+  if (probability < MIN_EVENT_LIST_PROBABILITY) {
+    logDetail(`${source.name} lists no events (${probability.toFixed(2)}).`);
     return [];
   }
+
+  return toLabelledPieces(pieces, answers);
 }
 
 function toQuestions(source: Source, pieces: Piece[]): Questions {
@@ -122,8 +123,8 @@ function toLabelledPieces(pieces: Piece[], answers: Answers): LabelledPiece[] {
   return pieces.flatMap((piece, index) => {
     const answer = answers[pieceKey(index)];
     const field =
-      answer?.type === "choice" && (answer.confidence ?? 0) >= MIN_CONFIDENCE
-        ? answer.choice
+      answer?.type === "choice"
+        ? aboveConfidence(answer, MIN_CONFIDENCE)?.choice
         : undefined;
 
     return isEventField(field) ? [{ ...piece, field }] : [];

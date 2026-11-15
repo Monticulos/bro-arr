@@ -74,13 +74,14 @@ single URL.
 |---|---|---|---|
 | Brønnøy kino | `.InnholdTabell` | `tr.InnholdTabellTekst` | A table. The film's own link leaves for filmweb, so the event keeps the cinema page. |
 | Brønnøy kirke | `.calendar` | `div.calendar-item` | One item can hold a whole day, so `splitAtTitles` separates the services and the second borrows the day's date. The time is written *above* its title. |
-| Brønnøy bibliotek | `.arena-events-container` | `div.col-md-6.col-sm-12` | JavaScript-rendered, and it renders *after* the network goes quiet — `waitForRenderedLinks` waits for it. Carries a closing time, so these events get an `endDate`. |
+| Brønnøy bibliotek | `.arena-events-container` | `div.col-md-6.col-sm-12` | JavaScript-rendered, and it fills itself in *after* the network goes quiet, so it is the one source carrying a `waitFor`. Has a closing time, so these events get an `endDate`. |
 | Brønnøy kommune | `#bottom-boxes` | — | A news list, structurally identical to an event list. `listsEvents` answers 0.07. |
 
 ## Failure handling
 
-The model call sits inside a `try`/`catch` that warns and returns an empty result, so one source
-failing costs that source's events and nothing else. HTTP 429 and 5xx are retried by
-`retryTransientFailures` before that. A page that renders nothing is read as it is rather than
-throwing. `script.ts` throws only if *every* Puppeteer source came back empty, which keeps a broken
-run from committing an empty events file.
+`script.ts` owns the per-source `try`/`catch`, so one source failing costs that source's events and
+nothing else. `parseEvents` lets a model failure through rather than returning an empty result,
+which keeps "this source broke" distinguishable from "this page lists no events" in the log. HTTP
+429 and 5xx are retried by `retryTransientFailures` before that. A page that never renders is read
+as it is rather than throwing. `script.ts` throws only if *every* Puppeteer source came back empty,
+which keeps a broken run from committing an empty events file.

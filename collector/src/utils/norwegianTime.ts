@@ -1,4 +1,4 @@
-const TIMEZONE = "Europe/Oslo";
+export const TIMEZONE = "Europe/Oslo";
 
 const osloFormatter = new Intl.DateTimeFormat("en-US", {
   timeZone: TIMEZONE,
@@ -25,10 +25,6 @@ export function norwegianDate(isoDatetime: string): string {
     month: "short",
     year: "numeric",
   });
-}
-
-export function norwegianDateToday(): string {
-  return norwegianDate(new Date().toISOString());
 }
 
 function getOsloOffsetHours(approximateDate: Date): number {
