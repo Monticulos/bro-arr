@@ -1,5 +1,9 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { norwegianDateToday, norwegianTimeToUtc } from "./norwegianTime.js";
+import {
+  norwegianDate,
+  norwegianDateToday,
+  norwegianTimeToUtc,
+} from "./norwegianTime.js";
 
 describe("norwegianTimeToUtc", () => {
   it("converts CET winter time to UTC (offset +1)", () => {
@@ -28,6 +32,16 @@ describe("norwegianTimeToUtc", () => {
   });
 });
 
+describe("norwegianDate", () => {
+  it("formats the date as day, short month and year", () => {
+    expect(norwegianDate("2026-11-14T10:00:00Z")).toBe("14. nov. 2026");
+  });
+
+  it("returns the Norwegian date when it is past midnight in Norway but not in UTC", () => {
+    expect(norwegianDate("2026-11-14T23:30:00Z")).toBe("15. nov. 2026");
+  });
+});
+
 describe("norwegianDateToday", () => {
   beforeEach(() => {
     vi.useFakeTimers();
@@ -37,13 +51,8 @@ describe("norwegianDateToday", () => {
     vi.useRealTimers();
   });
 
-  it("formats the date as day, short month and year", () => {
+  it("formats the current date", () => {
     vi.setSystemTime(new Date("2026-11-14T10:00:00Z"));
     expect(norwegianDateToday()).toBe("14. nov. 2026");
-  });
-
-  it("returns the Norwegian date when it is past midnight in Norway but not in UTC", () => {
-    vi.setSystemTime(new Date("2026-11-14T23:30:00Z"));
-    expect(norwegianDateToday()).toBe("15. nov. 2026");
   });
 });
