@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { upsertEvents } from "./upsertEvents.js";
 import { EVENTS_JSON_PATH } from "./eventsFile.js";
-import { createEvent } from "../test/createEvent.js";
+import { createEvent } from "../../../shared/test/createEvent";
 import { readFileSync, writeFileSync } from "fs";
 
 vi.mock("fs", () => ({

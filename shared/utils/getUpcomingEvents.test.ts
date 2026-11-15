@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { getUpcomingEvents } from "../../../shared/utils/getUpcomingEvents";
-import { createEvent } from "../test/createEvent.js";
+import { getUpcomingEvents } from "./getUpcomingEvents";
+import { createEvent } from "../test/createEvent";
 
 describe("getUpcomingEvents", () => {
   const now = new Date("2026-03-01T12:00:00Z");

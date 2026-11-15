@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { mergeEventLists } from "./mergeEvents.js";
-import { createEvent } from "../test/createEvent.js";
+import { createEvent } from "../../../shared/test/createEvent";
 
 describe("mergeEventLists", () => {
   it("returns incoming events when existing list is empty", () => {

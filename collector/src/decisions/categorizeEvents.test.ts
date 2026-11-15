@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { categorizeEvents } from "./categorizeEvents.js";
 import { CATEGORY_CRITERIA } from "./categoryCriteria.js";
-import { createEvent } from "../test/createEvent.js";
+import { createEvent } from "../../../shared/test/createEvent";
 
 const { choices } = vi.hoisted(() => ({ choices: vi.fn() }));
 

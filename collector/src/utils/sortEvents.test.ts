@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { sortEvents } from "./sortEvents.js";
-import { createEvent } from "../test/createEvent.js";
+import { createEvent } from "../../../shared/test/createEvent";
 
 describe("sortEvents", () => {
   it("sorts events chronologically by startDate", () => {
