@@ -9,7 +9,7 @@ once a day, and the site presents them to residents.
 
 **Collector**:
 The scheduled pipeline that gathers events, categorizes them, and writes the events file.
-_Avoid_: scraper, crawler, importer
+_Avoid_: importer, job
 
 **Source**:
 One local website the collector draws events from, such as Brønnøy kommune or Brønnøy kirke.
@@ -18,7 +18,7 @@ _Avoid_: site, target, feed
 **Puppeteer event**:
 An event the collector gathered from a Source directly. Its identity is derived from the Source and
 the start time, so it changes whenever a Source revises either.
-_Avoid_: scraped event, source event, site event
+_Avoid_: source event, site event
 
 **Apify event**:
 An event the collector gathered from its Apify dataset. It keeps the upstream listing's own
@@ -57,7 +57,7 @@ Duplicate.
 ### Models
 
 **Extraction model**:
-The language model that turns a Source's raw text into structured Events.
+The language model that turns a Source's text into structured Events.
 _Avoid_: parser, formatter, LLM
 
 **Decision model**:
