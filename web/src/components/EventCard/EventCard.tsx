@@ -23,7 +23,7 @@ export default function EventCard({ event, isFavorited, onToggleFavorite }: Prop
           <div className={styles.metaLeft}>
             <CategoryBadge category={event.category} />
             <time className={styles.date} dateTime={event.startDate}>
-              {formatEventDate(event.startDate)}
+              {formatEventDate(event.startDate, event.endDate)}
             </time>
           </div>
           <Button

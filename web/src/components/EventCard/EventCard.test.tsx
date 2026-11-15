@@ -36,6 +36,25 @@ describe("EventCard", () => {
     expect(screen.getByText("A test event description")).toBeInTheDocument();
   });
 
+  it("renders the closing time when the event has an end", () => {
+    renderCard({
+      startDate: "2026-11-15T10:00:00Z",
+      endDate: "2026-11-15T11:00:00Z",
+    });
+
+    expect(
+      screen.getByText("søndag 15. november 2026 kl. 11:00 - 12:00")
+    ).toBeInTheDocument();
+  });
+
+  it("renders the start alone when the event has no end", () => {
+    renderCard({ startDate: "2026-11-15T10:00:00Z", endDate: undefined });
+
+    expect(
+      screen.getByText("søndag 15. november 2026 kl. 11:00")
+    ).toBeInTheDocument();
+  });
+
   it("renders location when provided", () => {
     renderCard({ location: "Brønnøysund" });
     expect(screen.getByText(/Brønnøysund/)).toBeInTheDocument();

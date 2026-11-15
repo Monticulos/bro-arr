@@ -33,6 +33,19 @@ describe("formatEventDate", () => {
     const result = formatEventDate("2025-01-15T18:30:00Z");
     expect(result).toContain("19:30");
   });
+
+  it("appends the closing time when the event has an end", () => {
+    const result = formatEventDate(
+      "2026-11-15T10:00:00Z",
+      "2026-11-15T11:00:00Z",
+    );
+    expect(result).toBe("søndag 15. november 2026 kl. 11:00 - 12:00");
+  });
+
+  it("shows the start alone when the event has no end", () => {
+    const result = formatEventDate("2026-11-15T10:00:00Z");
+    expect(result).toBe("søndag 15. november 2026 kl. 11:00");
+  });
 });
 
 describe("formatUpdatedAtDate", () => {

@@ -10,12 +10,22 @@ export function formatMonthHeading(iso: string): string {
   return formatted.charAt(0).toUpperCase() + formatted.slice(1);
 }
 
-export function formatEventDate(iso: string): string {
-  return new Intl.DateTimeFormat(NORWEGIAN_LOCALE, {
+export function formatEventDate(iso: string, endIso?: string): string {
+  const start = new Intl.DateTimeFormat(NORWEGIAN_LOCALE, {
     weekday: "long",
     day: "numeric",
     month: "long",
     year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: NORWEGIAN_TIMEZONE,
+  }).format(new Date(iso));
+
+  return endIso ? `${start} - ${formatEventTime(endIso)}` : start;
+}
+
+function formatEventTime(iso: string): string {
+  return new Intl.DateTimeFormat(NORWEGIAN_LOCALE, {
     hour: "2-digit",
     minute: "2-digit",
     timeZone: NORWEGIAN_TIMEZONE,
