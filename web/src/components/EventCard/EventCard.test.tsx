@@ -2,9 +2,9 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import EventCard from "./EventCard";
-import type { Event } from "../../types/event";
+import type { CategorizedEvent } from "../../types/event";
 
-function createEvent(overrides: Partial<Event> = {}): Event {
+function createEvent(overrides: Partial<CategorizedEvent> = {}): CategorizedEvent {
   return {
     id: "1",
     title: "Test Event",
@@ -16,7 +16,7 @@ function createEvent(overrides: Partial<Event> = {}): Event {
   };
 }
 
-function renderCard(overrides: Partial<Event> = {}, isFavorited = false) {
+function renderCard(overrides: Partial<CategorizedEvent> = {}, isFavorited = false) {
   const onToggleFavorite = vi.fn();
   render(
     <EventCard

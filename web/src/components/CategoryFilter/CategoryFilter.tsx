@@ -1,12 +1,12 @@
 import { Chip, Label } from '@digdir/designsystemet-react';
-import type { Event } from '../../types/event';
+import type { EventCategory } from '../../types/event';
 import { CATEGORY_LABELS, CATEGORY_COLOR_MAP } from '../../constants/categories';
 import styles from './CategoryFilter.module.css';
 
 interface Props {
-  availableCategories: Event['category'][];
-  selectedCategories: Set<Event['category']>;
-  onToggleCategory: (category: Event['category']) => void;
+  availableCategories: EventCategory[];
+  selectedCategories: Set<EventCategory>;
+  onToggleCategory: (category: EventCategory) => void;
 }
 
 export default function CategoryFilter({

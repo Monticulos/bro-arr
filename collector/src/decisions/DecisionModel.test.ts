@@ -166,6 +166,7 @@ describe("DecisionModel", () => {
         { formality: "How formal is this?", clarity: "How clear is this?" },
         URGENCY,
         STATE,
+        0.5,
       );
 
       expect(scores).toEqual({
@@ -176,6 +177,25 @@ describe("DecisionModel", () => {
           confidence: 0.85,
           legend: { "0": "low", "1": "medium", "2": "high" },
         },
+      });
+    });
+
+    it("returns null for a question answered below minConfidence", async () => {
+      const { decisions } = createDecisionModel({
+        formality: { type: "score", score: 0.2, confidence: 0.9 },
+        clarity: { type: "score", score: 1.8, confidence: 0.4 },
+      });
+
+      const scores = await decisions.scores(
+        { formality: "How formal is this?", clarity: "How clear is this?" },
+        URGENCY,
+        STATE,
+        0.8,
+      );
+
+      expect(scores).toEqual({
+        formality: { type: "score", score: 0.2, confidence: 0.9 },
+        clarity: null,
       });
     });
   });
@@ -231,6 +251,7 @@ describe("DecisionModel", () => {
         { pricing: "Which team owns pricing?", crash: "Which team owns bugs?" },
         TEAMS,
         STATE,
+        0.5,
       );
 
       expect(choices).toEqual({
@@ -244,6 +265,25 @@ describe("DecisionModel", () => {
       });
     });
 
+    it("returns null for a question answered below minConfidence", async () => {
+      const { decisions } = createDecisionModel({
+        pricing: { type: "choice", choice: "billing", confidence: 0.95 },
+        crash: { type: "choice", choice: "technical", confidence: 0.4 },
+      });
+
+      const choices = await decisions.choices(
+        { pricing: "Which team owns pricing?", crash: "Which team owns bugs?" },
+        TEAMS,
+        STATE,
+        0.8,
+      );
+
+      expect(choices).toEqual({
+        pricing: { type: "choice", choice: "billing", confidence: 0.95 },
+        crash: null,
+      });
+    });
+
     it("returns null for a refused question while keeping the answered ones", async () => {
       const { decisions } = createDecisionModel({
         pricing: { type: "choice", choice: "billing", confidence: 0.95 },
@@ -254,6 +294,7 @@ describe("DecisionModel", () => {
         { pricing: "Which team owns pricing?", crash: "Which team owns bugs?" },
         TEAMS,
         STATE,
+        0.5,
       );
 
       expect(choices).toEqual({

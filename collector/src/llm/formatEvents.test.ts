@@ -2,13 +2,11 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { formatEvents } from "./formatEvents.js";
 import type { Source } from "../sources.js";
 
-const { structuredLlmCall, categorizeEvent } = vi.hoisted(() => ({
+const { structuredLlmCall } = vi.hoisted(() => ({
   structuredLlmCall: vi.fn(),
-  categorizeEvent: vi.fn(),
 }));
 
 vi.mock("./structuredLlmCall.js", () => ({ structuredLlmCall }));
-vi.mock("../decisions/categorizeEvent.js", () => ({ categorizeEvent }));
 
 const SOURCE: Source = { name: "Cash bar", url: "https://cashbar.no" };
 
@@ -25,7 +23,6 @@ describe("formatEvents", () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-03-01T12:00:00Z"));
     structuredLlmCall.mockResolvedValue({ events: [EXTRACTED_EVENT] });
-    categorizeEvent.mockResolvedValue("quiz");
   });
 
   afterEach(() => {
@@ -33,7 +30,7 @@ describe("formatEvents", () => {
     vi.clearAllMocks();
   });
 
-  it("returns an event with a categorized and UTC converted extraction", async () => {
+  it("returns an uncategorized event with a UTC converted extraction", async () => {
     const events = await formatEvents(SOURCE, "Humorquiz 7. mars kl 18:00");
 
     expect(events).toEqual([
@@ -41,7 +38,6 @@ describe("formatEvents", () => {
         id: "Cash-bar-2026-03-07T17:00:00.000Z",
         title: "Humorquiz",
         description: "Quiz med premier.",
-        category: "quiz",
         startDate: "2026-03-07T17:00:00.000Z",
         location: "Cash bar",
         url: "https://cashbar.no/quiz",
@@ -50,15 +46,17 @@ describe("formatEvents", () => {
     ]);
   });
 
-  it("categorizes every extracted event", async () => {
+  it("returns every extracted event", async () => {
     structuredLlmCall.mockResolvedValue({
       events: [EXTRACTED_EVENT, { ...EXTRACTED_EVENT, title: "Konsert" }],
     });
 
-    await formatEvents(SOURCE, "Noe tekst");
+    const events = await formatEvents(SOURCE, "Noe tekst");
 
-    expect(categorizeEvent).toHaveBeenCalledTimes(2);
-    expect(categorizeEvent).toHaveBeenCalledWith(EXTRACTED_EVENT);
+    expect(events.map((event) => event.title)).toEqual([
+      "Humorquiz",
+      "Konsert",
+    ]);
   });
 
   it("tells the model today's date, so dates without a year are not guessed", async () => {
@@ -71,11 +69,10 @@ describe("formatEvents", () => {
     );
   });
 
-  it("returns no events without asking the models when the source has no text", async () => {
+  it("returns no events without asking the model when the source has no text", async () => {
     const events = await formatEvents(SOURCE, "");
 
     expect(events).toEqual([]);
     expect(structuredLlmCall).not.toHaveBeenCalled();
-    expect(categorizeEvent).not.toHaveBeenCalled();
   });
 });

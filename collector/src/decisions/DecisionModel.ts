@@ -2,9 +2,9 @@
  * A thin wrapper around OpenRouter's Decisions API.
  *
  * Each method is named after the question type it asks, and answers keep the API's
- * own types. Every helper returns null for an answer the model refused. The singular
- * methods unwrap the answer and also return null below minConfidence; the batched
- * methods leave the threshold to the caller.
+ * own types. Every helper returns null for an answer the model refused or gave below
+ * minConfidence, and the singular methods unwrap the answer. Noul questions take no
+ * threshold - the probability they return already says how sure the model is.
  */
 import { OpenRouter } from "@openrouter/sdk";
 import type {
@@ -63,8 +63,9 @@ export class DecisionModel {
       singleQuestion(instructions),
       criteria,
       state,
+      minConfidence,
     );
-    const answer = aboveConfidence(singleAnswer(answers), minConfidence);
+    const answer = singleAnswer(answers);
     return answer && answer.score;
   }
 
@@ -73,6 +74,7 @@ export class DecisionModel {
     questions: Record<string, Instructions>,
     criteria: ScoreCriteria,
     state: State,
+    minConfidence: number,
   ): Promise<Record<string, DecisionsScoreAnswer | null>> {
     const { answers } = await this.create({
       state,
@@ -83,7 +85,7 @@ export class DecisionModel {
       })),
     });
     return mapValues(answers, (answer) =>
-      answer.type === "score" ? answer : null,
+      answer.type === "score" ? aboveConfidence(answer, minConfidence) : null,
     );
   }
 
@@ -98,8 +100,9 @@ export class DecisionModel {
       singleQuestion(instructions),
       criteria,
       state,
+      minConfidence,
     );
-    const answer = aboveConfidence(singleAnswer(answers), minConfidence);
+    const answer = singleAnswer(answers);
     return answer && answer.choice;
   }
 
@@ -108,6 +111,7 @@ export class DecisionModel {
     questions: Record<string, Instructions>,
     criteria: ChoiceCriteria,
     state: State,
+    minConfidence: number,
   ): Promise<Record<string, DecisionsChoiceAnswer | null>> {
     const { answers } = await this.create({
       state,
@@ -118,7 +122,7 @@ export class DecisionModel {
       })),
     });
     return mapValues(answers, (answer) =>
-      answer.type === "choice" ? answer : null,
+      answer.type === "choice" ? aboveConfidence(answer, minConfidence) : null,
     );
   }
 

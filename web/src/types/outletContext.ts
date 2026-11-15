@@ -1,5 +1,5 @@
-import type { Event } from "./event";
+import type { CategorizedEvent } from "./event";
 
 export interface ViewOutletContext {
-  events: Event[];
+  events: CategorizedEvent[];
 }

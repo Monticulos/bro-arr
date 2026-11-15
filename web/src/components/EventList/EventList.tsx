@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Paragraph } from '@digdir/designsystemet-react';
-import type { Event } from '../../types/event';
+import type { CategorizedEvent } from '../../types/event';
 import { useEventFiltering } from '../../hooks/useEventFiltering';
 import { useFavorites } from '../../hooks/useFavorites';
 import CategoryFilter from '../CategoryFilter/CategoryFilter';
@@ -11,7 +11,7 @@ import { getUpcomingEvents, groupByMonth } from '../../utils/eventGrouping';
 import styles from './EventList.module.css';
 
 interface Props {
-  events: Event[];
+  events: CategorizedEvent[];
 }
 
 const alwaysFavorited = () => true;

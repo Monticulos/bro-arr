@@ -2,9 +2,9 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import EventList from "./EventList";
-import type { Event } from "../../types/event";
+import type { CategorizedEvent } from "../../types/event";
 
-function createEvent(overrides: Partial<Event> = {}): Event {
+function createEvent(overrides: Partial<CategorizedEvent> = {}): CategorizedEvent {
   return {
     id: "1",
     title: "Test Event",
@@ -103,7 +103,7 @@ describe("EventList", () => {
   });
 });
 
-function createFutureEvent(overrides: Partial<Event> = {}): Event {
+function createFutureEvent(overrides: Partial<CategorizedEvent> = {}): CategorizedEvent {
   return createEvent({ startDate: "2099-06-20T10:00:00Z", ...overrides });
 }
 

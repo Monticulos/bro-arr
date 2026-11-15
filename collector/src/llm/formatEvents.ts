@@ -4,7 +4,6 @@ import { fileURLToPath } from "url";
 import { z } from "zod";
 import type { Event } from "../../../shared/types/Event";
 import type { Source } from "../sources.js";
-import { categorizeEvent } from "../decisions/categorizeEvent.js";
 import { generateEventId } from "../utils/generateEventId.js";
 import {
   norwegianDateToday,
@@ -67,17 +66,16 @@ export async function formatEvents(
     userMessage,
   );
 
-  return Promise.all(result.events.map((event) => toEvent(event, source.name)));
+  return result.events.map((event) => toEvent(event, source.name));
 }
 
 type LlmEvent = z.infer<typeof EventSchema>;
 
-async function toEvent(llmEvent: LlmEvent, sourceName: string): Promise<Event> {
+function toEvent(llmEvent: LlmEvent, sourceName: string): Event {
   const utcStartDate = norwegianTimeToUtc(llmEvent.startDate);
   return {
     ...llmEvent,
     id: generateEventId(sourceName, utcStartDate),
-    category: await categorizeEvent(llmEvent),
     startDate: utcStartDate,
     collectedAt: new Date().toISOString(),
   };

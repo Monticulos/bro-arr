@@ -1,18 +1,18 @@
 import { useState, useMemo } from "react";
-import type { Event } from "../../../shared/types/Event";
+import type { CategorizedEvent, EventCategory } from "../types/event";
 import { CATEGORY_LABELS } from "../constants/categories";
 
-const CATEGORY_ORDER = Object.keys(CATEGORY_LABELS) as Event["category"][];
+const CATEGORY_ORDER = Object.keys(CATEGORY_LABELS) as EventCategory[];
 
 function filterByCategories(
-  events: Event[],
-  selectedCategories: Set<Event["category"]>,
-): Event[] {
+  events: CategorizedEvent[],
+  selectedCategories: Set<EventCategory>,
+): CategorizedEvent[] {
   if (selectedCategories.size === 0) return events;
   return events.filter((event) => selectedCategories.has(event.category));
 }
 
-function filterBySearch(events: Event[], query: string): Event[] {
+function filterBySearch(events: CategorizedEvent[], query: string): CategorizedEvent[] {
   const normalizedQuery = query.toLowerCase().trim();
   if (normalizedQuery === "") return events;
 
@@ -24,15 +24,15 @@ function filterBySearch(events: Event[], query: string): Event[] {
   });
 }
 
-function getAvailableCategories(events: Event[]): Event["category"][] {
+function getAvailableCategories(events: CategorizedEvent[]): EventCategory[] {
   return CATEGORY_ORDER.filter((category) =>
     events.some((event) => event.category === category),
   );
 }
 
-export function useEventFiltering(events: Event[]) {
+export function useEventFiltering(events: CategorizedEvent[]) {
   const [selectedCategories, setSelectedCategories] = useState<
-    Set<Event["category"]>
+    Set<EventCategory>
   >(new Set());
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -46,7 +46,7 @@ export function useEventFiltering(events: Event[]) {
     return filterBySearch(categoryFiltered, searchQuery);
   }, [events, selectedCategories, searchQuery]);
 
-  const handleToggleCategory = (category: Event["category"]) => {
+  const handleToggleCategory = (category: EventCategory) => {
     setSelectedCategories((prev) => {
       const next = new Set(prev);
       if (next.has(category)) {

@@ -1,11 +1,11 @@
 import { Heading } from '@digdir/designsystemet-react';
-import type { Event } from '../../types/event';
+import type { CategorizedEvent } from '../../types/event';
 import EventCard from '../EventCard/EventCard';
 import styles from './EventSection.module.css';
 
 interface Props {
   heading: string;
-  events: Event[];
+  events: CategorizedEvent[];
   isFavorited: (id: string) => boolean;
   onToggleFavorite: (id: string) => void;
 }

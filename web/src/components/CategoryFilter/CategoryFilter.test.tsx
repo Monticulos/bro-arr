@@ -2,10 +2,10 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import CategoryFilter from './CategoryFilter';
-import type { Event } from '../../types/event';
+import type { EventCategory } from '../../types/event';
 
 describe('CategoryFilter', () => {
-  const availableCategories: Event['category'][] = ['musikk', 'kino', 'annet'];
+  const availableCategories: EventCategory[] = ['musikk', 'kino', 'annet'];
 
   it('renders a chip for each available category', () => {
     render(
@@ -25,7 +25,7 @@ describe('CategoryFilter', () => {
     render(
       <CategoryFilter
         availableCategories={availableCategories}
-        selectedCategories={new Set<Event['category']>(['kino'])}
+        selectedCategories={new Set<EventCategory>(['kino'])}
         onToggleCategory={() => {}}
       />
     );

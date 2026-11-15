@@ -1,9 +1,9 @@
 import { Tag } from '@digdir/designsystemet-react';
-import type { Event } from '../../types/event';
+import type { EventCategory } from '../../types/event';
 import { CATEGORY_LABELS, CATEGORY_COLOR_MAP } from '../../constants/categories';
 
 interface Props {
-  category: Event['category'];
+  category: EventCategory;
 }
 
 export default function CategoryBadge({ category }: Props) {

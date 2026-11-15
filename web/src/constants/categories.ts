@@ -1,6 +1,6 @@
-import type { Event } from "../../../shared/types/Event";
+import type { EventCategory } from "../../../shared/types/Event";
 
-export const CATEGORY_LABELS: Record<Event["category"], string> = {
+export const CATEGORY_LABELS: Record<EventCategory, string> = {
   musikk: "Musikk",
   kino: "Kino",
   quiz: "Quiz",
@@ -24,4 +24,4 @@ export const CATEGORY_COLOR_MAP = {
   kommunalt: "neutral",
   "tro-og-livssyn": "brand1",
   annet: "neutral",
-} as const satisfies Record<Event["category"], string>;
+} as const satisfies Record<EventCategory, string>;
