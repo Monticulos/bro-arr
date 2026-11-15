@@ -1,24 +1,25 @@
 {
-  "updatedAt": "2026-11-15T09:04:27.711Z",
+  "updatedAt": "2026-11-15T14:06:55.738Z",
   "events": [
     {
+      "id": "Brønnøy-kirke-2026-11-15T10:00:00.000Z",
       "title": "Gudstjeneste med dåp",
-      "description": "Gudstjeneste med dåp - Brønnøy kirke",
+      "description": "Gudstjeneste med dåp",
       "startDate": "2026-11-15T10:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=89bb9c00-e619-4359-8da7-65ffd1184cc4&OccurenceId=89bb9c00-e619-4359-8da7-65ffd1184cc4",
-      "id": "Brønnøy-kirke-2026-11-15T10:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:27.257Z",
+      "collectedAt": "2026-11-15T14:06:55.421Z",
       "category": "tro-og-livssyn"
     },
     {
+      "id": "Brønnøy-bibliotek-2026-11-17T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-11-17T10:00:00.000Z",
+      "endDate": "2026-11-17T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/35215c08-b8f3-4495-90cb-c3697e651b59",
-      "id": "Brønnøy-bibliotek-2026-11-17T10:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:18.810Z",
+      "collectedAt": "2026-11-15T14:06:52.603Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -42,13 +43,13 @@
       "collectedAt": "2026-11-10T09:34:36.995Z"
     },
     {
+      "id": "Brønnøy-kirke-2026-11-22T10:00:00.000Z",
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Brønnøy kirke",
+      "description": "Gudstjeneste",
       "startDate": "2026-11-22T10:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f202fc6a-c287-4819-a298-ec3a75d47967&OccurenceId=f202fc6a-c287-4819-a298-ec3a75d47967",
-      "id": "Brønnøy-kirke-2026-11-22T10:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:27.257Z",
+      "collectedAt": "2026-11-15T14:06:55.421Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -62,43 +63,44 @@
       "collectedAt": "2026-11-02T09:13:57.232Z"
     },
     {
+      "id": "Brønnøy-bibliotek-2026-11-24T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-11-24T10:00:00.000Z",
+      "endDate": "2026-11-24T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/e2607289-b695-400e-931a-e4e510d35f93",
-      "id": "Brønnøy-bibliotek-2026-11-24T10:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:18.810Z",
+      "collectedAt": "2026-11-15T14:06:52.603Z",
       "category": "barn-og-ungdom"
     },
     {
+      "id": "Brønnøy-kirke-2026-11-25T10:00:00.000Z",
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Barn og unge - Kefas",
+      "description": "Trille-Tralle-Treff (babysang)",
       "startDate": "2026-11-25T10:00:00.000Z",
       "location": "Kefas",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=3fd20971-9f27-4ea8-88e5-9c3e3d5a9c13",
-      "id": "Brønnøy-kirke-2026-11-25T10:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:27.257Z",
+      "collectedAt": "2026-11-15T14:06:55.421Z",
       "category": "barn-og-ungdom"
     },
     {
       "id": "27931154943206710",
       "title": "Førstehjelpskurs 0-2år",
       "description": "Helsestasjonen tilbyr førstehjelpskurs for foreldre med barn 0-2år med fokus på HLR, kvelning og brannskader. Det vil være både teori og praktisk øving på dukker. \nFørste gruppe: kl.09-11\nAndre gruppe:kl.12-14\nTa kontakt med resepsjonen for påmelding: tlf 750 12880",
-      "category": "annet",
+      "category": "barn-og-ungdom",
       "startDate": "2026-11-26T08:00:00.000Z",
       "location": "Skulesvei 13, 8904 Brønnøysund, Norway",
       "url": "https://www.facebook.com/events/27931154943206710/",
       "collectedAt": "2026-11-10T09:34:35.159Z"
     },
     {
+      "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z",
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Sykehjemmets kapell",
+      "description": "Gudstjeneste",
       "startDate": "2026-11-26T10:30:00.000Z",
       "location": "Sykehjemmets kapell",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=b3b6d79d-a06d-4934-8685-15563e0d1e80&OccurenceId=b3b6d79d-a06d-4934-8685-15563e0d1e80",
-      "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z",
-      "collectedAt": "2026-11-15T09:04:27.258Z",
+      "collectedAt": "2026-11-15T14:06:55.421Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -122,44 +124,46 @@
       "collectedAt": "2026-11-10T09:34:36.474Z"
     },
     {
+      "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Brønnøy kirke",
+      "description": "Gudstjeneste",
       "startDate": "2026-11-29T10:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5&OccurenceId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5",
-      "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:27.258Z",
+      "collectedAt": "2026-11-15T14:06:55.421Z",
       "category": "tro-og-livssyn"
     },
     {
+      "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Velfjord kirke",
+      "description": "Gudstjeneste",
       "startDate": "2026-11-29T14:00:00.000Z",
       "location": "Velfjord kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=99633440-8026-4a82-b801-7a613295cbbe&OccurenceId=99633440-8026-4a82-b801-7a613295cbbe",
-      "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:27.258Z",
+      "collectedAt": "2026-11-15T14:06:55.421Z",
       "category": "tro-og-livssyn"
     },
     {
+      "id": "Brønnøy-bibliotek-2026-12-01T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-12-01T10:00:00.000Z",
+      "endDate": "2026-12-01T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/6375e174-16c1-411e-a36c-3ae0087dad49",
-      "id": "Brønnøy-bibliotek-2026-12-01T10:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:18.810Z",
+      "collectedAt": "2026-11-15T14:06:52.603Z",
       "category": "barn-og-ungdom"
     },
     {
+      "id": "Brønnøy-bibliotek-2026-12-02T18:00:00.000Z",
       "title": "Naturtreff i regi av BirdLife og Brønnøy kameraklubb",
       "description": "Naturtreff i regi av BirdLife og Brønnøy kameraklubb",
       "startDate": "2026-12-02T18:00:00.000Z",
+      "endDate": "2026-12-02T19:30:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/8a242be5-9686-4988-bfbd-3469cb565c19",
-      "id": "Brønnøy-bibliotek-2026-12-02T18:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:18.810Z",
-      "category": "annet"
+      "collectedAt": "2026-11-15T14:06:52.603Z",
+      "category": "kunst-og-kultur"
     },
     {
       "id": "2581114842404722",
@@ -195,20 +199,21 @@
       "id": "1106724755591969",
       "title": "Putti Plutti Pott og Julenissens skjegg ",
       "description": "Putti Plutti Pott har i år igjen rappa Julenissens trylleskjegg. Vil skjegget og Putti Plutti Pott komme til rette? Kom på forestilling å se da vel!\nDørene åpner kl.15.00 for de som ønsker å nyte noe godt i kafeen før forestillingen begynner eller ønsker å kjøpe billetter direkte.\nBillettpriser\nBarn: 175,-\nVoksen: 250,-\nFamilie (2+2): 700,-\nHusk at du også kan kjøpe billetter via hoopla.no",
-      "category": "annet",
+      "category": "barn-og-ungdom",
       "startDate": "2026-12-06T15:00:00.000Z",
       "location": "Samfunnshuset Brønnøysund",
       "url": "https://www.facebook.com/events/1106724755591969/",
       "collectedAt": "2026-11-10T09:34:32.929Z"
     },
     {
+      "id": "Brønnøy-bibliotek-2026-12-08T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-12-08T10:00:00.000Z",
+      "endDate": "2026-12-08T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/78618b53-0c45-446b-9a7c-8375c3ec541f",
-      "id": "Brønnøy-bibliotek-2026-12-08T10:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:18.810Z",
+      "collectedAt": "2026-11-15T14:06:52.603Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -242,13 +247,14 @@
       "collectedAt": "2026-11-10T09:34:34.064Z"
     },
     {
+      "id": "Brønnøy-bibliotek-2026-12-15T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-12-15T10:00:00.000Z",
+      "endDate": "2026-12-15T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/dacfeb49-3581-448f-8ef7-f84e7a3f1d46",
-      "id": "Brønnøy-bibliotek-2026-12-15T10:00:00.000Z",
-      "collectedAt": "2026-11-15T09:04:18.810Z",
+      "collectedAt": "2026-11-15T14:06:52.603Z",
       "category": "barn-og-ungdom"
     },
     {
