@@ -8,10 +8,6 @@ const DEFAULT_EVENT: Event = {
   collectedAt: "2026-02-28T12:00:00",
 };
 
-export function createUncategorizedEvent(overrides: Partial<Event> = {}): Event {
-  return { ...DEFAULT_EVENT, ...overrides };
-}
-
 export function createEvent(overrides: Partial<Event> = {}): Event {
-  return { category: "annet", ...DEFAULT_EVENT, ...overrides };
+  return { ...DEFAULT_EVENT, ...overrides };
 }

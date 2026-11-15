@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { categorizeEvents } from "./categorizeEvents.js";
 import { CATEGORY_CRITERIA } from "./categoryCriteria.js";
-import { createEvent, createUncategorizedEvent } from "../test/createEvent.js";
+import { createEvent } from "../test/createEvent.js";
 
 const { choices } = vi.hoisted(() => ({ choices: vi.fn() }));
 
@@ -11,13 +11,13 @@ vi.mock("./DecisionModel.js", () => ({
   },
 }));
 
-const CONCERT = createUncategorizedEvent({
+const CONCERT = createEvent({
   id: "bronnoy-kirke-julekonsert",
   title: "Julekonsert",
   description: "Lokale kor fremfører julesanger.",
 });
 
-const QUIZ = createUncategorizedEvent({
+const QUIZ = createEvent({
   id: "cash-bar-humorquiz",
   title: "Humorquiz",
   description: "Quiz med premier.",
@@ -123,9 +123,8 @@ describe("categorizeEvents", () => {
 
   it("asks again about an event that an earlier run left uncategorized", async () => {
     choices.mockResolvedValue({ event1: choiceAnswer("musikk") });
-    const uncategorizedConcert = createEvent({ ...CONCERT, category: undefined });
 
-    const events = await categorizeEvents([CONCERT], [uncategorizedConcert]);
+    const events = await categorizeEvents([CONCERT], [CONCERT]);
 
     expect(events[0].category).toBe("musikk");
     expect(choices).toHaveBeenCalledTimes(1);
