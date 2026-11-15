@@ -1,7 +1,7 @@
 # BroArr
 
-A local events aggregator for Brønnøysund, Norway. The collector gathers events from local
-websites and Facebook once a day, and the site presents them to residents.
+A local events aggregator for Brønnøysund, Norway. The collector gathers events from local sources
+once a day, and the site presents them to residents.
 
 ## Language
 
@@ -12,18 +12,18 @@ The scheduled pipeline that gathers events, categorizes them, and writes the eve
 _Avoid_: scraper, crawler, importer
 
 **Source**:
-One local website the collector visits for events, such as Brønnøy kommune or Brønnøy kirke.
+One local website the collector draws events from, such as Brønnøy kommune or Brønnøy kirke.
 _Avoid_: site, target, feed
 
 **Puppeteer event**:
-An event the collector gathered by visiting a Source itself. Its identity is derived from the
-Source and the start time, so it changes whenever a Source revises either.
-_Avoid_: scraped event, crawled event, source event, site event
+An event the collector gathered from a Source directly. Its identity is derived from the Source and
+the start time, so it changes whenever a Source revises either.
+_Avoid_: scraped event, source event, site event
 
 **Apify event**:
-An event the collector gathered from Facebook via Apify. It keeps Facebook's own identity, which
-stays stable no matter how the listing is edited.
-_Avoid_: Facebook event, dataset event, actor event
+An event the collector gathered from its Apify dataset. It keeps the upstream listing's own
+identity, which stays stable no matter how that listing is edited.
+_Avoid_: dataset event, actor event
 
 **Events file**:
 The committed snapshot of every known event. It is the collector's only output and the site's only
@@ -57,7 +57,7 @@ Duplicate.
 ### Models
 
 **Extraction model**:
-The language model that turns a Source's page text into structured Events.
+The language model that turns a Source's raw text into structured Events.
 _Avoid_: parser, formatter, LLM
 
 **Decision model**:
