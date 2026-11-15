@@ -1,14 +1,18 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { parseEvents } from "./parseEvents.js";
-import type { Piece } from "../puppeteer/readEventPieces.js";
+import type { Line } from "../puppeteer/readPageLines.js";
 import type { Source } from "../sources.js";
 
-const { create } = vi.hoisted(() => ({ create: vi.fn() }));
+const { nouls, choices } = vi.hoisted(() => ({
+  nouls: vi.fn(),
+  choices: vi.fn(),
+}));
 
 vi.mock("./DecisionModel.js", async (importOriginal) => ({
   ...(await importOriginal<typeof import("./DecisionModel.js")>()),
   DecisionModel: class {
-    create = create;
+    nouls = nouls;
+    choices = choices;
   },
 }));
 
@@ -17,92 +21,68 @@ const NOW = new Date("2026-11-10T09:00:00.000Z");
 const KINO: Source = {
   url: "https://www.bronnoy.kommune.no/kino/",
   name: "Brønnøy kino",
-  selector: ".InnholdTabell",
 };
 
 const KIRKE: Source = {
   url: "https://www.bronnoy.kirken.no/Kalender",
   name: "Brønnøy kirke",
-  selector: ".calendar",
 };
 
-const KINO_PIECES: Piece[] = [
-  { tag: "th", text: "Kino", block: 0 },
-  { tag: "th", text: "Dato", block: 1 },
-  { tag: "a", text: "Ebenezer (Premerie)", block: 2 },
-  { tag: "span", text: "13.11.26 kl. 20:00", block: 2 },
-  { tag: "span", text: "Siste dag *", block: 3 },
+const KINO_LINES: Line[] = [
+  { text: "Kino Dato" },
+  { text: "Ebenezer (Premerie) 13.11.26 kl. 20:00" },
 ];
 
-const KINO_FIELDS = ["other", "other", "title", "date", "other"];
-
-/** One calendar item holding a whole day, the way the church writes two services under one date. */
-const KIRKE_DAY_PIECES: Piece[] = [
-  { tag: "div", text: "29.11", block: 0 },
-  { tag: "div", text: "kl.11.00", block: 0 },
-  { tag: "a", text: "Gudstjeneste", href: `${KIRKE.url}?EventId=aaa`, block: 0 },
-  { tag: "span", text: "Brønnøy kirke", block: 0 },
-  { tag: "div", text: "kl.15.00", block: 0 },
-  { tag: "a", text: "Julekonsert", href: `${KIRKE.url}?EventId=bbb`, block: 0 },
-  { tag: "span", text: "Velfjord kirke", block: 0 },
+/** The church writes the day once, then a time, a title and a venue per service under it. */
+const KIRKE_DAY_LINES: Line[] = [
+  { text: "Søndag 29.11" },
+  { text: "kl.11.00" },
+  { text: "Gudstjeneste", href: `${KIRKE.url}?EventId=aaa` },
+  { text: "Brønnøy kirke" },
+  { text: "kl.15.00" },
+  { text: "Julekonsert", href: `${KIRKE.url}?EventId=bbb` },
+  { text: "Velfjord kirke" },
 ];
 
-const KIRKE_DAY_FIELDS = [
-  "date",
-  "startTime",
-  "title",
-  "location",
-  "startTime",
-  "title",
-  "location",
-];
+/** Answers question one: which lines begin an event. */
+function startsOn(...lineNumbers: number[]) {
+  return (questions: Record<string, unknown>) =>
+    Object.fromEntries(
+      Object.keys(questions).map((key) => [
+        key,
+        lineNumbers.includes(Number(key.replace("line", ""))) ? 0.9 : 0.05,
+      ]),
+    );
+}
 
-/** Two cards whose pieces do not line up, which is where a nearest-title guess drifts across them. */
-const UNEVEN_CARDS: Piece[] = [
-  { tag: "h3", text: "Naturtreff", block: 0 },
-  { tag: "span", text: "2.12", block: 0 },
-  { tag: "time", text: "19:00", block: 0 },
-  { tag: "time", text: "20:30", block: 0 },
-  { tag: "h3", text: "Barseltreff", block: 1 },
-  { tag: "span", text: "8.12", block: 1 },
-  { tag: "time", text: "11:00", block: 1 },
-  { tag: "time", text: "14:00", block: 1 },
-  { tag: "span", text: "Brønnøy bibliotek", block: 1 },
-];
+/** Answers question two: what each line says, by line number. */
+function saying(fields: Record<number, string>, confidence = 0.9) {
+  return (questions: Record<string, unknown>) =>
+    Object.fromEntries(
+      Object.keys(questions).map((key) => [
+        key,
+        fields[Number(key.replace("line", ""))]
+          ? {
+              type: "choice",
+              choice: fields[Number(key.replace("line", ""))],
+              confidence,
+            }
+          : null,
+      ]),
+    );
+}
 
-const UNEVEN_FIELDS = [
-  "title",
-  "date",
-  "startTime",
-  "endTime",
-  "title",
-  "date",
-  "startTime",
-  "endTime",
-  "location",
-];
-
-/** A model answer per piece, where null stands for a piece the model refused to label. */
-function answered(listsEvents: number, fields: (string | null)[], confidence = 0.9) {
-  return {
-    answers: {
-      listsEvents: { type: "noul", noul: listsEvents },
-      ...Object.fromEntries(
-        fields.flatMap((field, index) =>
-          field === null
-            ? []
-            : [[`piece${index + 1}`, { type: "choice", choice: field, confidence }]],
-        ),
-      ),
-    },
-  };
+/** Answers question three: every assembled event is real unless told otherwise. */
+function allReal(questions: Record<string, unknown>) {
+  return Object.fromEntries(Object.keys(questions).map((key) => [key, 0.9]));
 }
 
 describe("parseEvents", () => {
   beforeEach(() => {
     vi.useFakeTimers();
     vi.setSystemTime(NOW);
-    create.mockReset().mockResolvedValue(answered(0.9, []));
+    nouls.mockReset().mockImplementation(allReal);
+    choices.mockReset().mockImplementation(saying({}));
   });
 
   afterEach(() => {
@@ -110,10 +90,17 @@ describe("parseEvents", () => {
     vi.restoreAllMocks();
   });
 
-  it("builds an event out of the pieces the model labeled", async () => {
-    create.mockResolvedValue(answered(0.99, KINO_FIELDS));
+  it("builds an event out of the lines the model labeled", async () => {
+    nouls
+      .mockImplementationOnce(startsOn(2))
+      .mockImplementationOnce(allReal);
+    choices.mockImplementation(saying({ 1: "other", 2: "title", 3: "date" }));
 
-    const events = await parseEvents(KINO, KINO_PIECES);
+    const events = await parseEvents(KINO, [
+      { text: "Kino Dato" },
+      { text: "Ebenezer (Premerie)" },
+      { text: "13.11.26 kl. 20:00" },
+    ]);
 
     expect(events).toEqual([
       {
@@ -128,37 +115,58 @@ describe("parseEvents", () => {
     ]);
   });
 
-  it("asks about the page and every piece of it in a single request", async () => {
-    await parseEvents(KINO, KINO_PIECES);
+  it("asks where events start and what each line says, sharing one state", async () => {
+    nouls.mockImplementationOnce(startsOn(2)).mockImplementationOnce(allReal);
+    choices.mockImplementation(saying({ 2: "title", 3: "date" }));
 
-    expect(create).toHaveBeenCalledTimes(1);
-    const [{ state, questions }] = create.mock.calls[0];
-
-    expect(state).toEqual({
-      source: KINO.name,
-      piece1: { tag: "th", text: "Kino" },
-      piece2: { tag: "th", text: "Dato" },
-      piece3: { tag: "a", text: "Ebenezer (Premerie)" },
-      piece4: { tag: "span", text: "13.11.26 kl. 20:00" },
-      piece5: { tag: "span", text: "Siste dag *" },
-    });
-    expect(questions.piece3.instructions).toContain("piece3");
-    expect(Object.keys(questions)).toEqual([
-      "listsEvents",
-      "piece1",
-      "piece2",
-      "piece3",
-      "piece4",
-      "piece5",
+    await parseEvents(KINO, [
+      { text: "Kino Dato" },
+      { text: "Ebenezer (Premerie)" },
+      { text: "13.11.26 kl. 20:00" },
     ]);
-    expect(questions.listsEvents.type).toBe("noul");
-    expect(questions.piece3.type).toBe("choice");
+
+    const [startQuestions, startState] = nouls.mock.calls[0];
+    const [, , fieldState] = choices.mock.calls[0];
+
+    expect(Object.keys(startQuestions)).toEqual(["line1", "line2", "line3"]);
+    expect(startState).toEqual({
+      source: KINO.name,
+      line1: "Kino Dato",
+      line2: "Ebenezer (Premerie)",
+      line3: "13.11.26 kl. 20:00",
+    });
+    expect(fieldState).toEqual(startState);
   });
 
-  it("splits one long list into an event per title", async () => {
-    create.mockResolvedValue(answered(0.97, KIRKE_DAY_FIELDS));
+  it("throws away the lines above the first event", async () => {
+    nouls.mockImplementationOnce(startsOn(2)).mockImplementationOnce(allReal);
+    choices.mockImplementation(saying({ 1: "title", 2: "title", 3: "date" }));
 
-    const events = await parseEvents(KIRKE, KIRKE_DAY_PIECES);
+    const events = await parseEvents(KINO, [
+      { text: "Hopp til innhold" },
+      { text: "Ebenezer (Premerie)" },
+      { text: "13.11.26 kl. 20:00" },
+    ]);
+
+    expect(events).toHaveLength(1);
+    expect(events[0].title).toBe("Ebenezer (Premerie)");
+  });
+
+  it("starts a new event on every line that says so, inside one calendar day", async () => {
+    nouls.mockImplementationOnce(startsOn(1, 5)).mockImplementationOnce(allReal);
+    choices.mockImplementation(
+      saying({
+        1: "date",
+        2: "startTime",
+        3: "title",
+        4: "location",
+        5: "startTime",
+        6: "title",
+        7: "location",
+      }),
+    );
+
+    const events = await parseEvents(KIRKE, KIRKE_DAY_LINES);
 
     expect(events).toEqual([
       expect.objectContaining({
@@ -176,73 +184,79 @@ describe("parseEvents", () => {
   });
 
   it("gives an event without a date of its own the day written above it", async () => {
-    create.mockResolvedValue(answered(0.97, KIRKE_DAY_FIELDS));
+    nouls.mockImplementationOnce(startsOn(1, 5)).mockImplementationOnce(allReal);
+    choices.mockImplementation(
+      saying({
+        1: "date",
+        2: "startTime",
+        3: "title",
+        4: "location",
+        5: "startTime",
+        6: "title",
+        7: "location",
+      }),
+    );
 
-    const [, second] = await parseEvents(KIRKE, KIRKE_DAY_PIECES);
+    const [, second] = await parseEvents(KIRKE, KIRKE_DAY_LINES);
 
     expect(second.startDate).toBe("2026-11-29T14:00:00.000Z");
   });
 
-  it("keeps a card's pieces out of the card next to it", async () => {
-    create.mockResolvedValue(answered(0.95, UNEVEN_FIELDS));
+  it("drops an event the model says is not one", async () => {
+    nouls
+      .mockImplementationOnce(startsOn(1))
+      .mockImplementationOnce(() => ({ event1: 0.04 }));
+    choices.mockImplementation(saying({ 1: "title", 2: "date" }));
 
-    const events = await parseEvents(KIRKE, UNEVEN_CARDS);
-
-    expect(events).toEqual([
-      expect.objectContaining({
-        title: "Naturtreff",
-        startDate: "2026-12-02T18:00:00.000Z",
-        endDate: "2026-12-02T19:30:00.000Z",
-      }),
-      expect.objectContaining({
-        title: "Barseltreff",
-        startDate: "2026-12-08T10:00:00.000Z",
-        endDate: "2026-12-08T13:00:00.000Z",
-      }),
+    const events = await parseEvents(KINO, [
+      { text: "Voksenvaksinasjon 2026" },
+      { text: "11.11.2026" },
     ]);
+
+    expect(events).toEqual([]);
   });
 
   it("takes the venue a page writes after the word introducing it", async () => {
-    const pieces: Piece[] = [
-      { tag: "h3", text: "Barseltreff", block: 0 },
-      { tag: "span", text: "17.11", block: 0 },
-      { tag: "span", text: "Plassering", block: 0 },
-      { tag: "span", text: "Kefas", block: 0 },
-    ];
-    create.mockResolvedValue(
-      answered(0.9, ["title", "date", "location", "location"]),
+    nouls.mockImplementationOnce(startsOn(1)).mockImplementationOnce(allReal);
+    choices.mockImplementation(
+      saying({ 1: "title", 2: "date", 3: "location", 4: "location" }),
     );
 
-    const [event] = await parseEvents(KIRKE, pieces);
+    const [event] = await parseEvents(KIRKE, [
+      { text: "Barseltreff" },
+      { text: "17.11" },
+      { text: "Plassering" },
+      { text: "Kefas" },
+    ]);
 
     expect(event.location).toBe("Kefas");
   });
 
   it("gives a location the name the site uses for that venue", async () => {
-    const pieces: Piece[] = [
-      { tag: "span", text: "17.11", block: 0 },
-      { tag: "span", text: "Barseltreff", block: 0 },
-      { tag: "span", text: "Brønnøy bibliotek Brønnøysund", block: 0 },
-    ];
-    create.mockResolvedValue(answered(0.9, ["date", "title", "location"]));
+    nouls.mockImplementationOnce(startsOn(1)).mockImplementationOnce(allReal);
+    choices.mockImplementation(saying({ 1: "title", 2: "date", 3: "location" }));
 
-    const [event] = await parseEvents(KIRKE, pieces);
+    const [event] = await parseEvents(KIRKE, [
+      { text: "Barseltreff" },
+      { text: "17.11" },
+      { text: "Brønnøy bibliotek Brønnøysund" },
+    ]);
 
     expect(event.location).toBe("Brønnøy bibliotek");
   });
 
   it("gives an event an end when the page writes a closing time", async () => {
-    const pieces: Piece[] = [
-      { tag: "span", text: "17.11", block: 0 },
-      { tag: "span", text: "Barseltreff", block: 0 },
-      { tag: "time", text: "11:00", block: 0 },
-      { tag: "time", text: "14:00", block: 0 },
-    ];
-    create.mockResolvedValue(
-      answered(0.9, ["date", "title", "startTime", "endTime"]),
+    nouls.mockImplementationOnce(startsOn(1)).mockImplementationOnce(allReal);
+    choices.mockImplementation(
+      saying({ 1: "title", 2: "date", 3: "startTime", 4: "endTime" }),
     );
 
-    const [event] = await parseEvents(KIRKE, pieces);
+    const [event] = await parseEvents(KIRKE, [
+      { text: "Barseltreff" },
+      { text: "17.11" },
+      { text: "11:00" },
+      { text: "14:00" },
+    ]);
 
     expect(event.startDate).toBe("2026-11-17T10:00:00.000Z");
     expect(event.endDate).toBe("2026-11-17T13:00:00.000Z");
@@ -252,63 +266,58 @@ describe("parseEvents", () => {
     ["no closing time was found", "other"],
     ["the closing time is not after the start", "endTime"],
   ])("leaves an event without an end when %s", async (_, lastField) => {
-    const pieces: Piece[] = [
-      { tag: "span", text: "17.11", block: 0 },
-      { tag: "span", text: "Barseltreff", block: 0 },
-      { tag: "time", text: "14:00", block: 0 },
-      { tag: "time", text: "11:00", block: 0 },
-    ];
-    create.mockResolvedValue(
-      answered(0.9, ["date", "title", "startTime", lastField]),
+    nouls.mockImplementationOnce(startsOn(1)).mockImplementationOnce(allReal);
+    choices.mockImplementation(
+      saying({ 1: "title", 2: "date", 3: "startTime", 4: lastField }),
     );
 
-    const [event] = await parseEvents(KIRKE, pieces);
+    const [event] = await parseEvents(KIRKE, [
+      { text: "Barseltreff" },
+      { text: "17.11" },
+      { text: "14:00" },
+      { text: "11:00" },
+    ]);
 
     expect(event.endDate).toBeUndefined();
   });
 
-  it("gives an event its own description when the model found one", async () => {
-    create.mockResolvedValue(
-      answered(0.97, ["date", "startTime", "title", "description"]),
-    );
+  it("leaves the confidence bar to the decision model", async () => {
+    nouls.mockImplementationOnce(startsOn(1)).mockImplementationOnce(allReal);
 
-    const [event] = await parseEvents(KIRKE, KIRKE_DAY_PIECES.slice(0, 4));
+    await parseEvents(KINO, KINO_LINES);
 
-    expect(event.description).toBe("Brønnøy kirke");
-  });
-
-  it("collects nothing when the page lists no events", async () => {
-    create.mockResolvedValue(answered(0.07, KINO_FIELDS));
-
-    expect(await parseEvents(KINO, KINO_PIECES)).toEqual([]);
-  });
-
-  it("ignores a piece the model is unsure about", async () => {
-    create.mockResolvedValue(answered(0.99, KINO_FIELDS, 0.4));
-
-    expect(await parseEvents(KINO, KINO_PIECES)).toEqual([]);
+    expect(choices.mock.calls[0][3]).toBe(0.6);
   });
 
   it.each([
-    ["has no title", ["other", "date"]],
-    ["has no answer at all", [null, null]],
-  ])("drops an event whose pieces say it %s", async (_, fields) => {
-    create.mockResolvedValue(answered(0.9, fields));
+    ["no line starts one", []],
+    ["the only line has no title", [1]],
+  ])("collects nothing when %s", async (_, starts) => {
+    nouls
+      .mockImplementationOnce(startsOn(...starts))
+      .mockImplementationOnce(allReal);
+    choices.mockImplementation(saying({ 1: "date", 2: "date" }));
 
-    expect(await parseEvents(KINO, KINO_PIECES.slice(2, 4))).toEqual([]);
+    expect(await parseEvents(KINO, KINO_LINES)).toEqual([]);
   });
 
   it("drops an event whose date cannot be read", async () => {
-    const pieces: Piece[] = [{ tag: "p", text: "Konsert en gang", block: 0 }];
-    create.mockResolvedValue(answered(0.9, ["title"]));
+    nouls.mockImplementationOnce(startsOn(1)).mockImplementationOnce(allReal);
+    choices.mockImplementation(saying({ 1: "title" }));
 
-    expect(await parseEvents(KIRKE, pieces)).toEqual([]);
+    expect(await parseEvents(KIRKE, [{ text: "Konsert en gang" }])).toEqual([]);
+  });
+
+  it("asks nothing at all about a page with no lines", async () => {
+    expect(await parseEvents(KINO, [])).toEqual([]);
+    expect(nouls).not.toHaveBeenCalled();
+    expect(choices).not.toHaveBeenCalled();
   });
 
   it("lets a decisions api failure through, so it is not read as a page without events", async () => {
-    create.mockRejectedValue(new Error("Service unavailable"));
+    nouls.mockRejectedValue(new Error("Service unavailable"));
 
-    await expect(parseEvents(KINO, KINO_PIECES)).rejects.toThrow(
+    await expect(parseEvents(KINO, KINO_LINES)).rejects.toThrow(
       "Service unavailable",
     );
   });

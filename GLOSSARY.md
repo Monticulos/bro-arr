@@ -32,17 +32,11 @@ _Avoid_: database, store, feed
 
 ### Extraction
 
-**Block**:
-The card, row or item on a Source page holding one event, or one day of them. The collector finds
-it as the outermost ancestor of a Piece standing among look-alike siblings, so the page's own
-markup decides where one event ends and the next begins.
-_Avoid_: candidate group, event container, cluster, card, item, node
-
-**Piece**:
-An element on a Source page holding text and nothing but text — a title, a date, a venue. The
-collector reads every visible one straight off the live page, and the Decision model labels each,
-which decides the field it fills.
-_Avoid_: fragment, chunk, token
+**Line**:
+One line of a Source page as a reader sees it, read straight off the live page in reading order.
+The Decision model says which lines begin an Event and what each one says, and the label decides
+the field it fills.
+_Avoid_: piece, block, fragment, chunk, element, node
 
 ### Events
 

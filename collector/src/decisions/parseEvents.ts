@@ -2,12 +2,10 @@ import type { Event } from "../../../shared/src/types/Event";
 import type { Source } from "../sources.js";
 import {
   DecisionModel,
-  aboveConfidence,
-  type Answers,
   type ChoiceCriteria,
-  type Questions,
+  type State,
 } from "./DecisionModel.js";
-import type { Piece } from "../puppeteer/readEventPieces.js";
+import type { Line } from "../puppeteer/readPageLines.js";
 import { parseNorwegianDate } from "../utils/parseNorwegianDate.js";
 import { norwegianTimeToUtc } from "../utils/norwegianTime.js";
 import { generateEventId } from "../utils/generateEventId.js";
@@ -16,11 +14,7 @@ import { logDetail } from "../utils/logger.js";
 
 /** Below this the model is only guessing, and a guess here invents an event that is not on the page. */
 const MIN_CONFIDENCE = 0.6;
-
-/** A news list reads much like an event list, so a page has to earn its events. */
-const MIN_EVENT_LIST_PROBABILITY = 0.5;
-
-const LISTS_EVENTS = "listsEvents";
+const MIN_PROBABILITY = 0.5;
 
 const EVENT_FIELDS = [
   "title",
@@ -43,157 +37,181 @@ const FIELD_CRITERIA: ChoiceCriteria = {
     "The name of the venue, room or address where the event happens, rather than the word introducing it.",
   description: "A sentence or phrase saying what the event is about.",
   other:
-    "Anything else: a label introducing the piece after it rather than saying anything itself, a column heading, a category, a price, a button, a separator, or text that is not about an event.",
+    "Anything else: a label introducing the line after it rather than saying anything itself, a heading, a category, a price, a button, a menu item, or text that is not about an event.",
 };
 
-interface LabelledPiece extends Piece {
-  field: EventField;
-}
-
-/** Builds events out of a source page, copying every word from the page itself. */
-export async function parseEvents(
-  source: Source,
-  pieces: Piece[],
-): Promise<Event[]> {
-  const labelledPieces = await labelPieces(source, pieces);
-
-  return groupByBlock(labelledPieces)
-    .flatMap(splitAtTitles)
-    .map((eventPieces) => toEvent(source, eventPieces))
-    .filter((event): event is Event => event !== null);
-}
-
-/** The markup decides where one event ends and the next begins, so a block is never crossed. */
-function groupByBlock(pieces: LabelledPiece[]): LabelledPiece[][] {
-  const blocks = new Map<number, LabelledPiece[]>();
-  pieces.forEach((piece) => {
-    const block = blocks.get(piece.block) ?? [];
-    blocks.set(piece.block, block);
-    block.push(piece);
-  });
-
-  return [...blocks.values()];
+interface LabelledLine extends Line {
+  field?: EventField;
 }
 
 /**
- * One request asks whether the page lists events at all and what every piece of it says. A failure
- * is left to the caller, so one source going quiet is never mistaken for a page without events.
+ * Reads a page the way a person reads a printout: find where each event starts, read what every
+ * line says, then check that what was assembled is really an event. Every word is copied from the
+ * page itself, so an event can only be mislabelled, never invented.
  */
-async function labelPieces(
+export async function parseEvents(
   source: Source,
-  pieces: Piece[],
-): Promise<LabelledPiece[]> {
-  const { answers } = await new DecisionModel().create({
-    state: {
-      source: source.name,
-      ...pieceEntries(pieces, ({ tag, text }) => ({ tag, text })),
-    },
-    questions: toQuestions(source, pieces),
-  });
+  lines: Line[],
+): Promise<Event[]> {
+  if (lines.length === 0) return [];
 
-  const probability = eventListProbability(answers);
-  if (probability < MIN_EVENT_LIST_PROBABILITY) {
-    logDetail(`${source.name} lists no events (${probability.toFixed(2)}).`);
-    return [];
-  }
+  const [startsEvent, fields] = await Promise.all([
+    askWhereEventsStart(source, lines),
+    askWhatEachLineSays(source, lines),
+  ]);
 
-  return toLabelledPieces(pieces, answers);
+  const labelled = lines.map((line, index) => ({
+    ...line,
+    field: fields[index],
+  }));
+
+  const events = withBorrowedDates(splitWhereEventsStart(labelled, startsEvent))
+    .map((eventLines) => toEvent(source, eventLines))
+    .filter((event): event is Event => event !== null);
+
+  return keepRealEvents(source, events);
 }
 
-function toQuestions(source: Source, pieces: Piece[]): Questions {
-  return {
-    [LISTS_EVENTS]: {
-      type: "noul",
-      instructions: `The ${source.name} page lists events happening at a place and time, rather than news articles, links or menu items.`,
+/** Question one: where does each event begin? */
+async function askWhereEventsStart(
+  source: Source,
+  lines: Line[],
+): Promise<boolean[]> {
+  const probabilities = await new DecisionModel().nouls(
+    toLineQuestions(
+      lines,
+      (key) =>
+        `${key} of the ${source.name} page is the first line of an event. A page often writes the day or the time above the name, and then the event starts on that line rather than on its name. Every line below it belongs to the same event, until the next event's first line.`,
+    ),
+    toLineState(source, lines),
+  );
+
+  return lines.map(
+    (_, index) => (probabilities[lineKey(index)] ?? 0) >= MIN_PROBABILITY,
+  );
+}
+
+/** Question two: what does each line say about the event it belongs to? */
+async function askWhatEachLineSays(
+  source: Source,
+  lines: Line[],
+): Promise<(EventField | undefined)[]> {
+  const answers = await new DecisionModel().choices(
+    toLineQuestions(
+      lines,
+      (key) =>
+        `What does ${key} of the ${source.name} page say about the event it belongs to?`,
+    ),
+    FIELD_CRITERIA,
+    toLineState(source, lines),
+    MIN_CONFIDENCE,
+  );
+
+  return lines.map((_, index) => toEventField(answers[lineKey(index)]?.choice));
+}
+
+/** Question three: is what we assembled something a person could actually turn up to? */
+async function keepRealEvents(
+  source: Source,
+  events: Event[],
+): Promise<Event[]> {
+  if (events.length === 0) return [];
+
+  const probabilities = await new DecisionModel().nouls(
+    Object.fromEntries(
+      events.map((_, index) => [
+        eventKey(index),
+        `${eventKey(index)} is a real event that people can turn up to at a place and time, rather than a news article, a notice, a menu item or a heading.`,
+      ]),
+    ),
+    {
+      source: source.name,
+      ...Object.fromEntries(
+        events.map((event, index) => [
+          eventKey(index),
+          { title: event.title, starts: event.startDate, where: event.location },
+        ]),
+      ),
     },
-    ...pieceEntries(pieces, (_, index) => ({
-      type: "choice" as const,
-      instructions: `What does ${pieceKey(index)} say about the event it belongs to?`,
-      criteria: FIELD_CRITERIA,
-    })),
+  );
+
+  const real = events.filter(
+    (_, index) => (probabilities[eventKey(index)] ?? 0) >= MIN_PROBABILITY,
+  );
+  logDetail(`Kept ${real.length} of ${events.length} assembled events.`);
+  return real;
+}
+
+/** The page's own words, shared by both line questions so the second is prompt-cached. */
+function toLineState(source: Source, lines: Line[]): State {
+  return {
+    source: source.name,
+    ...toLineQuestions(lines, (_, index) => lines[index].text),
   };
 }
 
-function eventListProbability(answers: Answers): number {
-  const answer = answers[LISTS_EVENTS];
-  return answer?.type === "noul" ? answer.noul : 0;
+function toLineQuestions<Value>(
+  lines: Line[],
+  toValue: (key: string, index: number) => Value,
+): Record<string, Value> {
+  return Object.fromEntries(
+    lines.map((_, index) => [lineKey(index), toValue(lineKey(index), index)]),
+  );
 }
 
-function toLabelledPieces(pieces: Piece[], answers: Answers): LabelledPiece[] {
-  return pieces.flatMap((piece, index) => {
-    const answer = answers[pieceKey(index)];
-    const field =
-      answer?.type === "choice"
-        ? aboveConfidence(answer, MIN_CONFIDENCE)?.choice
-        : undefined;
+function lineKey(index: number): string {
+  return `line${index + 1}`;
+}
 
-    return isEventField(field) ? [{ ...piece, field }] : [];
+function eventKey(index: number): string {
+  return `event${index + 1}`;
+}
+
+function toEventField(choice: string | undefined): EventField | undefined {
+  return EVENT_FIELDS.includes(choice as EventField)
+    ? (choice as EventField)
+    : undefined;
+}
+
+/** Every line joins the event that started above it, and anything before the first one is page furniture. */
+function splitWhereEventsStart(
+  lines: LabelledLine[],
+  startsEvent: boolean[],
+): LabelledLine[][] {
+  const events: LabelledLine[][] = [];
+
+  lines.forEach((line, index) => {
+    if (startsEvent[index]) events.push([]);
+    events[events.length - 1]?.push(line);
+  });
+
+  return events;
+}
+
+/** A calendar writes the day once above several events, so an event without one borrows the day above it. */
+function withBorrowedDates(events: LabelledLine[][]): LabelledLine[][] {
+  return events.map((event, index) => {
+    if (event.some(isDate)) return event;
+
+    const dayAbove = events
+      .slice(0, index)
+      .reverse()
+      .find((earlier) => earlier.some(isDate));
+
+    return [...(dayAbove?.filter(isDate) ?? []), ...event];
   });
 }
 
-function isEventField(field: string | undefined): field is EventField {
-  return EVENT_FIELDS.includes(field as EventField);
+function isDate(line: LabelledLine): boolean {
+  return line.field === "date";
 }
 
-function pieceEntries<Value>(
-  pieces: Piece[],
-  toValue: (piece: Piece, index: number) => Value,
-): Record<string, Value> {
-  return Object.fromEntries(
-    pieces.map((piece, index) => [pieceKey(index), toValue(piece, index)]),
-  );
+function isTitle(line: LabelledLine): boolean {
+  return line.field === "title";
 }
 
-function pieceKey(index: number): string {
-  return `piece${index + 1}`;
-}
-
-/**
- * One event per title, since a block can hold a whole day. Every other piece of the block joins
- * the title it sits closest to, which keeps a time written above its title with it.
- */
-function splitAtTitles(pieces: LabelledPiece[]): LabelledPiece[][] {
-  const titleIndexes = pieces.flatMap((piece, index) =>
-    isTitle(piece) ? [index] : [],
-  );
-  if (titleIndexes.length === 0) return [];
-
-  const events: LabelledPiece[][] = titleIndexes.map(() => []);
-  pieces.forEach((piece, index) =>
-    events[nearestTitle(titleIndexes, index)].push(piece),
-  );
-
-  return events.map((event) => withTheBlocksDay(event, events));
-}
-
-function isTitle(piece: LabelledPiece): boolean {
-  return piece.field === "title";
-}
-
-function nearestTitle(titleIndexes: number[], index: number): number {
-  const distances = titleIndexes.map((titleIndex) =>
-    Math.abs(titleIndex - index),
-  );
-  return distances.indexOf(Math.min(...distances));
-}
-
-/** A calendar writes the day once above the whole block, so an event without one borrows it. */
-function withTheBlocksDay(
-  event: LabelledPiece[],
-  events: LabelledPiece[][],
-): LabelledPiece[] {
-  if (event.some(isDate)) return event;
-
-  const day = events.find((other) => other.some(isDate))?.filter(isDate);
-  return [...(day ?? []), ...event];
-}
-
-function isDate(piece: LabelledPiece): boolean {
-  return piece.field === "date";
-}
-
-function toEvent(source: Source, pieces: LabelledPiece[]): Event | null {
-  const texts = toFieldTexts(pieces);
+function toEvent(source: Source, lines: LabelledLine[]): Event | null {
+  const texts = toFieldTexts(lines);
   const title = joinTexts(texts.title);
   const startDate = toStartDate(texts);
   /** The last one, since a page writes "Plassering" before the venue and the street after the house. */
@@ -207,16 +225,16 @@ function toEvent(source: Source, pieces: LabelledPiece[]): Event | null {
     startDate,
     endDate: toEndDate(texts, startDate),
     location: location ? mapLocation(location) : source.name,
-    url: toEventUrl(pieces, source.url),
+    url: toEventUrl(lines, source.url),
     collectedAt: new Date().toISOString(),
   };
 }
 
-function toFieldTexts(pieces: LabelledPiece[]): FieldTexts {
+function toFieldTexts(lines: LabelledLine[]): FieldTexts {
   return Object.fromEntries(
     EVENT_FIELDS.map((field) => [
       field,
-      pieces.filter((piece) => piece.field === field).map((piece) => piece.text),
+      lines.filter((line) => line.field === field).map((line) => line.text),
     ]),
   ) as FieldTexts;
 }
@@ -241,10 +259,10 @@ function toUtcDate(texts: string[]): string | null {
   return localDatetime && norwegianTimeToUtc(localDatetime);
 }
 
-/** The link on the title itself, so two events written under one heading keep their own pages. */
-function toEventUrl(pieces: LabelledPiece[], sourceUrl: string): string {
-  const titleHref = pieces.find(isTitle)?.href;
-  return titleHref ?? pieces.find((piece) => piece.href)?.href ?? sourceUrl;
+/** The link on the title's own line, so two events under one heading keep their own pages. */
+function toEventUrl(lines: LabelledLine[], sourceUrl: string): string {
+  const titleHref = lines.find(isTitle)?.href;
+  return titleHref ?? lines.find((line) => line.href)?.href ?? sourceUrl;
 }
 
 function joinTexts(texts: string[]): string {
