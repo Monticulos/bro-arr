@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import ViewNavigation from "../ViewNavigation/ViewNavigation";
+// The collector writes this file sorted by startDate, oldest first.
 import eventsData from "../../../../shared/data/events.json";
 import type { EventsData } from "../../types/event";
 import type { ViewOutletContext } from "../../types/outletContext";
