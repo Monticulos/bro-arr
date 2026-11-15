@@ -73,11 +73,15 @@ location lines: a page writes "Plassering" before the venue, and the street afte
 
 ## Known weakness
 
-Question 1 has no structural backstop. Where a page writes the time *above* the title, the model
-must count that line as the event's first; where it writes the time *below*, it must not. Getting
-this wrong does not lose the event — it moves a line into the neighbouring event, which usually
-shows up as a start time of midnight. Cinema and church read correctly; the library's times are
-not yet reliable.
+An event runs until the next one begins, and the last event on a page has nothing to end it, so
+the footer joins it. The cinema takes its venue from the address in the footer rather than from
+the page, because that address is the last line of the only event on it.
+
+The same gap lets a news article survive: the municipality's front page yields one event it should
+not, since question 3 is asked of a headline that has collected a real date from the lines below.
+
+Both want the same thing — a way for an event to end as well as begin. Trailing lines answered
+`other` already fall away; it is the ones that genuinely look like a venue or a date that stay.
 
 ## Failure handling
 

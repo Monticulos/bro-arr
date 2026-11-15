@@ -54,9 +54,10 @@ async function readSettledLines(page: Page): Promise<Line[]> {
  * written beside a <span> belongs to no element of its own, and a walk over elements loses it.
  *
  * Each text is measured where it is painted, so the lines come back in reading order even when the
- * stylesheet lays them out in another order than the markup. Texts are joined only when they share
- * the same block of the page: a title and the <span> beside it are one line, while two cells of a
- * table row stay apart, since a row holds a title and a date that must be told from each other.
+ * stylesheet lays them out in another order than the markup.
+ *
+ * Texts are never joined together. Two of them printed side by side are still two answers: a page
+ * writing "11:00 – 14:00" is giving a start and an end, and a line can only be labelled once.
  *
  * Nothing in here may name a function, not even an arrow in a const: the build renames functions
  * with a helper that does not exist in the browser this is sent to.
@@ -64,14 +65,7 @@ async function readSettledLines(page: Page): Promise<Line[]> {
 function toLines(root: Element): Line[] {
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   const range = document.createRange();
-  const blocks: Element[] = [];
-  const texts: {
-    text: string;
-    block: number;
-    top: number;
-    left: number;
-    href?: string;
-  }[] = [];
+  const lines: (Line & { top: number; left: number })[] = [];
 
   let node = walker.nextNode();
   while (node) {
@@ -86,22 +80,11 @@ function toLines(root: Element): Line[] {
     if (isReadable) {
       range.selectNodeContents(node);
       const rect = range.getBoundingClientRect();
-
-      let block: Element = parent;
-      while (
-        block !== root &&
-        block.parentElement &&
-        getComputedStyle(block).display.startsWith("inline")
-      )
-        block = block.parentElement;
-
-      if (!blocks.includes(block)) blocks.push(block);
       const link = parent.closest("a");
 
       if (rect.width > 0 && rect.height > 0)
-        texts.push({
+        lines.push({
           text,
-          block: blocks.indexOf(block),
           top: Math.round(rect.top),
           left: rect.left,
           href: link?.origin === location.origin ? link.href : undefined,
@@ -111,21 +94,7 @@ function toLines(root: Element): Line[] {
     node = walker.nextNode();
   }
 
-  texts.sort((first, second) => first.top - second.top || first.left - second.left);
+  lines.sort((first, second) => first.top - second.top || first.left - second.left);
 
-  const lines: Line[] = [];
-  let lineBlock: number | null = null;
-  for (const text of texts) {
-    const sameLine = text.block === lineBlock && lines.length > 0;
-    if (sameLine) {
-      const line = lines[lines.length - 1];
-      line.text = `${line.text} ${text.text}`;
-      line.href = line.href ?? text.href;
-    } else {
-      lines.push({ text: text.text, href: text.href });
-      lineBlock = text.block;
-    }
-  }
-
-  return lines;
+  return lines.map(({ text, href }) => ({ text, href }));
 }
