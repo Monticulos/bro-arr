@@ -18,13 +18,17 @@ export function norwegianTimeToUtc(localDatetime: string): string {
   return new Date(utcMs).toISOString();
 }
 
-export function norwegianDateToday(): string {
-  return new Date().toLocaleDateString("nb-NO", {
+export function norwegianDate(isoDatetime: string): string {
+  return new Date(isoDatetime).toLocaleDateString("nb-NO", {
     timeZone: TIMEZONE,
     day: "numeric",
     month: "short",
     year: "numeric",
   });
+}
+
+export function norwegianDateToday(): string {
+  return norwegianDate(new Date().toISOString());
 }
 
 function getOsloOffsetHours(approximateDate: Date): number {

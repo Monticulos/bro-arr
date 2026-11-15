@@ -54,7 +54,7 @@ async function chooseCategories(
 ): Promise<Record<string, DecisionsChoiceAnswer | null>> {
   if (events.length === 0) return {};
 
-  const decisions = new DecisionModel("google/gemini-decision-1");
+  const decisions = new DecisionModel();
   try {
     return await decisions.choices(
       toQuestions(events),

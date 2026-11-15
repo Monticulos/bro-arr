@@ -11,7 +11,7 @@ import {
   type ScoreCriteria,
 } from "./DecisionModel";
 
-const decisions = new DecisionModel("google/gemini-decision-1");
+const decisions = new DecisionModel();
 
 const URGENCY: ScoreCriteria = ["can wait", "today", "right now"];
 

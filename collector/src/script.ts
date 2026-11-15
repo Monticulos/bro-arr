@@ -7,7 +7,7 @@ import { categorizeEvents } from "./decisions/categorizeEvents.js";
 import { upsertEvents } from "./io/upsertEvents.js";
 import { sortEvents } from "./utils/sortEvents.js";
 import { deleteExpiredEvents } from "./utils/deleteExpiredEvents.js";
-import { deleteDuplicateEvents } from "./utils/deleteDuplicateEvents.js";
+import { deleteDuplicateEvents } from "./decisions/deleteDuplicateEvents.js";
 import {
   readEventsFile,
   writeEventsFile,
@@ -80,10 +80,10 @@ async function collectApifyEventsOrNone(
   }
 }
 
-function cleanEventsFile() {
+async function cleanEventsFile() {
   const data = readEventsFile();
   data.events = deleteExpiredEvents(data.events);
-  data.events = deleteDuplicateEvents(data.events);
+  data.events = await deleteDuplicateEvents(data.events);
   data.events = sortEvents(data.events);
   writeEventsFile(data);
 }
@@ -113,7 +113,7 @@ async function main() {
     await categorizeEvents(collectedEvents, readEventsFile().events),
   );
 
-  cleanEventsFile();
+  await cleanEventsFile();
 
   if (runApify && apifyEvents.length === 0) {
     warnPhase("Apify returned no events. Keeping events from the previous run.");

@@ -28,7 +28,7 @@ export type ScoreCriteria = DecisionsScoreQuestion["criteria"];
 const client = new OpenRouter({ retryConfig: { strategy: "none" } });
 
 export class DecisionModel {
-  constructor(readonly model: string) {}
+  constructor(readonly model: string = "google/gemini-decision-1") {}
 
   /** Returns the probability (0 to 1) that the statement is true, or null. */
   async noul(instructions: Instructions, state: State): Promise<number | null> {
