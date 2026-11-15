@@ -1,8 +1,8 @@
 import "dotenv/config";
 import type { Event } from "../../shared/src/types/Event.js";
 import { TARGET_SOURCES } from "./sources.js";
-import { extractEvents } from "./puppeteer/extractEvents.js";
-import { formatEvents } from "./llm/formatEvents.js";
+import { readPageLines } from "./puppeteer/readPageLines.js";
+import { parseEvents } from "./decisions/parseEvents.js";
 import { categorizeEvents } from "./decisions/categorizeEvents.js";
 import { upsertEvents } from "./io/upsertEvents.js";
 import { sortEvents } from "./utils/sortEvents.js";
@@ -31,20 +31,20 @@ async function collectPuppeteerEvents(): Promise<Event[]> {
   for (const source of TARGET_SOURCES) {
     logPhase(`Processing ${source.name}...`);
 
-    const rawText = await extractEvents(source);
-    if (!rawText) {
-      logDetail(`Skipping ${source.name} - no content extracted.`);
+    const lines = await readPageLines(source);
+    if (lines.length === 0) {
+      logDetail(`Skipping ${source.name} - nothing readable on the page.`);
       continue;
     }
 
-    logDetail(`Extracted content from ${source.url}.`);
+    logDetail(`Read ${lines.length} lines from ${source.url}.`);
 
     try {
-      const events = await formatEvents(source, rawText);
+      const events = await parseEvents(source, lines);
       collectedEvents.push(...events);
       logDetail(`Found ${events.length} events.`);
     } catch (error) {
-      warnDetail(`Failed to format events from ${source.name}:`, error);
+      warnDetail(`Failed to parse events from ${source.name}:`, error);
     }
   }
 

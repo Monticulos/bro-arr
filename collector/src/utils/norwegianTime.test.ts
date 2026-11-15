@@ -1,9 +1,5 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import {
-  norwegianDate,
-  norwegianDateToday,
-  norwegianTimeToUtc,
-} from "./norwegianTime.js";
+import { describe, it, expect } from "vitest";
+import { norwegianDate, norwegianTimeToUtc } from "./norwegianTime.js";
 
 describe("norwegianTimeToUtc", () => {
   it("converts CET winter time to UTC (offset +1)", () => {
@@ -39,20 +35,5 @@ describe("norwegianDate", () => {
 
   it("returns the Norwegian date when it is past midnight in Norway but not in UTC", () => {
     expect(norwegianDate("2026-11-14T23:30:00Z")).toBe("15. nov. 2026");
-  });
-});
-
-describe("norwegianDateToday", () => {
-  beforeEach(() => {
-    vi.useFakeTimers();
-  });
-
-  afterEach(() => {
-    vi.useRealTimers();
-  });
-
-  it("formats the current date", () => {
-    vi.setSystemTime(new Date("2026-11-14T10:00:00Z"));
-    expect(norwegianDateToday()).toBe("14. nov. 2026");
   });
 });

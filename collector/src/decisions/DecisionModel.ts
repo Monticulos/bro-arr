@@ -19,6 +19,7 @@ import type {
 import { retryTransientFailures } from "./retryTransientFailures.js";
 
 export type State = DecisionsRequest["state"];
+export type Questions = DecisionsRequest["questions"];
 export type Answers = DecisionsResponse["answers"];
 export type Instructions = DecisionsChoiceQuestionInstructions;
 export type ChoiceCriteria = DecisionsChoiceQuestion["criteria"];
@@ -146,7 +147,8 @@ function singleAnswer<Answer>(answers: Record<string, Answer>): Answer {
   return Object.values(answers)[0];
 }
 
-function aboveConfidence<Answer extends { confidence?: number }>(
+/** Exported so a caller mixing question types in one request keeps the same threshold rule. */
+export function aboveConfidence<Answer extends { confidence?: number }>(
   answer: Answer | null,
   minConfidence: number,
 ): Answer | null {

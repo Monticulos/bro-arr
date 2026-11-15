@@ -30,6 +30,14 @@ The committed snapshot of every known event. It is the collector's only output a
 input.
 _Avoid_: database, store, feed
 
+### Extraction
+
+**Line**:
+One line of a Source page as a reader sees it, read straight off the live page in reading order.
+The Decision model says which lines begin an Event and what each one says, and the label decides
+the field it fills.
+_Avoid_: piece, block, fragment, chunk, element, node
+
 ### Events
 
 **Event**:
@@ -56,11 +64,8 @@ Duplicate.
 
 ### Models
 
-**Extraction model**:
-The language model that turns a Source's text into structured Events.
-_Avoid_: parser, formatter, LLM
-
 **Decision model**:
-The model that answers closed questions about Events — picking a Category, or judging whether a
-Candidate pair is a Duplicate. It answers with a probability or a labelled choice, never prose.
+The model that answers closed questions about Events — reading one out of a Source page, picking a
+Category, or judging whether a Candidate pair is a Duplicate. It answers with a probability or a
+labelled choice, never prose, so every word of an Event is copied from its Source.
 _Avoid_: classifier, judge, LLM
