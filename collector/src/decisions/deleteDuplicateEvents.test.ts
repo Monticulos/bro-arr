@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { deleteDuplicateEvents } from "./deleteDuplicateEvents.js";
-import { createEvent } from "../test/createEvent.js";
+import { createEvent } from "../../../shared/src/test/createEvent";
 
 const { nouls } = vi.hoisted(() => ({ nouls: vi.fn() }));
 

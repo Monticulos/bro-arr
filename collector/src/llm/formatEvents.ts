@@ -2,7 +2,7 @@ import { readFileSync } from "fs";
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 import { z } from "zod";
-import type { Event } from "../../../shared/types/Event";
+import type { Event } from "../../../shared/src/types/Event";
 import type { Source } from "../sources.js";
 import { generateEventId } from "../utils/generateEventId.js";
 import {

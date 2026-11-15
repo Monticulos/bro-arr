@@ -7,7 +7,8 @@ import CategoryFilter from '../CategoryFilter/CategoryFilter';
 import Search from '../Search/Search';
 import EventSection from '../EventSection/EventSection';
 import { formatMonthHeading } from '../../utils/formatDate';
-import { getUpcomingEvents, groupByMonth } from '../../utils/eventGrouping';
+import { groupSortedEventsByMonth } from '../../utils/eventGrouping';
+import { getUpcomingEvents } from '../../../../shared/src/utils/getUpcomingEvents';
 import styles from './EventList.module.css';
 
 interface Props {
@@ -34,7 +35,7 @@ export default function EventList({ events }: Props) {
     [filteredEvents, favoriteIds]
   );
 
-  const monthGroups = useMemo(() => groupByMonth(filteredEvents), [filteredEvents]);
+  const monthGroups = useMemo(() => groupSortedEventsByMonth(filteredEvents), [filteredEvents]);
 
   if (upcomingEvents.length === 0) {
     return <Paragraph className={styles.statusContainer}>Ingen kommende arrangementer.</Paragraph>;

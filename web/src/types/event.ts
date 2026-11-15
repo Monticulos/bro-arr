@@ -3,4 +3,4 @@ export type {
   CategorizedEvent,
   EventCategory,
   EventsData,
-} from "../../../shared/types/Event";
+} from "../../../shared/src/types/Event";

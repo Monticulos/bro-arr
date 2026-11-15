@@ -1,4 +1,4 @@
-import type { Event } from "../../../shared/types/Event";
+import type { Event } from "../../../shared/src/types/Event";
 import { DecisionModel } from "./DecisionModel.js";
 import { norwegianDate } from "../utils/norwegianTime.js";
 import { logDetail, logPhase, warnDetail } from "../utils/logger.js";
