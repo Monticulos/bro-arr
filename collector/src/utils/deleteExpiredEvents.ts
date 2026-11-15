@@ -1,23 +1,15 @@
-import type { Event } from "../../../shared/types/Event";
+import type { Event } from "../../../shared/src/types/Event";
+import { getUpcomingEvents } from "../../../shared/src/utils/getUpcomingEvents";
 import { logPhase } from "./logger.js";
 
-const EXPIRY_HOURS = 12;
-
-export function isExpired(event: Event, now: Date = new Date()): boolean {
-  const expiryThreshold = new Date(
-    now.getTime() - EXPIRY_HOURS * 60 * 60 * 1000,
-  );
-  return new Date(event.startDate) < expiryThreshold;
-}
-
 export function deleteExpiredEvents(events: Event[]): Event[] {
-  const filtered = events.filter((event) => !isExpired(event));
-  const removedCount = events.length - filtered.length;
+  const upcomingEvents = getUpcomingEvents(events);
+  const removedCount = events.length - upcomingEvents.length;
 
   logPhase(
     removedCount > 0
       ? `Removed ${removedCount} expired events.`
       : "No expired events found.",
   );
-  return filtered;
+  return upcomingEvents;
 }

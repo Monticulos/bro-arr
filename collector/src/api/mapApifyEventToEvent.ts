@@ -1,4 +1,4 @@
-import type { Event } from "../../../shared/types/Event";
+import type { Event } from "../../../shared/src/types/Event";
 import type { ApifyEvent } from "./fetchApifyEvents.js";
 
 export function mapApifyEventToEvent(apifyEvent: ApifyEvent): Event {

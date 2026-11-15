@@ -1,4 +1,4 @@
-import type { EventCategory } from "../../../shared/types/Event";
+import type { EventCategory } from "../../../shared/src/types/Event";
 
 export const CATEGORY_LABELS: Record<EventCategory, string> = {
   musikk: "Musikk",
