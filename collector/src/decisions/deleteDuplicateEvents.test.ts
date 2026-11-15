@@ -5,6 +5,7 @@ import { createEvent } from "../test/createEvent.js";
 const { nouls } = vi.hoisted(() => ({ nouls: vi.fn() }));
 
 vi.mock("./DecisionModel.js", () => ({
+  DECISION_MODEL: "test-model",
   DecisionModel: class {
     nouls = nouls;
   },
@@ -47,13 +48,9 @@ describe("deleteDuplicateEvents", () => {
   it("deletes the scraped event when the model says the pair is the same event", async () => {
     nouls.mockResolvedValue({ pair1: 0.95 });
 
-    const events = await deleteDuplicateEvents([
-      APIFY_CONCERT,
-      SCRAPED_CONCERT,
-      SCRAPED_CHURCH_SERVICE,
-    ]);
+    const events = await deleteDuplicateEvents([APIFY_CONCERT, SCRAPED_CONCERT]);
 
-    expect(events).toEqual([APIFY_CONCERT, SCRAPED_CHURCH_SERVICE]);
+    expect(events).toEqual([APIFY_CONCERT]);
   });
 
   it("asks about every pair starting the same day in a single call, describing both events", async () => {

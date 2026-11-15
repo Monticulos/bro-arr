@@ -24,6 +24,8 @@ export type Instructions = DecisionsChoiceQuestionInstructions;
 export type ChoiceCriteria = DecisionsChoiceQuestion["criteria"];
 export type ScoreCriteria = DecisionsScoreQuestion["criteria"];
 
+export const DECISION_MODEL = "google/gemini-decision-1";
+
 /** The SDK's own retry runs for up to an hour */
 const client = new OpenRouter({ retryConfig: { strategy: "none" } });
 

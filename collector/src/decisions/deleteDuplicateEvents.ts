@@ -1,5 +1,5 @@
 import type { Event } from "../../../shared/types/Event";
-import { DecisionModel } from "./DecisionModel.js";
+import { DECISION_MODEL, DecisionModel } from "./DecisionModel.js";
 import { norwegianDate } from "../utils/norwegianTime.js";
 import { logDetail, logPhase, warnDetail } from "../utils/logger.js";
 
@@ -11,7 +11,7 @@ type EventToCompare = Pick<
   "title" | "description" | "startDate" | "location"
 >;
 
-/** Apify records are richer than scraped ones, so the scraped event is the one we delete. */
+/** Apify records are richer, and their ids stay stable when a source revises the start time. */
 type CandidatePair = { apifyEvent: Event; scrapedEvent: Event };
 
 export async function deleteDuplicateEvents(events: Event[]): Promise<Event[]> {
@@ -64,7 +64,7 @@ async function askWhetherPairsAreTheSameEvent(
 ): Promise<Record<string, number | null>> {
   if (pairs.length === 0) return {};
 
-  const decisions = new DecisionModel("google/gemini-decision-1");
+  const decisions = new DecisionModel(DECISION_MODEL);
   try {
     return await decisions.nouls(toQuestions(pairs), toState(pairs));
   } catch (error) {
@@ -77,7 +77,7 @@ function toQuestions(pairs: CandidatePair[]): Record<string, string> {
   return Object.fromEntries(
     pairs.map((_, index) => [
       pairKey(index),
-      `Do the two events in ${pairKey(index)} describe the same local event in Brønnøysund, Norway, listed by two different sources?`,
+      `Are the two events in ${pairKey(index)} one local event listed twice by different sources, rather than two separate occurrences held at different times?`,
     ]),
   );
 }
