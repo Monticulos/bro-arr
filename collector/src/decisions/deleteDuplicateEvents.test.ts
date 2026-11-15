@@ -5,7 +5,6 @@ import { createEvent } from "../test/createEvent.js";
 const { nouls } = vi.hoisted(() => ({ nouls: vi.fn() }));
 
 vi.mock("./DecisionModel.js", () => ({
-  DECISION_MODEL: "test-model",
   DecisionModel: class {
     nouls = nouls;
   },

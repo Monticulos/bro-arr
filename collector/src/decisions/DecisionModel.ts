@@ -24,13 +24,11 @@ export type Instructions = DecisionsChoiceQuestionInstructions;
 export type ChoiceCriteria = DecisionsChoiceQuestion["criteria"];
 export type ScoreCriteria = DecisionsScoreQuestion["criteria"];
 
-export const DECISION_MODEL = "google/gemini-decision-1";
-
 /** The SDK's own retry runs for up to an hour */
 const client = new OpenRouter({ retryConfig: { strategy: "none" } });
 
 export class DecisionModel {
-  constructor(readonly model: string) {}
+  constructor(readonly model: string = "google/gemini-decision-1") {}
 
   /** Returns the probability (0 to 1) that the statement is true, or null. */
   async noul(instructions: Instructions, state: State): Promise<number | null> {

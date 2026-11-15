@@ -1,5 +1,5 @@
 import type { Event } from "../../../shared/types/Event";
-import { DECISION_MODEL, DecisionModel } from "./DecisionModel.js";
+import { DecisionModel } from "./DecisionModel.js";
 import { norwegianDate } from "../utils/norwegianTime.js";
 import { logDetail, logPhase, warnDetail } from "../utils/logger.js";
 
@@ -64,7 +64,7 @@ async function askWhetherPairsAreTheSameEvent(
 ): Promise<Record<string, number | null>> {
   if (pairs.length === 0) return {};
 
-  const decisions = new DecisionModel(DECISION_MODEL);
+  const decisions = new DecisionModel();
   try {
     return await decisions.nouls(toQuestions(pairs), toState(pairs));
   } catch (error) {

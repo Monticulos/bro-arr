@@ -1,6 +1,6 @@
 import type { DecisionsChoiceAnswer } from "@openrouter/sdk/models";
 import type { Event, EventCategory } from "../../../shared/types/Event";
-import { DECISION_MODEL, DecisionModel } from "./DecisionModel.js";
+import { DecisionModel } from "./DecisionModel.js";
 import { CATEGORY_CRITERIA, isEventCategory } from "./categoryCriteria.js";
 import { logDetail, logPhase, warnDetail } from "../utils/logger.js";
 
@@ -54,7 +54,7 @@ async function chooseCategories(
 ): Promise<Record<string, DecisionsChoiceAnswer | null>> {
   if (events.length === 0) return {};
 
-  const decisions = new DecisionModel(DECISION_MODEL);
+  const decisions = new DecisionModel();
   try {
     return await decisions.choices(
       toQuestions(events),
