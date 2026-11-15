@@ -1,23 +1,23 @@
 import { readFileSync, writeFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
-import type { EventsDataSchema } from "../../../shared/types/Event";
+import type { EventsData } from "../../../shared/types/Event";
 const currentDir = dirname(fileURLToPath(import.meta.url));
 export const EVENTS_JSON_PATH = resolve(
   currentDir,
   "../../../shared/data/events.json",
 );
 
-export function readEventsFile(): EventsDataSchema {
+export function readEventsFile(): EventsData {
   try {
     const raw = readFileSync(EVENTS_JSON_PATH, "utf-8");
-    return JSON.parse(raw) as EventsDataSchema;
+    return JSON.parse(raw) as EventsData;
   } catch {
     return { updatedAt: new Date().toISOString(), events: [] };
   }
 }
 
-export function writeEventsFile(data: EventsDataSchema): void {
+export function writeEventsFile(data: EventsData): void {
   writeFileSync(EVENTS_JSON_PATH, JSON.stringify(data, null, 2), "utf-8");
 }
 

@@ -146,7 +146,7 @@ function singleAnswer<Answer>(answers: Record<string, Answer>): Answer {
   return Object.values(answers)[0];
 }
 
-export function aboveConfidence<Answer extends { confidence?: number }>(
+function aboveConfidence<Answer extends { confidence?: number }>(
   answer: Answer | null,
   minConfidence: number,
 ): Answer | null {

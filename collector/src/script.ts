@@ -25,7 +25,7 @@ import {
 } from "./utils/logger.js";
 
 async function collectPuppeteerEvents(): Promise<UncategorizedEvent[]> {
-  logPhase("Starting Puppeteer event collection.");
+  logPhase("Starting Puppeteer event collection...");
   const collectedEvents: UncategorizedEvent[] = [];
 
   for (const source of TARGET_SOURCES) {
@@ -42,7 +42,7 @@ async function collectPuppeteerEvents(): Promise<UncategorizedEvent[]> {
     try {
       const events = await formatEvents(source, rawText);
       collectedEvents.push(...events);
-      logDetail(`Formatted ${events.length} events.`);
+      logDetail(`Found ${events.length} events.`);
     } catch (error) {
       warnDetail(`Failed to format events from ${source.name}:`, error);
     }
@@ -69,6 +69,16 @@ async function collectApifyEvents(
 
   return collectedEvents;
 }
+async function collectApifyEventsOrNone(
+  runId: string,
+): Promise<UncategorizedEvent[]> {
+  try {
+    return await collectApifyEvents(await waitForActorRun(runId));
+  } catch (error) {
+    warnPhase("Failed to collect Apify events:", error);
+    return [];
+  }
+}
 
 function cleanEventsFile() {
   const data = readEventsFile();
@@ -94,13 +104,11 @@ async function main() {
   logPhase(`Collected ${puppeteerEvents.length} Puppeteer events.`);
 
   if (runApify && runId) {
-    const datasetId = await waitForActorRun(runId);
-    apifyEvents = await collectApifyEvents(datasetId);
+    apifyEvents = await collectApifyEventsOrNone(runId);
     logPhase(`Collected ${apifyEvents.length} Apify events.`);
   }
 
   const collectedEvents = [...puppeteerEvents, ...apifyEvents];
-  logPhase(`Categorizing ${collectedEvents.length} collected events...`);
   await upsertEvents(
     await categorizeEvents(collectedEvents, readEventsFile().events),
   );

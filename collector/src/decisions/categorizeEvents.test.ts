@@ -5,8 +5,7 @@ import { createEvent, createUncategorizedEvent } from "../test/createEvent.js";
 
 const { choices } = vi.hoisted(() => ({ choices: vi.fn() }));
 
-vi.mock("./DecisionModel.js", async (importOriginal) => ({
-  ...(await importOriginal<typeof import("./DecisionModel.js")>()),
+vi.mock("./DecisionModel.js", () => ({
   DecisionModel: class {
     choices = choices;
   },
@@ -62,7 +61,10 @@ describe("categorizeEvents", () => {
         event2: expect.stringContaining("event2"),
       },
       CATEGORY_CRITERIA,
-      { event1: CONCERT, event2: QUIZ },
+      {
+        event1: { title: CONCERT.title, description: CONCERT.description },
+        event2: { title: QUIZ.title, description: QUIZ.description },
+      },
       expect.any(Number),
     );
   });
@@ -77,7 +79,7 @@ describe("categorizeEvents", () => {
     expect(choices).toHaveBeenCalledWith(
       { event1: expect.any(String) },
       CATEGORY_CRITERIA,
-      { event1: QUIZ },
+      { event1: { title: QUIZ.title, description: QUIZ.description } },
       expect.any(Number),
     );
   });
@@ -98,20 +100,34 @@ describe("categorizeEvents", () => {
   it.each([
     ["gives no answer", null],
     ["chooses a category that does not exist", choiceAnswer("sport")],
-  ])("falls back to annet when the model %s", async (_, answer) => {
+  ])("leaves the event uncategorized when the model %s", async (_, answer) => {
+    vi.spyOn(console, "warn").mockImplementation(() => {});
     choices.mockResolvedValue({ event1: answer });
 
     const events = await categorizeEvents([CONCERT], []);
 
-    expect(events[0].category).toBe("annet");
+    expect(events[0].category).toBeUndefined();
   });
 
-  it("falls back to annet for every event when the decisions api fails", async () => {
+  it("leaves every event uncategorized when the decisions api fails", async () => {
     vi.spyOn(console, "warn").mockImplementation(() => {});
     choices.mockRejectedValue(new Error("Service unavailable"));
 
     const events = await categorizeEvents([CONCERT, QUIZ], []);
 
-    expect(events.map((event) => event.category)).toEqual(["annet", "annet"]);
+    expect(events.map((event) => event.category)).toEqual([
+      undefined,
+      undefined,
+    ]);
+  });
+
+  it("asks again about an event that an earlier run left uncategorized", async () => {
+    choices.mockResolvedValue({ event1: choiceAnswer("musikk") });
+    const uncategorizedConcert = createEvent({ ...CONCERT, category: undefined });
+
+    const events = await categorizeEvents([CONCERT], [uncategorizedConcert]);
+
+    expect(events[0].category).toBe("musikk");
+    expect(choices).toHaveBeenCalledTimes(1);
   });
 });

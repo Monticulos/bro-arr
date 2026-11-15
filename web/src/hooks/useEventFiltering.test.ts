@@ -1,9 +1,9 @@
 import { describe, it, expect } from "vitest";
 import { renderHook, act } from "@testing-library/react";
-import type { Event } from "../../../shared/types/Event";
+import type { CategorizedEvent } from "../types/event";
 import { useEventFiltering } from "./useEventFiltering";
 
-function createEvent(overrides: Partial<Event> = {}): Event {
+function createEvent(overrides: Partial<CategorizedEvent> = {}): CategorizedEvent {
   return {
     id: "1",
     title: "Test Event",

@@ -1,9 +1,9 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import CategoryBadge from "./CategoryBadge";
-import type { Event } from "../../types/event";
+import type { EventCategory } from "../../types/event";
 
-const CATEGORIES: { category: Event["category"]; label: string; color: string }[] = [
+const CATEGORIES: { category: EventCategory; label: string; color: string }[] = [
   { category: "musikk", label: "Musikk", color: "accent" },
   { category: "kino", label: "Kino", color: "brand2" },
   { category: "quiz", label: "Quiz", color: "brand1" },

@@ -1,6 +1,6 @@
 import { Card, Heading, Paragraph, Link, Button } from '@digdir/designsystemet-react';
 import { StarIcon, StarFillIcon } from '@navikt/aksel-icons';
-import type { Event } from '../../types/event';
+import type { CategorizedEvent } from '../../types/event';
 import CategoryBadge from '../CategoryBadge/CategoryBadge';
 import { formatEventDate } from '../../utils/formatDate';
 import styles from './EventCard.module.css';
@@ -10,7 +10,7 @@ const STAR_LABEL_FAVORITED = 'Fjern fra favoritter';
 const STAR_LABEL_UNFAVORITED = 'Legg til i favoritter';
 
 interface Props {
-  event: Event;
+  event: CategorizedEvent;
   isFavorited: boolean;
   onToggleFavorite: (id: string) => void;
 }

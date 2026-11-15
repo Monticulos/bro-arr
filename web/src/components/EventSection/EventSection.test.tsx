@@ -2,9 +2,9 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import EventSection from "./EventSection";
-import type { Event } from "../../types/event";
+import type { CategorizedEvent } from "../../types/event";
 
-function createEvent(overrides: Partial<Event> = {}): Event {
+function createEvent(overrides: Partial<CategorizedEvent> = {}): CategorizedEvent {
   return {
     id: "1",
     title: "Test Event",

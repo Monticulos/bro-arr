@@ -1,6 +1,8 @@
 import { CATEGORY_SLUGS } from "../constants";
 
-export interface EventsDataSchema {
+export type EventCategory = (typeof CATEGORY_SLUGS)[number];
+
+export interface EventsData {
   updatedAt: string;
   events: Event[];
 }
@@ -9,7 +11,8 @@ export interface Event {
   id: string;
   title: string;
   description: string;
-  category: (typeof CATEGORY_SLUGS)[number];
+  /** Absent until the decision model answers. The next collector run asks again. */
+  category?: EventCategory;
   startDate: string; // ISO 8601
   endDate?: string; // ISO 8601
   location?: string;
@@ -18,3 +21,5 @@ export interface Event {
 }
 
 export type UncategorizedEvent = Omit<Event, "category">;
+
+export type CategorizedEvent = Event & { category: EventCategory };

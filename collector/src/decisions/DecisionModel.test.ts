@@ -179,6 +179,25 @@ describe("DecisionModel", () => {
         },
       });
     });
+
+    it("returns null for a question answered below minConfidence", async () => {
+      const { decisions } = createDecisionModel({
+        formality: { type: "score", score: 0.2, confidence: 0.9 },
+        clarity: { type: "score", score: 1.8, confidence: 0.4 },
+      });
+
+      const scores = await decisions.scores(
+        { formality: "How formal is this?", clarity: "How clear is this?" },
+        URGENCY,
+        STATE,
+        0.8,
+      );
+
+      expect(scores).toEqual({
+        formality: { type: "score", score: 0.2, confidence: 0.9 },
+        clarity: null,
+      });
+    });
   });
 
   describe("choice", () => {

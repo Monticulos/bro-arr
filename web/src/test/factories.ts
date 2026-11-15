@@ -1,6 +1,6 @@
-import type { Event } from "../types/event";
+import type { CategorizedEvent } from "../types/event";
 
-export const createEvent = (overrides: Partial<Event> = {}): Event => ({
+export const createEvent = (overrides: Partial<CategorizedEvent> = {}): CategorizedEvent => ({
   id: "1",
   title: "Quiz Night",
   description: "Weekly pub quiz",

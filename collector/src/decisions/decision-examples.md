@@ -59,7 +59,7 @@ await decisions.nouls(
 
 ## `score`
 
-A score between 0 and the last criterion. With can wait / today / right now, 1.9 means almost "right now".
+A score between 0 and the last criterion. With can wait / today / right now, 1.9 means almost "right now". The last argument is the confidence threshold: below it the answer becomes `null`.
 
 ```ts
 await decisions.score(
@@ -73,7 +73,7 @@ await decisions.score(
 
 ## `scores`
 
-The whole answer per name, on a low / medium / high scale.
+The whole answer per name, on a low / medium / high scale. The last argument is the confidence threshold, applied to every answer: a question the model answers below it comes back as `null` instead of an answer.
 
 ```ts
 await decisions.scores(
@@ -117,13 +117,14 @@ await decisions.choice(
 
 ## `choices`
 
-The whole answer per name, all from the same criteria.
+The whole answer per name, all from the same criteria. The last argument is the confidence threshold, applied to every answer - here the reviewer never mentions support, so that answer is `null`.
 
 ```ts
 await decisions.choices(
   {
     price: "How does the reviewer feel about the price?",
     speed: "How does the reviewer feel about the app's speed?",
+    support: "How does the reviewer feel about customer support?",
   },
   FEELINGS,
   "Love the new look, but it's slow and way too expensive.",
@@ -134,6 +135,7 @@ await decisions.choices(
 //            probabilities: { negative: 0.95, mixed: 0.03, ... } },
 //   speed: { type: "choice", choice: "negative", confidence: 0.8,
 //            probabilities: { negative: 0.8, mixed: 0.15, ... } },
+//   support: null,  // answered not_mentioned at 0.44, below the 0.5 threshold
 // }
 ```
 
