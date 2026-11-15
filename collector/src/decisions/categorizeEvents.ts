@@ -1,9 +1,5 @@
 import type { DecisionsChoiceAnswer } from "@openrouter/sdk/models";
-import type {
-  Event,
-  EventCategory,
-  UncategorizedEvent,
-} from "../../../shared/types/Event";
+import type { Event, EventCategory } from "../../../shared/types/Event";
 import { DecisionModel } from "./DecisionModel.js";
 import { CATEGORY_CRITERIA, isEventCategory } from "./categoryCriteria.js";
 import { logDetail, logPhase, warnDetail } from "../utils/logger.js";
@@ -11,13 +7,10 @@ import { logDetail, logPhase, warnDetail } from "../utils/logger.js";
 /** Below this the model is only guessing between categories, so the event is left uncategorized. */
 const MIN_CONFIDENCE = 0.3;
 
-type EventToCategorize = Pick<
-  UncategorizedEvent,
-  "title" | "description" | "location"
->;
+type EventToCategorize = Pick<Event, "title" | "description" | "location">;
 
 export async function categorizeEvents(
-  events: UncategorizedEvent[],
+  events: Event[],
   savedEvents: Event[],
 ): Promise<Event[]> {
   const savedCategories = toSavedCategories(savedEvents);
@@ -42,7 +35,7 @@ function toSavedCategories(savedEvents: Event[]): Map<string, EventCategory> {
 }
 
 async function categorizeNewEvents(
-  events: UncategorizedEvent[],
+  events: Event[],
 ): Promise<Map<string, EventCategory>> {
   const answers = await chooseCategories(events);
   const categories = new Map<string, EventCategory>();
@@ -57,7 +50,7 @@ async function categorizeNewEvents(
 }
 
 async function chooseCategories(
-  events: UncategorizedEvent[],
+  events: Event[],
 ): Promise<Record<string, DecisionsChoiceAnswer | null>> {
   if (events.length === 0) return {};
 
@@ -75,7 +68,7 @@ async function chooseCategories(
   }
 }
 
-function toQuestions(events: UncategorizedEvent[]): Record<string, string> {
+function toQuestions(events: Event[]): Record<string, string> {
   return Object.fromEntries(
     events.map((_, index) => [
       eventKey(index),
@@ -85,7 +78,7 @@ function toQuestions(events: UncategorizedEvent[]): Record<string, string> {
 }
 
 function toState(
-  events: UncategorizedEvent[],
+  events: Event[],
 ): Record<string, EventToCategorize> {
   return Object.fromEntries(
     events.map(({ title, description, location }, index) => [
@@ -106,7 +99,7 @@ function toCategory(
   return isEventCategory(choice) ? choice : undefined;
 }
 
-function logOutcome(event: UncategorizedEvent, category?: EventCategory): void {
+function logOutcome(event: Event, category?: EventCategory): void {
   if (category) {
     logDetail(`${event.title} was labeled as ${category}.`);
     return;

@@ -2,7 +2,7 @@ import { readFileSync } from "fs";
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 import { z } from "zod";
-import type { UncategorizedEvent } from "../../../shared/types/Event";
+import type { Event } from "../../../shared/types/Event";
 import type { Source } from "../sources.js";
 import { generateEventId } from "../utils/generateEventId.js";
 import {
@@ -56,7 +56,7 @@ const EventsResponseSchema = z.object({
 export async function formatEvents(
   source: Source,
   rawText: string,
-): Promise<UncategorizedEvent[]> {
+): Promise<Event[]> {
   if (!rawText) return [];
 
   const userMessage = `Today's date: ${norwegianDateToday()}\nSource: ${source.name}\nSource URL: ${source.url}\n\n${rawText}`;
@@ -71,7 +71,7 @@ export async function formatEvents(
 
 type LlmEvent = z.infer<typeof EventSchema>;
 
-function toEvent(llmEvent: LlmEvent, sourceName: string): UncategorizedEvent {
+function toEvent(llmEvent: LlmEvent, sourceName: string): Event {
   const utcStartDate = norwegianTimeToUtc(llmEvent.startDate);
   return {
     ...llmEvent,
