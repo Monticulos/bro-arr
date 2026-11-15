@@ -12,7 +12,7 @@ type EventToCompare = Pick<
 >;
 
 /** Apify records are richer, and their ids stay stable when a source revises the start time. */
-type CandidatePair = { apifyEvent: Event; scrapedEvent: Event };
+type CandidatePair = { apifyEvent: Event; puppeteerEvent: Event };
 
 export async function deleteDuplicateEvents(events: Event[]): Promise<Event[]> {
   const candidatePairs = findCandidatePairs(events);
@@ -23,12 +23,12 @@ export async function deleteDuplicateEvents(events: Event[]): Promise<Event[]> {
     (_, index) =>
       (sameEventProbabilities[pairKey(index)] ?? 0) >= MIN_DUPLICATE_PROBABILITY,
   );
-  duplicates.forEach(({ apifyEvent, scrapedEvent }) =>
-    logDetail(`${scrapedEvent.title} duplicates ${apifyEvent.title}.`),
+  duplicates.forEach(({ apifyEvent, puppeteerEvent }) =>
+    logDetail(`${puppeteerEvent.title} duplicates ${apifyEvent.title}.`),
   );
 
   const duplicateIds = new Set(
-    duplicates.map(({ scrapedEvent }) => scrapedEvent.id),
+    duplicates.map(({ puppeteerEvent }) => puppeteerEvent.id),
   );
   logPhase(
     duplicateIds.size > 0
@@ -48,14 +48,14 @@ function startsOnTheSameDay(eventA: Event, eventB: Event): boolean {
 }
 
 function findCandidatePairs(events: Event[]): CandidatePair[] {
-  const scrapedEvents = events.filter((event) => !isApifyEvent(event));
+  const puppeteerEvents = events.filter((event) => !isApifyEvent(event));
 
   return events
     .filter(isApifyEvent)
     .flatMap((apifyEvent) =>
-      scrapedEvents
-        .filter((scrapedEvent) => startsOnTheSameDay(apifyEvent, scrapedEvent))
-        .map((scrapedEvent) => ({ apifyEvent, scrapedEvent })),
+      puppeteerEvents
+        .filter((puppeteerEvent) => startsOnTheSameDay(apifyEvent, puppeteerEvent))
+        .map((puppeteerEvent) => ({ apifyEvent, puppeteerEvent })),
     );
 }
 
@@ -86,11 +86,11 @@ function toState(
   pairs: CandidatePair[],
 ): Record<string, Record<string, EventToCompare>> {
   return Object.fromEntries(
-    pairs.map(({ apifyEvent, scrapedEvent }, index) => [
+    pairs.map(({ apifyEvent, puppeteerEvent }, index) => [
       pairKey(index),
       {
         first: toEventToCompare(apifyEvent),
-        second: toEventToCompare(scrapedEvent),
+        second: toEventToCompare(puppeteerEvent),
       },
     ]),
   );

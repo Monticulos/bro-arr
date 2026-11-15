@@ -18,7 +18,7 @@ const APIFY_CONCERT = createEvent({
   location: "Brønnøysund kulturhus",
 });
 
-const SCRAPED_CONCERT = createEvent({
+const PUPPETEER_CONCERT = createEvent({
   id: "kulturhuset-2026-12-03T20:00:00.000Z",
   title: "Bugge Wesseltoft - julekonsert",
   description: "Julekonsert med Bugge Wesseltoft.",
@@ -26,7 +26,7 @@ const SCRAPED_CONCERT = createEvent({
   location: "Kulturhuset",
 });
 
-const SCRAPED_CHURCH_SERVICE = createEvent({
+const PUPPETEER_CHURCH_SERVICE = createEvent({
   id: "bronnoy-kirke-2026-12-06T10:00:00.000Z",
   title: "Gudstjeneste",
   description: "Gudstjeneste med dåp.",
@@ -44,10 +44,10 @@ describe("deleteDuplicateEvents", () => {
     vi.restoreAllMocks();
   });
 
-  it("deletes the scraped event when the model says the pair is the same event", async () => {
+  it("deletes the Puppeteer event when the model says the pair is the same event", async () => {
     nouls.mockResolvedValue({ pair1: 0.95 });
 
-    const events = await deleteDuplicateEvents([APIFY_CONCERT, SCRAPED_CONCERT]);
+    const events = await deleteDuplicateEvents([APIFY_CONCERT, PUPPETEER_CONCERT]);
 
     expect(events).toEqual([APIFY_CONCERT]);
   });
@@ -55,8 +55,8 @@ describe("deleteDuplicateEvents", () => {
   it("asks about every pair starting the same day in a single call, describing both events", async () => {
     await deleteDuplicateEvents([
       APIFY_CONCERT,
-      SCRAPED_CONCERT,
-      SCRAPED_CHURCH_SERVICE,
+      PUPPETEER_CONCERT,
+      PUPPETEER_CHURCH_SERVICE,
     ]);
 
     expect(nouls).toHaveBeenCalledTimes(1);
@@ -71,10 +71,10 @@ describe("deleteDuplicateEvents", () => {
             location: APIFY_CONCERT.location,
           },
           second: {
-            title: SCRAPED_CONCERT.title,
-            description: SCRAPED_CONCERT.description,
-            startDate: SCRAPED_CONCERT.startDate,
-            location: SCRAPED_CONCERT.location,
+            title: PUPPETEER_CONCERT.title,
+            description: PUPPETEER_CONCERT.description,
+            startDate: PUPPETEER_CONCERT.startDate,
+            location: PUPPETEER_CONCERT.location,
           },
         },
       },
@@ -88,16 +88,16 @@ describe("deleteDuplicateEvents", () => {
   ])("keeps both events when the model %s", async (_, answers) => {
     nouls.mockResolvedValue(answers);
 
-    const events = await deleteDuplicateEvents([APIFY_CONCERT, SCRAPED_CONCERT]);
+    const events = await deleteDuplicateEvents([APIFY_CONCERT, PUPPETEER_CONCERT]);
 
-    expect(events).toEqual([APIFY_CONCERT, SCRAPED_CONCERT]);
+    expect(events).toEqual([APIFY_CONCERT, PUPPETEER_CONCERT]);
   });
 
   it.each([
-    ["the events start on different days", [APIFY_CONCERT, SCRAPED_CHURCH_SERVICE]],
+    ["the events start on different days", [APIFY_CONCERT, PUPPETEER_CHURCH_SERVICE]],
     [
       "both events come from apify",
-      [APIFY_CONCERT, createEvent({ ...SCRAPED_CONCERT, id: "88112233445566" })],
+      [APIFY_CONCERT, createEvent({ ...PUPPETEER_CONCERT, id: "88112233445566" })],
     ],
   ])("asks nothing when %s", async (_, events) => {
     const remaining = await deleteDuplicateEvents(events);
@@ -110,8 +110,8 @@ describe("deleteDuplicateEvents", () => {
     vi.spyOn(console, "warn").mockImplementation(() => {});
     nouls.mockRejectedValue(new Error("Service unavailable"));
 
-    const events = await deleteDuplicateEvents([APIFY_CONCERT, SCRAPED_CONCERT]);
+    const events = await deleteDuplicateEvents([APIFY_CONCERT, PUPPETEER_CONCERT]);
 
-    expect(events).toEqual([APIFY_CONCERT, SCRAPED_CONCERT]);
+    expect(events).toEqual([APIFY_CONCERT, PUPPETEER_CONCERT]);
   });
 });
