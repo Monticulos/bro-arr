@@ -1,4 +1,4 @@
-import type { Event } from "../../../shared/types/Event";
+import type { Event } from "../../../shared/src/types/Event";
 import { logPhase } from "./logger.js";
 
 export function sortEvents(events: Event[]): Event[] {

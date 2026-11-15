@@ -8,7 +8,7 @@ import Search from '../Search/Search';
 import EventSection from '../EventSection/EventSection';
 import { formatMonthHeading } from '../../utils/formatDate';
 import { groupSortedEventsByMonth } from '../../utils/eventGrouping';
-import { getUpcomingEvents } from '../../../../shared/utils/getUpcomingEvents';
+import { getUpcomingEvents } from '../../../../shared/src/utils/getUpcomingEvents';
 import styles from './EventList.module.css';
 
 interface Props {

@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { deleteExpiredEvents } from "./deleteExpiredEvents.js";
-import { createEvent } from "../../../shared/test/createEvent";
+import { createEvent } from "../../../shared/src/test/createEvent";
 
 describe("deleteExpiredEvents", () => {
   const expiredEvent = createEvent({

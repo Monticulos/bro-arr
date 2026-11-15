@@ -1,4 +1,4 @@
-import type { Event } from "../../../shared/types/Event";
+import type { Event } from "../../../shared/src/types/Event";
 import { logPhase } from "./logger.js";
 
 const MIN_WORD_LENGTH = 4;

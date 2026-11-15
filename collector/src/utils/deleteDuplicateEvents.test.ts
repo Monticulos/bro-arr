@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import type { Event } from "../../../shared/types/Event";
+import type { Event } from "../../../shared/src/types/Event";
 import {
   hasSimilarTitle,
   isDuplicate,

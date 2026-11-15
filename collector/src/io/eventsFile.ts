@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
-import type { EventsData } from "../../../shared/types/Event";
+import type { EventsData } from "../../../shared/src/types/Event";
 const currentDir = dirname(fileURLToPath(import.meta.url));
 export const EVENTS_JSON_PATH = resolve(
   currentDir,

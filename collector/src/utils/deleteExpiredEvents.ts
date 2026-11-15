@@ -1,5 +1,5 @@
-import type { Event } from "../../../shared/types/Event";
-import { getUpcomingEvents } from "../../../shared/utils/getUpcomingEvents";
+import type { Event } from "../../../shared/src/types/Event";
+import { getUpcomingEvents } from "../../../shared/src/utils/getUpcomingEvents";
 import { logPhase } from "./logger.js";
 
 export function deleteExpiredEvents(events: Event[]): Event[] {

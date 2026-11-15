@@ -1,4 +1,4 @@
-import type { EventCategory } from "../../../shared/types/Event";
+import type { EventCategory } from "../../../shared/src/types/Event";
 
 export const CATEGORY_CRITERIA: Record<EventCategory, string> = {
   "musikk": "Concerts, live music, music festivals such as Rootsfestivalen, band performances, choir and song events, including concerts for children and families.",

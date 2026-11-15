@@ -1,4 +1,4 @@
-import type { Event } from "../../../shared/types/Event";
+import type { Event } from "../../../shared/src/types/Event";
 import { readEventsFile, writeEventsFile } from "./eventsFile.js";
 import { mergeEventLists } from "../utils/mergeEvents.js";
 

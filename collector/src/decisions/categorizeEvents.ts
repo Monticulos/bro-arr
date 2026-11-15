@@ -1,5 +1,5 @@
 import type { DecisionsChoiceAnswer } from "@openrouter/sdk/models";
-import type { Event, EventCategory } from "../../../shared/types/Event";
+import type { Event, EventCategory } from "../../../shared/src/types/Event";
 import { DecisionModel } from "./DecisionModel.js";
 import { CATEGORY_CRITERIA, isEventCategory } from "./categoryCriteria.js";
 import { logDetail, logPhase, warnDetail } from "../utils/logger.js";
