@@ -1,25 +1,14 @@
 {
-  "updatedAt": "2026-11-15T14:06:55.738Z",
+  "updatedAt": "2026-11-16T09:21:31.080Z",
   "events": [
     {
-      "id": "Brønnøy-kirke-2026-11-15T10:00:00.000Z",
-      "title": "Gudstjeneste med dåp",
-      "description": "Gudstjeneste med dåp",
-      "startDate": "2026-11-15T10:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=89bb9c00-e619-4359-8da7-65ffd1184cc4&OccurenceId=89bb9c00-e619-4359-8da7-65ffd1184cc4",
-      "collectedAt": "2026-11-15T14:06:55.421Z",
-      "category": "tro-og-livssyn"
-    },
-    {
-      "id": "Brønnøy-bibliotek-2026-11-17T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-11-17T10:00:00.000Z",
-      "endDate": "2026-11-17T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/35215c08-b8f3-4495-90cb-c3697e651b59",
-      "collectedAt": "2026-11-15T14:06:52.603Z",
+      "id": "Brønnøy-bibliotek-2026-11-17T10:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:41.950Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -43,13 +32,13 @@
       "collectedAt": "2026-11-10T09:34:36.995Z"
     },
     {
-      "id": "Brønnøy-kirke-2026-11-22T10:00:00.000Z",
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Gudstjeneste - Brønnøy kirke",
       "startDate": "2026-11-22T10:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f202fc6a-c287-4819-a298-ec3a75d47967&OccurenceId=f202fc6a-c287-4819-a298-ec3a75d47967",
-      "collectedAt": "2026-11-15T14:06:55.421Z",
+      "id": "Brønnøy-kirke-2026-11-22T10:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:49.371Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -63,24 +52,23 @@
       "collectedAt": "2026-11-02T09:13:57.232Z"
     },
     {
-      "id": "Brønnøy-bibliotek-2026-11-24T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-11-24T10:00:00.000Z",
-      "endDate": "2026-11-24T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/e2607289-b695-400e-931a-e4e510d35f93",
-      "collectedAt": "2026-11-15T14:06:52.603Z",
+      "id": "Brønnøy-bibliotek-2026-11-24T10:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:41.950Z",
       "category": "barn-og-ungdom"
     },
     {
-      "id": "Brønnøy-kirke-2026-11-25T10:00:00.000Z",
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Barn og unge - Kefas",
       "startDate": "2026-11-25T10:00:00.000Z",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=3fd20971-9f27-4ea8-88e5-9c3e3d5a9c13",
-      "collectedAt": "2026-11-15T14:06:55.421Z",
+      "id": "Brønnøy-kirke-2026-11-25T10:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:49.371Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -94,13 +82,13 @@
       "collectedAt": "2026-11-10T09:34:35.159Z"
     },
     {
-      "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z",
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Gudstjeneste - Sykehjemmets kapell",
       "startDate": "2026-11-26T10:30:00.000Z",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=b3b6d79d-a06d-4934-8685-15563e0d1e80&OccurenceId=b3b6d79d-a06d-4934-8685-15563e0d1e80",
-      "collectedAt": "2026-11-15T14:06:55.421Z",
+      "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z",
+      "collectedAt": "2026-11-16T09:20:49.371Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -124,45 +112,43 @@
       "collectedAt": "2026-11-10T09:34:36.474Z"
     },
     {
-      "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Gudstjeneste - Brønnøy kirke",
       "startDate": "2026-11-29T10:00:00.000Z",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5&OccurenceId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5",
-      "collectedAt": "2026-11-15T14:06:55.421Z",
+      "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:49.371Z",
       "category": "tro-og-livssyn"
     },
     {
-      "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Gudstjeneste - Velfjord kirke",
       "startDate": "2026-11-29T14:00:00.000Z",
-      "location": "Velfjord kirke",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=99633440-8026-4a82-b801-7a613295cbbe&OccurenceId=99633440-8026-4a82-b801-7a613295cbbe",
-      "collectedAt": "2026-11-15T14:06:55.421Z",
+      "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:49.371Z",
       "category": "tro-og-livssyn"
     },
     {
-      "id": "Brønnøy-bibliotek-2026-12-01T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-12-01T10:00:00.000Z",
-      "endDate": "2026-12-01T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/6375e174-16c1-411e-a36c-3ae0087dad49",
-      "collectedAt": "2026-11-15T14:06:52.603Z",
+      "id": "Brønnøy-bibliotek-2026-12-01T10:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:41.950Z",
       "category": "barn-og-ungdom"
     },
     {
-      "id": "Brønnøy-bibliotek-2026-12-02T18:00:00.000Z",
       "title": "Naturtreff i regi av BirdLife og Brønnøy kameraklubb",
       "description": "Naturtreff i regi av BirdLife og Brønnøy kameraklubb",
       "startDate": "2026-12-02T18:00:00.000Z",
-      "endDate": "2026-12-02T19:30:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/8a242be5-9686-4988-bfbd-3469cb565c19",
-      "collectedAt": "2026-11-15T14:06:52.603Z",
+      "id": "Brønnøy-bibliotek-2026-12-02T18:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:41.950Z",
       "category": "kunst-og-kultur"
     },
     {
@@ -206,14 +192,13 @@
       "collectedAt": "2026-11-10T09:34:32.929Z"
     },
     {
-      "id": "Brønnøy-bibliotek-2026-12-08T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-12-08T10:00:00.000Z",
-      "endDate": "2026-12-08T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/78618b53-0c45-446b-9a7c-8375c3ec541f",
-      "collectedAt": "2026-11-15T14:06:52.603Z",
+      "id": "Brønnøy-bibliotek-2026-12-08T10:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:41.950Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -247,14 +232,13 @@
       "collectedAt": "2026-11-10T09:34:34.064Z"
     },
     {
-      "id": "Brønnøy-bibliotek-2026-12-15T10:00:00.000Z",
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-12-15T10:00:00.000Z",
-      "endDate": "2026-12-15T13:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/dacfeb49-3581-448f-8ef7-f84e7a3f1d46",
-      "collectedAt": "2026-11-15T14:06:52.603Z",
+      "id": "Brønnøy-bibliotek-2026-12-15T10:00:00.000Z",
+      "collectedAt": "2026-11-16T09:20:41.950Z",
       "category": "barn-og-ungdom"
     },
     {
