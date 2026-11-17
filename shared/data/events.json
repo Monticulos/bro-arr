@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T09:21:31.080Z",
+  "updatedAt": "2026-11-17T10:28:57.881Z",
   "events": [
     {
       "title": "Barseltreff på biblioteket",
@@ -8,7 +8,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/35215c08-b8f3-4495-90cb-c3697e651b59",
       "id": "Brønnøy-bibliotek-2026-11-17T10:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:41.950Z",
+      "collectedAt": "2026-11-17T10:28:50.335Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -20,6 +20,66 @@
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=a293174b-41ec-486f-98bb-2ec14df37068",
       "id": "Brønnøy-kirke-2026-11-18T10:00:00.000Z",
       "collectedAt": "2026-11-08T08:51:33.087Z"
+    },
+    {
+      "title": "Sangen fra skogene (Frank tale, norsk tekst)",
+      "description": "Sangen fra skogene (Frank tale, norsk tekst)",
+      "startDate": "2026-11-18T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-18T17:00:00.000Z",
+      "collectedAt": "2026-11-17T10:28:41.239Z",
+      "category": "kino"
+    },
+    {
+      "title": "The Hunger Games: Sunrise on the Reaping (Premiere)",
+      "description": "The Hunger Games: Sunrise on the Reaping (Premiere)",
+      "startDate": "2026-11-18T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-18T19:00:00.000Z",
+      "collectedAt": "2026-11-17T10:28:41.239Z",
+      "category": "kino"
+    },
+    {
+      "title": "Julenissens verksted",
+      "description": "Julenissens verksted",
+      "startDate": "2026-11-19T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-19T17:00:00.000Z",
+      "collectedAt": "2026-11-17T10:28:41.239Z",
+      "category": "kino"
+    },
+    {
+      "title": "Ebenezer",
+      "description": "Ebenezer",
+      "startDate": "2026-11-19T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-19T19:00:00.000Z",
+      "collectedAt": "2026-11-17T10:28:41.239Z",
+      "category": "kino"
+    },
+    {
+      "title": "Mysteriepakken",
+      "description": "Mysteriepakken",
+      "startDate": "2026-11-20T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-20T17:00:00.000Z",
+      "collectedAt": "2026-11-17T10:28:41.239Z",
+      "category": "kino"
+    },
+    {
+      "title": "Wildwood (Engelske tale, norsk tekst)",
+      "description": "Wildwood (Engelske tale, norsk tekst)",
+      "startDate": "2026-11-20T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-20T19:00:00.000Z",
+      "collectedAt": "2026-11-17T10:28:41.239Z",
+      "category": "kino"
     },
     {
       "id": "1759930691717212",
@@ -38,7 +98,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f202fc6a-c287-4819-a298-ec3a75d47967&OccurenceId=f202fc6a-c287-4819-a298-ec3a75d47967",
       "id": "Brønnøy-kirke-2026-11-22T10:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:49.371Z",
+      "collectedAt": "2026-11-17T10:28:57.523Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -58,7 +118,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/e2607289-b695-400e-931a-e4e510d35f93",
       "id": "Brønnøy-bibliotek-2026-11-24T10:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:41.950Z",
+      "collectedAt": "2026-11-17T10:28:50.335Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -68,7 +128,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=3fd20971-9f27-4ea8-88e5-9c3e3d5a9c13",
       "id": "Brønnøy-kirke-2026-11-25T10:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:49.371Z",
+      "collectedAt": "2026-11-17T10:28:57.523Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -88,7 +148,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=b3b6d79d-a06d-4934-8685-15563e0d1e80&OccurenceId=b3b6d79d-a06d-4934-8685-15563e0d1e80",
       "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z",
-      "collectedAt": "2026-11-16T09:20:49.371Z",
+      "collectedAt": "2026-11-17T10:28:57.523Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -100,6 +160,16 @@
       "location": "Kred",
       "url": "https://www.facebook.com/events/1095611339918740/",
       "collectedAt": "2026-11-10T09:34:39.445Z"
+    },
+    {
+      "title": "Hexe: det magiske riket (engelsk tale, norsk tekst)",
+      "description": "Hexe: det magiske riket (engelsk tale, norsk tekst)",
+      "startDate": "2026-11-27T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-11-27T17:00:00.000Z",
+      "collectedAt": "2026-11-17T10:28:41.239Z",
+      "category": "kino"
     },
     {
       "id": "1558998812644654",
@@ -118,7 +188,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5&OccurenceId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5",
       "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:49.371Z",
+      "collectedAt": "2026-11-17T10:28:57.523Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -128,7 +198,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=99633440-8026-4a82-b801-7a613295cbbe&OccurenceId=99633440-8026-4a82-b801-7a613295cbbe",
       "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:49.371Z",
+      "collectedAt": "2026-11-17T10:28:57.523Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -138,7 +208,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/6375e174-16c1-411e-a36c-3ae0087dad49",
       "id": "Brønnøy-bibliotek-2026-12-01T10:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:41.950Z",
+      "collectedAt": "2026-11-17T10:28:50.335Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -148,7 +218,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/8a242be5-9686-4988-bfbd-3469cb565c19",
       "id": "Brønnøy-bibliotek-2026-12-02T18:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:41.950Z",
+      "collectedAt": "2026-11-17T10:28:50.336Z",
       "category": "kunst-og-kultur"
     },
     {
@@ -198,7 +268,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/78618b53-0c45-446b-9a7c-8375c3ec541f",
       "id": "Brønnøy-bibliotek-2026-12-08T10:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:41.950Z",
+      "collectedAt": "2026-11-17T10:28:50.336Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -238,8 +308,18 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/dacfeb49-3581-448f-8ef7-f84e7a3f1d46",
       "id": "Brønnøy-bibliotek-2026-12-15T10:00:00.000Z",
-      "collectedAt": "2026-11-16T09:20:41.950Z",
+      "collectedAt": "2026-11-17T10:28:50.336Z",
       "category": "barn-og-ungdom"
+    },
+    {
+      "title": "Avengers: Doomsday (Premiere)",
+      "description": "Avengers: Doomsday (Premiere)",
+      "startDate": "2026-12-16T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-12-16T19:00:00.000Z",
+      "collectedAt": "2026-11-17T10:28:41.239Z",
+      "category": "kino"
     },
     {
       "id": "1452828786732314",
