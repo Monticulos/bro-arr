@@ -1,26 +1,6 @@
 {
-  "updatedAt": "2026-11-20T09:54:52.998Z",
+  "updatedAt": "2026-11-21T09:30:52.277Z",
   "events": [
-    {
-      "title": "Mysteriepakken",
-      "description": "Mysteriepakken",
-      "startDate": "2026-11-20T17:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-20T17:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
-      "category": "kino"
-    },
-    {
-      "title": "Wildwood (engelsk tale, norsk tekst)",
-      "description": "Wildwood (engelsk tale, norsk tekst)",
-      "startDate": "2026-11-20T19:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-20T19:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
-      "category": "kino"
-    },
     {
       "id": "1759930691717212",
       "title": "Catillus ",
@@ -38,7 +18,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f202fc6a-c287-4819-a298-ec3a75d47967&OccurenceId=f202fc6a-c287-4819-a298-ec3a75d47967",
       "id": "Brønnøy-kirke-2026-11-22T10:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:22.065Z",
+      "collectedAt": "2026-11-21T09:30:52.275Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -58,7 +38,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/e2607289-b695-400e-931a-e4e510d35f93",
       "id": "Brønnøy-bibliotek-2026-11-24T10:00:00.000Z",
-      "collectedAt": "2026-11-18T09:58:41.066Z",
+      "collectedAt": "2026-11-21T09:30:44.826Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -68,7 +48,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-24T17:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -78,7 +58,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-24T19:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -88,7 +68,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=808f5143-048b-4c09-8d69-c029bd1a3e70&OccurenceId=3fd20971-9f27-4ea8-88e5-9c3e3d5a9c13",
       "id": "Brønnøy-kirke-2026-11-25T10:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:22.065Z",
+      "collectedAt": "2026-11-21T09:30:52.275Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -98,7 +78,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-25T16:30:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -108,7 +88,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-25T19:15:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -128,7 +108,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=b3b6d79d-a06d-4934-8685-15563e0d1e80&OccurenceId=b3b6d79d-a06d-4934-8685-15563e0d1e80",
       "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z",
-      "collectedAt": "2026-11-20T09:54:22.065Z",
+      "collectedAt": "2026-11-21T09:30:52.275Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -138,7 +118,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-26T17:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -148,7 +128,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-26T19:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -168,7 +148,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-27T17:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -188,7 +168,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-27T19:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -198,7 +178,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5&OccurenceId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5",
       "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:22.065Z",
+      "collectedAt": "2026-11-21T09:30:52.275Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -208,7 +188,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=99633440-8026-4a82-b801-7a613295cbbe&OccurenceId=99633440-8026-4a82-b801-7a613295cbbe",
       "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:22.065Z",
+      "collectedAt": "2026-11-21T09:30:52.275Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -218,7 +198,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/6375e174-16c1-411e-a36c-3ae0087dad49",
       "id": "Brønnøy-bibliotek-2026-12-01T10:00:00.000Z",
-      "collectedAt": "2026-11-18T09:58:41.066Z",
+      "collectedAt": "2026-11-21T09:30:44.826Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -228,7 +208,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/8a242be5-9686-4988-bfbd-3469cb565c19",
       "id": "Brønnøy-bibliotek-2026-12-02T18:00:00.000Z",
-      "collectedAt": "2026-11-18T09:58:41.066Z",
+      "collectedAt": "2026-11-21T09:30:44.826Z",
       "category": "kunst-og-kultur"
     },
     {
@@ -278,7 +258,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/78618b53-0c45-446b-9a7c-8375c3ec541f",
       "id": "Brønnøy-bibliotek-2026-12-08T10:00:00.000Z",
-      "collectedAt": "2026-11-18T09:58:41.066Z",
+      "collectedAt": "2026-11-21T09:30:44.826Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -318,7 +298,7 @@
       "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/dacfeb49-3581-448f-8ef7-f84e7a3f1d46",
       "id": "Brønnøy-bibliotek-2026-12-15T10:00:00.000Z",
-      "collectedAt": "2026-11-18T09:58:41.067Z",
+      "collectedAt": "2026-11-21T09:30:44.826Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -328,7 +308,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-16T19:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -338,7 +318,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-17T19:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
@@ -348,7 +328,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-18T19:00:00.000Z",
-      "collectedAt": "2026-11-20T09:54:07.082Z",
+      "collectedAt": "2026-11-21T09:30:35.008Z",
       "category": "kino"
     },
     {
