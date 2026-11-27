@@ -1,46 +1,6 @@
 {
-  "updatedAt": "2026-11-26T10:42:34.925Z",
+  "updatedAt": "2026-11-27T10:43:55.802Z",
   "events": [
-    {
-      "id": "27931154943206710",
-      "title": "Førstehjelpskurs 0-2år",
-      "description": "Helsestasjonen tilbyr førstehjelpskurs for foreldre med barn 0-2år med fokus på HLR, kvelning og brannskader. Det vil være både teori og praktisk øving på dukker. \nFørste gruppe: kl.09-11\nAndre gruppe:kl.12-14\nTa kontakt med resepsjonen for påmelding: tlf 750 12880",
-      "category": "barn-og-ungdom",
-      "startDate": "2026-11-26T08:00:00.000Z",
-      "location": "Skulesvei 13, 8904 Brønnøysund, Norway",
-      "url": "https://www.facebook.com/events/27931154943206710/",
-      "collectedAt": "2026-11-10T09:34:35.159Z"
-    },
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Sykehjemmets kapell",
-      "startDate": "2026-11-26T10:30:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=b3b6d79d-a06d-4934-8685-15563e0d1e80&OccurenceId=b3b6d79d-a06d-4934-8685-15563e0d1e80",
-      "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z",
-      "collectedAt": "2026-11-26T10:42:04.262Z",
-      "category": "tro-og-livssyn"
-    },
-    {
-      "title": "Julenissens verksted",
-      "description": "Julenissens verksted 26.11.26 kl. 18:00",
-      "startDate": "2026-11-26T17:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-26T17:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:50.332Z",
-      "category": "kino"
-    },
-    {
-      "title": "The Hunger Games: Sunrise on the Reaping",
-      "description": "The Hunger Games: Sunrise on the Reaping 26.11.26 kl. 20:00",
-      "startDate": "2026-11-26T19:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-26T19:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:50.332Z",
-      "category": "kino"
-    },
     {
       "id": "1095611339918740",
       "title": "Julebord for Tekna i Brønnøysund",
@@ -58,7 +18,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-27T17:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:50.332Z",
+      "collectedAt": "2026-11-27T10:43:41.254Z",
       "category": "kino"
     },
     {
@@ -78,7 +38,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-11-27T19:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:50.332Z",
+      "collectedAt": "2026-11-27T10:43:41.254Z",
       "category": "kino"
     },
     {
@@ -88,7 +48,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5&OccurenceId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5",
       "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
-      "collectedAt": "2026-11-26T10:42:04.262Z",
+      "collectedAt": "2026-11-27T10:43:55.580Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -98,7 +58,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=99633440-8026-4a82-b801-7a613295cbbe&OccurenceId=99633440-8026-4a82-b801-7a613295cbbe",
       "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
-      "collectedAt": "2026-11-26T10:42:04.262Z",
+      "collectedAt": "2026-11-27T10:43:55.580Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -108,17 +68,17 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=21672dd8-92f4-412b-b80e-b724e604947c&OccurenceId=21672dd8-92f4-412b-b80e-b724e604947c",
       "id": "Brønnøy-kirke-2026-11-29T17:00:00.000Z",
-      "collectedAt": "2026-11-26T10:42:04.262Z",
+      "collectedAt": "2026-11-27T10:43:55.580Z",
       "category": "musikk"
     },
     {
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-12-01T10:00:00.000Z",
-      "location": "Brønnøy bibliotek",
+      "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/6375e174-16c1-411e-a36c-3ae0087dad49",
       "id": "Brønnøy-bibliotek-2026-12-01T10:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:58.120Z",
+      "collectedAt": "2026-11-27T10:43:49.826Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -142,14 +102,44 @@
       "category": "kino"
     },
     {
+      "title": "Julenissens verksted",
+      "description": "Julenissens verksted 02.12.26 kl. 18:00",
+      "startDate": "2026-12-02T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-12-02T17:00:00.000Z",
+      "collectedAt": "2026-11-27T10:43:41.254Z",
+      "category": "kino"
+    },
+    {
       "title": "Naturtreff i regi av BirdLife og Brønnøy kameraklubb",
       "description": "Naturtreff i regi av BirdLife og Brønnøy kameraklubb",
       "startDate": "2026-12-02T18:00:00.000Z",
-      "location": "Brønnøy bibliotek",
+      "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/8a242be5-9686-4988-bfbd-3469cb565c19",
       "id": "Brønnøy-bibliotek-2026-12-02T18:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:58.120Z",
+      "collectedAt": "2026-11-27T10:43:49.826Z",
       "category": "kunst-og-kultur"
+    },
+    {
+      "title": "Ebenezer",
+      "description": "Ebenezer 02.12.26 kl. 20:00",
+      "startDate": "2026-12-02T19:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-12-02T19:00:00.000Z",
+      "collectedAt": "2026-11-27T10:43:41.254Z",
+      "category": "kino"
+    },
+    {
+      "title": "Hexe: det magiske riket (engelsk tale, norsk tekst)",
+      "description": "Hexe: det magiske riket (engelsk tale, norsk tekst) 03.12.26 kl. 18:00",
+      "startDate": "2026-12-03T17:00:00.000Z",
+      "location": "Brønnøy kino",
+      "url": "https://www.bronnoy.kommune.no/kino/",
+      "id": "Brønnøy-kino-2026-12-03T17:00:00.000Z",
+      "collectedAt": "2026-11-27T10:43:41.254Z",
+      "category": "kino"
     },
     {
       "id": "2581114842404722",
@@ -195,10 +185,10 @@
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-12-08T10:00:00.000Z",
-      "location": "Brønnøy bibliotek",
+      "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/78618b53-0c45-446b-9a7c-8375c3ec541f",
       "id": "Brønnøy-bibliotek-2026-12-08T10:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:58.120Z",
+      "collectedAt": "2026-11-27T10:43:49.826Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -235,10 +225,10 @@
       "title": "Barseltreff på biblioteket",
       "description": "Barseltreff på biblioteket",
       "startDate": "2026-12-15T10:00:00.000Z",
-      "location": "Brønnøy bibliotek",
+      "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/dacfeb49-3581-448f-8ef7-f84e7a3f1d46",
       "id": "Brønnøy-bibliotek-2026-12-15T10:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:58.120Z",
+      "collectedAt": "2026-11-27T10:43:49.826Z",
       "category": "barn-og-ungdom"
     },
     {
