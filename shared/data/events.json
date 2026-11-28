@@ -1,46 +1,6 @@
 {
-  "updatedAt": "2026-11-27T10:43:55.802Z",
+  "updatedAt": "2026-11-28T10:05:44.345Z",
   "events": [
-    {
-      "id": "1095611339918740",
-      "title": "Julebord for Tekna i Brønnøysund",
-      "description": "Dette arrangementet er åpent for Tekna-medlemmer.\n\nTekna Helgeland inviterer sine medlemmer i Brønnøysund til hyggelig julebord på Kred AS!\n\nLes mer og meld deg på her: https://www.tekna.no/kurs/julebord-for-tekna-i-bronnoysund-54413/",
-      "category": "næringsliv",
-      "startDate": "2026-11-27T17:00:00.000Z",
-      "location": "Kred",
-      "url": "https://www.facebook.com/events/1095611339918740/",
-      "collectedAt": "2026-11-10T09:34:39.445Z"
-    },
-    {
-      "title": "Hexe: det magiske riket (engelsk tale, norsk tekst)",
-      "description": "Hexe: det magiske riket (engelsk tale, norsk tekst) 27.11.26 kl. 18:00",
-      "startDate": "2026-11-27T17:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-27T17:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:41.254Z",
-      "category": "kino"
-    },
-    {
-      "id": "1558998812644654",
-      "title": "Et lys i mørketida - julekonsert med BMK og Susanne Larsen",
-      "description": "Velkommen til en magisk førjulskveld med Brønnøysund Musikkorps og solist Susanne Larsen!\n\nLa deg fylle av julestemning gjennom et variert repertoar med både kjente og kjære jule favoritter, samt musikalske overraskelser. Sammen ønsker vi å skape en stemningsfull konsertopplevelse for hele familien.\n\nVi håper du vil dele denne kvelden med oss.\n\nBillett selges i døra.\nPris er 250 kr. for voksne og 100 kr. for barn.",
-      "category": "musikk",
-      "startDate": "2026-11-27T18:00:00.000Z",
-      "location": "Brønnøysund samfunnshus",
-      "url": "https://www.facebook.com/events/1558998812644654/",
-      "collectedAt": "2026-11-10T09:34:36.474Z"
-    },
-    {
-      "title": "Focker-In-Law (Premiere)",
-      "description": "Focker-In-Law (Premiere) 27.11.26 kl. 20:00",
-      "startDate": "2026-11-27T19:00:00.000Z",
-      "location": "Brønnøy kino",
-      "url": "https://www.bronnoy.kommune.no/kino/",
-      "id": "Brønnøy-kino-2026-11-27T19:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:41.254Z",
-      "category": "kino"
-    },
     {
       "title": "Gudstjeneste",
       "description": "Gudstjeneste - Brønnøy kirke",
@@ -48,7 +8,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5&OccurenceId=ce8e4d36-5181-4b4e-a57e-67aea171a8c5",
       "id": "Brønnøy-kirke-2026-11-29T10:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:55.580Z",
+      "collectedAt": "2026-11-28T10:04:42.602Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -58,7 +18,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=99633440-8026-4a82-b801-7a613295cbbe&OccurenceId=99633440-8026-4a82-b801-7a613295cbbe",
       "id": "Brønnøy-kirke-2026-11-29T14:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:55.580Z",
+      "collectedAt": "2026-11-28T10:04:42.602Z",
       "category": "tro-og-livssyn"
     },
     {
@@ -68,7 +28,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=21672dd8-92f4-412b-b80e-b724e604947c&OccurenceId=21672dd8-92f4-412b-b80e-b724e604947c",
       "id": "Brønnøy-kirke-2026-11-29T17:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:55.580Z",
+      "collectedAt": "2026-11-28T10:04:42.602Z",
       "category": "musikk"
     },
     {
@@ -78,37 +38,37 @@
       "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/6375e174-16c1-411e-a36c-3ae0087dad49",
       "id": "Brønnøy-bibliotek-2026-12-01T10:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:49.826Z",
+      "collectedAt": "2026-11-28T10:04:36.486Z",
       "category": "barn-og-ungdom"
     },
     {
       "title": "Mysteriepakken",
-      "description": "Mysteriepakken 01.12.26 kl. 18:00",
+      "description": "Mysteriepakken",
       "startDate": "2026-12-01T17:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-01T17:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:50.332Z",
+      "collectedAt": "2026-11-28T10:04:27.398Z",
       "category": "kino"
     },
     {
       "title": "Wildwood (engelsk tale, norsk tekst)",
-      "description": "Wildwood (engelsk tale, norsk tekst) 01.12.26 kl. 20:00",
+      "description": "Wildwood (engelsk tale, norsk tekst)",
       "startDate": "2026-12-01T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-01T19:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:50.332Z",
+      "collectedAt": "2026-11-28T10:04:27.398Z",
       "category": "kino"
     },
     {
       "title": "Julenissens verksted",
-      "description": "Julenissens verksted 02.12.26 kl. 18:00",
+      "description": "Julenissens verksted",
       "startDate": "2026-12-02T17:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-02T17:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:41.254Z",
+      "collectedAt": "2026-11-28T10:04:27.398Z",
       "category": "kino"
     },
     {
@@ -118,27 +78,27 @@
       "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/8a242be5-9686-4988-bfbd-3469cb565c19",
       "id": "Brønnøy-bibliotek-2026-12-02T18:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:49.826Z",
+      "collectedAt": "2026-11-28T10:04:36.487Z",
       "category": "kunst-og-kultur"
     },
     {
       "title": "Ebenezer",
-      "description": "Ebenezer 02.12.26 kl. 20:00",
+      "description": "Ebenezer",
       "startDate": "2026-12-02T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-02T19:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:41.254Z",
+      "collectedAt": "2026-11-28T10:04:27.398Z",
       "category": "kino"
     },
     {
-      "title": "Hexe: det magiske riket (engelsk tale, norsk tekst)",
-      "description": "Hexe: det magiske riket (engelsk tale, norsk tekst) 03.12.26 kl. 18:00",
+      "title": "Hexe: det magiske riket",
+      "description": "Hexe: det magiske riket",
       "startDate": "2026-12-03T17:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-03T17:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:41.254Z",
+      "collectedAt": "2026-11-28T10:04:27.398Z",
       "category": "kino"
     },
     {
@@ -188,7 +148,7 @@
       "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/78618b53-0c45-446b-9a7c-8375c3ec541f",
       "id": "Brønnøy-bibliotek-2026-12-08T10:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:49.826Z",
+      "collectedAt": "2026-11-28T10:04:36.487Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -228,7 +188,7 @@
       "location": "Brønnøy bibliotek Brønnøysund",
       "url": "https://bronnoybibliotek.no/arrangementer#/events/dacfeb49-3581-448f-8ef7-f84e7a3f1d46",
       "id": "Brønnøy-bibliotek-2026-12-15T10:00:00.000Z",
-      "collectedAt": "2026-11-27T10:43:49.826Z",
+      "collectedAt": "2026-11-28T10:04:36.487Z",
       "category": "barn-og-ungdom"
     },
     {
@@ -243,22 +203,22 @@
     },
     {
       "title": "Dune: Part Three",
-      "description": "Dune: Part Three 17.12.26 kl. 20:00",
+      "description": "Dune: Part Three",
       "startDate": "2026-12-17T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-17T19:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:50.332Z",
+      "collectedAt": "2026-11-28T10:04:27.398Z",
       "category": "kino"
     },
     {
       "title": "Avengers: Doomsday",
-      "description": "Avengers: Doomsday 18.12.26 kl. 20:00",
+      "description": "Avengers: Doomsday",
       "startDate": "2026-12-18T19:00:00.000Z",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-12-18T19:00:00.000Z",
-      "collectedAt": "2026-11-26T10:41:50.332Z",
+      "collectedAt": "2026-11-28T10:04:27.398Z",
       "category": "kino"
     },
     {
